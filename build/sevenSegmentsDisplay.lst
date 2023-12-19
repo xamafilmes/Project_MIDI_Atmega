@@ -1,0 +1,474 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 1
+
+
+   1               		.file	"sevenSegmentsDisplay.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType,"ax",@progbits
+  23               	.global	_Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+  25               	_Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F0E0      		ldi r31,0
+  32 0004 E050      		subi r30,lo8(-(gs(.L5)))
+  33 0006 F040      		sbci r31,hi8(-(gs(.L5)))
+  34 0008 0C94 0000 		jmp __tablejump2__
+  35               		.section	.jumptables.gcc._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType,"a",@progbits
+  36               		.p2align	1
+  37               	.L5:
+  38 0000 0000      		.word gs(.L17)
+  39 0002 0000      		.word gs(.L37)
+  40 0004 0000      		.word gs(.L33)
+  41 0006 0000      		.word gs(.L32)
+  42 0008 0000      		.word gs(.L31)
+  43 000a 0000      		.word gs(.L15)
+  44 000c 0000      		.word gs(.L30)
+  45 000e 0000      		.word gs(.L34)
+  46 0010 0000      		.word gs(.L28)
+  47 0012 0000      		.word gs(.L27)
+  48 0014 0000      		.word gs(.L25)
+  49 0016 0000      		.word gs(.L24)
+  50 0018 0000      		.word gs(.L23)
+  51 001a 0000      		.word gs(.L22)
+  52 001c 0000      		.word gs(.L21)
+  53 001e 0000      		.word gs(.L20)
+  54 0020 0000      		.word gs(.L3)
+  55 0022 0000      		.word gs(.L3)
+  56 0024 0000      		.word gs(.L3)
+  57 0026 0000      		.word gs(.L3)
+  58 0028 0000      		.word gs(.L3)
+  59 002a 0000      		.word gs(.L3)
+  60 002c 0000      		.word gs(.L3)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 2
+
+
+  61 002e 0000      		.word gs(.L3)
+  62 0030 0000      		.word gs(.L3)
+  63 0032 0000      		.word gs(.L3)
+  64 0034 0000      		.word gs(.L3)
+  65 0036 0000      		.word gs(.L3)
+  66 0038 0000      		.word gs(.L3)
+  67 003a 0000      		.word gs(.L3)
+  68 003c 0000      		.word gs(.L3)
+  69 003e 0000      		.word gs(.L3)
+  70 0040 0000      		.word gs(.L3)
+  71 0042 0000      		.word gs(.L3)
+  72 0044 0000      		.word gs(.L3)
+  73 0046 0000      		.word gs(.L3)
+  74 0048 0000      		.word gs(.L3)
+  75 004a 0000      		.word gs(.L3)
+  76 004c 0000      		.word gs(.L3)
+  77 004e 0000      		.word gs(.L3)
+  78 0050 0000      		.word gs(.L3)
+  79 0052 0000      		.word gs(.L3)
+  80 0054 0000      		.word gs(.L3)
+  81 0056 0000      		.word gs(.L3)
+  82 0058 0000      		.word gs(.L3)
+  83 005a 0000      		.word gs(.L26)
+  84 005c 0000      		.word gs(.L3)
+  85 005e 0000      		.word gs(.L3)
+  86 0060 0000      		.word gs(.L3)
+  87 0062 0000      		.word gs(.L3)
+  88 0064 0000      		.word gs(.L3)
+  89 0066 0000      		.word gs(.L3)
+  90 0068 0000      		.word gs(.L3)
+  91 006a 0000      		.word gs(.L3)
+  92 006c 0000      		.word gs(.L3)
+  93 006e 0000      		.word gs(.L3)
+  94 0070 0000      		.word gs(.L3)
+  95 0072 0000      		.word gs(.L3)
+  96 0074 0000      		.word gs(.L3)
+  97 0076 0000      		.word gs(.L3)
+  98 0078 0000      		.word gs(.L3)
+  99 007a 0000      		.word gs(.L3)
+ 100 007c 0000      		.word gs(.L3)
+ 101 007e 0000      		.word gs(.L3)
+ 102 0080 0000      		.word gs(.L3)
+ 103 0082 0000      		.word gs(.L25)
+ 104 0084 0000      		.word gs(.L24)
+ 105 0086 0000      		.word gs(.L23)
+ 106 0088 0000      		.word gs(.L22)
+ 107 008a 0000      		.word gs(.L21)
+ 108 008c 0000      		.word gs(.L20)
+ 109 008e 0000      		.word gs(.L3)
+ 110 0090 0000      		.word gs(.L19)
+ 111 0092 0000      		.word gs(.L3)
+ 112 0094 0000      		.word gs(.L3)
+ 113 0096 0000      		.word gs(.L3)
+ 114 0098 0000      		.word gs(.L18)
+ 115 009a 0000      		.word gs(.L3)
+ 116 009c 0000      		.word gs(.L3)
+ 117 009e 0000      		.word gs(.L17)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 3
+
+
+ 118 00a0 0000      		.word gs(.L16)
+ 119 00a2 0000      		.word gs(.L3)
+ 120 00a4 0000      		.word gs(.L3)
+ 121 00a6 0000      		.word gs(.L15)
+ 122 00a8 0000      		.word gs(.L3)
+ 123 00aa 0000      		.word gs(.L14)
+ 124 00ac 0000      		.word gs(.L3)
+ 125 00ae 0000      		.word gs(.L3)
+ 126 00b0 0000      		.word gs(.L3)
+ 127 00b2 0000      		.word gs(.L3)
+ 128 00b4 0000      		.word gs(.L3)
+ 129 00b6 0000      		.word gs(.L3)
+ 130 00b8 0000      		.word gs(.L3)
+ 131 00ba 0000      		.word gs(.L3)
+ 132 00bc 0000      		.word gs(.L3)
+ 133 00be 0000      		.word gs(.L3)
+ 134 00c0 0000      		.word gs(.L3)
+ 135 00c2 0000      		.word gs(.L3)
+ 136 00c4 0000      		.word gs(.L3)
+ 137 00c6 0000      		.word gs(.L3)
+ 138 00c8 0000      		.word gs(.L3)
+ 139 00ca 0000      		.word gs(.L3)
+ 140 00cc 0000      		.word gs(.L3)
+ 141 00ce 0000      		.word gs(.L3)
+ 142 00d0 0000      		.word gs(.L3)
+ 143 00d2 0000      		.word gs(.L13)
+ 144 00d4 0000      		.word gs(.L12)
+ 145 00d6 0000      		.word gs(.L3)
+ 146 00d8 0000      		.word gs(.L3)
+ 147 00da 0000      		.word gs(.L3)
+ 148 00dc 0000      		.word gs(.L11)
+ 149 00de 0000      		.word gs(.L3)
+ 150 00e0 0000      		.word gs(.L3)
+ 151 00e2 0000      		.word gs(.L10)
+ 152 00e4 0000      		.word gs(.L9)
+ 153 00e6 0000      		.word gs(.L3)
+ 154 00e8 0000      		.word gs(.L8)
+ 155 00ea 0000      		.word gs(.L3)
+ 156 00ec 0000      		.word gs(.L3)
+ 157 00ee 0000      		.word gs(.L3)
+ 158 00f0 0000      		.word gs(.L3)
+ 159 00f2 0000      		.word gs(.L7)
+ 160 00f4 0000      		.word gs(.L3)
+ 161 00f6 0000      		.word gs(.L3)
+ 162 00f8 0000      		.word gs(.L3)
+ 163 00fa 0000      		.word gs(.L3)
+ 164 00fc 0000      		.word gs(.L3)
+ 165 00fe 0000      		.word gs(.L3)
+ 166 0100 0000      		.word gs(.L3)
+ 167 0102 0000      		.word gs(.L3)
+ 168 0104 0000      		.word gs(.L3)
+ 169 0106 0000      		.word gs(.L3)
+ 170 0108 0000      		.word gs(.L3)
+ 171 010a 0000      		.word gs(.L3)
+ 172 010c 0000      		.word gs(.L3)
+ 173 010e 0000      		.word gs(.L3)
+ 174 0110 0000      		.word gs(.L3)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 4
+
+
+ 175 0112 0000      		.word gs(.L3)
+ 176 0114 0000      		.word gs(.L3)
+ 177 0116 0000      		.word gs(.L3)
+ 178 0118 0000      		.word gs(.L3)
+ 179 011a 0000      		.word gs(.L3)
+ 180 011c 0000      		.word gs(.L3)
+ 181 011e 0000      		.word gs(.L3)
+ 182 0120 0000      		.word gs(.L3)
+ 183 0122 0000      		.word gs(.L3)
+ 184 0124 0000      		.word gs(.L3)
+ 185 0126 0000      		.word gs(.L3)
+ 186 0128 0000      		.word gs(.L3)
+ 187 012a 0000      		.word gs(.L3)
+ 188 012c 0000      		.word gs(.L3)
+ 189 012e 0000      		.word gs(.L3)
+ 190 0130 0000      		.word gs(.L3)
+ 191 0132 0000      		.word gs(.L3)
+ 192 0134 0000      		.word gs(.L3)
+ 193 0136 0000      		.word gs(.L3)
+ 194 0138 0000      		.word gs(.L3)
+ 195 013a 0000      		.word gs(.L3)
+ 196 013c 0000      		.word gs(.L3)
+ 197 013e 0000      		.word gs(.L3)
+ 198 0140 0000      		.word gs(.L3)
+ 199 0142 0000      		.word gs(.L3)
+ 200 0144 0000      		.word gs(.L3)
+ 201 0146 0000      		.word gs(.L3)
+ 202 0148 0000      		.word gs(.L3)
+ 203 014a 0000      		.word gs(.L3)
+ 204 014c 0000      		.word gs(.L3)
+ 205 014e 0000      		.word gs(.L3)
+ 206 0150 0000      		.word gs(.L3)
+ 207 0152 0000      		.word gs(.L3)
+ 208 0154 0000      		.word gs(.L3)
+ 209 0156 0000      		.word gs(.L3)
+ 210 0158 0000      		.word gs(.L3)
+ 211 015a 0000      		.word gs(.L3)
+ 212 015c 0000      		.word gs(.L3)
+ 213 015e 0000      		.word gs(.L3)
+ 214 0160 0000      		.word gs(.L3)
+ 215 0162 0000      		.word gs(.L3)
+ 216 0164 0000      		.word gs(.L3)
+ 217 0166 0000      		.word gs(.L3)
+ 218 0168 0000      		.word gs(.L3)
+ 219 016a 0000      		.word gs(.L3)
+ 220 016c 0000      		.word gs(.L3)
+ 221 016e 0000      		.word gs(.L3)
+ 222 0170 0000      		.word gs(.L3)
+ 223 0172 0000      		.word gs(.L3)
+ 224 0174 0000      		.word gs(.L3)
+ 225 0176 0000      		.word gs(.L3)
+ 226 0178 0000      		.word gs(.L3)
+ 227 017a 0000      		.word gs(.L3)
+ 228 017c 0000      		.word gs(.L3)
+ 229 017e 0000      		.word gs(.L3)
+ 230 0180 0000      		.word gs(.L3)
+ 231 0182 0000      		.word gs(.L3)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 5
+
+
+ 232 0184 0000      		.word gs(.L3)
+ 233 0186 0000      		.word gs(.L3)
+ 234 0188 0000      		.word gs(.L3)
+ 235 018a 0000      		.word gs(.L3)
+ 236 018c 0000      		.word gs(.L3)
+ 237 018e 0000      		.word gs(.L3)
+ 238 0190 0000      		.word gs(.L3)
+ 239 0192 0000      		.word gs(.L3)
+ 240 0194 0000      		.word gs(.L3)
+ 241 0196 0000      		.word gs(.L3)
+ 242 0198 0000      		.word gs(.L3)
+ 243 019a 0000      		.word gs(.L3)
+ 244 019c 0000      		.word gs(.L3)
+ 245 019e 0000      		.word gs(.L3)
+ 246 01a0 0000      		.word gs(.L3)
+ 247 01a2 0000      		.word gs(.L3)
+ 248 01a4 0000      		.word gs(.L3)
+ 249 01a6 0000      		.word gs(.L3)
+ 250 01a8 0000      		.word gs(.L3)
+ 251 01aa 0000      		.word gs(.L3)
+ 252 01ac 0000      		.word gs(.L3)
+ 253 01ae 0000      		.word gs(.L3)
+ 254 01b0 0000      		.word gs(.L3)
+ 255 01b2 0000      		.word gs(.L3)
+ 256 01b4 0000      		.word gs(.L3)
+ 257 01b6 0000      		.word gs(.L3)
+ 258 01b8 0000      		.word gs(.L3)
+ 259 01ba 0000      		.word gs(.L3)
+ 260 01bc 0000      		.word gs(.L3)
+ 261 01be 0000      		.word gs(.L3)
+ 262 01c0 0000      		.word gs(.L3)
+ 263 01c2 0000      		.word gs(.L3)
+ 264 01c4 0000      		.word gs(.L3)
+ 265 01c6 0000      		.word gs(.L3)
+ 266 01c8 0000      		.word gs(.L3)
+ 267 01ca 0000      		.word gs(.L3)
+ 268 01cc 0000      		.word gs(.L3)
+ 269 01ce 0000      		.word gs(.L3)
+ 270 01d0 0000      		.word gs(.L3)
+ 271 01d2 0000      		.word gs(.L3)
+ 272 01d4 0000      		.word gs(.L3)
+ 273 01d6 0000      		.word gs(.L3)
+ 274 01d8 0000      		.word gs(.L3)
+ 275 01da 0000      		.word gs(.L3)
+ 276 01dc 0000      		.word gs(.L3)
+ 277 01de 0000      		.word gs(.L3)
+ 278 01e0 0000      		.word gs(.L3)
+ 279 01e2 0000      		.word gs(.L3)
+ 280 01e4 0000      		.word gs(.L3)
+ 281 01e6 0000      		.word gs(.L3)
+ 282 01e8 0000      		.word gs(.L3)
+ 283 01ea 0000      		.word gs(.L3)
+ 284 01ec 0000      		.word gs(.L3)
+ 285 01ee 0000      		.word gs(.L3)
+ 286 01f0 0000      		.word gs(.L3)
+ 287 01f2 0000      		.word gs(.L3)
+ 288 01f4 0000      		.word gs(.L3)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 6
+
+
+ 289 01f6 0000      		.word gs(.L3)
+ 290 01f8 0000      		.word gs(.L3)
+ 291 01fa 0000      		.word gs(.L6)
+ 292 01fc 0000      		.word gs(.L3)
+ 293 01fe 0000      		.word gs(.L4)
+ 294               		.section	.text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+ 295               	.L17:
+ 296 000c 8FE3      		ldi r24,lo8(63)
+ 297 000e 00C0      		rjmp .L34
+ 298               	.L33:
+ 299 0010 8BE5      		ldi r24,lo8(91)
+ 300               	.L34:
+ 301 0012 6111      		cpse r22,__zero_reg__
+ 302 0014 8068      		ori r24,lo8(-128)
+ 303               	.L35:
+ 304 0016 4111      		cpse r20,__zero_reg__
+ 305 0018 00C0      		rjmp .L2
+ 306 001a 8095      		com r24
+ 307               	.L2:
+ 308               	/* epilogue start */
+ 309 001c 0895      		ret
+ 310               	.L32:
+ 311 001e 8FE4      		ldi r24,lo8(79)
+ 312 0020 00C0      		rjmp .L34
+ 313               	.L31:
+ 314 0022 86E6      		ldi r24,lo8(102)
+ 315 0024 00C0      		rjmp .L34
+ 316               	.L15:
+ 317 0026 8DE6      		ldi r24,lo8(109)
+ 318 0028 00C0      		rjmp .L34
+ 319               	.L30:
+ 320 002a 8DE7      		ldi r24,lo8(125)
+ 321 002c 00C0      		rjmp .L34
+ 322               	.L28:
+ 323 002e 8FE7      		ldi r24,lo8(127)
+ 324 0030 00C0      		rjmp .L34
+ 325               	.L27:
+ 326 0032 8FE6      		ldi r24,lo8(111)
+ 327 0034 00C0      		rjmp .L34
+ 328               	.L25:
+ 329 0036 87E7      		ldi r24,lo8(119)
+ 330 0038 00C0      		rjmp .L34
+ 331               	.L24:
+ 332 003a 8CE7      		ldi r24,lo8(124)
+ 333 003c 00C0      		rjmp .L34
+ 334               	.L23:
+ 335 003e 89E3      		ldi r24,lo8(57)
+ 336 0040 00C0      		rjmp .L34
+ 337               	.L22:
+ 338 0042 8EE5      		ldi r24,lo8(94)
+ 339 0044 00C0      		rjmp .L34
+ 340               	.L21:
+ 341 0046 89E7      		ldi r24,lo8(121)
+ 342 0048 00C0      		rjmp .L34
+ 343               	.L20:
+ 344 004a 81E7      		ldi r24,lo8(113)
+ 345 004c 00C0      		rjmp .L34
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 7
+
+
+ 346               	.L19:
+ 347 004e 86E7      		ldi r24,lo8(118)
+ 348 0050 00C0      		rjmp .L34
+ 349               	.L13:
+ 350 0052 84E0      		ldi r24,lo8(4)
+ 351 0054 00C0      		rjmp .L34
+ 352               	.L12:
+ 353 0056 8EE1      		ldi r24,lo8(30)
+ 354 0058 00C0      		rjmp .L34
+ 355               	.L18:
+ 356 005a 88E3      		ldi r24,lo8(56)
+ 357 005c 00C0      		rjmp .L34
+ 358               	.L11:
+ 359 005e 84E5      		ldi r24,lo8(84)
+ 360 0060 00C0      		rjmp .L34
+ 361               	.L16:
+ 362 0062 83E7      		ldi r24,lo8(115)
+ 363 0064 00C0      		rjmp .L34
+ 364               	.L10:
+ 365 0066 87E6      		ldi r24,lo8(103)
+ 366 0068 00C0      		rjmp .L34
+ 367               	.L9:
+ 368 006a 80E5      		ldi r24,lo8(80)
+ 369 006c 00C0      		rjmp .L34
+ 370               	.L8:
+ 371 006e 88E7      		ldi r24,lo8(120)
+ 372 0070 00C0      		rjmp .L34
+ 373               	.L14:
+ 374 0072 8EE3      		ldi r24,lo8(62)
+ 375 0074 00C0      		rjmp .L34
+ 376               	.L7:
+ 377 0076 8EE6      		ldi r24,lo8(110)
+ 378 0078 00C0      		rjmp .L34
+ 379               	.L26:
+ 380 007a 80E4      		ldi r24,lo8(64)
+ 381 007c 00C0      		rjmp .L34
+ 382               	.L6:
+ 383 007e 8FEF      		ldi r24,lo8(-1)
+ 384 0080 00C0      		rjmp .L34
+ 385               	.L4:
+ 386 0082 80E0      		ldi r24,0
+ 387 0084 00C0      		rjmp .L34
+ 388               	.L3:
+ 389 0086 80E0      		ldi r24,0
+ 390 0088 00C0      		rjmp .L34
+ 391               	.L37:
+ 392 008a 86E0      		ldi r24,lo8(6)
+ 393 008c 00C0      		rjmp .L34
+ 395               		.section	.text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType,"ax",@prog
+ 396               	.global	_Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+ 398               	_Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:
+ 399               	/* prologue: function */
+ 400               	/* frame size = 0 */
+ 401               	/* stack size = 0 */
+ 402               	.L__stack_usage = 0
+ 403 0000 0E94 0000 		call _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+ 404               	/* epilogue start */
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 8
+
+
+ 405 0004 0895      		ret
+ 407               		.ident	"GCC: (GNU) 12.1.0"
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 sevenSegmentsDisplay.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:25     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:398    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:37     .jumptables.gcc._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .L5
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:300    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000012 .L34
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:307    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .L2
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:295    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000000c .L17
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:391    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008a .L37
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:298    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .L33
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:310    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .L32
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:313    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .L31
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:316    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .L15
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:319    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .L30
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:322    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .L28
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:325    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .L27
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:328    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .L25
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:331    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .L24
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:334    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .L23
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:337    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .L22
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:340    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .L21
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:343    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .L20
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:388    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .L3
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:379    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .L26
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:346    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .L19
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:355    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .L18
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:361    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .L16
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:373    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:349    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .L13
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:352    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .L12
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:358    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .L11
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:364    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .L10
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:367    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:370    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .L8
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:376    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .L7
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:382    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .L6
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccd3J9ks.s:385    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .L4
+
+UNDEFINED SYMBOLS
+__tablejump2__

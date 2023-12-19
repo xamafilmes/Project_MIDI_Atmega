@@ -1,0 +1,1696 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 1
+
+
+   1               		.file	"dateTime.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN8DateTimeD2Ev,"ax",@progbits
+  23               	.global	_ZN8DateTimeD2Ev
+  25               	_ZN8DateTimeD2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30               	/* epilogue start */
+  31 0000 0895      		ret
+  33               	.global	_ZN8DateTimeD1Ev
+  34               		.set	_ZN8DateTimeD1Ev,_ZN8DateTimeD2Ev
+  35               		.section	.text._ZN8DateTime12getLastErrorEv,"ax",@progbits
+  36               	.global	_ZN8DateTime12getLastErrorEv
+  38               	_ZN8DateTime12getLastErrorEv:
+  39               	/* prologue: function */
+  40               	/* frame size = 0 */
+  41               	/* stack size = 0 */
+  42               	.L__stack_usage = 0
+  43 0000 FC01      		movw r30,r24
+  44 0002 8181      		ldd r24,Z+1
+  45 0004 9281      		ldd r25,Z+2
+  46               	/* epilogue start */
+  47 0006 0895      		ret
+  49               		.section	.text._ZN8DateTime9isDateSetEv,"ax",@progbits
+  50               	.global	_ZN8DateTime9isDateSetEv
+  52               	_ZN8DateTime9isDateSetEv:
+  53               	/* prologue: function */
+  54               	/* frame size = 0 */
+  55               	/* stack size = 0 */
+  56               	.L__stack_usage = 0
+  57 0000 E82F      		mov r30,r24
+  58 0002 F92F      		mov r31,r25
+  59 0004 1282      		std Z+2,__zero_reg__
+  60 0006 1182      		std Z+1,__zero_reg__
+  61 0008 8081      		ld r24,Z
+  62 000a 8170      		andi r24,lo8(1)
+  63               	/* epilogue start */
+  64 000c 0895      		ret
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 2
+
+
+  66               		.section	.text._ZN8DateTime9isTimeSetEv,"ax",@progbits
+  67               	.global	_ZN8DateTime9isTimeSetEv
+  69               	_ZN8DateTime9isTimeSetEv:
+  70               	/* prologue: function */
+  71               	/* frame size = 0 */
+  72               	/* stack size = 0 */
+  73               	.L__stack_usage = 0
+  74 0000 E82F      		mov r30,r24
+  75 0002 F92F      		mov r31,r25
+  76 0004 1282      		std Z+2,__zero_reg__
+  77 0006 1182      		std Z+1,__zero_reg__
+  78 0008 8081      		ld r24,Z
+  79 000a 8695      		lsr r24
+  80 000c 8170      		andi r24,1
+  81               	/* epilogue start */
+  82 000e 0895      		ret
+  84               		.section	.text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE,"ax",@progbits
+  85               	.global	_ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE
+  87               	_ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:
+  88 0000 0F93      		push r16
+  89 0002 1F93      		push r17
+  90 0004 CF93      		push r28
+  91 0006 DF93      		push r29
+  92               	/* prologue: function */
+  93               	/* frame size = 0 */
+  94               	/* stack size = 4 */
+  95               	.L__stack_usage = 4
+  96 0008 E82F      		mov r30,r24
+  97 000a F92F      		mov r31,r25
+  98 000c A62F      		mov r26,r22
+  99 000e B72F      		mov r27,r23
+ 100 0010 642F      		mov r22,r20
+ 101 0012 752F      		mov r23,r21
+ 102 0014 422F      		mov r20,r18
+ 103 0016 532F      		mov r21,r19
+ 104 0018 202F      		mov r18,r16
+ 105 001a 312F      		mov r19,r17
+ 106 001c 8081      		ld r24,Z
+ 107 001e 8170      		andi r24,1
+ 108 0020 8823      		tst r24
+ 109 0022 01F0      		breq .L9
+ 110 0024 1097      		sbiw r26,0
+ 111 0026 01F0      		breq .L10
+ 112 0028 6115      		cp r22,__zero_reg__
+ 113 002a 7105      		cpc r23,__zero_reg__
+ 114 002c 01F0      		breq .L11
+ 115 002e 4115      		cp r20,__zero_reg__
+ 116 0030 5105      		cpc r21,__zero_reg__
+ 117 0032 01F0      		breq .L12
+ 118 0034 9381      		ldd r25,Z+3
+ 119 0036 9F71      		andi r25,lo8(31)
+ 120 0038 EA01      		movw r28,r20
+ 121 003a 9883      		st Y,r25
+ 122 003c 9481      		ldd r25,Z+4
+ 123 003e EB01      		movw r28,r22
+ 124 0040 9883      		st Y,r25
+ 125 0042 4581      		ldd r20,Z+5
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 3
+
+
+ 126 0044 9681      		ldd r25,Z+6
+ 127 0046 9F73      		andi r25,lo8(63)
+ 128 0048 4C93      		st X,r20
+ 129 004a 1196      		adiw r26,1
+ 130 004c 9C93      		st X,r25
+ 131 004e 2115      		cp r18,__zero_reg__
+ 132 0050 3105      		cpc r19,__zero_reg__
+ 133 0052 01F0      		breq .L8
+ 134 0054 9781      		ldd r25,Z+7
+ 135 0056 D901      		movw r26,r18
+ 136 0058 9C93      		st X,r25
+ 137               	.L8:
+ 138 005a 20E0      		ldi r18,0
+ 139 005c 30E0      		ldi r19,0
+ 140               	.L7:
+ 141 005e 3283      		std Z+2,r19
+ 142 0060 2183      		std Z+1,r18
+ 143               	/* epilogue start */
+ 144 0062 DF91      		pop r29
+ 145 0064 CF91      		pop r28
+ 146 0066 1F91      		pop r17
+ 147 0068 0F91      		pop r16
+ 148 006a 0895      		ret
+ 149               	.L9:
+ 150 006c 20E5      		ldi r18,lo8(80)
+ 151 006e 30E0      		ldi r19,0
+ 152 0070 00C0      		rjmp .L7
+ 153               	.L10:
+ 154 0072 21E1      		ldi r18,lo8(17)
+ 155 0074 30E0      		ldi r19,0
+ 156 0076 80E0      		ldi r24,0
+ 157 0078 00C0      		rjmp .L7
+ 158               	.L11:
+ 159 007a 21E1      		ldi r18,lo8(17)
+ 160 007c 30E0      		ldi r19,0
+ 161 007e 80E0      		ldi r24,0
+ 162 0080 00C0      		rjmp .L7
+ 163               	.L12:
+ 164 0082 21E1      		ldi r18,lo8(17)
+ 165 0084 30E0      		ldi r19,0
+ 166 0086 80E0      		ldi r24,0
+ 167 0088 00C0      		rjmp .L7
+ 169               		.section	.text._ZN8DateTime10getWeekDayEPNS_7WeekDayE,"ax",@progbits
+ 170               	.global	_ZN8DateTime10getWeekDayEPNS_7WeekDayE
+ 172               	_ZN8DateTime10getWeekDayEPNS_7WeekDayE:
+ 173               	/* prologue: function */
+ 174               	/* frame size = 0 */
+ 175               	/* stack size = 0 */
+ 176               	.L__stack_usage = 0
+ 177 0000 E82F      		mov r30,r24
+ 178 0002 F92F      		mov r31,r25
+ 179 0004 A62F      		mov r26,r22
+ 180 0006 B72F      		mov r27,r23
+ 181 0008 8081      		ld r24,Z
+ 182 000a 8170      		andi r24,1
+ 183 000c 20E5      		ldi r18,lo8(80)
+ 184 000e 30E0      		ldi r19,0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 4
+
+
+ 185 0010 8823      		tst r24
+ 186 0012 01F0      		breq .L14
+ 187 0014 1097      		sbiw r26,0
+ 188 0016 01F0      		breq .L16
+ 189 0018 9781      		ldd r25,Z+7
+ 190 001a 9C93      		st X,r25
+ 191 001c 20E0      		ldi r18,0
+ 192 001e 30E0      		ldi r19,0
+ 193               	.L14:
+ 194 0020 3283      		std Z+2,r19
+ 195 0022 2183      		std Z+1,r18
+ 196               	/* epilogue start */
+ 197 0024 0895      		ret
+ 198               	.L16:
+ 199 0026 21E1      		ldi r18,lo8(17)
+ 200 0028 30E0      		ldi r19,0
+ 201 002a 80E0      		ldi r24,0
+ 202 002c 00C0      		rjmp .L14
+ 204               		.section	.text._ZN8DateTime10isLeapYearEv,"ax",@progbits
+ 205               	.global	_ZN8DateTime10isLeapYearEv
+ 207               	_ZN8DateTime10isLeapYearEv:
+ 208               	/* prologue: function */
+ 209               	/* frame size = 0 */
+ 210               	/* stack size = 0 */
+ 211               	.L__stack_usage = 0
+ 212 0000 E82F      		mov r30,r24
+ 213 0002 F92F      		mov r31,r25
+ 214 0004 8081      		ld r24,Z
+ 215 0006 8170      		andi r24,1
+ 216 0008 8823      		tst r24
+ 217 000a 01F0      		breq .L20
+ 218 000c 1282      		std Z+2,__zero_reg__
+ 219 000e 1182      		std Z+1,__zero_reg__
+ 220 0010 8381      		ldd r24,Z+3
+ 221 0012 85FB      		bst r24,5
+ 222 0014 8827      		clr r24
+ 223 0016 80F9      		bld r24,0
+ 224               	/* epilogue start */
+ 225 0018 0895      		ret
+ 226               	.L20:
+ 227 001a 20E5      		ldi r18,lo8(80)
+ 228 001c 30E0      		ldi r19,0
+ 229 001e 3283      		std Z+2,r19
+ 230 0020 2183      		std Z+1,r18
+ 231 0022 0895      		ret
+ 233               		.section	.text._ZN8DateTime13getTimeFormatEPNS_10TimeFormatE,"ax",@progbits
+ 234               	.global	_ZN8DateTime13getTimeFormatEPNS_10TimeFormatE
+ 236               	_ZN8DateTime13getTimeFormatEPNS_10TimeFormatE:
+ 237               	/* prologue: function */
+ 238               	/* frame size = 0 */
+ 239               	/* stack size = 0 */
+ 240               	.L__stack_usage = 0
+ 241 0000 E82F      		mov r30,r24
+ 242 0002 F92F      		mov r31,r25
+ 243 0004 A62F      		mov r26,r22
+ 244 0006 B72F      		mov r27,r23
+ 245 0008 8081      		ld r24,Z
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 5
+
+
+ 246 000a 8695      		lsr r24
+ 247 000c 8170      		andi r24,1
+ 248 000e 27E5      		ldi r18,lo8(87)
+ 249 0010 30E0      		ldi r19,0
+ 250 0012 8823      		tst r24
+ 251 0014 01F0      		breq .L22
+ 252 0016 1097      		sbiw r26,0
+ 253 0018 01F0      		breq .L24
+ 254 001a 9585      		ldd r25,Z+13
+ 255 001c 9C93      		st X,r25
+ 256 001e 20E0      		ldi r18,0
+ 257 0020 30E0      		ldi r19,0
+ 258               	.L22:
+ 259 0022 3283      		std Z+2,r19
+ 260 0024 2183      		std Z+1,r18
+ 261               	/* epilogue start */
+ 262 0026 0895      		ret
+ 263               	.L24:
+ 264 0028 21E1      		ldi r18,lo8(17)
+ 265 002a 30E0      		ldi r19,0
+ 266 002c 80E0      		ldi r24,0
+ 267 002e 00C0      		rjmp .L22
+ 269               		.section	.text._ZN8DateTime11getTimeZoneEPNS_8TimeZoneE,"ax",@progbits
+ 270               	.global	_ZN8DateTime11getTimeZoneEPNS_8TimeZoneE
+ 272               	_ZN8DateTime11getTimeZoneEPNS_8TimeZoneE:
+ 273               	/* prologue: function */
+ 274               	/* frame size = 0 */
+ 275               	/* stack size = 0 */
+ 276               	.L__stack_usage = 0
+ 277 0000 E82F      		mov r30,r24
+ 278 0002 F92F      		mov r31,r25
+ 279 0004 A62F      		mov r26,r22
+ 280 0006 B72F      		mov r27,r23
+ 281 0008 1097      		sbiw r26,0
+ 282 000a 01F0      		breq .L27
+ 283 000c 8685      		ldd r24,Z+14
+ 284 000e 8C93      		st X,r24
+ 285 0010 20E0      		ldi r18,0
+ 286 0012 30E0      		ldi r19,0
+ 287 0014 81E0      		ldi r24,lo8(1)
+ 288               	.L26:
+ 289 0016 3283      		std Z+2,r19
+ 290 0018 2183      		std Z+1,r18
+ 291               	/* epilogue start */
+ 292 001a 0895      		ret
+ 293               	.L27:
+ 294 001c 21E1      		ldi r18,lo8(17)
+ 295 001e 30E0      		ldi r19,0
+ 296 0020 80E0      		ldi r24,0
+ 297 0022 00C0      		rjmp .L26
+ 299               		.section	.text._ZN8DateTime11setTimeZoneENS_8TimeZoneE,"ax",@progbits
+ 300               	.global	_ZN8DateTime11setTimeZoneENS_8TimeZoneE
+ 302               	_ZN8DateTime11setTimeZoneENS_8TimeZoneE:
+ 303               	/* prologue: function */
+ 304               	/* frame size = 0 */
+ 305               	/* stack size = 0 */
+ 306               	.L__stack_usage = 0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 6
+
+
+ 307 0000 E82F      		mov r30,r24
+ 308 0002 F92F      		mov r31,r25
+ 309 0004 6687      		std Z+14,r22
+ 310 0006 1282      		std Z+2,__zero_reg__
+ 311 0008 1182      		std Z+1,__zero_reg__
+ 312 000a 81E0      		ldi r24,lo8(1)
+ 313               	/* epilogue start */
+ 314 000c 0895      		ret
+ 316               		.section	.text._ZN8DateTime10_clearDataEv,"ax",@progbits
+ 317               	.global	_ZN8DateTime10_clearDataEv
+ 319               	_ZN8DateTime10_clearDataEv:
+ 320               	/* prologue: function */
+ 321               	/* frame size = 0 */
+ 322               	/* stack size = 0 */
+ 323               	.L__stack_usage = 0
+ 324 0000 E82F      		mov r30,r24
+ 325 0002 F92F      		mov r31,r25
+ 326 0004 8081      		ld r24,Z
+ 327 0006 8E7F      		andi r24,lo8(-2)
+ 328 0008 8D7F      		andi r24,lo8(~(1<<1))
+ 329 000a 8083      		st Z,r24
+ 330 000c 8381      		ldd r24,Z+3
+ 331 000e 807E      		andi r24,lo8(-32)
+ 332 0010 8F7D      		andi r24,lo8(~(1<<5))
+ 333 0012 8383      		std Z+3,r24
+ 334 0014 1482      		std Z+4,__zero_reg__
+ 335 0016 1582      		std Z+5,__zero_reg__
+ 336 0018 8681      		ldd r24,Z+6
+ 337 001a 807C      		andi r24,lo8(-64)
+ 338 001c 8683      		std Z+6,r24
+ 339 001e 1782      		std Z+7,__zero_reg__
+ 340 0020 1086      		std Z+8,__zero_reg__
+ 341 0022 1186      		std Z+9,__zero_reg__
+ 342 0024 1286      		std Z+10,__zero_reg__
+ 343 0026 1386      		std Z+11,__zero_reg__
+ 344 0028 8485      		ldd r24,Z+12
+ 345 002a 887F      		andi r24,lo8(-8)
+ 346 002c 8487      		std Z+12,r24
+ 347 002e 1586      		std Z+13,__zero_reg__
+ 348 0030 1686      		std Z+14,__zero_reg__
+ 349 0032 1282      		std Z+2,__zero_reg__
+ 350 0034 1182      		std Z+1,__zero_reg__
+ 351               	/* epilogue start */
+ 352 0036 0895      		ret
+ 354               		.section	.text._ZN8DateTimeC2Ev,"ax",@progbits
+ 355               	.global	_ZN8DateTimeC2Ev
+ 357               	_ZN8DateTimeC2Ev:
+ 358 0000 CF93      		push r28
+ 359 0002 DF93      		push r29
+ 360               	/* prologue: function */
+ 361               	/* frame size = 0 */
+ 362               	/* stack size = 2 */
+ 363               	.L__stack_usage = 2
+ 364 0004 C82F      		mov r28,r24
+ 365 0006 D92F      		mov r29,r25
+ 366 0008 CE01      		movw r24,r28
+ 367 000a 0E94 0000 		call _ZN8DateTime10_clearDataEv
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 7
+
+
+ 368 000e 1A82      		std Y+2,__zero_reg__
+ 369 0010 1982      		std Y+1,__zero_reg__
+ 370               	/* epilogue start */
+ 371 0012 DF91      		pop r29
+ 372 0014 CF91      		pop r28
+ 373 0016 0895      		ret
+ 375               	.global	_ZN8DateTimeC1Ev
+ 376               		.set	_ZN8DateTimeC1Ev,_ZN8DateTimeC2Ev
+ 377               		.section	.rodata._ZN8DateTime18_evaluateDayOfWeekEv.str1.1,"aMS",@progbits,1
+ 378               	.LC0:
+ 379 0000 2D62 6564 		.string	"-bed=pen+mad."
+ 379      3D70 656E 
+ 379      2B6D 6164 
+ 379      2E00 
+ 380               		.section	.text._ZN8DateTime18_evaluateDayOfWeekEv,"ax",@progbits
+ 381               	.global	_ZN8DateTime18_evaluateDayOfWeekEv
+ 383               	_ZN8DateTime18_evaluateDayOfWeekEv:
+ 384 0000 CF93      		push r28
+ 385 0002 DF93      		push r29
+ 386               	/* prologue: function */
+ 387               	/* frame size = 0 */
+ 388               	/* stack size = 2 */
+ 389               	.L__stack_usage = 2
+ 390 0004 C82F      		mov r28,r24
+ 391 0006 D92F      		mov r29,r25
+ 392 0008 2D81      		ldd r18,Y+5
+ 393 000a 8E81      		ldd r24,Y+6
+ 394 000c 382F      		mov r19,r24
+ 395 000e 3F73      		andi r19,lo8(63)
+ 396 0010 EC81      		ldd r30,Y+4
+ 397 0012 81E0      		ldi r24,lo8(1)
+ 398 0014 90E0      		ldi r25,0
+ 399 0016 E330      		cpi r30,lo8(3)
+ 400 0018 00F0      		brlo .L32
+ 401 001a 80E0      		ldi r24,0
+ 402 001c 90E0      		ldi r25,0
+ 403               	.L32:
+ 404 001e 281B      		sub r18,r24
+ 405 0020 390B      		sbc r19,r25
+ 406 0022 8B81      		ldd r24,Y+3
+ 407 0024 8F71      		andi r24,lo8(31)
+ 408 0026 F0E0      		ldi r31,0
+ 409 0028 E050      		subi r30,lo8(-(.LC0))
+ 410 002a F040      		sbci r31,hi8(-(.LC0))
+ 411 002c 9081      		ld r25,Z
+ 412 002e F901      		movw r30,r18
+ 413 0030 E90F      		add r30,r25
+ 414 0032 F11D      		adc r31,__zero_reg__
+ 415 0034 97FD      		sbrc r25,7
+ 416 0036 FA95      		dec r31
+ 417 0038 E80F      		add r30,r24
+ 418 003a F11D      		adc r31,__zero_reg__
+ 419 003c A901      		movw r20,r18
+ 420 003e 5695      		lsr r21
+ 421 0040 4795      		ror r20
+ 422 0042 5695      		lsr r21
+ 423 0044 4795      		ror r20
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 8
+
+
+ 424 0046 E40F      		add r30,r20
+ 425 0048 F51F      		adc r31,r21
+ 426 004a 3295      		swap r19
+ 427 004c 2295      		swap r18
+ 428 004e 2F70      		andi r18,0x0f
+ 429 0050 2327      		eor r18,r19
+ 430 0052 3F70      		andi r19,0x0f
+ 431 0054 2327      		eor r18,r19
+ 432 0056 AEE3      		ldi r26,lo8(62)
+ 433 0058 BAE0      		ldi r27,lo8(10)
+ 434 005a 0E94 0000 		call __umulhisi3
+ 435 005e E80F      		add r30,r24
+ 436 0060 F91F      		adc r31,r25
+ 437 0062 9A01      		movw r18,r20
+ 438 0064 ABE7      		ldi r26,lo8(123)
+ 439 0066 B4E1      		ldi r27,lo8(20)
+ 440 0068 0E94 0000 		call __umulhisi3
+ 441 006c 9695      		lsr r25
+ 442 006e 8795      		ror r24
+ 443 0070 E81B      		sub r30,r24
+ 444 0072 F90B      		sbc r31,r25
+ 445 0074 9F01      		movw r18,r30
+ 446 0076 A3E9      		ldi r26,lo8(-109)
+ 447 0078 B4E2      		ldi r27,lo8(36)
+ 448 007a 0E94 0000 		call __umulhisi3
+ 449 007e 482F      		mov r20,r24
+ 450 0080 592F      		mov r21,r25
+ 451 0082 CF01      		movw r24,r30
+ 452 0084 841B      		sub r24,r20
+ 453 0086 950B      		sbc r25,r21
+ 454 0088 9695      		lsr r25
+ 455 008a 8795      		ror r24
+ 456 008c 840F      		add r24,r20
+ 457 008e 951F      		adc r25,r21
+ 458 0090 9695      		lsr r25
+ 459 0092 8795      		ror r24
+ 460 0094 9695      		lsr r25
+ 461 0096 8795      		ror r24
+ 462 0098 9C01      		movw r18,r24
+ 463 009a 220F      		lsl r18
+ 464 009c 331F      		rol r19
+ 465 009e 220F      		lsl r18
+ 466 00a0 331F      		rol r19
+ 467 00a2 220F      		lsl r18
+ 468 00a4 331F      		rol r19
+ 469 00a6 281B      		sub r18,r24
+ 470 00a8 390B      		sbc r19,r25
+ 471 00aa CF01      		movw r24,r30
+ 472 00ac 821B      		sub r24,r18
+ 473 00ae 930B      		sbc r25,r19
+ 474 00b0 1A82      		std Y+2,__zero_reg__
+ 475 00b2 1982      		std Y+1,__zero_reg__
+ 476 00b4 8F5F      		subi r24,lo8(-(1))
+ 477               	/* epilogue start */
+ 478 00b6 DF91      		pop r29
+ 479 00b8 CF91      		pop r28
+ 480 00ba 0895      		ret
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 9
+
+
+ 482               		.section	.text._ZN8DateTime11_isLeapYearEj,"ax",@progbits
+ 483               	.global	_ZN8DateTime11_isLeapYearEj
+ 485               	_ZN8DateTime11_isLeapYearEj:
+ 486               	/* prologue: function */
+ 487               	/* frame size = 0 */
+ 488               	/* stack size = 0 */
+ 489               	.L__stack_usage = 0
+ 490 0000 E82F      		mov r30,r24
+ 491 0002 F92F      		mov r31,r25
+ 492 0004 462F      		mov r20,r22
+ 493 0006 572F      		mov r21,r23
+ 494 0008 9A01      		movw r18,r20
+ 495 000a 3295      		swap r19
+ 496 000c 2295      		swap r18
+ 497 000e 2F70      		andi r18,0x0f
+ 498 0010 2327      		eor r18,r19
+ 499 0012 3F70      		andi r19,0x0f
+ 500 0014 2327      		eor r18,r19
+ 501 0016 AEE3      		ldi r26,lo8(62)
+ 502 0018 BAE0      		ldi r27,lo8(10)
+ 503 001a 0E94 0000 		call __umulhisi3
+ 504 001e 60E9      		ldi r22,lo8(-112)
+ 505 0020 71E0      		ldi r23,lo8(1)
+ 506 0022 869F      		mul r24,r22
+ 507 0024 9001      		movw r18,r0
+ 508 0026 879F      		mul r24,r23
+ 509 0028 300D      		add r19,r0
+ 510 002a 969F      		mul r25,r22
+ 511 002c 300D      		add r19,r0
+ 512 002e 1124      		clr r1
+ 513 0030 81E0      		ldi r24,lo8(1)
+ 514 0032 4217      		cp r20,r18
+ 515 0034 5307      		cpc r21,r19
+ 516 0036 01F0      		breq .L34
+ 517 0038 9A01      		movw r18,r20
+ 518 003a 3695      		lsr r19
+ 519 003c 2795      		ror r18
+ 520 003e 3695      		lsr r19
+ 521 0040 2795      		ror r18
+ 522 0042 ABE7      		ldi r26,lo8(123)
+ 523 0044 B4E1      		ldi r27,lo8(20)
+ 524 0046 0E94 0000 		call __umulhisi3
+ 525 004a 9695      		lsr r25
+ 526 004c 8795      		ror r24
+ 527 004e 64E6      		ldi r22,lo8(100)
+ 528 0050 689F      		mul r22,r24
+ 529 0052 9001      		movw r18,r0
+ 530 0054 699F      		mul r22,r25
+ 531 0056 300D      		add r19,r0
+ 532 0058 1124      		clr __zero_reg__
+ 533 005a 80E0      		ldi r24,0
+ 534 005c 4217      		cp r20,r18
+ 535 005e 5307      		cpc r21,r19
+ 536 0060 01F0      		breq .L34
+ 537 0062 4370      		andi r20,3
+ 538 0064 5527      		clr r21
+ 539 0066 81E0      		ldi r24,lo8(1)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 10
+
+
+ 540 0068 452B      		or r20,r21
+ 541 006a 01F0      		breq .L34
+ 542 006c 80E0      		ldi r24,0
+ 543               	.L34:
+ 544 006e 1282      		std Z+2,__zero_reg__
+ 545 0070 1182      		std Z+1,__zero_reg__
+ 546               	/* epilogue start */
+ 547 0072 0895      		ret
+ 549               		.section	.text._ZN8DateTime12_isValidDateEjNS_5MonthEh,"ax",@progbits
+ 550               	.global	_ZN8DateTime12_isValidDateEjNS_5MonthEh
+ 552               	_ZN8DateTime12_isValidDateEjNS_5MonthEh:
+ 553 0000 CF93      		push r28
+ 554 0002 DF93      		push r29
+ 555               	/* prologue: function */
+ 556               	/* frame size = 0 */
+ 557               	/* stack size = 2 */
+ 558               	.L__stack_usage = 2
+ 559 0004 C82F      		mov r28,r24
+ 560 0006 D92F      		mov r29,r25
+ 561 0008 862F      		mov r24,r22
+ 562 000a 972F      		mov r25,r23
+ 563 000c 2223      		tst r18
+ 564 000e 01F0      		breq .L47
+ 565 0010 4423      		tst r20
+ 566 0012 01F0      		breq .L48
+ 567 0014 0097      		sbiw r24,0
+ 568 0016 01F0      		breq .L49
+ 569 0018 4430      		cpi r20,lo8(4)
+ 570 001a 01F0      		breq .L40
+ 571 001c 00F0      		brlo .L51
+ 572 001e 4530      		cpi r20,lo8(5)
+ 573 0020 01F0      		breq .L43
+ 574 0022 4650      		subi r20,lo8(-(-6))
+ 575 0024 4730      		cpi r20,lo8(7)
+ 576 0026 00F4      		brsh .L44
+ 577 0028 81E0      		ldi r24,lo8(1)
+ 578 002a 00C0      		rjmp 2f
+ 579               		1:
+ 580 002c 880F      		lsl r24
+ 581               		2:
+ 582 002e 4A95      		dec r20
+ 583 0030 02F4      		brpl 1b
+ 584 0032 982F      		mov r25,r24
+ 585 0034 9675      		andi r25,lo8(86)
+ 586 0036 9923      		tst r25
+ 587 0038 01F0      		breq .L52
+ 588               	.L43:
+ 589 003a 2032      		cpi r18,lo8(32)
+ 590 003c 00F4      		brsh .L44
+ 591               	.L46:
+ 592 003e 20E0      		ldi r18,0
+ 593 0040 30E0      		ldi r19,0
+ 594 0042 81E0      		ldi r24,lo8(1)
+ 595 0044 00C0      		rjmp .L39
+ 596               	.L51:
+ 597 0046 4230      		cpi r20,lo8(2)
+ 598 0048 01F4      		brne .L53
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 11
+
+
+ 599 004a 2E31      		cpi r18,lo8(30)
+ 600 004c 00F4      		brsh .L44
+ 601 004e 2D31      		cpi r18,lo8(29)
+ 602 0050 01F4      		brne .L46
+ 603 0052 BC01      		movw r22,r24
+ 604 0054 CE01      		movw r24,r28
+ 605 0056 0E94 0000 		call _ZN8DateTime11_isLeapYearEj
+ 606 005a 8111      		cpse r24,__zero_reg__
+ 607 005c 00C0      		rjmp .L46
+ 608 005e 00C0      		rjmp .L44
+ 609               	.L53:
+ 610 0060 4D7F      		andi r20,lo8(-3)
+ 611 0062 4130      		cpi r20,lo8(1)
+ 612 0064 01F0      		breq .L43
+ 613               	.L44:
+ 614 0066 2AE5      		ldi r18,lo8(90)
+ 615 0068 30E0      		ldi r19,0
+ 616 006a 80E0      		ldi r24,0
+ 617 006c 00C0      		rjmp .L39
+ 618               	.L52:
+ 619 006e 8972      		andi r24,lo8(41)
+ 620 0070 8823      		tst r24
+ 621 0072 01F0      		breq .L44
+ 622               	.L40:
+ 623 0074 2F31      		cpi r18,lo8(31)
+ 624 0076 00F0      		brlo .L46
+ 625 0078 00C0      		rjmp .L44
+ 626               	.L47:
+ 627 007a 2AE5      		ldi r18,lo8(90)
+ 628 007c 30E0      		ldi r19,0
+ 629 007e 80E0      		ldi r24,0
+ 630               	.L39:
+ 631 0080 3A83      		std Y+2,r19
+ 632 0082 2983      		std Y+1,r18
+ 633               	/* epilogue start */
+ 634 0084 DF91      		pop r29
+ 635 0086 CF91      		pop r28
+ 636 0088 0895      		ret
+ 637               	.L48:
+ 638 008a 2AE5      		ldi r18,lo8(90)
+ 639 008c 30E0      		ldi r19,0
+ 640 008e 80E0      		ldi r24,0
+ 641 0090 00C0      		rjmp .L39
+ 642               	.L49:
+ 643 0092 2AE5      		ldi r18,lo8(90)
+ 644 0094 30E0      		ldi r19,0
+ 645 0096 80E0      		ldi r24,0
+ 646 0098 00C0      		rjmp .L39
+ 648               		.section	.text._ZN8DateTime7setDateEjNS_5MonthEh,"ax",@progbits
+ 649               	.global	_ZN8DateTime7setDateEjNS_5MonthEh
+ 651               	_ZN8DateTime7setDateEjNS_5MonthEh:
+ 652 0000 DF92      		push r13
+ 653 0002 EF92      		push r14
+ 654 0004 FF92      		push r15
+ 655 0006 0F93      		push r16
+ 656 0008 1F93      		push r17
+ 657 000a CF93      		push r28
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 12
+
+
+ 658 000c DF93      		push r29
+ 659               	/* prologue: function */
+ 660               	/* frame size = 0 */
+ 661               	/* stack size = 7 */
+ 662               	.L__stack_usage = 7
+ 663 000e C82F      		mov r28,r24
+ 664 0010 D92F      		mov r29,r25
+ 665 0012 E62E      		mov r14,r22
+ 666 0014 F72E      		mov r15,r23
+ 667 0016 D42E      		mov r13,r20
+ 668 0018 122F      		mov r17,r18
+ 669 001a 8881      		ld r24,Y
+ 670 001c 8E7F      		andi r24,lo8(~(1<<0))
+ 671 001e 8883      		st Y,r24
+ 672 0020 CE01      		movw r24,r28
+ 673 0022 0E94 0000 		call _ZN8DateTime12_isValidDateEjNS_5MonthEh
+ 674 0026 082F      		mov r16,r24
+ 675 0028 8111      		cpse r24,__zero_reg__
+ 676 002a 00C0      		rjmp .L56
+ 677               	.L54:
+ 678 002c 802F      		mov r24,r16
+ 679               	/* epilogue start */
+ 680 002e DF91      		pop r29
+ 681 0030 CF91      		pop r28
+ 682 0032 1F91      		pop r17
+ 683 0034 0F91      		pop r16
+ 684 0036 FF90      		pop r15
+ 685 0038 EF90      		pop r14
+ 686 003a DF90      		pop r13
+ 687 003c 0895      		ret
+ 688               	.L56:
+ 689 003e 8881      		ld r24,Y
+ 690 0040 8160      		ori r24,lo8(1<<0)
+ 691 0042 8883      		st Y,r24
+ 692 0044 ED82      		std Y+5,r14
+ 693 0046 9F2D      		mov r25,r15
+ 694 0048 9F73      		andi r25,lo8(63)
+ 695 004a 8E81      		ldd r24,Y+6
+ 696 004c 807C      		andi r24,lo8(-64)
+ 697 004e 892B      		or r24,r25
+ 698 0050 8E83      		std Y+6,r24
+ 699 0052 6E2D      		mov r22,r14
+ 700 0054 7F2D      		mov r23,r15
+ 701 0056 CE01      		movw r24,r28
+ 702 0058 0E94 0000 		call _ZN8DateTime11_isLeapYearEj
+ 703 005c 9B81      		ldd r25,Y+3
+ 704 005e 80FB      		bst r24,0
+ 705 0060 95F9      		bld r25,5
+ 706 0062 DC82      		std Y+4,r13
+ 707 0064 1F71      		andi r17,lo8(31)
+ 708 0066 907E      		andi r25,lo8(-32)
+ 709 0068 912B      		or r25,r17
+ 710 006a 9B83      		std Y+3,r25
+ 711 006c CE01      		movw r24,r28
+ 712 006e 0E94 0000 		call _ZN8DateTime18_evaluateDayOfWeekEv
+ 713 0072 8F83      		std Y+7,r24
+ 714 0074 1A82      		std Y+2,__zero_reg__
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 13
+
+
+ 715 0076 1982      		std Y+1,__zero_reg__
+ 716 0078 00C0      		rjmp .L54
+ 718               		.section	.text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_,"ax",@progbits
+ 719               	.global	_ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+ 721               	_ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:
+ 722 0000 0F93      		push r16
+ 723 0002 CF93      		push r28
+ 724 0004 DF93      		push r29
+ 725               	/* prologue: function */
+ 726               	/* frame size = 0 */
+ 727               	/* stack size = 3 */
+ 728               	.L__stack_usage = 3
+ 729 0006 E82F      		mov r30,r24
+ 730 0008 F92F      		mov r31,r25
+ 731 000a A62F      		mov r26,r22
+ 732 000c B72F      		mov r27,r23
+ 733 000e C42F      		mov r28,r20
+ 734 0010 D52F      		mov r29,r21
+ 735 0012 2130      		cpi r18,lo8(1)
+ 736 0014 01F0      		breq .L68
+ 737 0016 0130      		cpi r16,lo8(1)
+ 738 0018 01F0      		breq .L69
+ 739               	.L59:
+ 740 001a 20E0      		ldi r18,0
+ 741 001c 30E0      		ldi r19,0
+ 742 001e 81E0      		ldi r24,lo8(1)
+ 743               	.L64:
+ 744 0020 3283      		std Z+2,r19
+ 745 0022 2183      		std Z+1,r18
+ 746               	/* epilogue start */
+ 747 0024 DF91      		pop r29
+ 748 0026 CF91      		pop r28
+ 749 0028 0F91      		pop r16
+ 750 002a 0895      		ret
+ 751               	.L68:
+ 752 002c 0111      		cpse r16,__zero_reg__
+ 753 002e 00C0      		rjmp .L59
+ 754 0030 8881      		ld r24,Y
+ 755 0032 8111      		cpse r24,__zero_reg__
+ 756 0034 00C0      		rjmp .L60
+ 757 0036 8C91      		ld r24,X
+ 758 0038 8C30      		cpi r24,lo8(12)
+ 759 003a 01F4      		brne .L59
+ 760 003c 1C92      		st X,__zero_reg__
+ 761 003e 00C0      		rjmp .L59
+ 762               	.L60:
+ 763 0040 8C91      		ld r24,X
+ 764 0042 8C30      		cpi r24,lo8(12)
+ 765 0044 01F4      		brne .L59
+ 766 0046 88E1      		ldi r24,lo8(24)
+ 767 0048 8C93      		st X,r24
+ 768 004a 00C0      		rjmp .L59
+ 769               	.L69:
+ 770 004c 8C91      		ld r24,X
+ 771 004e 8C30      		cpi r24,lo8(12)
+ 772 0050 01F0      		breq .L61
+ 773 0052 00F4      		brsh .L62
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 14
+
+
+ 774 0054 8823      		tst r24
+ 775 0056 01F0      		breq .L63
+ 776 0058 1882      		st Y,__zero_reg__
+ 777 005a 00C0      		rjmp .L59
+ 778               	.L62:
+ 779 005c 93EF      		ldi r25,lo8(-13)
+ 780 005e 980F      		add r25,r24
+ 781 0060 9B30      		cpi r25,lo8(11)
+ 782 0062 00F4      		brsh .L70
+ 783 0064 8C50      		subi r24,lo8(-(-12))
+ 784 0066 8C93      		st X,r24
+ 785 0068 81E0      		ldi r24,lo8(1)
+ 786 006a 8883      		st Y,r24
+ 787 006c 00C0      		rjmp .L59
+ 788               	.L63:
+ 789 006e 8CE0      		ldi r24,lo8(12)
+ 790 0070 8C93      		st X,r24
+ 791 0072 1882      		st Y,__zero_reg__
+ 792 0074 00C0      		rjmp .L59
+ 793               	.L61:
+ 794 0076 81E0      		ldi r24,lo8(1)
+ 795 0078 8883      		st Y,r24
+ 796 007a 00C0      		rjmp .L59
+ 797               	.L70:
+ 798 007c 822F      		mov r24,r18
+ 799 007e 2FEF      		ldi r18,lo8(-1)
+ 800 0080 3FEF      		ldi r19,lo8(-1)
+ 801 0082 00C0      		rjmp .L64
+ 803               		.section	.text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE,"ax",@progbits
+ 804               	.global	_ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE
+ 806               	_ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:
+ 807 0000 4F92      		push r4
+ 808 0002 5F92      		push r5
+ 809 0004 6F92      		push r6
+ 810 0006 7F92      		push r7
+ 811 0008 8F92      		push r8
+ 812 000a 9F92      		push r9
+ 813 000c AF92      		push r10
+ 814 000e BF92      		push r11
+ 815 0010 CF92      		push r12
+ 816 0012 DF92      		push r13
+ 817 0014 EF92      		push r14
+ 818 0016 FF92      		push r15
+ 819 0018 0F93      		push r16
+ 820 001a 1F93      		push r17
+ 821 001c CF93      		push r28
+ 822 001e DF93      		push r29
+ 823 0020 00D0      		rcall .
+ 824 0022 CDB7      		in r28,__SP_L__
+ 825 0024 DEB7      		in r29,__SP_H__
+ 826               	/* prologue: function */
+ 827               	/* frame size = 2 */
+ 828               	/* stack size = 18 */
+ 829               	.L__stack_usage = 18
+ 830 0026 C82E      		mov r12,r24
+ 831 0028 D92E      		mov r13,r25
+ 832 002a A62E      		mov r10,r22
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 15
+
+
+ 833 002c B72E      		mov r11,r23
+ 834 002e 842E      		mov r8,r20
+ 835 0030 952E      		mov r9,r21
+ 836 0032 622E      		mov r6,r18
+ 837 0034 732E      		mov r7,r19
+ 838 0036 4E2C      		mov r4,r14
+ 839 0038 5F2C      		mov r5,r15
+ 840 003a F601      		movw r30,r12
+ 841 003c 1081      		ld r17,Z
+ 842 003e 1695      		lsr r17
+ 843 0040 1170      		andi r17,1
+ 844 0042 1123      		tst r17
+ 845 0044 01F0      		breq .L82
+ 846 0046 A114      		cp r10,__zero_reg__
+ 847 0048 B104      		cpc r11,__zero_reg__
+ 848 004a 01F4      		brne .+2
+ 849 004c 00C0      		rjmp .L74
+ 850 004e 8114      		cp r8,__zero_reg__
+ 851 0050 9104      		cpc r9,__zero_reg__
+ 852 0052 01F4      		brne .+2
+ 853 0054 00C0      		rjmp .L74
+ 854 0056 6114      		cp r6,__zero_reg__
+ 855 0058 7104      		cpc r7,__zero_reg__
+ 856 005a 01F4      		brne .+2
+ 857 005c 00C0      		rjmp .L74
+ 858 005e 0130      		cpi r16,lo8(1)
+ 859 0060 01F4      		brne .+2
+ 860 0062 00C0      		rjmp .L83
+ 861 0064 F601      		movw r30,r12
+ 862 0066 8085      		ldd r24,Z+8
+ 863 0068 8A83      		std Y+2,r24
+ 864 006a 8185      		ldd r24,Z+9
+ 865 006c 8F71      		andi r24,lo8(31)
+ 866 006e 8983      		std Y+1,r24
+ 867 0070 8585      		ldd r24,Z+13
+ 868 0072 8111      		cpse r24,__zero_reg__
+ 869 0074 00C0      		rjmp .L84
+ 870               	.L78:
+ 871 0076 4114      		cp r4,__zero_reg__
+ 872 0078 5104      		cpc r5,__zero_reg__
+ 873 007a 01F0      		breq .L79
+ 874               	.L80:
+ 875 007c 8A81      		ldd r24,Y+2
+ 876 007e F201      		movw r30,r4
+ 877 0080 8083      		st Z,r24
+ 878               	.L79:
+ 879 0082 8981      		ldd r24,Y+1
+ 880 0084 F501      		movw r30,r10
+ 881 0086 8083      		st Z,r24
+ 882 0088 F601      		movw r30,r12
+ 883 008a 9285      		ldd r25,Z+10
+ 884 008c 991F      		rol r25
+ 885 008e 9927      		clr r25
+ 886 0090 991F      		rol r25
+ 887 0092 8385      		ldd r24,Z+11
+ 888 0094 8F71      		andi r24,lo8(31)
+ 889 0096 880F      		lsl r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 16
+
+
+ 890 0098 892B      		or r24,r25
+ 891 009a F401      		movw r30,r8
+ 892 009c 8083      		st Z,r24
+ 893 009e F601      		movw r30,r12
+ 894 00a0 9385      		ldd r25,Z+11
+ 895 00a2 9295      		swap r25
+ 896 00a4 9695      		lsr r25
+ 897 00a6 9770      		andi r25,lo8(7)
+ 898 00a8 8485      		ldd r24,Z+12
+ 899 00aa 8770      		andi r24,lo8(7)
+ 900 00ac 880F      		lsl r24
+ 901 00ae 880F      		lsl r24
+ 902 00b0 880F      		lsl r24
+ 903 00b2 892B      		or r24,r25
+ 904 00b4 F301      		movw r30,r6
+ 905 00b6 8083      		st Z,r24
+ 906 00b8 F601      		movw r30,r12
+ 907 00ba 1282      		std Z+2,__zero_reg__
+ 908 00bc 1182      		std Z+1,__zero_reg__
+ 909 00be 00C0      		rjmp .L71
+ 910               	.L82:
+ 911 00c0 87E5      		ldi r24,lo8(87)
+ 912 00c2 90E0      		ldi r25,0
+ 913 00c4 9283      		std Z+2,r25
+ 914 00c6 8183      		std Z+1,r24
+ 915               	.L71:
+ 916 00c8 812F      		mov r24,r17
+ 917               	/* epilogue start */
+ 918 00ca 0F90      		pop __tmp_reg__
+ 919 00cc 0F90      		pop __tmp_reg__
+ 920 00ce DF91      		pop r29
+ 921 00d0 CF91      		pop r28
+ 922 00d2 1F91      		pop r17
+ 923 00d4 0F91      		pop r16
+ 924 00d6 FF90      		pop r15
+ 925 00d8 EF90      		pop r14
+ 926 00da DF90      		pop r13
+ 927 00dc CF90      		pop r12
+ 928 00de BF90      		pop r11
+ 929 00e0 AF90      		pop r10
+ 930 00e2 9F90      		pop r9
+ 931 00e4 8F90      		pop r8
+ 932 00e6 7F90      		pop r7
+ 933 00e8 6F90      		pop r6
+ 934 00ea 5F90      		pop r5
+ 935 00ec 4F90      		pop r4
+ 936 00ee 0895      		ret
+ 937               	.L74:
+ 938 00f0 81E1      		ldi r24,lo8(17)
+ 939 00f2 90E0      		ldi r25,0
+ 940 00f4 F601      		movw r30,r12
+ 941 00f6 9283      		std Z+2,r25
+ 942 00f8 8183      		std Z+1,r24
+ 943 00fa 10E0      		ldi r17,0
+ 944 00fc 00C0      		rjmp .L71
+ 945               	.L83:
+ 946 00fe 4114      		cp r4,__zero_reg__
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 17
+
+
+ 947 0100 5104      		cpc r5,__zero_reg__
+ 948 0102 01F0      		breq .L85
+ 949 0104 F601      		movw r30,r12
+ 950 0106 8085      		ldd r24,Z+8
+ 951 0108 8A83      		std Y+2,r24
+ 952 010a 8185      		ldd r24,Z+9
+ 953 010c 8F71      		andi r24,lo8(31)
+ 954 010e 8983      		std Y+1,r24
+ 955 0110 8585      		ldd r24,Z+13
+ 956 0112 8111      		cpse r24,__zero_reg__
+ 957 0114 00C0      		rjmp .L80
+ 958 0116 20E0      		ldi r18,0
+ 959 0118 AE01      		movw r20,r28
+ 960 011a 4E5F      		subi r20,-2
+ 961 011c 5F4F      		sbci r21,-1
+ 962 011e BE01      		movw r22,r28
+ 963 0120 6F5F      		subi r22,-1
+ 964 0122 7F4F      		sbci r23,-1
+ 965 0124 C601      		movw r24,r12
+ 966 0126 0E94 0000 		call _ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+ 967 012a 8111      		cpse r24,__zero_reg__
+ 968 012c 00C0      		rjmp .L80
+ 969 012e 182F      		mov r17,r24
+ 970 0130 00C0      		rjmp .L71
+ 971               	.L85:
+ 972 0132 81E1      		ldi r24,lo8(17)
+ 973 0134 90E0      		ldi r25,0
+ 974 0136 F601      		movw r30,r12
+ 975 0138 9283      		std Z+2,r25
+ 976 013a 8183      		std Z+1,r24
+ 977 013c 10E0      		ldi r17,0
+ 978 013e 00C0      		rjmp .L71
+ 979               	.L84:
+ 980 0140 21E0      		ldi r18,lo8(1)
+ 981 0142 AE01      		movw r20,r28
+ 982 0144 4E5F      		subi r20,-2
+ 983 0146 5F4F      		sbci r21,-1
+ 984 0148 BE01      		movw r22,r28
+ 985 014a 6F5F      		subi r22,-1
+ 986 014c 7F4F      		sbci r23,-1
+ 987 014e C601      		movw r24,r12
+ 988 0150 0E94 0000 		call _ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+ 989 0154 8111      		cpse r24,__zero_reg__
+ 990 0156 00C0      		rjmp .L78
+ 991 0158 182F      		mov r17,r24
+ 992 015a 00C0      		rjmp .L71
+ 994               		.section	.text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE,"ax",@progbits
+ 995               	.global	_ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE
+ 997               	_ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:
+ 998 0000 2F92      		push r2
+ 999 0002 3F92      		push r3
+ 1000 0004 4F92      		push r4
+ 1001 0006 5F92      		push r5
+ 1002 0008 6F92      		push r6
+ 1003 000a 7F92      		push r7
+ 1004 000c 8F92      		push r8
+ 1005 000e 9F92      		push r9
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 18
+
+
+ 1006 0010 AF92      		push r10
+ 1007 0012 BF92      		push r11
+ 1008 0014 CF92      		push r12
+ 1009 0016 DF92      		push r13
+ 1010 0018 EF92      		push r14
+ 1011 001a FF92      		push r15
+ 1012 001c 0F93      		push r16
+ 1013 001e 1F93      		push r17
+ 1014 0020 CF93      		push r28
+ 1015 0022 DF93      		push r29
+ 1016 0024 00D0      		rcall .
+ 1017 0026 CDB7      		in r28,__SP_L__
+ 1018 0028 DEB7      		in r29,__SP_H__
+ 1019               	/* prologue: function */
+ 1020               	/* frame size = 2 */
+ 1021               	/* stack size = 20 */
+ 1022               	.L__stack_usage = 20
+ 1023 002a A82E      		mov r10,r24
+ 1024 002c B92E      		mov r11,r25
+ 1025 002e 862E      		mov r8,r22
+ 1026 0030 972E      		mov r9,r23
+ 1027 0032 442E      		mov r4,r20
+ 1028 0034 552E      		mov r5,r21
+ 1029 0036 222E      		mov r2,r18
+ 1030 0038 332E      		mov r3,r19
+ 1031 003a 602E      		mov r6,r16
+ 1032 003c 712E      		mov r7,r17
+ 1033 003e 0E2D      		mov r16,r14
+ 1034 0040 EC2C      		mov r14,r12
+ 1035 0042 FD2C      		mov r15,r13
+ 1036 0044 F501      		movw r30,r10
+ 1037 0046 1081      		ld r17,Z
+ 1038 0048 1695      		lsr r17
+ 1039 004a 1170      		andi r17,1
+ 1040 004c 1123      		tst r17
+ 1041 004e 01F4      		brne .+2
+ 1042 0050 00C0      		rjmp .L97
+ 1043 0052 8114      		cp r8,__zero_reg__
+ 1044 0054 9104      		cpc r9,__zero_reg__
+ 1045 0056 01F4      		brne .+2
+ 1046 0058 00C0      		rjmp .L89
+ 1047 005a 4114      		cp r4,__zero_reg__
+ 1048 005c 5104      		cpc r5,__zero_reg__
+ 1049 005e 01F4      		brne .+2
+ 1050 0060 00C0      		rjmp .L89
+ 1051 0062 2114      		cp r2,__zero_reg__
+ 1052 0064 3104      		cpc r3,__zero_reg__
+ 1053 0066 01F4      		brne .+2
+ 1054 0068 00C0      		rjmp .L89
+ 1055 006a 6114      		cp r6,__zero_reg__
+ 1056 006c 7104      		cpc r7,__zero_reg__
+ 1057 006e 01F4      		brne .+2
+ 1058 0070 00C0      		rjmp .L89
+ 1059 0072 0130      		cpi r16,lo8(1)
+ 1060 0074 01F4      		brne .+2
+ 1061 0076 00C0      		rjmp .L98
+ 1062 0078 F501      		movw r30,r10
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 19
+
+
+ 1063 007a 8085      		ldd r24,Z+8
+ 1064 007c 8A83      		std Y+2,r24
+ 1065 007e 8185      		ldd r24,Z+9
+ 1066 0080 8F71      		andi r24,lo8(31)
+ 1067 0082 8983      		std Y+1,r24
+ 1068 0084 8585      		ldd r24,Z+13
+ 1069 0086 8111      		cpse r24,__zero_reg__
+ 1070 0088 00C0      		rjmp .L99
+ 1071               	.L93:
+ 1072 008a E114      		cp r14,__zero_reg__
+ 1073 008c F104      		cpc r15,__zero_reg__
+ 1074 008e 01F0      		breq .L94
+ 1075               	.L95:
+ 1076 0090 8A81      		ldd r24,Y+2
+ 1077 0092 F701      		movw r30,r14
+ 1078 0094 8083      		st Z,r24
+ 1079               	.L94:
+ 1080 0096 8981      		ldd r24,Y+1
+ 1081 0098 F401      		movw r30,r8
+ 1082 009a 8083      		st Z,r24
+ 1083 009c F501      		movw r30,r10
+ 1084 009e 9285      		ldd r25,Z+10
+ 1085 00a0 991F      		rol r25
+ 1086 00a2 9927      		clr r25
+ 1087 00a4 991F      		rol r25
+ 1088 00a6 8385      		ldd r24,Z+11
+ 1089 00a8 8F71      		andi r24,lo8(31)
+ 1090 00aa 880F      		lsl r24
+ 1091 00ac 892B      		or r24,r25
+ 1092 00ae F201      		movw r30,r4
+ 1093 00b0 8083      		st Z,r24
+ 1094 00b2 F501      		movw r30,r10
+ 1095 00b4 9385      		ldd r25,Z+11
+ 1096 00b6 9295      		swap r25
+ 1097 00b8 9695      		lsr r25
+ 1098 00ba 9770      		andi r25,lo8(7)
+ 1099 00bc 8485      		ldd r24,Z+12
+ 1100 00be 8770      		andi r24,lo8(7)
+ 1101 00c0 880F      		lsl r24
+ 1102 00c2 880F      		lsl r24
+ 1103 00c4 880F      		lsl r24
+ 1104 00c6 892B      		or r24,r25
+ 1105 00c8 F101      		movw r30,r2
+ 1106 00ca 8083      		st Z,r24
+ 1107 00cc F501      		movw r30,r10
+ 1108 00ce 2185      		ldd r18,Z+9
+ 1109 00d0 2295      		swap r18
+ 1110 00d2 2695      		lsr r18
+ 1111 00d4 2770      		andi r18,lo8(7)
+ 1112 00d6 8285      		ldd r24,Z+10
+ 1113 00d8 982F      		mov r25,r24
+ 1114 00da 990F      		lsl r25
+ 1115 00dc 990F      		lsl r25
+ 1116 00de 990F      		lsl r25
+ 1117 00e0 922B      		or r25,r18
+ 1118 00e2 8295      		swap r24
+ 1119 00e4 8695      		lsr r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 20
+
+
+ 1120 00e6 8770      		andi r24,lo8(7)
+ 1121 00e8 8370      		andi r24,lo8(3)
+ 1122 00ea F301      		movw r30,r6
+ 1123 00ec 9083      		st Z,r25
+ 1124 00ee 8183      		std Z+1,r24
+ 1125 00f0 F501      		movw r30,r10
+ 1126 00f2 1282      		std Z+2,__zero_reg__
+ 1127 00f4 1182      		std Z+1,__zero_reg__
+ 1128 00f6 00C0      		rjmp .L86
+ 1129               	.L97:
+ 1130 00f8 87E5      		ldi r24,lo8(87)
+ 1131 00fa 90E0      		ldi r25,0
+ 1132 00fc 9283      		std Z+2,r25
+ 1133 00fe 8183      		std Z+1,r24
+ 1134 0100 00C0      		rjmp .L86
+ 1135               	.L89:
+ 1136 0102 81E1      		ldi r24,lo8(17)
+ 1137 0104 90E0      		ldi r25,0
+ 1138 0106 F501      		movw r30,r10
+ 1139 0108 9283      		std Z+2,r25
+ 1140 010a 8183      		std Z+1,r24
+ 1141 010c 10E0      		ldi r17,0
+ 1142               	.L86:
+ 1143 010e 812F      		mov r24,r17
+ 1144               	/* epilogue start */
+ 1145 0110 0F90      		pop __tmp_reg__
+ 1146 0112 0F90      		pop __tmp_reg__
+ 1147 0114 DF91      		pop r29
+ 1148 0116 CF91      		pop r28
+ 1149 0118 1F91      		pop r17
+ 1150 011a 0F91      		pop r16
+ 1151 011c FF90      		pop r15
+ 1152 011e EF90      		pop r14
+ 1153 0120 DF90      		pop r13
+ 1154 0122 CF90      		pop r12
+ 1155 0124 BF90      		pop r11
+ 1156 0126 AF90      		pop r10
+ 1157 0128 9F90      		pop r9
+ 1158 012a 8F90      		pop r8
+ 1159 012c 7F90      		pop r7
+ 1160 012e 6F90      		pop r6
+ 1161 0130 5F90      		pop r5
+ 1162 0132 4F90      		pop r4
+ 1163 0134 3F90      		pop r3
+ 1164 0136 2F90      		pop r2
+ 1165 0138 0895      		ret
+ 1166               	.L98:
+ 1167 013a E114      		cp r14,__zero_reg__
+ 1168 013c F104      		cpc r15,__zero_reg__
+ 1169 013e 01F0      		breq .L100
+ 1170 0140 F501      		movw r30,r10
+ 1171 0142 8085      		ldd r24,Z+8
+ 1172 0144 8A83      		std Y+2,r24
+ 1173 0146 8185      		ldd r24,Z+9
+ 1174 0148 8F71      		andi r24,lo8(31)
+ 1175 014a 8983      		std Y+1,r24
+ 1176 014c 8585      		ldd r24,Z+13
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 21
+
+
+ 1177 014e 8111      		cpse r24,__zero_reg__
+ 1178 0150 00C0      		rjmp .L95
+ 1179 0152 20E0      		ldi r18,0
+ 1180 0154 AE01      		movw r20,r28
+ 1181 0156 4E5F      		subi r20,-2
+ 1182 0158 5F4F      		sbci r21,-1
+ 1183 015a BE01      		movw r22,r28
+ 1184 015c 6F5F      		subi r22,-1
+ 1185 015e 7F4F      		sbci r23,-1
+ 1186 0160 C501      		movw r24,r10
+ 1187 0162 0E94 0000 		call _ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+ 1188 0166 8111      		cpse r24,__zero_reg__
+ 1189 0168 00C0      		rjmp .L95
+ 1190 016a 182F      		mov r17,r24
+ 1191 016c 00C0      		rjmp .L86
+ 1192               	.L100:
+ 1193 016e 81E1      		ldi r24,lo8(17)
+ 1194 0170 90E0      		ldi r25,0
+ 1195 0172 F501      		movw r30,r10
+ 1196 0174 9283      		std Z+2,r25
+ 1197 0176 8183      		std Z+1,r24
+ 1198 0178 10E0      		ldi r17,0
+ 1199 017a 00C0      		rjmp .L86
+ 1200               	.L99:
+ 1201 017c 21E0      		ldi r18,lo8(1)
+ 1202 017e AE01      		movw r20,r28
+ 1203 0180 4E5F      		subi r20,-2
+ 1204 0182 5F4F      		sbci r21,-1
+ 1205 0184 BE01      		movw r22,r28
+ 1206 0186 6F5F      		subi r22,-1
+ 1207 0188 7F4F      		sbci r23,-1
+ 1208 018a C501      		movw r24,r10
+ 1209 018c 0E94 0000 		call _ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+ 1210 0190 8111      		cpse r24,__zero_reg__
+ 1211 0192 00C0      		rjmp .L93
+ 1212 0194 182F      		mov r17,r24
+ 1213 0196 00C0      		rjmp .L86
+ 1215               		.section	.text._ZN8DateTime13setTimeFormatENS_10TimeFormatE,"ax",@progbits
+ 1216               	.global	_ZN8DateTime13setTimeFormatENS_10TimeFormatE
+ 1218               	_ZN8DateTime13setTimeFormatENS_10TimeFormatE:
+ 1219 0000 EF92      		push r14
+ 1220 0002 FF92      		push r15
+ 1221 0004 0F93      		push r16
+ 1222 0006 1F93      		push r17
+ 1223 0008 CF93      		push r28
+ 1224 000a DF93      		push r29
+ 1225 000c 00D0      		rcall .
+ 1226 000e CDB7      		in r28,__SP_L__
+ 1227 0010 DEB7      		in r29,__SP_H__
+ 1228               	/* prologue: function */
+ 1229               	/* frame size = 2 */
+ 1230               	/* stack size = 8 */
+ 1231               	.L__stack_usage = 8
+ 1232 0012 E82E      		mov r14,r24
+ 1233 0014 F92E      		mov r15,r25
+ 1234 0016 162F      		mov r17,r22
+ 1235 0018 F701      		movw r30,r14
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 22
+
+
+ 1236 001a 8185      		ldd r24,Z+9
+ 1237 001c 8F71      		andi r24,lo8(31)
+ 1238 001e 8983      		std Y+1,r24
+ 1239 0020 8085      		ldd r24,Z+8
+ 1240 0022 8A83      		std Y+2,r24
+ 1241 0024 8081      		ld r24,Z
+ 1242 0026 8695      		lsr r24
+ 1243 0028 8170      		andi r24,1
+ 1244 002a 8823      		tst r24
+ 1245 002c 01F0      		breq .L105
+ 1246 002e F701      		movw r30,r14
+ 1247 0030 2585      		ldd r18,Z+13
+ 1248 0032 2617      		cp r18,r22
+ 1249 0034 01F0      		breq .L106
+ 1250 0036 062F      		mov r16,r22
+ 1251 0038 AE01      		movw r20,r28
+ 1252 003a 4E5F      		subi r20,-2
+ 1253 003c 5F4F      		sbci r21,-1
+ 1254 003e BE01      		movw r22,r28
+ 1255 0040 6F5F      		subi r22,-1
+ 1256 0042 7F4F      		sbci r23,-1
+ 1257 0044 C701      		movw r24,r14
+ 1258 0046 0E94 0000 		call _ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+ 1259 004a 8823      		tst r24
+ 1260 004c 01F0      		breq .L101
+ 1261 004e 2981      		ldd r18,Y+1
+ 1262 0050 2F71      		andi r18,lo8(31)
+ 1263 0052 F701      		movw r30,r14
+ 1264 0054 9185      		ldd r25,Z+9
+ 1265 0056 907E      		andi r25,lo8(-32)
+ 1266 0058 922B      		or r25,r18
+ 1267 005a 9187      		std Z+9,r25
+ 1268 005c 9A81      		ldd r25,Y+2
+ 1269 005e 9087      		std Z+8,r25
+ 1270 0060 1587      		std Z+13,r17
+ 1271 0062 1282      		std Z+2,__zero_reg__
+ 1272 0064 1182      		std Z+1,__zero_reg__
+ 1273 0066 00C0      		rjmp .L101
+ 1274               	.L105:
+ 1275 0068 27E5      		ldi r18,lo8(87)
+ 1276 006a 30E0      		ldi r19,0
+ 1277 006c 3283      		std Z+2,r19
+ 1278 006e 2183      		std Z+1,r18
+ 1279               	.L101:
+ 1280               	/* epilogue start */
+ 1281 0070 0F90      		pop __tmp_reg__
+ 1282 0072 0F90      		pop __tmp_reg__
+ 1283 0074 DF91      		pop r29
+ 1284 0076 CF91      		pop r28
+ 1285 0078 1F91      		pop r17
+ 1286 007a 0F91      		pop r16
+ 1287 007c FF90      		pop r15
+ 1288 007e EF90      		pop r14
+ 1289 0080 0895      		ret
+ 1290               	.L106:
+ 1291 0082 1282      		std Z+2,__zero_reg__
+ 1292 0084 1182      		std Z+1,__zero_reg__
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 23
+
+
+ 1293 0086 80E0      		ldi r24,0
+ 1294 0088 00C0      		rjmp .L101
+ 1296               		.section	.text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE,"ax",@progbits
+ 1297               	.global	_ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE
+ 1299               	_ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:
+ 1300 0000 0F93      		push r16
+ 1301               	/* prologue: function */
+ 1302               	/* frame size = 0 */
+ 1303               	/* stack size = 1 */
+ 1304               	.L__stack_usage = 1
+ 1305 0002 E82F      		mov r30,r24
+ 1306 0004 F92F      		mov r31,r25
+ 1307 0006 2C33      		cpi r18,lo8(60)
+ 1308 0008 00F4      		brsh .L110
+ 1309 000a 4C33      		cpi r20,lo8(60)
+ 1310 000c 00F4      		brsh .L111
+ 1311 000e 0130      		cpi r16,lo8(1)
+ 1312 0010 01F0      		breq .L114
+ 1313 0012 6831      		cpi r22,lo8(24)
+ 1314 0014 00F4      		brsh .L113
+ 1315 0016 20E0      		ldi r18,0
+ 1316 0018 30E0      		ldi r19,0
+ 1317 001a 81E0      		ldi r24,lo8(1)
+ 1318 001c 00C0      		rjmp .L108
+ 1319               	.L114:
+ 1320 001e 6150      		subi r22,lo8(-(-1))
+ 1321 0020 6C30      		cpi r22,lo8(12)
+ 1322 0022 00F4      		brsh .L112
+ 1323 0024 802F      		mov r24,r16
+ 1324 0026 20E0      		ldi r18,0
+ 1325 0028 30E0      		ldi r19,0
+ 1326 002a 00C0      		rjmp .L108
+ 1327               	.L110:
+ 1328 002c 2BE5      		ldi r18,lo8(91)
+ 1329 002e 30E0      		ldi r19,0
+ 1330 0030 80E0      		ldi r24,0
+ 1331               	.L108:
+ 1332 0032 3283      		std Z+2,r19
+ 1333 0034 2183      		std Z+1,r18
+ 1334               	/* epilogue start */
+ 1335 0036 0F91      		pop r16
+ 1336 0038 0895      		ret
+ 1337               	.L111:
+ 1338 003a 2BE5      		ldi r18,lo8(91)
+ 1339 003c 30E0      		ldi r19,0
+ 1340 003e 80E0      		ldi r24,0
+ 1341 0040 00C0      		rjmp .L108
+ 1342               	.L112:
+ 1343 0042 2BE5      		ldi r18,lo8(91)
+ 1344 0044 30E0      		ldi r19,0
+ 1345 0046 80E0      		ldi r24,0
+ 1346 0048 00C0      		rjmp .L108
+ 1347               	.L113:
+ 1348 004a 802F      		mov r24,r16
+ 1349 004c 2BE5      		ldi r18,lo8(91)
+ 1350 004e 30E0      		ldi r19,0
+ 1351 0050 00C0      		rjmp .L108
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 24
+
+
+ 1353               		.section	.text._ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE,"ax",@progbits
+ 1354               	.global	_ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE
+ 1356               	_ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE:
+ 1357 0000 CF92      		push r12
+ 1358 0002 DF92      		push r13
+ 1359 0004 EF92      		push r14
+ 1360 0006 FF92      		push r15
+ 1361 0008 0F93      		push r16
+ 1362 000a 1F93      		push r17
+ 1363 000c CF93      		push r28
+ 1364 000e DF93      		push r29
+ 1365               	/* prologue: function */
+ 1366               	/* frame size = 0 */
+ 1367               	/* stack size = 8 */
+ 1368               	.L__stack_usage = 8
+ 1369 0010 C82F      		mov r28,r24
+ 1370 0012 D92F      		mov r29,r25
+ 1371 0014 D62E      		mov r13,r22
+ 1372 0016 F42E      		mov r15,r20
+ 1373 0018 122F      		mov r17,r18
+ 1374 001a 8881      		ld r24,Y
+ 1375 001c 8D7F      		andi r24,lo8(~(1<<1))
+ 1376 001e 8883      		st Y,r24
+ 1377 0020 CE01      		movw r24,r28
+ 1378 0022 0E94 0000 		call _ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE
+ 1379 0026 8823      		tst r24
+ 1380 0028 01F0      		breq .L115
+ 1381 002a 9881      		ld r25,Y
+ 1382 002c 9260      		ori r25,lo8(1<<1)
+ 1383 002e 9883      		st Y,r25
+ 1384 0030 6D2D      		mov r22,r13
+ 1385 0032 6F71      		andi r22,lo8(31)
+ 1386 0034 9985      		ldd r25,Y+9
+ 1387 0036 907E      		andi r25,lo8(-32)
+ 1388 0038 962B      		or r25,r22
+ 1389 003a 9987      		std Y+9,r25
+ 1390 003c 0D87      		std Y+13,r16
+ 1391 003e E886      		std Y+8,r14
+ 1392 0040 9A85      		ldd r25,Y+10
+ 1393 0042 F0FA      		bst r15,0
+ 1394 0044 97F9      		bld r25,7
+ 1395 0046 9A87      		std Y+10,r25
+ 1396 0048 9F2D      		mov r25,r15
+ 1397 004a 9695      		lsr r25
+ 1398 004c 212F      		mov r18,r17
+ 1399 004e 2295      		swap r18
+ 1400 0050 220F      		lsl r18
+ 1401 0052 207E      		andi r18,lo8(-32)
+ 1402 0054 9F71      		andi r25,lo8(31)
+ 1403 0056 922B      		or r25,r18
+ 1404 0058 9B87      		std Y+11,r25
+ 1405 005a 1695      		lsr r17
+ 1406 005c 1695      		lsr r17
+ 1407 005e 1695      		lsr r17
+ 1408 0060 1770      		andi r17,lo8(7)
+ 1409 0062 9C85      		ldd r25,Y+12
+ 1410 0064 987F      		andi r25,lo8(-8)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 25
+
+
+ 1411 0066 912B      		or r25,r17
+ 1412 0068 9C87      		std Y+12,r25
+ 1413 006a 1A82      		std Y+2,__zero_reg__
+ 1414 006c 1982      		std Y+1,__zero_reg__
+ 1415               	.L115:
+ 1416               	/* epilogue start */
+ 1417 006e DF91      		pop r29
+ 1418 0070 CF91      		pop r28
+ 1419 0072 1F91      		pop r17
+ 1420 0074 0F91      		pop r16
+ 1421 0076 FF90      		pop r15
+ 1422 0078 EF90      		pop r14
+ 1423 007a DF90      		pop r13
+ 1424 007c CF90      		pop r12
+ 1425 007e 0895      		ret
+ 1427               		.section	.text._ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE,"ax",@progbits
+ 1428               	.global	_ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE
+ 1430               	_ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE:
+ 1431 0000 9F92      		push r9
+ 1432 0002 AF92      		push r10
+ 1433 0004 BF92      		push r11
+ 1434 0006 CF92      		push r12
+ 1435 0008 DF92      		push r13
+ 1436 000a EF92      		push r14
+ 1437 000c FF92      		push r15
+ 1438 000e 0F93      		push r16
+ 1439 0010 1F93      		push r17
+ 1440 0012 CF93      		push r28
+ 1441 0014 DF93      		push r29
+ 1442               	/* prologue: function */
+ 1443               	/* frame size = 0 */
+ 1444               	/* stack size = 11 */
+ 1445               	.L__stack_usage = 11
+ 1446 0016 C82F      		mov r28,r24
+ 1447 0018 D92F      		mov r29,r25
+ 1448 001a 962E      		mov r9,r22
+ 1449 001c D42E      		mov r13,r20
+ 1450 001e F22E      		mov r15,r18
+ 1451 0020 A02E      		mov r10,r16
+ 1452 0022 B12E      		mov r11,r17
+ 1453 0024 8881      		ld r24,Y
+ 1454 0026 8D7F      		andi r24,lo8(~(1<<1))
+ 1455 0028 8883      		st Y,r24
+ 1456 002a 0E2D      		mov r16,r14
+ 1457 002c CE01      		movw r24,r28
+ 1458 002e 0E94 0000 		call _ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE
+ 1459 0032 8823      		tst r24
+ 1460 0034 01F0      		breq .L117
+ 1461 0036 98EE      		ldi r25,-24
+ 1462 0038 A916      		cp r10,r25
+ 1463 003a 93E0      		ldi r25,3
+ 1464 003c B906      		cpc r11,r25
+ 1465 003e 00F0      		brlo .L119
+ 1466 0040 A12C      		mov r10,__zero_reg__
+ 1467 0042 B12C      		mov r11,__zero_reg__
+ 1468               	.L119:
+ 1469 0044 3A2D      		mov r19,r10
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 26
+
+
+ 1470 0046 3695      		lsr r19
+ 1471 0048 3695      		lsr r19
+ 1472 004a 3695      		lsr r19
+ 1473 004c 9B2D      		mov r25,r11
+ 1474 004e 9370      		andi r25,lo8(3)
+ 1475 0050 9295      		swap r25
+ 1476 0052 990F      		lsl r25
+ 1477 0054 907E      		andi r25,lo8(-32)
+ 1478 0056 292D      		mov r18,r9
+ 1479 0058 2F71      		andi r18,lo8(31)
+ 1480 005a AA0C      		lsl r10
+ 1481 005c AA0C      		lsl r10
+ 1482 005e AA0C      		lsl r10
+ 1483 0060 AA0C      		lsl r10
+ 1484 0062 AA0C      		lsl r10
+ 1485 0064 A22A      		or r10,r18
+ 1486 0066 A986      		std Y+9,r10
+ 1487 0068 2D2D      		mov r18,r13
+ 1488 006a 2795      		ror r18
+ 1489 006c 2227      		clr r18
+ 1490 006e 2795      		ror r18
+ 1491 0070 932B      		or r25,r19
+ 1492 0072 922B      		or r25,r18
+ 1493 0074 9A87      		std Y+10,r25
+ 1494 0076 9D2D      		mov r25,r13
+ 1495 0078 9695      		lsr r25
+ 1496 007a 2F2D      		mov r18,r15
+ 1497 007c 2295      		swap r18
+ 1498 007e 220F      		lsl r18
+ 1499 0080 207E      		andi r18,lo8(-32)
+ 1500 0082 9F71      		andi r25,lo8(31)
+ 1501 0084 922B      		or r25,r18
+ 1502 0086 9B87      		std Y+11,r25
+ 1503 0088 9F2D      		mov r25,r15
+ 1504 008a 9695      		lsr r25
+ 1505 008c 9695      		lsr r25
+ 1506 008e 9695      		lsr r25
+ 1507 0090 9770      		andi r25,lo8(7)
+ 1508 0092 2C85      		ldd r18,Y+12
+ 1509 0094 287F      		andi r18,lo8(-8)
+ 1510 0096 922B      		or r25,r18
+ 1511 0098 9C87      		std Y+12,r25
+ 1512 009a C886      		std Y+8,r12
+ 1513 009c ED86      		std Y+13,r14
+ 1514 009e 1A82      		std Y+2,__zero_reg__
+ 1515 00a0 1982      		std Y+1,__zero_reg__
+ 1516               	.L117:
+ 1517               	/* epilogue start */
+ 1518 00a2 DF91      		pop r29
+ 1519 00a4 CF91      		pop r28
+ 1520 00a6 1F91      		pop r17
+ 1521 00a8 0F91      		pop r16
+ 1522 00aa FF90      		pop r15
+ 1523 00ac EF90      		pop r14
+ 1524 00ae DF90      		pop r13
+ 1525 00b0 CF90      		pop r12
+ 1526 00b2 BF90      		pop r11
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 27
+
+
+ 1527 00b4 AF90      		pop r10
+ 1528 00b6 9F90      		pop r9
+ 1529 00b8 0895      		ret
+ 1531               		.ident	"GCC: (GNU) 12.1.0"
+ 1532               	.global __do_copy_data
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 28
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 dateTime.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:25     .text._ZN8DateTimeD2Ev:0000000000000000 _ZN8DateTimeD2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:25     .text._ZN8DateTimeD2Ev:0000000000000000 _ZN8DateTimeD1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:38     .text._ZN8DateTime12getLastErrorEv:0000000000000000 _ZN8DateTime12getLastErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:52     .text._ZN8DateTime9isDateSetEv:0000000000000000 _ZN8DateTime9isDateSetEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:69     .text._ZN8DateTime9isTimeSetEv:0000000000000000 _ZN8DateTime9isTimeSetEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:87     .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:0000000000000000 _ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:172    .text._ZN8DateTime10getWeekDayEPNS_7WeekDayE:0000000000000000 _ZN8DateTime10getWeekDayEPNS_7WeekDayE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:207    .text._ZN8DateTime10isLeapYearEv:0000000000000000 _ZN8DateTime10isLeapYearEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:236    .text._ZN8DateTime13getTimeFormatEPNS_10TimeFormatE:0000000000000000 _ZN8DateTime13getTimeFormatEPNS_10TimeFormatE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:272    .text._ZN8DateTime11getTimeZoneEPNS_8TimeZoneE:0000000000000000 _ZN8DateTime11getTimeZoneEPNS_8TimeZoneE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:302    .text._ZN8DateTime11setTimeZoneENS_8TimeZoneE:0000000000000000 _ZN8DateTime11setTimeZoneENS_8TimeZoneE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:319    .text._ZN8DateTime10_clearDataEv:0000000000000000 _ZN8DateTime10_clearDataEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:357    .text._ZN8DateTimeC2Ev:0000000000000000 _ZN8DateTimeC2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:357    .text._ZN8DateTimeC2Ev:0000000000000000 _ZN8DateTimeC1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:383    .text._ZN8DateTime18_evaluateDayOfWeekEv:0000000000000000 _ZN8DateTime18_evaluateDayOfWeekEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:485    .text._ZN8DateTime11_isLeapYearEj:0000000000000000 _ZN8DateTime11_isLeapYearEj
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:552    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000000 _ZN8DateTime12_isValidDateEjNS_5MonthEh
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:651    .text._ZN8DateTime7setDateEjNS_5MonthEh:0000000000000000 _ZN8DateTime7setDateEjNS_5MonthEh
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:721    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:0000000000000000 _ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:806    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000000 _ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:823    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000022 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:848    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:000000000000004c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:852    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000054 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:856    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:000000000000005c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:859    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000062 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:997    .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000000 _ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1016   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000026 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1041   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000050 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1045   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000058 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1049   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000060 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1053   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000068 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1057   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000070 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1060   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000076 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1218   .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE:0000000000000000 _ZN8DateTime13setTimeFormatENS_10TimeFormatE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1225   .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE:000000000000000e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1299   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:0000000000000000 _ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1356   .text._ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE:0000000000000000 _ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1430   .text._ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE:0000000000000000 _ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:149    .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:000000000000006c .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:153    .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:0000000000000072 .L10
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:158    .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:000000000000007a .L11
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:163    .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:0000000000000082 .L12
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:137    .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:000000000000005a .L8
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:140    .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE:000000000000005e .L7
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:193    .text._ZN8DateTime10getWeekDayEPNS_7WeekDayE:0000000000000020 .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:198    .text._ZN8DateTime10getWeekDayEPNS_7WeekDayE:0000000000000026 .L16
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:226    .text._ZN8DateTime10isLeapYearEv:000000000000001a .L20
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:258    .text._ZN8DateTime13getTimeFormatEPNS_10TimeFormatE:0000000000000022 .L22
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:263    .text._ZN8DateTime13getTimeFormatEPNS_10TimeFormatE:0000000000000028 .L24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 29
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:293    .text._ZN8DateTime11getTimeZoneEPNS_8TimeZoneE:000000000000001c .L27
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:288    .text._ZN8DateTime11getTimeZoneEPNS_8TimeZoneE:0000000000000016 .L26
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:403    .text._ZN8DateTime18_evaluateDayOfWeekEv:000000000000001e .L32
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:543    .text._ZN8DateTime11_isLeapYearEj:000000000000006e .L34
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:626    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000007a .L47
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:637    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000008a .L48
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:642    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000092 .L49
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:622    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000074 .L40
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:596    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000046 .L51
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:588    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000003a .L43
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:613    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000066 .L44
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:581    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000002e .L21
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:579    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000002c .L11
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:618    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000006e .L52
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:630    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000080 .L39
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:609    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:0000000000000060 .L53
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:591    .text._ZN8DateTime12_isValidDateEjNS_5MonthEh:000000000000003e .L46
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:688    .text._ZN8DateTime7setDateEjNS_5MonthEh:000000000000003e .L56
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:677    .text._ZN8DateTime7setDateEjNS_5MonthEh:000000000000002c .L54
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:751    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:000000000000002c .L68
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:769    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:000000000000004c .L69
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:739    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:000000000000001a .L59
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:762    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:0000000000000040 .L60
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:793    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:0000000000000076 .L61
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:778    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:000000000000005c .L62
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:788    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:000000000000006e .L63
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:797    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:000000000000007c .L70
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:743    .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_:0000000000000020 .L64
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:910    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:00000000000000c0 .L82
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:937    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:00000000000000f0 .L74
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:945    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:00000000000000fe .L83
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:979    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000140 .L84
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:878    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000082 .L79
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:915    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:00000000000000c8 .L71
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:971    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000132 .L85
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:874    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:000000000000007c .L80
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:870    .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE:0000000000000076 .L78
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1129   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:00000000000000f8 .L97
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1135   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000102 .L89
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1166   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:000000000000013a .L98
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1200   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:000000000000017c .L99
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1079   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000096 .L94
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1142   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:000000000000010e .L86
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1192   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:000000000000016e .L100
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1075   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:0000000000000090 .L95
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1071   .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE:000000000000008a .L93
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1274   .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE:0000000000000068 .L105
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1290   .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE:0000000000000082 .L106
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1279   .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE:0000000000000070 .L101
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1327   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:000000000000002c .L110
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1337   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:000000000000003a .L111
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1319   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:000000000000001e .L114
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1347   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:000000000000004a .L113
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1331   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:0000000000000032 .L108
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1342   .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE:0000000000000042 .L112
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1415   .text._ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE:000000000000006e .L115
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1516   .text._ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE:00000000000000a2 .L117
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s 			page 30
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVghgvz.s:1468   .text._ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE:0000000000000044 .L119
+
+UNDEFINED SYMBOLS
+__umulhisi3
+__do_copy_data

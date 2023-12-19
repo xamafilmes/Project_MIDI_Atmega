@@ -1,0 +1,1510 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 1
+
+
+   1               		.file	"usart0.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN6Usart0D2Ev,"ax",@progbits
+  23               	.global	_ZN6Usart0D2Ev
+  25               	_ZN6Usart0D2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30               	/* epilogue start */
+  31 0000 0895      		ret
+  33               	.global	_ZN6Usart0D1Ev
+  34               		.set	_ZN6Usart0D1Ev,_ZN6Usart0D2Ev
+  35               		.section	.text._ZN6Usart04initEv,"ax",@progbits
+  36               	.global	_ZN6Usart04initEv
+  38               	_ZN6Usart04initEv:
+  39 0000 4F92      		push r4
+  40 0002 5F92      		push r5
+  41 0004 6F92      		push r6
+  42 0006 7F92      		push r7
+  43 0008 8F92      		push r8
+  44 000a 9F92      		push r9
+  45 000c AF92      		push r10
+  46 000e BF92      		push r11
+  47 0010 CF92      		push r12
+  48 0012 DF92      		push r13
+  49 0014 EF92      		push r14
+  50 0016 FF92      		push r15
+  51 0018 0F93      		push r16
+  52 001a 1F93      		push r17
+  53 001c CF93      		push r28
+  54 001e DF93      		push r29
+  55 0020 CDB7      		in r28,__SP_L__
+  56 0022 DEB7      		in r29,__SP_H__
+  57 0024 2A97      		sbiw r28,10
+  58 0026 0FB6      		in __tmp_reg__,__SREG__
+  59 0028 F894      		cli
+  60 002a DEBF      		out __SP_H__,r29
+  61 002c 0FBE      		out __SREG__,__tmp_reg__
+  62 002e CDBF      		out __SP_L__,r28
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 2
+
+
+  63               	/* prologue: function */
+  64               	/* frame size = 10 */
+  65               	/* stack size = 26 */
+  66               	.L__stack_usage = 26
+  67 0030 8987      		std Y+9,r24
+  68 0032 9A87      		std Y+10,r25
+  69 0034 2091 C000 		lds r18,192
+  70 0038 1091 C100 		lds r17,193
+  71 003c 8091 C200 		lds r24,194
+  72 0040 4091 C400 		lds r20,196
+  73 0044 5091 C500 		lds r21,196+1
+  74 0048 E985      		ldd r30,Y+9
+  75 004a FA85      		ldd r31,Y+10
+  76 004c 9385      		ldd r25,Z+11
+  77 004e 9923      		tst r25
+  78 0050 01F0      		breq .L4
+  79 0052 9130      		cpi r25,lo8(1)
+  80 0054 01F0      		breq .L5
+  81               	.L6:
+  82 0056 8F7C      		andi r24,lo8(-49)
+  83 0058 E985      		ldd r30,Y+9
+  84 005a FA85      		ldd r31,Y+10
+  85 005c 9285      		ldd r25,Z+10
+  86 005e 9130      		cpi r25,lo8(1)
+  87 0060 01F0      		breq .L7
+  88 0062 9230      		cpi r25,lo8(2)
+  89 0064 01F0      		breq .L8
+  90               	.L9:
+  91 0066 1B7F      		andi r17,lo8(-5)
+  92 0068 897F      		andi r24,lo8(-7)
+  93 006a E985      		ldd r30,Y+9
+  94 006c FA85      		ldd r31,Y+10
+  95 006e 9481      		ldd r25,Z+4
+  96 0070 9330      		cpi r25,lo8(3)
+  97 0072 01F0      		breq .L10
+  98 0074 00F4      		brsh .L11
+  99 0076 9130      		cpi r25,lo8(1)
+ 100 0078 01F0      		breq .L12
+ 101 007a 9230      		cpi r25,lo8(2)
+ 102 007c 01F4      		brne .L14
+ 103 007e 8460      		ori r24,lo8(4)
+ 104 0080 00C0      		rjmp .L14
+ 105               	.L4:
+ 106 0082 877F      		andi r24,lo8(-9)
+ 107 0084 00C0      		rjmp .L6
+ 108               	.L5:
+ 109 0086 8860      		ori r24,lo8(8)
+ 110 0088 00C0      		rjmp .L6
+ 111               	.L7:
+ 112 008a 8063      		ori r24,lo8(48)
+ 113 008c 00C0      		rjmp .L9
+ 114               	.L8:
+ 115 008e 8062      		ori r24,lo8(32)
+ 116 0090 00C0      		rjmp .L9
+ 117               	.L11:
+ 118 0092 9730      		cpi r25,lo8(7)
+ 119 0094 01F4      		brne .L14
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 3
+
+
+ 120 0096 1460      		ori r17,lo8(4)
+ 121 0098 8660      		ori r24,lo8(6)
+ 122 009a 00C0      		rjmp .L14
+ 123               	.L12:
+ 124 009c 8260      		ori r24,lo8(2)
+ 125               	.L14:
+ 126 009e 217E      		andi r18,lo8(-31)
+ 127 00a0 B22E      		mov r11,r18
+ 128 00a2 F82F      		mov r31,r24
+ 129 00a4 FE73      		andi r31,lo8(62)
+ 130 00a6 AF2E      		mov r10,r31
+ 131 00a8 E985      		ldd r30,Y+9
+ 132 00aa FA85      		ldd r31,Y+10
+ 133 00ac 0581      		ldd r16,Z+5
+ 134 00ae 0830      		cpi r16,lo8(8)
+ 135 00b0 00F4      		brsh .L16
+ 136 00b2 E02F      		mov r30,r16
+ 137 00b4 F0E0      		ldi r31,0
+ 138 00b6 E050      		subi r30,lo8(-(gs(.L18)))
+ 139 00b8 F040      		sbci r31,hi8(-(gs(.L18)))
+ 140 00ba 0C94 0000 		jmp __tablejump2__
+ 141               		.section	.jumptables.gcc._ZN6Usart04initEv,"a",@progbits
+ 142               		.p2align	1
+ 143               	.L18:
+ 144 0000 0000      		.word gs(.L26)
+ 145 0002 0000      		.word gs(.L24)
+ 146 0004 0000      		.word gs(.L23)
+ 147 0006 0000      		.word gs(.L22)
+ 148 0008 0000      		.word gs(.L21)
+ 149 000a 0000      		.word gs(.L20)
+ 150 000c 0000      		.word gs(.L19)
+ 151 000e 0000      		.word gs(.L17)
+ 152               		.section	.text._ZN6Usart04initEv
+ 153               	.L10:
+ 154 00be 8660      		ori r24,lo8(6)
+ 155 00c0 00C0      		rjmp .L14
+ 156               	.L16:
+ 157 00c2 01E0      		ldi r16,lo8(1)
+ 158 00c4 00C0      		rjmp .L25
+ 159               	.L24:
+ 160 00c6 6894      		set
+ 161 00c8 B1F8      		bld r11,1
+ 162 00ca 08E0      		ldi r16,lo8(8)
+ 163 00cc 00C0      		rjmp .L25
+ 164               	.L23:
+ 165 00ce 6894      		set
+ 166 00d0 A6F8      		bld r10,6
+ 167 00d2 00C0      		rjmp .L25
+ 168               	.L22:
+ 169 00d4 FA2D      		mov r31,r10
+ 170 00d6 F164      		ori r31,lo8(65)
+ 171 00d8 AF2E      		mov r10,r31
+ 172 00da 02E0      		ldi r16,lo8(2)
+ 173 00dc 00C0      		rjmp .L25
+ 174               	.L21:
+ 175 00de 8C73      		andi r24,lo8(60)
+ 176 00e0 806C      		ori r24,lo8(-64)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 4
+
+
+ 177 00e2 A82E      		mov r10,r24
+ 178 00e4 02E0      		ldi r16,lo8(2)
+ 179 00e6 00C0      		rjmp .L25
+ 180               	.L20:
+ 181 00e8 8A2D      		mov r24,r10
+ 182 00ea 826C      		ori r24,lo8(-62)
+ 183 00ec A82E      		mov r10,r24
+ 184 00ee 02E0      		ldi r16,lo8(2)
+ 185 00f0 00C0      		rjmp .L25
+ 186               	.L19:
+ 187 00f2 8C73      		andi r24,lo8(60)
+ 188 00f4 816C      		ori r24,lo8(-63)
+ 189 00f6 A82E      		mov r10,r24
+ 190 00f8 02E0      		ldi r16,lo8(2)
+ 191 00fa 00C0      		rjmp .L25
+ 192               	.L17:
+ 193 00fc 9A2D      		mov r25,r10
+ 194 00fe 936C      		ori r25,lo8(-61)
+ 195 0100 A92E      		mov r10,r25
+ 196 0102 02E0      		ldi r16,lo8(2)
+ 197 0104 00C0      		rjmp .L25
+ 198               	.L26:
+ 199 0106 00E1      		ldi r16,lo8(16)
+ 200               	.L25:
+ 201 0108 80E0      		ldi r24,lo8(systemStatus)
+ 202 010a 90E0      		ldi r25,hi8(systemStatus)
+ 203 010c 0E94 0000 		call _ZN12SystemStatus11getCpuClockEv
+ 204 0110 6D83      		std Y+5,r22
+ 205 0112 7E83      		std Y+6,r23
+ 206 0114 8F83      		std Y+7,r24
+ 207 0116 9887      		std Y+8,r25
+ 208 0118 E985      		ldd r30,Y+9
+ 209 011a FA85      		ldd r31,Y+10
+ 210 011c 2681      		ldd r18,Z+6
+ 211 011e 3781      		ldd r19,Z+7
+ 212 0120 4085      		ldd r20,Z+8
+ 213 0122 5185      		ldd r21,Z+9
+ 214 0124 A02F      		mov r26,r16
+ 215 0126 B0E0      		ldi r27,0
+ 216 0128 0E94 0000 		call __muluhisi3
+ 217 012c 6983      		std Y+1,r22
+ 218 012e 7A83      		std Y+2,r23
+ 219 0130 8B83      		std Y+3,r24
+ 220 0132 9C83      		std Y+4,r25
+ 221 0134 6D81      		ldd r22,Y+5
+ 222 0136 7E81      		ldd r23,Y+6
+ 223 0138 8F81      		ldd r24,Y+7
+ 224 013a 9885      		ldd r25,Y+8
+ 225 013c 2981      		ldd r18,Y+1
+ 226 013e 3A81      		ldd r19,Y+2
+ 227 0140 4B81      		ldd r20,Y+3
+ 228 0142 5C81      		ldd r21,Y+4
+ 229 0144 0E94 0000 		call __udivmodsi4
+ 230 0148 6901      		movw r12,r18
+ 231 014a 7A01      		movw r14,r20
+ 232 014c F1E0      		ldi r31,1
+ 233 014e CF1A      		sub r12,r31
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 5
+
+
+ 234 0150 D108      		sbc r13,__zero_reg__
+ 235 0152 E108      		sbc r14,__zero_reg__
+ 236 0154 F108      		sbc r15,__zero_reg__
+ 237 0156 B092 C000 		sts 192,r11
+ 238 015a 1093 C100 		sts 193,r17
+ 239 015e A092 C200 		sts 194,r10
+ 240 0162 2601      		movw r4,r12
+ 241 0164 3701      		movw r6,r14
+ 242 0166 2C2D      		mov r18,r12
+ 243 0168 352D      		mov r19,r5
+ 244 016a 462D      		mov r20,r6
+ 245 016c 572D      		mov r21,r7
+ 246 016e 60E0      		ldi r22,0
+ 247 0170 70E0      		ldi r23,0
+ 248 0172 80E0      		ldi r24,0
+ 249 0174 90E0      		ldi r25,0
+ 250 0176 08E0      		ldi r16,lo8(8)
+ 251 0178 0E94 0000 		call __lshrdi3
+ 252 017c 2F70      		andi r18,lo8(15)
+ 253 017e 2093 C500 		sts 197,r18
+ 254 0182 C092 C400 		sts 196,r12
+ 255 0186 E985      		ldd r30,Y+9
+ 256 0188 FA85      		ldd r31,Y+10
+ 257 018a 1382      		std Z+3,__zero_reg__
+ 258 018c 1282      		std Z+2,__zero_reg__
+ 259 018e 81E0      		ldi r24,lo8(1)
+ 260               	/* epilogue start */
+ 261 0190 2A96      		adiw r28,10
+ 262 0192 0FB6      		in __tmp_reg__,__SREG__
+ 263 0194 F894      		cli
+ 264 0196 DEBF      		out __SP_H__,r29
+ 265 0198 0FBE      		out __SREG__,__tmp_reg__
+ 266 019a CDBF      		out __SP_L__,r28
+ 267 019c DF91      		pop r29
+ 268 019e CF91      		pop r28
+ 269 01a0 1F91      		pop r17
+ 270 01a2 0F91      		pop r16
+ 271 01a4 FF90      		pop r15
+ 272 01a6 EF90      		pop r14
+ 273 01a8 DF90      		pop r13
+ 274 01aa CF90      		pop r12
+ 275 01ac BF90      		pop r11
+ 276 01ae AF90      		pop r10
+ 277 01b0 9F90      		pop r9
+ 278 01b2 8F90      		pop r8
+ 279 01b4 7F90      		pop r7
+ 280 01b6 6F90      		pop r6
+ 281 01b8 5F90      		pop r5
+ 282 01ba 4F90      		pop r4
+ 283 01bc 0895      		ret
+ 285               		.section	.text._ZN6Usart07setModeENS_4ModeE,"ax",@progbits
+ 286               	.global	_ZN6Usart07setModeENS_4ModeE
+ 288               	_ZN6Usart07setModeENS_4ModeE:
+ 289               	/* prologue: function */
+ 290               	/* frame size = 0 */
+ 291               	/* stack size = 0 */
+ 292               	.L__stack_usage = 0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 6
+
+
+ 293 0000 E82F      		mov r30,r24
+ 294 0002 F92F      		mov r31,r25
+ 295 0004 8081      		ld r24,Z
+ 296 0006 877F      		andi r24,lo8(~(1<<3))
+ 297 0008 8083      		st Z,r24
+ 298 000a 26EB      		ldi r18,lo8(-74)
+ 299 000c 30E0      		ldi r19,0
+ 300 000e 80E0      		ldi r24,0
+ 301 0010 6830      		cpi r22,lo8(8)
+ 302 0012 00F4      		brsh .L28
+ 303 0014 6583      		std Z+5,r22
+ 304 0016 20E0      		ldi r18,0
+ 305 0018 30E0      		ldi r19,0
+ 306 001a 81E0      		ldi r24,lo8(1)
+ 307               	.L28:
+ 308 001c 3383      		std Z+3,r19
+ 309 001e 2283      		std Z+2,r18
+ 310               	/* epilogue start */
+ 311 0020 0895      		ret
+ 313               		.section	.text._ZN6Usart011setDataSizeENS_8DataSizeE,"ax",@progbits
+ 314               	.global	_ZN6Usart011setDataSizeENS_8DataSizeE
+ 316               	_ZN6Usart011setDataSizeENS_8DataSizeE:
+ 317               	/* prologue: function */
+ 318               	/* frame size = 0 */
+ 319               	/* stack size = 0 */
+ 320               	.L__stack_usage = 0
+ 321 0000 E82F      		mov r30,r24
+ 322 0002 F92F      		mov r31,r25
+ 323 0004 8081      		ld r24,Z
+ 324 0006 877F      		andi r24,lo8(~(1<<3))
+ 325 0008 8083      		st Z,r24
+ 326 000a 6430      		cpi r22,lo8(4)
+ 327 000c 00F0      		brlo .L31
+ 328 000e 22EB      		ldi r18,lo8(-78)
+ 329 0010 30E0      		ldi r19,0
+ 330 0012 80E0      		ldi r24,0
+ 331 0014 6730      		cpi r22,lo8(7)
+ 332 0016 01F4      		brne .L32
+ 333               	.L31:
+ 334 0018 6483      		std Z+4,r22
+ 335 001a 20E0      		ldi r18,0
+ 336 001c 30E0      		ldi r19,0
+ 337 001e 81E0      		ldi r24,lo8(1)
+ 338               	.L32:
+ 339 0020 3383      		std Z+3,r19
+ 340 0022 2283      		std Z+2,r18
+ 341               	/* epilogue start */
+ 342 0024 0895      		ret
+ 344               		.section	.text._ZN6Usart011setStopBitsENS_8StopBitsE,"ax",@progbits
+ 345               	.global	_ZN6Usart011setStopBitsENS_8StopBitsE
+ 347               	_ZN6Usart011setStopBitsENS_8StopBitsE:
+ 348               	/* prologue: function */
+ 349               	/* frame size = 0 */
+ 350               	/* stack size = 0 */
+ 351               	.L__stack_usage = 0
+ 352 0000 E82F      		mov r30,r24
+ 353 0002 F92F      		mov r31,r25
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 7
+
+
+ 354 0004 8081      		ld r24,Z
+ 355 0006 877F      		andi r24,lo8(~(1<<3))
+ 356 0008 8083      		st Z,r24
+ 357 000a 25EB      		ldi r18,lo8(-75)
+ 358 000c 30E0      		ldi r19,0
+ 359 000e 80E0      		ldi r24,0
+ 360 0010 6230      		cpi r22,lo8(2)
+ 361 0012 00F0      		brlo .L37
+ 362               	.L35:
+ 363 0014 3383      		std Z+3,r19
+ 364 0016 2283      		std Z+2,r18
+ 365               	/* epilogue start */
+ 366 0018 0895      		ret
+ 367               	.L37:
+ 368 001a 6387      		std Z+11,r22
+ 369 001c 20E0      		ldi r18,0
+ 370 001e 30E0      		ldi r19,0
+ 371 0020 81E0      		ldi r24,lo8(1)
+ 372 0022 00C0      		rjmp .L35
+ 374               		.section	.text._ZN6Usart09setParityENS_6ParityE,"ax",@progbits
+ 375               	.global	_ZN6Usart09setParityENS_6ParityE
+ 377               	_ZN6Usart09setParityENS_6ParityE:
+ 378               	/* prologue: function */
+ 379               	/* frame size = 0 */
+ 380               	/* stack size = 0 */
+ 381               	.L__stack_usage = 0
+ 382 0000 E82F      		mov r30,r24
+ 383 0002 F92F      		mov r31,r25
+ 384 0004 8081      		ld r24,Z
+ 385 0006 877F      		andi r24,lo8(~(1<<3))
+ 386 0008 8083      		st Z,r24
+ 387 000a 24EB      		ldi r18,lo8(-76)
+ 388 000c 30E0      		ldi r19,0
+ 389 000e 80E0      		ldi r24,0
+ 390 0010 6330      		cpi r22,lo8(3)
+ 391 0012 00F4      		brsh .L39
+ 392 0014 6287      		std Z+10,r22
+ 393 0016 20E0      		ldi r18,0
+ 394 0018 30E0      		ldi r19,0
+ 395 001a 81E0      		ldi r24,lo8(1)
+ 396               	.L39:
+ 397 001c 3383      		std Z+3,r19
+ 398 001e 2283      		std Z+2,r18
+ 399               	/* epilogue start */
+ 400 0020 0895      		ret
+ 402               		.section	.text._ZN6Usart011setBaudRateENS_8BaudRateE,"ax",@progbits
+ 403               	.global	_ZN6Usart011setBaudRateENS_8BaudRateE
+ 405               	_ZN6Usart011setBaudRateENS_8BaudRateE:
+ 406               	/* prologue: function */
+ 407               	/* frame size = 0 */
+ 408               	/* stack size = 0 */
+ 409               	.L__stack_usage = 0
+ 410 0000 E82F      		mov r30,r24
+ 411 0002 F92F      		mov r31,r25
+ 412 0004 842F      		mov r24,r20
+ 413 0006 952F      		mov r25,r21
+ 414 0008 A62F      		mov r26,r22
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 8
+
+
+ 415 000a B72F      		mov r27,r23
+ 416 000c 2081      		ld r18,Z
+ 417 000e 277F      		andi r18,lo8(~(1<<3))
+ 418 0010 2083      		st Z,r18
+ 419 0012 8038      		cpi r24,-128
+ 420 0014 20E7      		ldi r18,112
+ 421 0016 9207      		cpc r25,r18
+ 422 0018 A105      		cpc r26,__zero_reg__
+ 423 001a B105      		cpc r27,__zero_reg__
+ 424 001c 01F4      		brne .+2
+ 425 001e 00C0      		rjmp .L42
+ 426 0020 00F0      		brlo .+2
+ 427 0022 00C0      		rjmp .L43
+ 428 0024 803C      		cpi r24,-64
+ 429 0026 22E1      		ldi r18,18
+ 430 0028 9207      		cpc r25,r18
+ 431 002a A105      		cpc r26,__zero_reg__
+ 432 002c B105      		cpc r27,__zero_reg__
+ 433 002e 01F4      		brne .+2
+ 434 0030 00C0      		rjmp .L42
+ 435 0032 00F4      		brsh .L44
+ 436 0034 8830      		cpi r24,8
+ 437 0036 27E0      		ldi r18,7
+ 438 0038 9207      		cpc r25,r18
+ 439 003a A105      		cpc r26,__zero_reg__
+ 440 003c B105      		cpc r27,__zero_reg__
+ 441 003e 01F4      		brne .+2
+ 442 0040 00C0      		rjmp .L42
+ 443 0042 00F0      		brlo .L49
+ 444 0044 8036      		cpi r24,96
+ 445 0046 29E0      		ldi r18,9
+ 446 0048 9207      		cpc r25,r18
+ 447 004a A105      		cpc r26,__zero_reg__
+ 448 004c B105      		cpc r27,__zero_reg__
+ 449 004e 01F4      		brne .+2
+ 450 0050 00C0      		rjmp .L42
+ 451 0052 20EB      		ldi r18,lo8(-80)
+ 452 0054 30E0      		ldi r19,0
+ 453 0056 80E0      		ldi r24,0
+ 454 0058 00C0      		rjmp .L46
+ 455               	.L49:
+ 456 005a 8835      		cpi r24,88
+ 457 005c 22E0      		ldi r18,2
+ 458 005e 9207      		cpc r25,r18
+ 459 0060 A105      		cpc r26,__zero_reg__
+ 460 0062 B105      		cpc r27,__zero_reg__
+ 461 0064 01F4      		brne .+2
+ 462 0066 00C0      		rjmp .L42
+ 463 0068 803B      		cpi r24,-80
+ 464 006a 24E0      		ldi r18,4
+ 465 006c 9207      		cpc r25,r18
+ 466 006e A105      		cpc r26,__zero_reg__
+ 467 0070 B105      		cpc r27,__zero_reg__
+ 468 0072 01F4      		brne .+2
+ 469 0074 00C0      		rjmp .L42
+ 470 0076 20EB      		ldi r18,lo8(-80)
+ 471 0078 30E0      		ldi r19,0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 9
+
+
+ 472 007a 80E0      		ldi r24,0
+ 473 007c 00C0      		rjmp .L46
+ 474               	.L44:
+ 475 007e 8034      		cpi r24,64
+ 476 0080 28E3      		ldi r18,56
+ 477 0082 9207      		cpc r25,r18
+ 478 0084 A105      		cpc r26,__zero_reg__
+ 479 0086 B105      		cpc r27,__zero_reg__
+ 480 0088 01F4      		brne .+2
+ 481 008a 00C0      		rjmp .L42
+ 482 008c 8115      		cp r24,__zero_reg__
+ 483 008e 2BE4      		ldi r18,75
+ 484 0090 9207      		cpc r25,r18
+ 485 0092 A105      		cpc r26,__zero_reg__
+ 486 0094 B105      		cpc r27,__zero_reg__
+ 487 0096 01F4      		brne .+2
+ 488 0098 00C0      		rjmp .L42
+ 489 009a 8038      		cpi r24,-128
+ 490 009c 25E2      		ldi r18,37
+ 491 009e 9207      		cpc r25,r18
+ 492 00a0 A105      		cpc r26,__zero_reg__
+ 493 00a2 B105      		cpc r27,__zero_reg__
+ 494 00a4 01F0      		breq .L42
+ 495 00a6 20EB      		ldi r18,lo8(-80)
+ 496 00a8 30E0      		ldi r19,0
+ 497 00aa 80E0      		ldi r24,0
+ 498               	.L46:
+ 499 00ac 3383      		std Z+3,r19
+ 500 00ae 2283      		std Z+2,r18
+ 501               	/* epilogue start */
+ 502 00b0 0895      		ret
+ 503               	.L43:
+ 504 00b2 8115      		cp r24,__zero_reg__
+ 505 00b4 22EC      		ldi r18,-62
+ 506 00b6 9207      		cpc r25,r18
+ 507 00b8 21E0      		ldi r18,1
+ 508 00ba A207      		cpc r26,r18
+ 509 00bc B105      		cpc r27,__zero_reg__
+ 510 00be 01F0      		breq .L42
+ 511 00c0 00F0      		brlo .L50
+ 512 00c2 8115      		cp r24,__zero_reg__
+ 513 00c4 24E8      		ldi r18,-124
+ 514 00c6 9207      		cpc r25,r18
+ 515 00c8 23E0      		ldi r18,3
+ 516 00ca A207      		cpc r26,r18
+ 517 00cc B105      		cpc r27,__zero_reg__
+ 518 00ce 01F0      		breq .L42
+ 519 00d0 8115      		cp r24,__zero_reg__
+ 520 00d2 28EE      		ldi r18,-24
+ 521 00d4 9207      		cpc r25,r18
+ 522 00d6 23E0      		ldi r18,3
+ 523 00d8 A207      		cpc r26,r18
+ 524 00da B105      		cpc r27,__zero_reg__
+ 525 00dc 01F0      		breq .L42
+ 526 00de 8115      		cp r24,__zero_reg__
+ 527 00e0 24EF      		ldi r18,-12
+ 528 00e2 9207      		cpc r25,r18
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 10
+
+
+ 529 00e4 21E0      		ldi r18,1
+ 530 00e6 A207      		cpc r26,r18
+ 531 00e8 B105      		cpc r27,__zero_reg__
+ 532 00ea 01F0      		breq .L42
+ 533 00ec 20EB      		ldi r18,lo8(-80)
+ 534 00ee 30E0      		ldi r19,0
+ 535 00f0 80E0      		ldi r24,0
+ 536 00f2 00C0      		rjmp .L46
+ 537               	.L50:
+ 538 00f4 803C      		cpi r24,-64
+ 539 00f6 2AED      		ldi r18,-38
+ 540 00f8 9207      		cpc r25,r18
+ 541 00fa A105      		cpc r26,__zero_reg__
+ 542 00fc B105      		cpc r27,__zero_reg__
+ 543 00fe 01F0      		breq .L42
+ 544 0100 8115      		cp r24,__zero_reg__
+ 545 0102 21EE      		ldi r18,-31
+ 546 0104 9207      		cpc r25,r18
+ 547 0106 A105      		cpc r26,__zero_reg__
+ 548 0108 B105      		cpc r27,__zero_reg__
+ 549 010a 01F0      		breq .L42
+ 550 010c 8115      		cp r24,__zero_reg__
+ 551 010e 26E9      		ldi r18,-106
+ 552 0110 9207      		cpc r25,r18
+ 553 0112 A105      		cpc r26,__zero_reg__
+ 554 0114 B105      		cpc r27,__zero_reg__
+ 555 0116 01F0      		breq .L42
+ 556 0118 20EB      		ldi r18,lo8(-80)
+ 557 011a 30E0      		ldi r19,0
+ 558 011c 80E0      		ldi r24,0
+ 559 011e 00C0      		rjmp .L46
+ 560               	.L42:
+ 561 0120 8683      		std Z+6,r24
+ 562 0122 9783      		std Z+7,r25
+ 563 0124 A087      		std Z+8,r26
+ 564 0126 B187      		std Z+9,r27
+ 565 0128 20E0      		ldi r18,0
+ 566 012a 30E0      		ldi r19,0
+ 567 012c 81E0      		ldi r24,lo8(1)
+ 568 012e 00C0      		rjmp .L46
+ 570               		.section	.text._ZN6Usart014setFrameFormatENS_11FrameFormatE,"ax",@progbits
+ 571               	.global	_ZN6Usart014setFrameFormatENS_11FrameFormatE
+ 573               	_ZN6Usart014setFrameFormatENS_11FrameFormatE:
+ 574               	/* prologue: function */
+ 575               	/* frame size = 0 */
+ 576               	/* stack size = 0 */
+ 577               	.L__stack_usage = 0
+ 578 0000 A82F      		mov r26,r24
+ 579 0002 B92F      		mov r27,r25
+ 580 0004 8C91      		ld r24,X
+ 581 0006 877F      		andi r24,lo8(~(1<<3))
+ 582 0008 8C93      		st X,r24
+ 583 000a EFEA      		ldi r30,lo8(-81)
+ 584 000c E60F      		add r30,r22
+ 585 000e EA34      		cpi r30,lo8(74)
+ 586 0010 00F0      		brlo .+2
+ 587 0012 00C0      		rjmp .L59
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 11
+
+
+ 588 0014 F0E0      		ldi r31,0
+ 589 0016 E050      		subi r30,lo8(-(gs(.L54)))
+ 590 0018 F040      		sbci r31,hi8(-(gs(.L54)))
+ 591 001a 0C94 0000 		jmp __tablejump2__
+ 592               		.section	.jumptables.gcc._ZN6Usart014setFrameFormatENS_11FrameFormatE,"a",@progbits
+ 593               		.p2align	1
+ 594               	.L54:
+ 595 0000 0000      		.word gs(.L53)
+ 596 0002 0000      		.word gs(.L53)
+ 597 0004 0000      		.word gs(.L59)
+ 598 0006 0000      		.word gs(.L59)
+ 599 0008 0000      		.word gs(.L53)
+ 600 000a 0000      		.word gs(.L53)
+ 601 000c 0000      		.word gs(.L59)
+ 602 000e 0000      		.word gs(.L59)
+ 603 0010 0000      		.word gs(.L53)
+ 604 0012 0000      		.word gs(.L53)
+ 605 0014 0000      		.word gs(.L59)
+ 606 0016 0000      		.word gs(.L59)
+ 607 0018 0000      		.word gs(.L59)
+ 608 001a 0000      		.word gs(.L59)
+ 609 001c 0000      		.word gs(.L59)
+ 610 001e 0000      		.word gs(.L59)
+ 611 0020 0000      		.word gs(.L53)
+ 612 0022 0000      		.word gs(.L53)
+ 613 0024 0000      		.word gs(.L59)
+ 614 0026 0000      		.word gs(.L59)
+ 615 0028 0000      		.word gs(.L53)
+ 616 002a 0000      		.word gs(.L53)
+ 617 002c 0000      		.word gs(.L59)
+ 618 002e 0000      		.word gs(.L59)
+ 619 0030 0000      		.word gs(.L53)
+ 620 0032 0000      		.word gs(.L53)
+ 621 0034 0000      		.word gs(.L59)
+ 622 0036 0000      		.word gs(.L59)
+ 623 0038 0000      		.word gs(.L59)
+ 624 003a 0000      		.word gs(.L59)
+ 625 003c 0000      		.word gs(.L59)
+ 626 003e 0000      		.word gs(.L59)
+ 627 0040 0000      		.word gs(.L53)
+ 628 0042 0000      		.word gs(.L53)
+ 629 0044 0000      		.word gs(.L59)
+ 630 0046 0000      		.word gs(.L59)
+ 631 0048 0000      		.word gs(.L53)
+ 632 004a 0000      		.word gs(.L53)
+ 633 004c 0000      		.word gs(.L59)
+ 634 004e 0000      		.word gs(.L59)
+ 635 0050 0000      		.word gs(.L53)
+ 636 0052 0000      		.word gs(.L53)
+ 637 0054 0000      		.word gs(.L59)
+ 638 0056 0000      		.word gs(.L59)
+ 639 0058 0000      		.word gs(.L59)
+ 640 005a 0000      		.word gs(.L59)
+ 641 005c 0000      		.word gs(.L59)
+ 642 005e 0000      		.word gs(.L59)
+ 643 0060 0000      		.word gs(.L53)
+ 644 0062 0000      		.word gs(.L53)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 12
+
+
+ 645 0064 0000      		.word gs(.L59)
+ 646 0066 0000      		.word gs(.L59)
+ 647 0068 0000      		.word gs(.L53)
+ 648 006a 0000      		.word gs(.L53)
+ 649 006c 0000      		.word gs(.L59)
+ 650 006e 0000      		.word gs(.L59)
+ 651 0070 0000      		.word gs(.L53)
+ 652 0072 0000      		.word gs(.L53)
+ 653 0074 0000      		.word gs(.L59)
+ 654 0076 0000      		.word gs(.L59)
+ 655 0078 0000      		.word gs(.L59)
+ 656 007a 0000      		.word gs(.L59)
+ 657 007c 0000      		.word gs(.L59)
+ 658 007e 0000      		.word gs(.L59)
+ 659 0080 0000      		.word gs(.L53)
+ 660 0082 0000      		.word gs(.L53)
+ 661 0084 0000      		.word gs(.L59)
+ 662 0086 0000      		.word gs(.L59)
+ 663 0088 0000      		.word gs(.L53)
+ 664 008a 0000      		.word gs(.L53)
+ 665 008c 0000      		.word gs(.L59)
+ 666 008e 0000      		.word gs(.L59)
+ 667 0090 0000      		.word gs(.L53)
+ 668 0092 0000      		.word gs(.L53)
+ 669               		.section	.text._ZN6Usart014setFrameFormatENS_11FrameFormatE
+ 670               	.L53:
+ 671 001e 862F      		mov r24,r22
+ 672 0020 8370      		andi r24,lo8(3)
+ 673 0022 8130      		cpi r24,lo8(1)
+ 674 0024 01F0      		breq .L60
+ 675 0026 8230      		cpi r24,lo8(2)
+ 676 0028 01F0      		breq .+2
+ 677 002a 00C0      		rjmp .L61
+ 678 002c 81E0      		ldi r24,lo8(1)
+ 679               	.L55:
+ 680 002e 1B96      		adiw r26,11
+ 681 0030 8C93      		st X,r24
+ 682 0032 1B97      		sbiw r26,11
+ 683 0034 862F      		mov r24,r22
+ 684 0036 8695      		lsr r24
+ 685 0038 8695      		lsr r24
+ 686 003a 8370      		andi r24,lo8(3)
+ 687 003c 8130      		cpi r24,lo8(1)
+ 688 003e 01F0      		breq .L56
+ 689 0040 8230      		cpi r24,lo8(2)
+ 690 0042 01F0      		breq .L56
+ 691 0044 8823      		tst r24
+ 692 0046 01F0      		breq .L56
+ 693 0048 2FEF      		ldi r18,lo8(-1)
+ 694 004a 3FEF      		ldi r19,lo8(-1)
+ 695 004c 80E0      		ldi r24,0
+ 696 004e 00C0      		rjmp .L52
+ 697               	.L60:
+ 698 0050 80E0      		ldi r24,0
+ 699 0052 00C0      		rjmp .L55
+ 700               	.L56:
+ 701 0054 1A96      		adiw r26,10
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 13
+
+
+ 702 0056 8C93      		st X,r24
+ 703 0058 1A97      		sbiw r26,10
+ 704 005a 6295      		swap r22
+ 705 005c 6F70      		andi r22,lo8(15)
+ 706 005e 6730      		cpi r22,lo8(7)
+ 707 0060 01F0      		breq .L63
+ 708 0062 00F0      		brlo .L68
+ 709 0064 6830      		cpi r22,lo8(8)
+ 710 0066 01F0      		breq .L66
+ 711 0068 6930      		cpi r22,lo8(9)
+ 712 006a 01F4      		brne .L67
+ 713 006c 87E0      		ldi r24,lo8(7)
+ 714               	.L57:
+ 715 006e 1496      		adiw r26,4
+ 716 0070 8C93      		st X,r24
+ 717 0072 1497      		sbiw r26,4
+ 718 0074 20E0      		ldi r18,0
+ 719 0076 30E0      		ldi r19,0
+ 720 0078 81E0      		ldi r24,lo8(1)
+ 721 007a 00C0      		rjmp .L52
+ 722               	.L68:
+ 723 007c 6530      		cpi r22,lo8(5)
+ 724 007e 01F0      		breq .L64
+ 725 0080 2FEF      		ldi r18,lo8(-1)
+ 726 0082 3FEF      		ldi r19,lo8(-1)
+ 727 0084 80E0      		ldi r24,0
+ 728 0086 6630      		cpi r22,lo8(6)
+ 729 0088 01F4      		brne .L52
+ 730 008a 81E0      		ldi r24,lo8(1)
+ 731 008c 00C0      		rjmp .L57
+ 732               	.L63:
+ 733 008e 82E0      		ldi r24,lo8(2)
+ 734 0090 00C0      		rjmp .L57
+ 735               	.L64:
+ 736 0092 80E0      		ldi r24,0
+ 737 0094 00C0      		rjmp .L57
+ 738               	.L66:
+ 739 0096 83E0      		ldi r24,lo8(3)
+ 740 0098 00C0      		rjmp .L57
+ 741               	.L59:
+ 742 009a 23EB      		ldi r18,lo8(-77)
+ 743 009c 30E0      		ldi r19,0
+ 744 009e 80E0      		ldi r24,0
+ 745               	.L52:
+ 746 00a0 1396      		adiw r26,2+1
+ 747 00a2 3C93      		st X,r19
+ 748 00a4 2E93      		st -X,r18
+ 749 00a6 1297      		sbiw r26,2
+ 750               	/* epilogue start */
+ 751 00a8 0895      		ret
+ 752               	.L61:
+ 753 00aa 2FEF      		ldi r18,lo8(-1)
+ 754 00ac 3FEF      		ldi r19,lo8(-1)
+ 755 00ae 80E0      		ldi r24,0
+ 756 00b0 00C0      		rjmp .L52
+ 757               	.L67:
+ 758 00b2 2FEF      		ldi r18,lo8(-1)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 14
+
+
+ 759 00b4 3FEF      		ldi r19,lo8(-1)
+ 760 00b6 80E0      		ldi r24,0
+ 761 00b8 00C0      		rjmp .L52
+ 763               		.section	.text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE,"ax",@progbits
+ 764               	.global	_ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+ 766               	_ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE:
+ 767 0000 0F93      		push r16
+ 768 0002 1F93      		push r17
+ 769 0004 CF93      		push r28
+ 770 0006 DF93      		push r29
+ 771               	/* prologue: function */
+ 772               	/* frame size = 0 */
+ 773               	/* stack size = 4 */
+ 774               	.L__stack_usage = 4
+ 775 0008 C82F      		mov r28,r24
+ 776 000a D92F      		mov r29,r25
+ 777 000c 122F      		mov r17,r18
+ 778 000e CE01      		movw r24,r28
+ 779 0010 0E94 0000 		call _ZN6Usart011setBaudRateENS_8BaudRateE
+ 780 0014 8111      		cpse r24,__zero_reg__
+ 781 0016 00C0      		rjmp .L72
+ 782               	.L69:
+ 783               	/* epilogue start */
+ 784 0018 DF91      		pop r29
+ 785 001a CF91      		pop r28
+ 786 001c 1F91      		pop r17
+ 787 001e 0F91      		pop r16
+ 788 0020 0895      		ret
+ 789               	.L72:
+ 790 0022 8881      		ld r24,Y
+ 791 0024 877F      		andi r24,lo8(~(1<<3))
+ 792 0026 8883      		st Y,r24
+ 793 0028 1830      		cpi r17,lo8(8)
+ 794 002a 00F0      		brlo .L71
+ 795 002c 86EB      		ldi r24,lo8(-74)
+ 796 002e 90E0      		ldi r25,0
+ 797 0030 9B83      		std Y+3,r25
+ 798 0032 8A83      		std Y+2,r24
+ 799 0034 00C0      		rjmp .L69
+ 800               	.L71:
+ 801 0036 1D83      		std Y+5,r17
+ 802 0038 1B82      		std Y+3,__zero_reg__
+ 803 003a 1A82      		std Y+2,__zero_reg__
+ 804 003c 602F      		mov r22,r16
+ 805 003e CE01      		movw r24,r28
+ 806 0040 0E94 0000 		call _ZN6Usart014setFrameFormatENS_11FrameFormatE
+ 807 0044 8823      		tst r24
+ 808 0046 01F0      		breq .L69
+ 809 0048 E0E0      		ldi r30,lo8(usartStream)
+ 810 004a F0E0      		ldi r31,hi8(usartStream)
+ 811 004c 80E0      		ldi r24,lo8(gs(_Z23usartTransmitStdWrappercP6__file))
+ 812 004e 90E0      		ldi r25,hi8(gs(_Z23usartTransmitStdWrappercP6__file))
+ 813 0050 9187      		std Z+9,r25
+ 814 0052 8087      		std Z+8,r24
+ 815 0054 1386      		std Z+11,__zero_reg__
+ 816 0056 1286      		std Z+10,__zero_reg__
+ 817 0058 82E0      		ldi r24,lo8(2)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 15
+
+
+ 818 005a 8383      		std Z+3,r24
+ 819 005c 1586      		std Z+13,__zero_reg__
+ 820 005e 1486      		std Z+12,__zero_reg__
+ 821 0060 8881      		ld r24,Y
+ 822 0062 8860      		ori r24,lo8(1<<3)
+ 823 0064 8883      		st Y,r24
+ 824 0066 1B82      		std Y+3,__zero_reg__
+ 825 0068 1A82      		std Y+2,__zero_reg__
+ 826 006a 00C0      		rjmp .L69
+ 828               	.global	_ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+ 829               		.set	_ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE,_ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11
+ 830               		.section	.text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE,"ax",@progbits
+ 831               	.global	_ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE
+ 833               	_ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:
+ 834               	/* prologue: function */
+ 835               	/* frame size = 0 */
+ 836               	/* stack size = 0 */
+ 837               	.L__stack_usage = 0
+ 838 0000 A82F      		mov r26,r24
+ 839 0002 B92F      		mov r27,r25
+ 840 0004 E62F      		mov r30,r22
+ 841 0006 F72F      		mov r31,r23
+ 842 0008 3097      		sbiw r30,0
+ 843 000a 01F0      		breq .L78
+ 844 000c 1082      		st Z,__zero_reg__
+ 845 000e 8C91      		ld r24,X
+ 846 0010 80FF      		sbrs r24,0
+ 847 0012 00C0      		rjmp .L75
+ 848 0014 84E0      		ldi r24,lo8(4)
+ 849 0016 8083      		st Z,r24
+ 850               	.L75:
+ 851 0018 8C91      		ld r24,X
+ 852 001a 81FF      		sbrs r24,1
+ 853 001c 00C0      		rjmp .L76
+ 854 001e 8081      		ld r24,Z
+ 855 0020 8160      		ori r24,lo8(1)
+ 856 0022 8083      		st Z,r24
+ 857               	.L76:
+ 858 0024 8C91      		ld r24,X
+ 859 0026 82FF      		sbrs r24,2
+ 860 0028 00C0      		rjmp .L77
+ 861 002a 8081      		ld r24,Z
+ 862 002c 8260      		ori r24,lo8(2)
+ 863 002e 8083      		st Z,r24
+ 864               	.L77:
+ 865 0030 20E0      		ldi r18,0
+ 866 0032 30E0      		ldi r19,0
+ 867 0034 81E0      		ldi r24,lo8(1)
+ 868               	.L74:
+ 869 0036 1396      		adiw r26,2+1
+ 870 0038 3C93      		st X,r19
+ 871 003a 2E93      		st -X,r18
+ 872 003c 1297      		sbiw r26,2
+ 873               	/* epilogue start */
+ 874 003e 0895      		ret
+ 875               	.L78:
+ 876 0040 21E1      		ldi r18,lo8(17)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 16
+
+
+ 877 0042 30E0      		ldi r19,0
+ 878 0044 80E0      		ldi r24,0
+ 879 0046 00C0      		rjmp .L74
+ 881               		.section	.text._ZN6Usart015_receiveDataStdEP6__file,"ax",@progbits
+ 882               	.global	_ZN6Usart015_receiveDataStdEP6__file
+ 884               	_ZN6Usart015_receiveDataStdEP6__file:
+ 885               	/* prologue: function */
+ 886               	/* frame size = 0 */
+ 887               	/* stack size = 0 */
+ 888               	.L__stack_usage = 0
+ 889 0000 80E0      		ldi r24,0
+ 890               	/* epilogue start */
+ 891 0002 0895      		ret
+ 893               		.section	.text._ZN6Usart022_clearDataOverrunErrorEv,"ax",@progbits
+ 894               	.global	_ZN6Usart022_clearDataOverrunErrorEv
+ 896               	_ZN6Usart022_clearDataOverrunErrorEv:
+ 897               	/* prologue: function */
+ 898               	/* frame size = 0 */
+ 899               	/* stack size = 0 */
+ 900               	.L__stack_usage = 0
+ 901 0000 E0EC      		ldi r30,lo8(-64)
+ 902 0002 F0E0      		ldi r31,0
+ 903 0004 8081      		ld r24,Z
+ 904 0006 877F      		andi r24,lo8(-9)
+ 905 0008 8083      		st Z,r24
+ 906               	/* epilogue start */
+ 907 000a 0895      		ret
+ 909               		.section	.text._ZN6Usart016_clearFrameErrorEv,"ax",@progbits
+ 910               	.global	_ZN6Usart016_clearFrameErrorEv
+ 912               	_ZN6Usart016_clearFrameErrorEv:
+ 913               	/* prologue: function */
+ 914               	/* frame size = 0 */
+ 915               	/* stack size = 0 */
+ 916               	.L__stack_usage = 0
+ 917 0000 E0EC      		ldi r30,lo8(-64)
+ 918 0002 F0E0      		ldi r31,0
+ 919 0004 8081      		ld r24,Z
+ 920 0006 8F7E      		andi r24,lo8(-17)
+ 921 0008 8083      		st Z,r24
+ 922               	/* epilogue start */
+ 923 000a 0895      		ret
+ 925               		.section	.text._ZN6Usart017_clearParityErrorEv,"ax",@progbits
+ 926               	.global	_ZN6Usart017_clearParityErrorEv
+ 928               	_ZN6Usart017_clearParityErrorEv:
+ 929               	/* prologue: function */
+ 930               	/* frame size = 0 */
+ 931               	/* stack size = 0 */
+ 932               	.L__stack_usage = 0
+ 933 0000 E0EC      		ldi r30,lo8(-64)
+ 934 0002 F0E0      		ldi r31,0
+ 935 0004 8081      		ld r24,Z
+ 936 0006 8B7F      		andi r24,lo8(-5)
+ 937 0008 8083      		st Z,r24
+ 938               	/* epilogue start */
+ 939 000a 0895      		ret
+ 941               		.section	.text._ZN6Usart08sendDataEj,"ax",@progbits
+ 942               	.global	_ZN6Usart08sendDataEj
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 17
+
+
+ 944               	_ZN6Usart08sendDataEj:
+ 945               	/* prologue: function */
+ 946               	/* frame size = 0 */
+ 947               	/* stack size = 0 */
+ 948               	.L__stack_usage = 0
+ 949 0000 A82F      		mov r26,r24
+ 950 0002 B92F      		mov r27,r25
+ 951 0004 262F      		mov r18,r22
+ 952 0006 372F      		mov r19,r23
+ 953 0008 8C91      		ld r24,X
+ 954 000a 83FB      		bst r24,3
+ 955 000c 8827      		clr r24
+ 956 000e 80F9      		bld r24,0
+ 957 0010 8823      		tst r24
+ 958 0012 01F0      		breq .L88
+ 959 0014 E0EC      		ldi r30,lo8(-64)
+ 960 0016 F0E0      		ldi r31,0
+ 961               	.L85:
+ 962 0018 9081      		ld r25,Z
+ 963 001a 95FF      		sbrs r25,5
+ 964 001c 00C0      		rjmp .L85
+ 965 001e 1496      		adiw r26,4
+ 966 0020 9C91      		ld r25,X
+ 967 0022 1497      		sbiw r26,4
+ 968 0024 9730      		cpi r25,lo8(7)
+ 969 0026 01F0      		breq .L90
+ 970               	.L86:
+ 971 0028 2093 C600 		sts 198,r18
+ 972 002c 20E0      		ldi r18,0
+ 973 002e 30E0      		ldi r19,0
+ 974               	.L84:
+ 975 0030 1396      		adiw r26,2+1
+ 976 0032 3C93      		st X,r19
+ 977 0034 2E93      		st -X,r18
+ 978 0036 1297      		sbiw r26,2
+ 979               	/* epilogue start */
+ 980 0038 0895      		ret
+ 981               	.L90:
+ 982 003a 30FF      		sbrs r19,0
+ 983 003c 00C0      		rjmp .L87
+ 984 003e E1EC      		ldi r30,lo8(-63)
+ 985 0040 F0E0      		ldi r31,0
+ 986 0042 9081      		ld r25,Z
+ 987 0044 9160      		ori r25,lo8(1)
+ 988 0046 9083      		st Z,r25
+ 989 0048 00C0      		rjmp .L86
+ 990               	.L87:
+ 991 004a E1EC      		ldi r30,lo8(-63)
+ 992 004c F0E0      		ldi r31,0
+ 993 004e 9081      		ld r25,Z
+ 994 0050 9E7F      		andi r25,lo8(-2)
+ 995 0052 9083      		st Z,r25
+ 996 0054 00C0      		rjmp .L86
+ 997               	.L88:
+ 998 0056 24E0      		ldi r18,lo8(4)
+ 999 0058 30E0      		ldi r19,0
+ 1000 005a 00C0      		rjmp .L84
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 18
+
+
+ 1002               		.section	.text._ZN6Usart011receiveDataEPj,"ax",@progbits
+ 1003               	.global	_ZN6Usart011receiveDataEPj
+ 1005               	_ZN6Usart011receiveDataEPj:
+ 1006 0000 CF93      		push r28
+ 1007 0002 DF93      		push r29
+ 1008               	/* prologue: function */
+ 1009               	/* frame size = 0 */
+ 1010               	/* stack size = 2 */
+ 1011               	.L__stack_usage = 2
+ 1012 0004 E82F      		mov r30,r24
+ 1013 0006 F92F      		mov r31,r25
+ 1014 0008 C62F      		mov r28,r22
+ 1015 000a D72F      		mov r29,r23
+ 1016 000c 8081      		ld r24,Z
+ 1017 000e 83FB      		bst r24,3
+ 1018 0010 8827      		clr r24
+ 1019 0012 80F9      		bld r24,0
+ 1020 0014 24E0      		ldi r18,lo8(4)
+ 1021 0016 30E0      		ldi r19,0
+ 1022 0018 8823      		tst r24
+ 1023 001a 01F0      		breq .L92
+ 1024 001c A0EC      		ldi r26,lo8(-64)
+ 1025 001e B0E0      		ldi r27,0
+ 1026               	.L93:
+ 1027 0020 9C91      		ld r25,X
+ 1028 0022 9923      		tst r25
+ 1029 0024 04F4      		brge .L93
+ 1030 0026 2091 C000 		lds r18,192
+ 1031 002a 9081      		ld r25,Z
+ 1032 002c 23FB      		bst r18,3
+ 1033 002e 90F9      		bld r25,0
+ 1034 0030 24FB      		bst r18,4
+ 1035 0032 91F9      		bld r25,1
+ 1036 0034 22FB      		bst r18,2
+ 1037 0036 92F9      		bld r25,2
+ 1038 0038 9083      		st Z,r25
+ 1039 003a 1982      		std Y+1,__zero_reg__
+ 1040 003c 1882      		st Y,__zero_reg__
+ 1041 003e 9481      		ldd r25,Z+4
+ 1042 0040 9730      		cpi r25,lo8(7)
+ 1043 0042 01F0      		breq .L97
+ 1044               	.L94:
+ 1045 0044 9091 C600 		lds r25,198
+ 1046 0048 2881      		ld r18,Y
+ 1047 004a 3981      		ldd r19,Y+1
+ 1048 004c 292B      		or r18,r25
+ 1049 004e 3983      		std Y+1,r19
+ 1050 0050 2883      		st Y,r18
+ 1051 0052 20E0      		ldi r18,0
+ 1052 0054 30E0      		ldi r19,0
+ 1053               	.L92:
+ 1054 0056 3383      		std Z+3,r19
+ 1055 0058 2283      		std Z+2,r18
+ 1056               	/* epilogue start */
+ 1057 005a DF91      		pop r29
+ 1058 005c CF91      		pop r28
+ 1059 005e 0895      		ret
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 19
+
+
+ 1060               	.L97:
+ 1061 0060 9091 C100 		lds r25,193
+ 1062 0064 9695      		lsr r25
+ 1063 0066 9170      		andi r25,1
+ 1064 0068 1882      		st Y,__zero_reg__
+ 1065 006a 9983      		std Y+1,r25
+ 1066 006c 00C0      		rjmp .L94
+ 1068               		.section	.text._ZN6Usart020flushReceptionBufferEv,"ax",@progbits
+ 1069               	.global	_ZN6Usart020flushReceptionBufferEv
+ 1071               	_ZN6Usart020flushReceptionBufferEv:
+ 1072               	/* prologue: function */
+ 1073               	/* frame size = 0 */
+ 1074               	/* stack size = 0 */
+ 1075               	.L__stack_usage = 0
+ 1076 0000 8091 C000 		lds r24,192
+ 1077 0004 8823      		tst r24
+ 1078 0006 04F4      		brge .L98
+ 1079 0008 A6EC      		ldi r26,lo8(-58)
+ 1080 000a B0E0      		ldi r27,0
+ 1081 000c E0EC      		ldi r30,lo8(-64)
+ 1082 000e F0E0      		ldi r31,0
+ 1083               	.L100:
+ 1084 0010 8C91      		ld r24,X
+ 1085 0012 8081      		ld r24,Z
+ 1086 0014 8823      		tst r24
+ 1087 0016 04F0      		brlt .L100
+ 1088               	.L98:
+ 1089               	/* epilogue start */
+ 1090 0018 0895      		ret
+ 1092               		.section	.text._ZN6Usart014receiveDataStdEP6__file,"ax",@progbits
+ 1093               	.global	_ZN6Usart014receiveDataStdEP6__file
+ 1095               	_ZN6Usart014receiveDataStdEP6__file:
+ 1096               	/* prologue: function */
+ 1097               	/* frame size = 0 */
+ 1098               	/* stack size = 0 */
+ 1099               	.L__stack_usage = 0
+ 1100 0000 E0EC      		ldi r30,lo8(-64)
+ 1101 0002 F0E0      		ldi r31,0
+ 1102               	.L103:
+ 1103 0004 8081      		ld r24,Z
+ 1104 0006 8823      		tst r24
+ 1105 0008 04F4      		brge .L103
+ 1106 000a 8091 C600 		lds r24,198
+ 1107               	/* epilogue start */
+ 1108 000e 0895      		ret
+ 1110               		.section	.text._ZN6Usart011sendDataStdEcP6__file,"ax",@progbits
+ 1111               	.global	_ZN6Usart011sendDataStdEcP6__file
+ 1113               	_ZN6Usart011sendDataStdEcP6__file:
+ 1114               	/* prologue: function */
+ 1115               	/* frame size = 0 */
+ 1116               	/* stack size = 0 */
+ 1117               	.L__stack_usage = 0
+ 1118 0000 E0EC      		ldi r30,lo8(-64)
+ 1119 0002 F0E0      		ldi r31,0
+ 1120               	.L106:
+ 1121 0004 8081      		ld r24,Z
+ 1122 0006 85FF      		sbrs r24,5
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 20
+
+
+ 1123 0008 00C0      		rjmp .L106
+ 1124 000a 6093 C600 		sts 198,r22
+ 1125 000e 80E0      		ldi r24,0
+ 1126 0010 90E0      		ldi r25,0
+ 1127               	/* epilogue start */
+ 1128 0012 0895      		ret
+ 1130               		.section	.text._Z23usartTransmitStdWrappercP6__file,"ax",@progbits
+ 1131               	.global	_Z23usartTransmitStdWrappercP6__file
+ 1133               	_Z23usartTransmitStdWrappercP6__file:
+ 1134               	/* prologue: function */
+ 1135               	/* frame size = 0 */
+ 1136               	/* stack size = 0 */
+ 1137               	.L__stack_usage = 0
+ 1138 0000 462F      		mov r20,r22
+ 1139 0002 572F      		mov r21,r23
+ 1140 0004 682F      		mov r22,r24
+ 1141 0006 8091 0000 		lds r24,usartDefaultHandler
+ 1142 000a 9091 0000 		lds r25,usartDefaultHandler+1
+ 1143 000e 0E94 0000 		call _ZN6Usart011sendDataStdEcP6__file
+ 1144               	/* epilogue start */
+ 1145 0012 0895      		ret
+ 1147               		.section	.text._Z30usartReceptionCompleteCallbackv,"ax",@progbits
+ 1148               		.weak	_Z30usartReceptionCompleteCallbackv
+ 1150               	_Z30usartReceptionCompleteCallbackv:
+ 1151               	/* prologue: function */
+ 1152               	/* frame size = 0 */
+ 1153               	/* stack size = 0 */
+ 1154               	.L__stack_usage = 0
+ 1155               	/* epilogue start */
+ 1156 0000 0895      		ret
+ 1158               		.section	.text._Z36usartTransmissionBufferEmptyCallbackv,"ax",@progbits
+ 1159               		.weak	_Z36usartTransmissionBufferEmptyCallbackv
+ 1161               	_Z36usartTransmissionBufferEmptyCallbackv:
+ 1162               	/* prologue: function */
+ 1163               	/* frame size = 0 */
+ 1164               	/* stack size = 0 */
+ 1165               	.L__stack_usage = 0
+ 1166               	/* epilogue start */
+ 1167 0000 0895      		ret
+ 1169               		.section	.text._Z33usartTransmissionCompleteCallbackv,"ax",@progbits
+ 1170               		.weak	_Z33usartTransmissionCompleteCallbackv
+ 1172               	_Z33usartTransmissionCompleteCallbackv:
+ 1173               	/* prologue: function */
+ 1174               	/* frame size = 0 */
+ 1175               	/* stack size = 0 */
+ 1176               	.L__stack_usage = 0
+ 1177               	/* epilogue start */
+ 1178 0000 0895      		ret
+ 1180               		.section	.text.__vector_18,"ax",@progbits
+ 1181               	.global	__vector_18
+ 1183               	__vector_18:
+ 1184 0000 1F92      		push r1
+ 1185 0002 0F92      		push r0
+ 1186 0004 0FB6      		in r0,__SREG__
+ 1187 0006 0F92      		push r0
+ 1188 0008 1124      		clr __zero_reg__
+ 1189 000a 2F93      		push r18
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 21
+
+
+ 1190 000c 3F93      		push r19
+ 1191 000e 4F93      		push r20
+ 1192 0010 5F93      		push r21
+ 1193 0012 6F93      		push r22
+ 1194 0014 7F93      		push r23
+ 1195 0016 8F93      		push r24
+ 1196 0018 9F93      		push r25
+ 1197 001a AF93      		push r26
+ 1198 001c BF93      		push r27
+ 1199 001e EF93      		push r30
+ 1200 0020 FF93      		push r31
+ 1201               	/* prologue: Signal */
+ 1202               	/* frame size = 0 */
+ 1203               	/* stack size = 15 */
+ 1204               	.L__stack_usage = 15
+ 1205 0022 0E94 0000 		call _Z30usartReceptionCompleteCallbackv
+ 1206               	/* epilogue start */
+ 1207 0026 FF91      		pop r31
+ 1208 0028 EF91      		pop r30
+ 1209 002a BF91      		pop r27
+ 1210 002c AF91      		pop r26
+ 1211 002e 9F91      		pop r25
+ 1212 0030 8F91      		pop r24
+ 1213 0032 7F91      		pop r23
+ 1214 0034 6F91      		pop r22
+ 1215 0036 5F91      		pop r21
+ 1216 0038 4F91      		pop r20
+ 1217 003a 3F91      		pop r19
+ 1218 003c 2F91      		pop r18
+ 1219 003e 0F90      		pop r0
+ 1220 0040 0FBE      		out __SREG__,r0
+ 1221 0042 0F90      		pop r0
+ 1222 0044 1F90      		pop r1
+ 1223 0046 1895      		reti
+ 1225               		.section	.text.__vector_20,"ax",@progbits
+ 1226               	.global	__vector_20
+ 1228               	__vector_20:
+ 1229 0000 1F92      		push r1
+ 1230 0002 0F92      		push r0
+ 1231 0004 0FB6      		in r0,__SREG__
+ 1232 0006 0F92      		push r0
+ 1233 0008 1124      		clr __zero_reg__
+ 1234 000a 2F93      		push r18
+ 1235 000c 3F93      		push r19
+ 1236 000e 4F93      		push r20
+ 1237 0010 5F93      		push r21
+ 1238 0012 6F93      		push r22
+ 1239 0014 7F93      		push r23
+ 1240 0016 8F93      		push r24
+ 1241 0018 9F93      		push r25
+ 1242 001a AF93      		push r26
+ 1243 001c BF93      		push r27
+ 1244 001e EF93      		push r30
+ 1245 0020 FF93      		push r31
+ 1246               	/* prologue: Signal */
+ 1247               	/* frame size = 0 */
+ 1248               	/* stack size = 15 */
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 22
+
+
+ 1249               	.L__stack_usage = 15
+ 1250 0022 0E94 0000 		call _Z33usartTransmissionCompleteCallbackv
+ 1251               	/* epilogue start */
+ 1252 0026 FF91      		pop r31
+ 1253 0028 EF91      		pop r30
+ 1254 002a BF91      		pop r27
+ 1255 002c AF91      		pop r26
+ 1256 002e 9F91      		pop r25
+ 1257 0030 8F91      		pop r24
+ 1258 0032 7F91      		pop r23
+ 1259 0034 6F91      		pop r22
+ 1260 0036 5F91      		pop r21
+ 1261 0038 4F91      		pop r20
+ 1262 003a 3F91      		pop r19
+ 1263 003c 2F91      		pop r18
+ 1264 003e 0F90      		pop r0
+ 1265 0040 0FBE      		out __SREG__,r0
+ 1266 0042 0F90      		pop r0
+ 1267 0044 1F90      		pop r1
+ 1268 0046 1895      		reti
+ 1270               		.section	.text.__vector_19,"ax",@progbits
+ 1271               	.global	__vector_19
+ 1273               	__vector_19:
+ 1274 0000 1F92      		push r1
+ 1275 0002 0F92      		push r0
+ 1276 0004 0FB6      		in r0,__SREG__
+ 1277 0006 0F92      		push r0
+ 1278 0008 1124      		clr __zero_reg__
+ 1279 000a 2F93      		push r18
+ 1280 000c 3F93      		push r19
+ 1281 000e 4F93      		push r20
+ 1282 0010 5F93      		push r21
+ 1283 0012 6F93      		push r22
+ 1284 0014 7F93      		push r23
+ 1285 0016 8F93      		push r24
+ 1286 0018 9F93      		push r25
+ 1287 001a AF93      		push r26
+ 1288 001c BF93      		push r27
+ 1289 001e EF93      		push r30
+ 1290 0020 FF93      		push r31
+ 1291               	/* prologue: Signal */
+ 1292               	/* frame size = 0 */
+ 1293               	/* stack size = 15 */
+ 1294               	.L__stack_usage = 15
+ 1295 0022 0E94 0000 		call _Z36usartTransmissionBufferEmptyCallbackv
+ 1296               	/* epilogue start */
+ 1297 0026 FF91      		pop r31
+ 1298 0028 EF91      		pop r30
+ 1299 002a BF91      		pop r27
+ 1300 002c AF91      		pop r26
+ 1301 002e 9F91      		pop r25
+ 1302 0030 8F91      		pop r24
+ 1303 0032 7F91      		pop r23
+ 1304 0034 6F91      		pop r22
+ 1305 0036 5F91      		pop r21
+ 1306 0038 4F91      		pop r20
+ 1307 003a 3F91      		pop r19
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 23
+
+
+ 1308 003c 2F91      		pop r18
+ 1309 003e 0F90      		pop r0
+ 1310 0040 0FBE      		out __SREG__,r0
+ 1311 0042 0F90      		pop r0
+ 1312 0044 1F90      		pop r1
+ 1313 0046 1895      		reti
+ 1315               		.section	.text._GLOBAL__sub_I_usartDefaultHandler,"ax",@progbits
+ 1317               	_GLOBAL__sub_I_usartDefaultHandler:
+ 1318 0000 0F93      		push r16
+ 1319               	/* prologue: function */
+ 1320               	/* frame size = 0 */
+ 1321               	/* stack size = 1 */
+ 1322               	.L__stack_usage = 1
+ 1323 0002 01E8      		ldi r16,lo8(-127)
+ 1324 0004 20E0      		ldi r18,0
+ 1325 0006 40E8      		ldi r20,lo8(-128)
+ 1326 0008 55E2      		ldi r21,lo8(37)
+ 1327 000a 60E0      		ldi r22,0
+ 1328 000c 70E0      		ldi r23,0
+ 1329 000e 80E0      		ldi r24,lo8(usart0)
+ 1330 0010 90E0      		ldi r25,hi8(usart0)
+ 1331 0012 0E94 0000 		call _ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+ 1332               	/* epilogue start */
+ 1333 0016 0F91      		pop r16
+ 1334 0018 0895      		ret
+ 1336               		.global __do_global_ctors
+ 1337               		.section .ctors,"a",@progbits
+ 1338               		.p2align	1
+ 1339 0000 0000      		.word	gs(_GLOBAL__sub_I_usartDefaultHandler)
+ 1340               	.global	usartStream
+ 1341               		.section	.bss.usartStream,"aw",@nobits
+ 1344               	usartStream:
+ 1345 0000 0000 0000 		.zero	14
+ 1345      0000 0000 
+ 1345      0000 0000 
+ 1345      0000 
+ 1346               	.global	usart0
+ 1347               		.section	.bss.usart0,"aw",@nobits
+ 1350               	usart0:
+ 1351 0000 0000 0000 		.zero	12
+ 1351      0000 0000 
+ 1351      0000 0000 
+ 1352               	.global	usartDefaultHandler
+ 1353               		.section	.bss.usartDefaultHandler,"aw",@nobits
+ 1356               	usartDefaultHandler:
+ 1357 0000 0000      		.zero	2
+ 1358               		.ident	"GCC: (GNU) 12.1.0"
+ 1359               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 24
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 usart0.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:25     .text._ZN6Usart0D2Ev:0000000000000000 _ZN6Usart0D2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:25     .text._ZN6Usart0D2Ev:0000000000000000 _ZN6Usart0D1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:38     .text._ZN6Usart04initEv:0000000000000000 _ZN6Usart04initEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:288    .text._ZN6Usart07setModeENS_4ModeE:0000000000000000 _ZN6Usart07setModeENS_4ModeE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:316    .text._ZN6Usart011setDataSizeENS_8DataSizeE:0000000000000000 _ZN6Usart011setDataSizeENS_8DataSizeE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:347    .text._ZN6Usart011setStopBitsENS_8StopBitsE:0000000000000000 _ZN6Usart011setStopBitsENS_8StopBitsE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:377    .text._ZN6Usart09setParityENS_6ParityE:0000000000000000 _ZN6Usart09setParityENS_6ParityE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:405    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000000 _ZN6Usart011setBaudRateENS_8BaudRateE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:424    .text._ZN6Usart011setBaudRateENS_8BaudRateE:000000000000001e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:426    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000022 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:433    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000030 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:441    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000040 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:449    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000050 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:461    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000066 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:468    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000074 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:480    .text._ZN6Usart011setBaudRateENS_8BaudRateE:000000000000008a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:487    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000098 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:573    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000000 _ZN6Usart014setFrameFormatENS_11FrameFormatE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:586    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000012 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:676    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000002a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:766    .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE:0000000000000000 _ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1344   .bss.usartStream:0000000000000000 usartStream
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1133   .text._Z23usartTransmitStdWrappercP6__file:0000000000000000 _Z23usartTransmitStdWrappercP6__file
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:766    .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE:0000000000000000 _ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:833    .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:0000000000000000 _ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:884    .text._ZN6Usart015_receiveDataStdEP6__file:0000000000000000 _ZN6Usart015_receiveDataStdEP6__file
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:896    .text._ZN6Usart022_clearDataOverrunErrorEv:0000000000000000 _ZN6Usart022_clearDataOverrunErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:912    .text._ZN6Usart016_clearFrameErrorEv:0000000000000000 _ZN6Usart016_clearFrameErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:928    .text._ZN6Usart017_clearParityErrorEv:0000000000000000 _ZN6Usart017_clearParityErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:944    .text._ZN6Usart08sendDataEj:0000000000000000 _ZN6Usart08sendDataEj
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1005   .text._ZN6Usart011receiveDataEPj:0000000000000000 _ZN6Usart011receiveDataEPj
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1071   .text._ZN6Usart020flushReceptionBufferEv:0000000000000000 _ZN6Usart020flushReceptionBufferEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1095   .text._ZN6Usart014receiveDataStdEP6__file:0000000000000000 _ZN6Usart014receiveDataStdEP6__file
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1113   .text._ZN6Usart011sendDataStdEcP6__file:0000000000000000 _ZN6Usart011sendDataStdEcP6__file
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1356   .bss.usartDefaultHandler:0000000000000000 usartDefaultHandler
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1150   .text._Z30usartReceptionCompleteCallbackv:0000000000000000 _Z30usartReceptionCompleteCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1161   .text._Z36usartTransmissionBufferEmptyCallbackv:0000000000000000 _Z36usartTransmissionBufferEmptyCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1172   .text._Z33usartTransmissionCompleteCallbackv:0000000000000000 _Z33usartTransmissionCompleteCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1183   .text.__vector_18:0000000000000000 __vector_18
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1228   .text.__vector_20:0000000000000000 __vector_20
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1273   .text.__vector_19:0000000000000000 __vector_19
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1317   .text._GLOBAL__sub_I_usartDefaultHandler:0000000000000000 _GLOBAL__sub_I_usartDefaultHandler
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1350   .bss.usart0:0000000000000000 usart0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:105    .text._ZN6Usart04initEv:0000000000000082 .L4
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:108    .text._ZN6Usart04initEv:0000000000000086 .L5
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:111    .text._ZN6Usart04initEv:000000000000008a .L7
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:114    .text._ZN6Usart04initEv:000000000000008e .L8
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:153    .text._ZN6Usart04initEv:00000000000000be .L10
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:117    .text._ZN6Usart04initEv:0000000000000092 .L11
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 25
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:123    .text._ZN6Usart04initEv:000000000000009c .L12
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:125    .text._ZN6Usart04initEv:000000000000009e .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:81     .text._ZN6Usart04initEv:0000000000000056 .L6
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:90     .text._ZN6Usart04initEv:0000000000000066 .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:156    .text._ZN6Usart04initEv:00000000000000c2 .L16
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:143    .jumptables.gcc._ZN6Usart04initEv:0000000000000000 .L18
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:200    .text._ZN6Usart04initEv:0000000000000108 .L25
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:198    .text._ZN6Usart04initEv:0000000000000106 .L26
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:159    .text._ZN6Usart04initEv:00000000000000c6 .L24
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:164    .text._ZN6Usart04initEv:00000000000000ce .L23
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:168    .text._ZN6Usart04initEv:00000000000000d4 .L22
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:174    .text._ZN6Usart04initEv:00000000000000de .L21
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:180    .text._ZN6Usart04initEv:00000000000000e8 .L20
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:186    .text._ZN6Usart04initEv:00000000000000f2 .L19
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:192    .text._ZN6Usart04initEv:00000000000000fc .L17
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:307    .text._ZN6Usart07setModeENS_4ModeE:000000000000001c .L28
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:333    .text._ZN6Usart011setDataSizeENS_8DataSizeE:0000000000000018 .L31
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:338    .text._ZN6Usart011setDataSizeENS_8DataSizeE:0000000000000020 .L32
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:367    .text._ZN6Usart011setStopBitsENS_8StopBitsE:000000000000001a .L37
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:362    .text._ZN6Usart011setStopBitsENS_8StopBitsE:0000000000000014 .L35
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:396    .text._ZN6Usart09setParityENS_6ParityE:000000000000001c .L39
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:560    .text._ZN6Usart011setBaudRateENS_8BaudRateE:0000000000000120 .L42
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:503    .text._ZN6Usart011setBaudRateENS_8BaudRateE:00000000000000b2 .L43
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:474    .text._ZN6Usart011setBaudRateENS_8BaudRateE:000000000000007e .L44
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:455    .text._ZN6Usart011setBaudRateENS_8BaudRateE:000000000000005a .L49
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:498    .text._ZN6Usart011setBaudRateENS_8BaudRateE:00000000000000ac .L46
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:537    .text._ZN6Usart011setBaudRateENS_8BaudRateE:00000000000000f4 .L50
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:741    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000009a .L59
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:594    .jumptables.gcc._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000000 .L54
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:697    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000050 .L60
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:752    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:00000000000000aa .L61
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:700    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000054 .L56
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:745    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:00000000000000a0 .L52
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:679    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000002e .L55
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:732    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000008e .L63
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:722    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000007c .L68
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:738    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000096 .L66
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:757    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:00000000000000b2 .L67
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:735    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:0000000000000092 .L64
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:714    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000006e .L57
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:670    .text._ZN6Usart014setFrameFormatENS_11FrameFormatE:000000000000001e .L53
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:789    .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE:0000000000000022 .L72
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:800    .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE:0000000000000036 .L71
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:782    .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE:0000000000000018 .L69
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:875    .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:0000000000000040 .L78
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:850    .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:0000000000000018 .L75
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:857    .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:0000000000000024 .L76
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:864    .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:0000000000000030 .L77
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:868    .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE:0000000000000036 .L74
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:997    .text._ZN6Usart08sendDataEj:0000000000000056 .L88
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:961    .text._ZN6Usart08sendDataEj:0000000000000018 .L85
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:981    .text._ZN6Usart08sendDataEj:000000000000003a .L90
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:990    .text._ZN6Usart08sendDataEj:000000000000004a .L87
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:970    .text._ZN6Usart08sendDataEj:0000000000000028 .L86
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:974    .text._ZN6Usart08sendDataEj:0000000000000030 .L84
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1053   .text._ZN6Usart011receiveDataEPj:0000000000000056 .L92
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1026   .text._ZN6Usart011receiveDataEPj:0000000000000020 .L93
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s 			page 26
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1060   .text._ZN6Usart011receiveDataEPj:0000000000000060 .L97
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1044   .text._ZN6Usart011receiveDataEPj:0000000000000044 .L94
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1088   .text._ZN6Usart020flushReceptionBufferEv:0000000000000018 .L98
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1083   .text._ZN6Usart020flushReceptionBufferEv:0000000000000010 .L100
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1102   .text._ZN6Usart014receiveDataStdEP6__file:0000000000000004 .L103
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc0wb8Zl.s:1120   .text._ZN6Usart011sendDataStdEcP6__file:0000000000000004 .L106
+
+UNDEFINED SYMBOLS
+__tablejump2__
+systemStatus
+_ZN12SystemStatus11getCpuClockEv
+__muluhisi3
+__udivmodsi4
+__lshrdi3
+__do_global_ctors
+__do_clear_bss

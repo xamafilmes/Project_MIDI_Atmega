@@ -1,0 +1,2318 @@
+Archive member included to satisfy reference by file (symbol)
+
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+                              build/hd44780.o (__divmodhi4)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                              build/ff.o (__udivmodsi4)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                              build/mmc_avr_spi.o (__tablejump2__)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                              build/ff.o (__do_copy_data)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+                              build/ff.o (__do_clear_bss)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+                              build/adc.o (__do_global_ctors)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+                              build/mmc_avr_spi.o (__umulhisi3)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+                              build/ff.o (__muluhisi3)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+                              build/usart0.o (__lshrdi3)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+                              build/twi.o (calloc)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o) (malloc)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                              build/keypad.o (realloc)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o) (memcpy)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o) (memset)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                              build/hd44780.o (__iob)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o) (__prologue_saves__)
+e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o) (__epilogue_restores__)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .text          0x0000000000000000        0x0 build/diskio.o
+ .data          0x0000000000000000        0x0 build/diskio.o
+ .bss           0x0000000000000000        0x0 build/diskio.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/diskio.o
+ .text.disk_status
+                0x0000000000000000        0xe build/diskio.o
+ .text.disk_initialize
+                0x0000000000000000        0xe build/diskio.o
+ .text.disk_read
+                0x0000000000000000       0x2e build/diskio.o
+ .text.disk_write
+                0x0000000000000000       0x2e build/diskio.o
+ .text.disk_ioctl
+                0x0000000000000000       0x18 build/diskio.o
+ .text.disk_timerproc
+                0x0000000000000000        0x6 build/diskio.o
+ .comment       0x0000000000000000       0x13 build/diskio.o
+ .text          0x0000000000000000        0x0 build/ff.o
+ .data          0x0000000000000000        0x0 build/ff.o
+ .bss           0x0000000000000000        0x0 build/ff.o
+ .text._ZL8ld_dwordPKh
+                0x0000000000000000       0x5a build/ff.o
+ .text._ZL7mem_cpyPvPKvj
+                0x0000000000000000       0x2e build/ff.o
+ .text._ZL7mem_cmpPKvS0_j
+                0x0000000000000000       0x3c build/ff.o
+ .text._ZL9clst2sectP5FATFSm
+                0x0000000000000000       0x84 build/ff.o
+ .text._ZL12get_ldnumberPPKc
+                0x0000000000000000       0x72 build/ff.o
+ .text._ZL8validateP7FFOBJIDPP5FATFS
+                0x0000000000000000       0x7e build/ff.o
+ .text._ZL11sync_windowP5FATFS
+                0x0000000000000000       0xc0 build/ff.o
+ .text._ZL11move_windowP5FATFSm
+                0x0000000000000000       0x7c build/ff.o
+ .text._ZL7put_fatP5FATFSmm
+                0x0000000000000000      0x2a4 build/ff.o
+ .text._ZL7get_fatP7FFOBJIDm
+                0x0000000000000000      0x274 build/ff.o
+ .text._ZL7dir_sdiP3DIRm
+                0x0000000000000000      0x1ee build/ff.o
+ .text._ZL12create_chainP7FFOBJIDm
+                0x0000000000000000      0x2b4 build/ff.o
+ .text._ZL8dir_nextP3DIRi
+                0x0000000000000000      0x322 build/ff.o
+ .rodata._ZL8check_fsP5FATFSm.str1.1
+                0x0000000000000000        0xa build/ff.o
+ .text._ZL8check_fsP5FATFSm
+                0x0000000000000000       0x8c build/ff.o
+ .text._ZL11find_volumePPKcPP5FATFSh
+                0x0000000000000000      0x7d4 build/ff.o
+ .text._ZL8ld_clustP5FATFSPKh
+                0x0000000000000000       0x60 build/ff.o
+ .rodata._ZL11follow_pathP3DIRPKc.str1.1
+                0x0000000000000000        0xf build/ff.o
+ .text._ZL11follow_pathP3DIRPKc
+                0x0000000000000000      0x2ca build/ff.o
+ .text.f_mount  0x0000000000000000       0x90 build/ff.o
+ .text.f_open   0x0000000000000000      0x5cc build/ff.o
+ .text.f_read   0x0000000000000000      0x314 build/ff.o
+ .text.f_write  0x0000000000000000      0x43a build/ff.o
+ .text.f_sync   0x0000000000000000      0x1f2 build/ff.o
+ .text.f_close  0x0000000000000000       0x50 build/ff.o
+ .text.f_lseek  0x0000000000000000      0x3a4 build/ff.o
+ .text.f_opendir
+                0x0000000000000000       0xde build/ff.o
+ .text.f_closedir
+                0x0000000000000000       0x36 build/ff.o
+ .text.f_readdir
+                0x0000000000000000      0x1dc build/ff.o
+ .bss._ZL4Fsid  0x0000000000000000        0x2 build/ff.o
+ .bss._ZL5FatFs
+                0x0000000000000000        0x2 build/ff.o
+ .comment       0x0000000000000000       0x13 build/ff.o
+ .text          0x0000000000000000        0x0 build/ffsystem.o
+ .data          0x0000000000000000        0x0 build/ffsystem.o
+ .bss           0x0000000000000000        0x0 build/ffsystem.o
+ .comment       0x0000000000000000       0x13 build/ffsystem.o
+ .text          0x0000000000000000        0x0 build/ffunicode.o
+ .data          0x0000000000000000        0x0 build/ffunicode.o
+ .bss           0x0000000000000000        0x0 build/ffunicode.o
+ .comment       0x0000000000000000       0x13 build/ffunicode.o
+ .text          0x0000000000000000        0x0 build/mmc_avr_spi.o
+ .data          0x0000000000000000        0x0 build/mmc_avr_spi.o
+ .bss           0x0000000000000000        0x0 build/mmc_avr_spi.o
+ .text._ZL9power_offv
+                0x0000000000000000        0xa build/mmc_avr_spi.o
+ .text._ZL8xchg_spih
+                0x0000000000000000        0xc build/mmc_avr_spi.o
+ .text._ZL10wait_readyj
+                0x0000000000000000       0x40 build/mmc_avr_spi.o
+ .text._ZL14rcvr_datablockPhj
+                0x0000000000000000       0x80 build/mmc_avr_spi.o
+ .text._ZL14xmit_datablockPKhh
+                0x0000000000000000       0x7e build/mmc_avr_spi.o
+ .text._ZL8deselectv
+                0x0000000000000000       0x10 build/mmc_avr_spi.o
+ .text._ZL6selectv
+                0x0000000000000000       0x34 build/mmc_avr_spi.o
+ .text._ZL8send_cmdhm
+                0x0000000000000000       0xc4 build/mmc_avr_spi.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/mmc_avr_spi.o
+ .text.sdCardCreate
+                0x0000000000000000       0x78 build/mmc_avr_spi.o
+ .text._Z11sdCardSsLowv
+                0x0000000000000000       0x28 build/mmc_avr_spi.o
+ .text._Z12sdCardSsHighv
+                0x0000000000000000       0x26 build/mmc_avr_spi.o
+ .text.mmc_disk_initialize
+                0x0000000000000000      0x192 build/mmc_avr_spi.o
+ .text.mmc_disk_status
+                0x0000000000000000        0x6 build/mmc_avr_spi.o
+ .text.mmc_disk_read
+                0x0000000000000000       0xc0 build/mmc_avr_spi.o
+ .text.mmc_disk_write
+                0x0000000000000000       0xfa build/mmc_avr_spi.o
+ .text.mmc_disk_ioctl
+                0x0000000000000000      0x72a build/mmc_avr_spi.o
+ .jumptables.gcc.mmc_disk_ioctl
+                0x0000000000000000       0x74 build/mmc_avr_spi.o
+ .text.mmc_disk_timerproc
+                0x0000000000000000       0x28 build/mmc_avr_spi.o
+ .bss._ZL8CardType
+                0x0000000000000000        0x1 build/mmc_avr_spi.o
+ .bss._ZL6Timer2
+                0x0000000000000000        0x1 build/mmc_avr_spi.o
+ .bss._ZL6Timer1
+                0x0000000000000000        0x1 build/mmc_avr_spi.o
+ .data._ZL4Stat
+                0x0000000000000000        0x1 build/mmc_avr_spi.o
+ .bss.spiSlaveSdCard
+                0x0000000000000000        0x5 build/mmc_avr_spi.o
+ .comment       0x0000000000000000       0x13 build/mmc_avr_spi.o
+ .text          0x0000000000000000        0x0 build/spiMaster.o
+ .data          0x0000000000000000        0x0 build/spiMaster.o
+ .bss           0x0000000000000000        0x0 build/spiMaster.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/spiMaster.o
+ .text._Z20spiSlaveDeviceCreateP16spiSlaveDevice_s13pinLocation_e
+                0x0000000000000000       0x78 build/spiMaster.o
+ .text._Z19spiSlaveDeviceSsLowP16spiSlaveDevice_s
+                0x0000000000000000       0x28 build/spiMaster.o
+ .text._Z20spiSlaveDeviceSsHighP16spiSlaveDevice_s
+                0x0000000000000000       0x26 build/spiMaster.o
+ .text._Z13spiMasterInit19spiClockPrescaler_t10spiModes_t14spiDataOrder_t13spiProtocol_t
+                0x0000000000000000       0x88 build/spiMaster.o
+ .text._Z24spiMasterSendReceiveByteh
+                0x0000000000000000       0x12 build/spiMaster.o
+ .text._Z24spiMasterSendReceiveDataPhS_h
+                0x0000000000000000       0x3e build/spiMaster.o
+ .comment       0x0000000000000000       0x13 build/spiMaster.o
+ .text          0x0000000000000000        0x0 build/ds1307.o
+ .data          0x0000000000000000        0x0 build/ds1307.o
+ .bss           0x0000000000000000        0x0 build/ds1307.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/ds1307.o
+ .text._ZN6Ds1307D2Ev
+                0x0000000000000000        0x8 build/ds1307.o
+ .text._ZN6Ds130712getLastErrorEv
+                0x0000000000000000        0x8 build/ds1307.o
+ .text._ZN6Ds130710getRamDataEhPhh
+                0x0000000000000000      0x110 build/ds1307.o
+ .text._ZN6Ds130710setRamDataEhPhh
+                0x0000000000000000      0x110 build/ds1307.o
+ .text._ZN6Ds130710_clearDataEv
+                0x0000000000000000       0x58 build/ds1307.o
+ .text._ZN6Ds1307C2Ev
+                0x0000000000000000       0x20 build/ds1307.o
+ .text._ZN6Ds13074initEP3Bus
+                0x0000000000000000       0x5e build/ds1307.o
+ .text._ZN6Ds130714_isInitializedEv
+                0x0000000000000000       0x1e build/ds1307.o
+ .text._ZN6Ds130722setSquareWaveGeneratorENS_10SquareWaveE
+                0x0000000000000000      0x144 build/ds1307.o
+ .text._ZN6Ds13078_getDataEv
+                0x0000000000000000      0x1d0 build/ds1307.o
+ .text._ZN6Ds13077getDateEPjPhS1_S1_
+                0x0000000000000000      0x14c build/ds1307.o
+ .text._ZN6Ds130711getDateTimeEP8DateTime
+                0x0000000000000000       0x54 build/ds1307.o
+ .text._ZN6Ds13077getTimeEPhS0_S0_N8DateTime10TimeFormatEPNS1_8AmPmFlagE
+                0x0000000000000000       0xd0 build/ds1307.o
+ .text._ZN6Ds13079_sendDataEv
+                0x0000000000000000      0x286 build/ds1307.o
+ .text._ZN6Ds13077setDateEjhh
+                0x0000000000000000       0x7e build/ds1307.o
+ .text._ZN6Ds130711setDateTimeE8DateTime
+                0x0000000000000000       0x72 build/ds1307.o
+ .text._ZN6Ds13077setTimeEhhhN8DateTime10TimeFormatENS0_8AmPmFlagE
+                0x0000000000000000       0x7e build/ds1307.o
+ .text._ZN6Ds130712_setCountingEb
+                0x0000000000000000      0x156 build/ds1307.o
+ .text._ZN6Ds130710clockStartEv
+                0x0000000000000000       0x1e build/ds1307.o
+ .text._ZN6Ds13079clockStopEv
+                0x0000000000000000       0x1e build/ds1307.o
+ .comment       0x0000000000000000       0x13 build/ds1307.o
+ .text          0x0000000000000000        0x0 build/hd44780.o
+ .data          0x0000000000000000        0x0 build/hd44780.o
+ .bss           0x0000000000000000        0x0 build/hd44780.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/hd44780.o
+ .text._ZN7Hd44780C2Ev
+                0x0000000000000000       0x64 build/hd44780.o
+ .text._ZN7Hd44780D2Ev
+                0x0000000000000000        0x2 build/hd44780.o
+ .text._ZN7Hd4478014controlPortSetEPVhhhh
+                0x0000000000000000       0x96 build/hd44780.o
+ .text._ZN7Hd4478011dataPortSetEPVhh
+                0x0000000000000000       0x6a build/hd44780.o
+ .text._ZN7Hd447805stdioEv
+                0x0000000000000000       0x30 build/hd44780.o
+ .text._ZN7Hd4478012getLastErrorEv
+                0x0000000000000000        0x8 build/hd44780.o
+ .text._ZN7Hd4478017_functionSet8BitsEh
+                0x0000000000000000      0x11c build/hd44780.o
+ .text._ZN7Hd4478015_waitUntilReadyEv
+                0x0000000000000000      0x214 build/hd44780.o
+ .text._ZN7Hd4478013_writeCommandEh
+                0x0000000000000000      0x1ce build/hd44780.o
+ .text._ZN7Hd447804initENS_4SizeENS_4FontEbb
+                0x0000000000000000      0x2c8 build/hd44780.o
+ .text._ZN7Hd4478011clearScreenEv
+                0x0000000000000000       0x2a build/hd44780.o
+ .text._ZN7Hd4478010cursorGoToEhh
+                0x0000000000000000       0xce build/hd44780.o
+ .text._ZN7Hd4478018cursorMoveNextLineEv
+                0x0000000000000000       0x48 build/hd44780.o
+ .text._ZN7Hd4478010cursorHomeEv
+                0x0000000000000000       0x2a build/hd44780.o
+ .text._ZN7Hd4478010cursorMoveE9Direction
+                0x0000000000000000       0x50 build/hd44780.o
+ .text._ZN7Hd4478019cursorMoveFirstLineEv
+                0x0000000000000000       0x2a build/hd44780.o
+ .text._ZN7Hd4478015displayStateSetENS_12DisplayStateE
+                0x0000000000000000       0x78 build/hd44780.o
+ .text._ZN7Hd4478012displayShiftE9Direction
+                0x0000000000000000       0x50 build/hd44780.o
+ .text._ZN7Hd4478012entryModeSetENS_4StepENS_11DisplayModeE
+                0x0000000000000000       0x4a build/hd44780.o
+ .text._ZN7Hd4478015_writeCharacterEhb
+                0x0000000000000000      0x1d2 build/hd44780.o
+ .text._ZL11lcdWriteStdcP6__file
+                0x0000000000000000       0x68 build/hd44780.o
+ .text._ZN7Hd4478018customCharacterSetEhPKh
+                0x0000000000000000       0x90 build/hd44780.o
+ .bss.defaultDisplay
+                0x0000000000000000        0x2 build/hd44780.o
+ .bss.lcdStream
+                0x0000000000000000        0xe build/hd44780.o
+ .comment       0x0000000000000000       0x13 build/hd44780.o
+ .text          0x0000000000000000        0x0 build/keypad.o
+ .data          0x0000000000000000        0x0 build/keypad.o
+ .bss           0x0000000000000000        0x0 build/keypad.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/keypad.o
+ .text._ZN6KeypadD2Ev
+                0x0000000000000000       0x10 build/keypad.o
+ .text          0x0000000000000000        0x0 build/sevenSegmentsDisplay.o
+ .data          0x0000000000000000        0x0 build/sevenSegmentsDisplay.o
+ .bss           0x0000000000000000        0x0 build/sevenSegmentsDisplay.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/sevenSegmentsDisplay.o
+ .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+                0x0000000000000000       0x8e build/sevenSegmentsDisplay.o
+ .jumptables.gcc._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+                0x0000000000000000      0x200 build/sevenSegmentsDisplay.o
+ .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+                0x0000000000000000        0x6 build/sevenSegmentsDisplay.o
+ .comment       0x0000000000000000       0x13 build/sevenSegmentsDisplay.o
+ .text          0x0000000000000000        0x0 build/sevenSegmentsMuxDisplay.o
+ .data          0x0000000000000000        0x0 build/sevenSegmentsMuxDisplay.o
+ .bss           0x0000000000000000        0x0 build/sevenSegmentsMuxDisplay.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/sevenSegmentsMuxDisplay.o
+ .text._ZN23SevenSegmentsMuxDisplayC2Ev
+                0x0000000000000000       0x74 build/sevenSegmentsMuxDisplay.o
+ .text._ZN23SevenSegmentsMuxDisplayD2Ev
+                0x0000000000000000        0x2 build/sevenSegmentsMuxDisplay.o
+ .text._ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType
+                0x0000000000000000       0xfe build/sevenSegmentsMuxDisplay.o
+ .text._ZN23SevenSegmentsMuxDisplay8setPortsEPVhS1_h10LogicLevel
+                0x0000000000000000       0xe6 build/sevenSegmentsMuxDisplay.o
+ .text._ZN23SevenSegmentsMuxDisplay13showNextDigitEv
+                0x0000000000000000      0x128 build/sevenSegmentsMuxDisplay.o
+ .text._ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb
+                0x0000000000000000       0x82 build/sevenSegmentsMuxDisplay.o
+ .rodata._ZL31constSevenSegmentMuxDisplayMask
+                0x0000000000000000        0x8 build/sevenSegmentsMuxDisplay.o
+ .comment       0x0000000000000000       0x13 build/sevenSegmentsMuxDisplay.o
+ .text          0x0000000000000000        0x0 build/adc.o
+ .data          0x0000000000000000        0x0 build/adc.o
+ .bss           0x0000000000000000        0x0 build/adc.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/adc.o
+ .text._ZN3AdcD2Ev
+                0x0000000000000000        0x2 build/adc.o
+ .text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE
+                0x0000000000000000       0x56 build/adc.o
+ .text._ZN3Adc13setDataAdjustENS_10DataAdjustE
+                0x0000000000000000       0x2e build/adc.o
+ .text._ZN3Adc7setModeENS_4ModeE
+                0x0000000000000000       0x34 build/adc.o
+ .text._ZN3Adc12setPrescalerENS_9PrescalerE
+                0x0000000000000000       0x1a build/adc.o
+ .text._ZN3Adc12setReferenceENS_9ReferenceE
+                0x0000000000000000       0x22 build/adc.o
+ .text._ZN3Adc19disableDigitalInputENS_12DigitalInputE
+                0x0000000000000000        0xe build/adc.o
+ .text._ZN3Adc18enableDigitalInputENS_12DigitalInputE
+                0x0000000000000000        0xe build/adc.o
+ .text._ZN3Adc10setChannelENS_7ChannelE
+                0x0000000000000000       0x1a build/adc.o
+ .text._ZN3Adc17activateInterruptEv
+                0x0000000000000000       0x1c build/adc.o
+ .text._ZN3Adc21clearInterruptRequestEv
+                0x0000000000000000       0x18 build/adc.o
+ .text._ZN3Adc19deactivateInterruptEv
+                0x0000000000000000       0x1c build/adc.o
+ .text._ZN3Adc6enableEv
+                0x0000000000000000       0x1c build/adc.o
+ .text._ZN3Adc7disableEv
+                0x0000000000000000       0x1c build/adc.o
+ .text._ZN3Adc12getLastErrorEv
+                0x0000000000000000        0x8 build/adc.o
+ .text._ZN3Adc15startConversionEv
+                0x0000000000000000       0x18 build/adc.o
+ .text._ZN3Adc25waitUntilConversionFinishEv
+                0x0000000000000000       0x1a build/adc.o
+ .text          0x0000000000000000        0x0 build/int0.o
+ .data          0x0000000000000000        0x0 build/int0.o
+ .bss           0x0000000000000000        0x0 build/int0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/int0.o
+ .text._ZN4Int0D2Ev
+                0x0000000000000000        0x2 build/int0.o
+ .text._ZN4Int04initENS_9SenseModeE
+                0x0000000000000000       0x20 build/int0.o
+ .text._ZN4Int012setSenseModeENS_9SenseModeE
+                0x0000000000000000       0x1a build/int0.o
+ .text._ZN4Int012getLastErrorEv
+                0x0000000000000000        0x8 build/int0.o
+ .text          0x0000000000000000        0x0 build/int1.o
+ .data          0x0000000000000000        0x0 build/int1.o
+ .bss           0x0000000000000000        0x0 build/int1.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/int1.o
+ .text._ZN4Int1D2Ev
+                0x0000000000000000        0x2 build/int1.o
+ .text._ZN4Int14initENS_9SenseModeE
+                0x0000000000000000       0x26 build/int1.o
+ .text._ZN4Int112setSenseModeENS_9SenseModeE
+                0x0000000000000000       0x20 build/int1.o
+ .text._ZN4Int112getLastErrorEv
+                0x0000000000000000        0x8 build/int1.o
+ .text          0x0000000000000000        0x0 build/pcint0.o
+ .data          0x0000000000000000        0x0 build/pcint0.o
+ .bss           0x0000000000000000        0x0 build/pcint0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/pcint0.o
+ .text._ZN6Pcint0D2Ev
+                0x0000000000000000        0x2 build/pcint0.o
+ .text._ZN6Pcint04initENS_3PinE
+                0x0000000000000000       0x1c build/pcint0.o
+ .text._ZN6Pcint010enablePinsENS_3PinE
+                0x0000000000000000       0x1a build/pcint0.o
+ .text._ZN6Pcint011disablePinsENS_3PinE
+                0x0000000000000000       0x1c build/pcint0.o
+ .text._ZN6Pcint012getLastErrorEv
+                0x0000000000000000        0x8 build/pcint0.o
+ .text          0x0000000000000000        0x0 build/pcint1.o
+ .data          0x0000000000000000        0x0 build/pcint1.o
+ .bss           0x0000000000000000        0x0 build/pcint1.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/pcint1.o
+ .text._ZN6Pcint1D2Ev
+                0x0000000000000000        0x2 build/pcint1.o
+ .text._ZN6Pcint14initENS_3PinE
+                0x0000000000000000       0x20 build/pcint1.o
+ .text._ZN6Pcint110enablePinsENS_3PinE
+                0x0000000000000000       0x1e build/pcint1.o
+ .text._ZN6Pcint111disablePinsENS_3PinE
+                0x0000000000000000       0x20 build/pcint1.o
+ .text._ZN6Pcint112getLastErrorEv
+                0x0000000000000000        0x8 build/pcint1.o
+ .text          0x0000000000000000        0x0 build/pcint2.o
+ .data          0x0000000000000000        0x0 build/pcint2.o
+ .bss           0x0000000000000000        0x0 build/pcint2.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/pcint2.o
+ .text._ZN6Pcint2D2Ev
+                0x0000000000000000        0x2 build/pcint2.o
+ .text._ZN6Pcint24initENS_3PinE
+                0x0000000000000000       0x1c build/pcint2.o
+ .text._ZN6Pcint210enablePinsENS_3PinE
+                0x0000000000000000       0x1a build/pcint2.o
+ .text._ZN6Pcint211disablePinsENS_3PinE
+                0x0000000000000000       0x1c build/pcint2.o
+ .text._ZN6Pcint212getLastErrorEv
+                0x0000000000000000        0x8 build/pcint2.o
+ .text          0x0000000000000000        0x0 build/timer0.o
+ .data          0x0000000000000000        0x0 build/timer0.o
+ .bss           0x0000000000000000        0x0 build/timer0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/timer0.o
+ .text._ZN6Timer0D2Ev
+                0x0000000000000000        0x2 build/timer0.o
+ .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE
+                0x0000000000000000       0x38 build/timer0.o
+ .text._ZN6Timer07setModeENS_4ModeE
+                0x0000000000000000       0x2e build/timer0.o
+ .text._ZN6Timer014setClockSourceENS_11ClockSourceE
+                0x0000000000000000       0x16 build/timer0.o
+ .text._ZN6Timer013setOutputModeENS_10OutputModeES0_
+                0x0000000000000000       0x26 build/timer0.o
+ .text._ZN6Timer012getLastErrorEv
+                0x0000000000000000        0x8 build/timer0.o
+ .text          0x0000000000000000        0x0 build/timer1.o
+ .data          0x0000000000000000        0x0 build/timer1.o
+ .bss           0x0000000000000000        0x0 build/timer1.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/timer1.o
+ .text._ZN6Timer1D2Ev
+                0x0000000000000000        0x2 build/timer1.o
+ .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE
+                0x0000000000000000       0x48 build/timer1.o
+ .text._ZN6Timer17setModeENS_4ModeE
+                0x0000000000000000       0x3e build/timer1.o
+ .text._ZN6Timer114setClockSourceENS_11ClockSourceE
+                0x0000000000000000       0x1a build/timer1.o
+ .text._ZN6Timer113setOutputModeENS_10OutputModeES0_
+                0x0000000000000000       0x2e build/timer1.o
+ .text._ZN6Timer119setInputCaptureModeE4Edgeb
+                0x0000000000000000       0x28 build/timer1.o
+ .text._ZN6Timer112getLastErrorEv
+                0x0000000000000000        0x8 build/timer1.o
+ .text          0x0000000000000000        0x0 build/timer2.o
+ .data          0x0000000000000000        0x0 build/timer2.o
+ .bss           0x0000000000000000        0x0 build/timer2.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/timer2.o
+ .text._ZN6Timer2D2Ev
+                0x0000000000000000        0x2 build/timer2.o
+ .text._ZN6Timer24initENS_4ModeENS_11ClockSourceE
+                0x0000000000000000       0x48 build/timer2.o
+ .text._ZN6Timer27setModeENS_4ModeE
+                0x0000000000000000       0x3e build/timer2.o
+ .text._ZN6Timer214setClockSourceENS_11ClockSourceE
+                0x0000000000000000       0x1a build/timer2.o
+ .text._ZN6Timer213setOutputModeENS_10OutputModeES0_
+                0x0000000000000000       0x2e build/timer2.o
+ .text._ZN6Timer212getLastErrorEv
+                0x0000000000000000        0x8 build/timer2.o
+ .group         0x0000000000000000        0x8 build/twi.o
+ .group         0x0000000000000000        0x8 build/twi.o
+ .group         0x0000000000000000        0x8 build/twi.o
+ .group         0x0000000000000000        0xc build/twi.o
+ .text          0x0000000000000000        0x0 build/twi.o
+ .data          0x0000000000000000        0x0 build/twi.o
+ .bss           0x0000000000000000        0x0 build/twi.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/twi.o
+ .text._ZN3TwiD2Ev
+                0x0000000000000000        0x2 build/twi.o
+ .text._ZN3Twi10setTimeoutEj
+                0x0000000000000000       0x10 build/twi.o
+ .text          0x0000000000000000        0x0 build/usart0.o
+ .data          0x0000000000000000        0x0 build/usart0.o
+ .bss           0x0000000000000000        0x0 build/usart0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/usart0.o
+ .text._ZN6Usart0D2Ev
+                0x0000000000000000        0x2 build/usart0.o
+ .text._ZN6Usart07setModeENS_4ModeE
+                0x0000000000000000       0x22 build/usart0.o
+ .text._ZN6Usart011setDataSizeENS_8DataSizeE
+                0x0000000000000000       0x26 build/usart0.o
+ .text._ZN6Usart011setStopBitsENS_8StopBitsE
+                0x0000000000000000       0x24 build/usart0.o
+ .text._ZN6Usart09setParityENS_6ParityE
+                0x0000000000000000       0x22 build/usart0.o
+ .text._ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE
+                0x0000000000000000       0x48 build/usart0.o
+ .text._ZN6Usart015_receiveDataStdEP6__file
+                0x0000000000000000        0x4 build/usart0.o
+ .text._ZN6Usart022_clearDataOverrunErrorEv
+                0x0000000000000000        0xc build/usart0.o
+ .text._ZN6Usart016_clearFrameErrorEv
+                0x0000000000000000        0xc build/usart0.o
+ .text._ZN6Usart017_clearParityErrorEv
+                0x0000000000000000        0xc build/usart0.o
+ .text._ZN6Usart08sendDataEj
+                0x0000000000000000       0x5c build/usart0.o
+ .text._ZN6Usart011receiveDataEPj
+                0x0000000000000000       0x6e build/usart0.o
+ .text._ZN6Usart020flushReceptionBufferEv
+                0x0000000000000000       0x1a build/usart0.o
+ .text._ZN6Usart014receiveDataStdEP6__file
+                0x0000000000000000       0x10 build/usart0.o
+ .text._Z36usartTransmissionBufferEmptyCallbackv
+                0x0000000000000000        0x2 build/usart0.o
+ .text          0x0000000000000000        0x0 build/dateTime.o
+ .data          0x0000000000000000        0x0 build/dateTime.o
+ .bss           0x0000000000000000        0x0 build/dateTime.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/dateTime.o
+ .text._ZN8DateTimeD2Ev
+                0x0000000000000000        0x2 build/dateTime.o
+ .text._ZN8DateTime12getLastErrorEv
+                0x0000000000000000        0x8 build/dateTime.o
+ .text._ZN8DateTime9isDateSetEv
+                0x0000000000000000        0xe build/dateTime.o
+ .text._ZN8DateTime9isTimeSetEv
+                0x0000000000000000       0x10 build/dateTime.o
+ .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE
+                0x0000000000000000       0x8a build/dateTime.o
+ .text._ZN8DateTime10getWeekDayEPNS_7WeekDayE
+                0x0000000000000000       0x2e build/dateTime.o
+ .text._ZN8DateTime10isLeapYearEv
+                0x0000000000000000       0x24 build/dateTime.o
+ .text._ZN8DateTime13getTimeFormatEPNS_10TimeFormatE
+                0x0000000000000000       0x30 build/dateTime.o
+ .text._ZN8DateTime11getTimeZoneEPNS_8TimeZoneE
+                0x0000000000000000       0x24 build/dateTime.o
+ .text._ZN8DateTime11setTimeZoneENS_8TimeZoneE
+                0x0000000000000000        0xe build/dateTime.o
+ .text._ZN8DateTime10_clearDataEv
+                0x0000000000000000       0x38 build/dateTime.o
+ .text._ZN8DateTimeC2Ev
+                0x0000000000000000       0x18 build/dateTime.o
+ .rodata._ZN8DateTime18_evaluateDayOfWeekEv.str1.1
+                0x0000000000000000        0xe build/dateTime.o
+ .text._ZN8DateTime18_evaluateDayOfWeekEv
+                0x0000000000000000       0xbc build/dateTime.o
+ .text._ZN8DateTime11_isLeapYearEj
+                0x0000000000000000       0x74 build/dateTime.o
+ .text._ZN8DateTime12_isValidDateEjNS_5MonthEh
+                0x0000000000000000       0x9a build/dateTime.o
+ .text._ZN8DateTime7setDateEjNS_5MonthEh
+                0x0000000000000000       0x7a build/dateTime.o
+ .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+                0x0000000000000000       0x84 build/dateTime.o
+ .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE
+                0x0000000000000000      0x15c build/dateTime.o
+ .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE
+                0x0000000000000000      0x198 build/dateTime.o
+ .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE
+                0x0000000000000000       0x8a build/dateTime.o
+ .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE
+                0x0000000000000000       0x52 build/dateTime.o
+ .text._ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE
+                0x0000000000000000       0x80 build/dateTime.o
+ .text._ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE
+                0x0000000000000000       0xba build/dateTime.o
+ .comment       0x0000000000000000       0x13 build/dateTime.o
+ .text          0x0000000000000000        0x0 build/debug.o
+ .data          0x0000000000000000        0x0 build/debug.o
+ .bss           0x0000000000000000        0x0 build/debug.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/debug.o
+ .text._ZN5DebugC2Ev
+                0x0000000000000000        0x2 build/debug.o
+ .text._ZN5DebugD2Ev
+                0x0000000000000000        0x2 build/debug.o
+ .bss.debug     0x0000000000000000        0x1 build/debug.o
+ .comment       0x0000000000000000       0x13 build/debug.o
+ .text          0x0000000000000000        0x0 build/sound.o
+ .data          0x0000000000000000        0x0 build/sound.o
+ .bss           0x0000000000000000        0x0 build/sound.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/sound.o
+ .text._Z9playNotesP4Note
+                0x0000000000000000       0xc0 build/sound.o
+ .rodata._ZL13notesOcrValue
+                0x0000000000000000       0xd8 build/sound.o
+ .data.notesPrescaler
+                0x0000000000000000       0x6c build/sound.o
+ .comment       0x0000000000000000       0x13 build/sound.o
+ .text          0x0000000000000000        0x0 build/systemStatus.o
+ .data          0x0000000000000000        0x0 build/systemStatus.o
+ .bss           0x0000000000000000        0x0 build/systemStatus.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/systemStatus.o
+ .text._ZN12SystemStatusD2Ev
+                0x0000000000000000        0x2 build/systemStatus.o
+ .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+                0x0000000000000000       0xec build/systemStatus.o
+ .jumptables.gcc._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+                0x0000000000000000       0x10 build/systemStatus.o
+ .text._ZN12SystemStatus12getLastErrorEv
+                0x0000000000000000        0x8 build/systemStatus.o
+ .text._ZN12SystemStatus15resumeStopwatchEv
+                0x0000000000000000        0xc build/systemStatus.o
+ .text._ZN12SystemStatus14pauseStopwatchEv
+                0x0000000000000000        0xc build/systemStatus.o
+ .text._ZN12SystemStatus14resetStopwatchEv
+                0x0000000000000000       0x16 build/systemStatus.o
+ .text._ZN12SystemStatus16setStopwatchMarkEv
+                0x0000000000000000       0x16 build/systemStatus.o
+ .text._ZN12SystemStatus18incrementStopwatchEv
+                0x0000000000000000       0x22 build/systemStatus.o
+ .text._ZN12SystemStatus14getElapsedTimeEb
+                0x0000000000000000       0x6e build/systemStatus.o
+ .text          0x0000000000000000        0x0 build/main.o
+ .data          0x0000000000000000        0x0 build/main.o
+ .bss           0x0000000000000000        0x0 build/main.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/main.o
+ .bss.printRawValue
+                0x0000000000000000        0x1 build/main.o
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .debug_line    0x0000000000000000       0xb7 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .debug_line_str
+                0x0000000000000000       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .debug_info    0x0000000000000000       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .debug_abbrev  0x0000000000000000       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .debug_str     0x0000000000000000       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_line    0x0000000000000000       0xbd e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_line_str
+                0x0000000000000000       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_info    0x0000000000000000       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_abbrev  0x0000000000000000       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_str     0x0000000000000000       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .bss           0x0000000000000000        0x6 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .comment       0x0000000000000000       0x13 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .text          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .data          0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .bss           0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD build/diskio.o
+LOAD build/ff.o
+LOAD build/ffsystem.o
+LOAD build/ffunicode.o
+LOAD build/mmc_avr_spi.o
+LOAD build/spiMaster.o
+LOAD build/ds1307.o
+LOAD build/hd44780.o
+LOAD build/keypad.o
+LOAD build/sevenSegmentsDisplay.o
+LOAD build/sevenSegmentsMuxDisplay.o
+LOAD build/adc.o
+LOAD build/int0.o
+LOAD build/int1.o
+LOAD build/pcint0.o
+LOAD build/pcint1.o
+LOAD build/pcint2.o
+LOAD build/timer0.o
+LOAD build/timer1.o
+LOAD build/timer2.o
+LOAD build/twi.o
+LOAD build/usart0.o
+LOAD build/dateTime.o
+LOAD build/debug.o
+LOAD build/sound.o
+LOAD build/systemStatus.o
+LOAD build/main.o
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a
+LOAD e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x0000000000020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x000000000000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x0000000000010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x2dd4
+ *(.vectors)
+ .vectors       0x0000000000000000       0x68 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000068                . = ALIGN (0x2)
+                0x0000000000000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000068        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+                0x0000000000000068                . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000068                __ctors_start = .
+ *(.ctors)
+ .ctors         0x0000000000000068        0x2 build/adc.o
+ .ctors         0x000000000000006a        0x2 build/int0.o
+ .ctors         0x000000000000006c        0x2 build/int1.o
+ .ctors         0x000000000000006e        0x2 build/pcint0.o
+ .ctors         0x0000000000000070        0x2 build/pcint1.o
+ .ctors         0x0000000000000072        0x2 build/pcint2.o
+ .ctors         0x0000000000000074        0x2 build/timer0.o
+ .ctors         0x0000000000000076        0x2 build/timer1.o
+ .ctors         0x0000000000000078        0x2 build/timer2.o
+ .ctors         0x000000000000007a        0x2 build/twi.o
+ .ctors         0x000000000000007c        0x2 build/usart0.o
+ .ctors         0x000000000000007e        0x2 build/systemStatus.o
+                0x0000000000000080                __ctors_end = .
+                0x0000000000000080                __dtors_start = .
+ *(.dtors)
+                0x0000000000000080                __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000080        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000080                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000080        0xc e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000008c       0x16 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                0x000000000000008c                __do_copy_data
+ .init4         0x00000000000000a2       0x10 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000000000000a2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000000000000b2       0x16 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+                0x00000000000000b2                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000c8        0x8 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000d0        0x4 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000000000d0                __bad_interrupt
+                0x00000000000000d0                __vector_6
+                0x00000000000000d0                __vector_23
+                0x00000000000000d0                __vector_25
+                0x00000000000000d0                __vector_17
+                0x00000000000000d0                __vector_22
+                0x00000000000000d4                . = ALIGN (0x2)
+ *(.text.*)
+ .text._ZN6KeypadC2Ev
+                0x00000000000000d4       0x36 build/keypad.o
+                0x00000000000000d4                _ZN6KeypadC2Ev
+                0x00000000000000d4                _ZN6KeypadC1Ev
+ .text._ZN6Keypad4initEh
+                0x000000000000010a      0x1ea build/keypad.o
+                0x000000000000010a                _ZN6Keypad4initEh
+ .text._ZN6Keypad8setPortsEPVhhS1_h
+                0x00000000000002f4       0xe8 build/keypad.o
+                0x00000000000002f4                _ZN6Keypad8setPortsEPVhhS1_h
+ .text._ZN6Keypad12setKeyValuesENS_4TypeEz
+                0x00000000000003dc      0x146 build/keypad.o
+                0x00000000000003dc                _ZN6Keypad12setKeyValuesENS_4TypeEz
+ .text._ZN6Keypad14readKeyPressedEPh
+                0x0000000000000522      0x1c0 build/keypad.o
+                0x0000000000000522                _ZN6Keypad14readKeyPressedEPh
+ .text._ZN3AdcC2Ev
+                0x00000000000006e2       0x26 build/adc.o
+                0x00000000000006e2                _ZN3AdcC1Ev
+                0x00000000000006e2                _ZN3AdcC2Ev
+ .text._Z29adcConversionCompleteCallbackv
+                0x0000000000000708        0x2 build/adc.o
+                0x0000000000000708                _Z29adcConversionCompleteCallbackv
+ .text.__vector_21
+                0x000000000000070a       0x48 build/adc.o
+                0x000000000000070a                __vector_21
+ .text._GLOBAL__sub_I_adc
+                0x0000000000000752        0xa build/adc.o
+ .text._ZN4Int0C2Ev
+                0x000000000000075c       0x12 build/int0.o
+                0x000000000000075c                _ZN4Int0C1Ev
+                0x000000000000075c                _ZN4Int0C2Ev
+ .text._Z21int0InterruptCallbackv
+                0x000000000000076e        0x2 build/int0.o
+                0x000000000000076e                _Z21int0InterruptCallbackv
+ .text.__vector_1
+                0x0000000000000770       0x48 build/int0.o
+                0x0000000000000770                __vector_1
+ .text._GLOBAL__sub_I_int0
+                0x00000000000007b8        0xa build/int0.o
+ .text._ZN4Int1C2Ev
+                0x00000000000007c2       0x12 build/int1.o
+                0x00000000000007c2                _ZN4Int1C1Ev
+                0x00000000000007c2                _ZN4Int1C2Ev
+ .text._Z21int1InterruptCallbackv
+                0x00000000000007d4        0x2 build/int1.o
+                0x00000000000007d4                _Z21int1InterruptCallbackv
+ .text.__vector_2
+                0x00000000000007d6       0x48 build/int1.o
+                0x00000000000007d6                __vector_2
+ .text._GLOBAL__sub_I_int1
+                0x000000000000081e        0xa build/int1.o
+ .text._ZN6Pcint0C2Ev
+                0x0000000000000828       0x12 build/pcint0.o
+                0x0000000000000828                _ZN6Pcint0C2Ev
+                0x0000000000000828                _ZN6Pcint0C1Ev
+ .text._Z23pcint0InterruptCallbackv
+                0x000000000000083a        0x2 build/pcint0.o
+                0x000000000000083a                _Z23pcint0InterruptCallbackv
+ .text.__vector_3
+                0x000000000000083c       0x48 build/pcint0.o
+                0x000000000000083c                __vector_3
+ .text._GLOBAL__sub_I_pcint0
+                0x0000000000000884        0xa build/pcint0.o
+ .text._ZN6Pcint1C2Ev
+                0x000000000000088e       0x12 build/pcint1.o
+                0x000000000000088e                _ZN6Pcint1C1Ev
+                0x000000000000088e                _ZN6Pcint1C2Ev
+ .text._Z23pcint1InterruptCallbackv
+                0x00000000000008a0        0x2 build/pcint1.o
+                0x00000000000008a0                _Z23pcint1InterruptCallbackv
+ .text.__vector_4
+                0x00000000000008a2       0x48 build/pcint1.o
+                0x00000000000008a2                __vector_4
+ .text._GLOBAL__sub_I_pcint1
+                0x00000000000008ea        0xa build/pcint1.o
+ .text._ZN6Pcint2C2Ev
+                0x00000000000008f4       0x12 build/pcint2.o
+                0x00000000000008f4                _ZN6Pcint2C1Ev
+                0x00000000000008f4                _ZN6Pcint2C2Ev
+ .text._Z23pcint2InterruptCallbackv
+                0x0000000000000906        0x2 build/pcint2.o
+                0x0000000000000906                _Z23pcint2InterruptCallbackv
+ .text.__vector_5
+                0x0000000000000908       0x48 build/pcint2.o
+                0x0000000000000908                __vector_5
+ .text._GLOBAL__sub_I_pcint2
+                0x0000000000000950        0xa build/pcint2.o
+ .text._ZN6Timer0C2Ev
+                0x000000000000095a       0x14 build/timer0.o
+                0x000000000000095a                _ZN6Timer0C2Ev
+                0x000000000000095a                _ZN6Timer0C1Ev
+ .text._Z22timer0CompareACallbackv
+                0x000000000000096e        0x2 build/timer0.o
+                0x000000000000096e                _Z22timer0CompareACallbackv
+ .text._Z22timer0CompareBCallbackv
+                0x0000000000000970        0x2 build/timer0.o
+                0x0000000000000970                _Z22timer0CompareBCallbackv
+ .text._Z22timer0OverflowCallbackv
+                0x0000000000000972        0x2 build/timer0.o
+                0x0000000000000972                _Z22timer0OverflowCallbackv
+ .text.__vector_14
+                0x0000000000000974       0x48 build/timer0.o
+                0x0000000000000974                __vector_14
+ .text.__vector_15
+                0x00000000000009bc       0x48 build/timer0.o
+                0x00000000000009bc                __vector_15
+ .text.__vector_16
+                0x0000000000000a04       0x48 build/timer0.o
+                0x0000000000000a04                __vector_16
+ .text._GLOBAL__sub_I_timer0
+                0x0000000000000a4c        0xa build/timer0.o
+ .text._ZN6Timer1C2Ev
+                0x0000000000000a56       0x14 build/timer1.o
+                0x0000000000000a56                _ZN6Timer1C1Ev
+                0x0000000000000a56                _ZN6Timer1C2Ev
+ .text._Z22timer1CompareACallbackv
+                0x0000000000000a6a        0x2 build/timer1.o
+                0x0000000000000a6a                _Z22timer1CompareACallbackv
+ .text._Z22timer1CompareBCallbackv
+                0x0000000000000a6c        0x2 build/timer1.o
+                0x0000000000000a6c                _Z22timer1CompareBCallbackv
+ .text._Z26timer1InputCaptureCallbackv
+                0x0000000000000a6e        0x2 build/timer1.o
+                0x0000000000000a6e                _Z26timer1InputCaptureCallbackv
+ .text._Z22timer1OverflowCallbackv
+                0x0000000000000a70        0x2 build/timer1.o
+                0x0000000000000a70                _Z22timer1OverflowCallbackv
+ .text.__vector_11
+                0x0000000000000a72       0x48 build/timer1.o
+                0x0000000000000a72                __vector_11
+ .text.__vector_12
+                0x0000000000000aba       0x48 build/timer1.o
+                0x0000000000000aba                __vector_12
+ .text.__vector_10
+                0x0000000000000b02       0x48 build/timer1.o
+                0x0000000000000b02                __vector_10
+ .text.__vector_13
+                0x0000000000000b4a       0x48 build/timer1.o
+                0x0000000000000b4a                __vector_13
+ .text._GLOBAL__sub_I_timer1
+                0x0000000000000b92        0xa build/timer1.o
+ .text._ZN6Timer2C2Ev
+                0x0000000000000b9c       0x14 build/timer2.o
+                0x0000000000000b9c                _ZN6Timer2C2Ev
+                0x0000000000000b9c                _ZN6Timer2C1Ev
+ .text._Z22timer2CompareACallbackv
+                0x0000000000000bb0        0x2 build/timer2.o
+                0x0000000000000bb0                _Z22timer2CompareACallbackv
+ .text._Z22timer2CompareBCallbackv
+                0x0000000000000bb2        0x2 build/timer2.o
+                0x0000000000000bb2                _Z22timer2CompareBCallbackv
+ .text._Z22timer2OverflowCallbackv
+                0x0000000000000bb4        0x2 build/timer2.o
+                0x0000000000000bb4                _Z22timer2OverflowCallbackv
+ .text.__vector_7
+                0x0000000000000bb6       0x48 build/timer2.o
+                0x0000000000000bb6                __vector_7
+ .text.__vector_8
+                0x0000000000000bfe       0x48 build/timer2.o
+                0x0000000000000bfe                __vector_8
+ .text.__vector_9
+                0x0000000000000c46       0x48 build/timer2.o
+                0x0000000000000c46                __vector_9
+ .text._GLOBAL__sub_I_timer2
+                0x0000000000000c8e        0xa build/timer2.o
+ .text._ZN3Bus8sendDataEPhj
+                0x0000000000000c98        0xe build/twi.o
+                0x0000000000000c98                _ZN3Bus8sendDataEPhj
+ .text._ZN3Bus8sendDataEPKhPhj
+                0x0000000000000ca6        0xe build/twi.o
+                0x0000000000000ca6                _ZN3Bus8sendDataEPKhPhj
+ .text._ZN3Bus9setDeviceEPFvvES1_
+                0x0000000000000cb4        0xe build/twi.o
+                0x0000000000000cb4                _ZN3Bus9setDeviceEPFvvES1_
+ .text._ZN3Twi9setDeviceEjb
+                0x0000000000000cc2       0x42 build/twi.o
+                0x0000000000000cc2                _ZN3Twi9setDeviceEjb
+ .text._ZN3Twi10getBusTypeEv
+                0x0000000000000d04        0x6 build/twi.o
+                0x0000000000000d04                _ZN3Twi10getBusTypeEv
+ .text._ZN3Twi12getLastErrorEv
+                0x0000000000000d0a        0x8 build/twi.o
+                0x0000000000000d0a                _ZN3Twi12getLastErrorEv
+ .text._ZN3TwiC2Ev
+                0x0000000000000d12       0x30 build/twi.o
+                0x0000000000000d12                _ZN3TwiC1Ev
+                0x0000000000000d12                _ZN3TwiC2Ev
+ .text._ZN3Twi4initEmh
+                0x0000000000000d42      0x1bc build/twi.o
+                0x0000000000000d42                _ZN3Twi4initEmh
+ .text._ZN3Twi16_waitWhileIsBusyEv
+                0x0000000000000efe       0xaa build/twi.o
+                0x0000000000000efe                _ZN3Twi16_waitWhileIsBusyEv
+ .text._ZN3Twi17_startTrasmissionEv
+                0x0000000000000fa8       0x20 build/twi.o
+                0x0000000000000fa8                _ZN3Twi17_startTrasmissionEv
+ .text._ZN3Twi15_readFromBufferEPhh
+                0x0000000000000fc8       0x54 build/twi.o
+                0x0000000000000fc8                _ZN3Twi15_readFromBufferEPhh
+ .text._ZN3Twi8sendDataEhNS_9OperationEhPhh
+                0x000000000000101c      0x152 build/twi.o
+                0x000000000000101c                _ZN3Twi8sendDataEhNS_9OperationEhPhh
+ .text._ZN3Twi7readRegEhPhj
+                0x000000000000116e       0x58 build/twi.o
+                0x000000000000116e                _ZN3Twi7readRegEhPhj
+ .text._ZN3Twi8writeRegEhPKhj
+                0x00000000000011c6       0x58 build/twi.o
+                0x00000000000011c6                _ZN3Twi8writeRegEhPKhj
+ .text._ZN3Twi16interruptHandlerEv
+                0x000000000000121e      0x102 build/twi.o
+                0x000000000000121e                _ZN3Twi16interruptHandlerEv
+ .text.__vector_24
+                0x0000000000001320       0x4c build/twi.o
+                0x0000000000001320                __vector_24
+ .text._GLOBAL__sub_I_twi
+                0x000000000000136c        0xa build/twi.o
+ .text._ZN6Usart04initEv
+                0x0000000000001376      0x1be build/usart0.o
+                0x0000000000001376                _ZN6Usart04initEv
+ .text._ZN6Usart011setBaudRateENS_8BaudRateE
+                0x0000000000001534      0x130 build/usart0.o
+                0x0000000000001534                _ZN6Usart011setBaudRateENS_8BaudRateE
+ .text._ZN6Usart014setFrameFormatENS_11FrameFormatE
+                0x0000000000001664       0xba build/usart0.o
+                0x0000000000001664                _ZN6Usart014setFrameFormatENS_11FrameFormatE
+ .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+                0x000000000000171e       0x6c build/usart0.o
+                0x000000000000171e                _ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+                0x000000000000171e                _ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+ .text._ZN6Usart011sendDataStdEcP6__file
+                0x000000000000178a       0x14 build/usart0.o
+                0x000000000000178a                _ZN6Usart011sendDataStdEcP6__file
+ .text._Z23usartTransmitStdWrappercP6__file
+                0x000000000000179e       0x14 build/usart0.o
+                0x000000000000179e                _Z23usartTransmitStdWrappercP6__file
+ .text._Z30usartReceptionCompleteCallbackv
+                0x00000000000017b2        0x2 build/usart0.o
+                0x00000000000017b2                _Z30usartReceptionCompleteCallbackv
+ .text._Z33usartTransmissionCompleteCallbackv
+                0x00000000000017b4        0x2 build/usart0.o
+                0x00000000000017b4                _Z33usartTransmissionCompleteCallbackv
+ .text.__vector_18
+                0x00000000000017b6       0x48 build/usart0.o
+                0x00000000000017b6                __vector_18
+ .text.__vector_20
+                0x00000000000017fe       0x48 build/usart0.o
+                0x00000000000017fe                __vector_20
+ .text.__vector_19
+                0x0000000000001846       0x48 build/usart0.o
+                0x0000000000001846                __vector_19
+ .text._GLOBAL__sub_I_usartDefaultHandler
+                0x000000000000188e       0x1a build/usart0.o
+ .text._ZN12SystemStatusC2Ev
+                0x00000000000018a8       0x34 build/systemStatus.o
+                0x00000000000018a8                _ZN12SystemStatusC2Ev
+                0x00000000000018a8                _ZN12SystemStatusC1Ev
+ .text._ZN12SystemStatus11getCpuClockEv
+                0x00000000000018dc       0x30 build/systemStatus.o
+                0x00000000000018dc                _ZN12SystemStatus11getCpuClockEv
+ .text._ZN12SystemStatus13readStopwatchEv
+                0x000000000000190c       0x32 build/systemStatus.o
+                0x000000000000190c                _ZN12SystemStatus13readStopwatchEv
+ .text._GLOBAL__sub_I_systemStatus
+                0x000000000000193e        0xa build/systemStatus.o
+ .text._Z4playP4MIDI
+                0x0000000000001948       0x4c build/main.o
+                0x0000000000001948                _Z4playP4MIDI
+ .text._Z9init_midiP4MIDIh
+                0x0000000000001994       0x5a build/main.o
+                0x0000000000001994                _Z9init_midiP4MIDIh
+ .text._Z7note_onP4MIDIhch
+                0x00000000000019ee       0x44 build/main.o
+                0x00000000000019ee                _Z7note_onP4MIDIhch
+ .text._Z8note_offP4MIDIhc
+                0x0000000000001a32        0x8 build/main.o
+                0x0000000000001a32                _Z8note_offP4MIDIhc
+ .text._Z17change_instrumentP4MIDIh
+                0x0000000000001a3a       0x2c build/main.o
+                0x0000000000001a3a                _Z17change_instrumentP4MIDIh
+ .text._Z36usartTransmissionBufferEmptyCallbackv
+                0x0000000000001a66       0x7c build/main.o
+                0x0000000000001a66                _Z36usartTransmissionBufferEmptyCallbackv
+ .text.main     0x0000000000001ae2      0xccc build/main.o
+                0x0000000000001ae2                main
+ .text.libgcc.div
+                0x00000000000027ae       0x44 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000000000027ae                __udivmodsi4
+ .text.libgcc   0x00000000000027f2        0xc e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000000000027f2                __tablejump2__
+ .text.libgcc.mul
+                0x00000000000027fe       0x1e e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00000000000027fe                __umulhisi3
+ .text.libgcc.mul
+                0x000000000000281c       0x16 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+                0x000000000000281c                __muluhisi3
+ .text.libgcc.builtins
+                0x0000000000002832       0x3a e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+                0x0000000000002832                __ashrdi3
+                0x0000000000002836                __lshrdi3
+ .text.avr-libc
+                0x000000000000286c       0x38 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+                0x000000000000286c                calloc
+ .text.avr-libc
+                0x00000000000028a4      0x26e e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00000000000028a4                malloc
+                0x00000000000029d0                free
+ .text.avr-libc
+                0x0000000000002b12      0x16c e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                0x0000000000002b12                realloc
+ .text.avr-libc
+                0x0000000000002c7e       0x12 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x0000000000002c7e                memcpy
+ .text.avr-libc
+                0x0000000000002c90        0xe e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
+                0x0000000000002c90                memset
+ .text.libgcc.prologue
+                0x0000000000002c9e       0x38 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000002c9e                __prologue_saves__
+ .text.libgcc.prologue
+                0x0000000000002cd6       0x36 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000002cd6                __epilogue_restores__
+                0x0000000000002d0c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000002d0c        0x0 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x0000000000002d0c                _exit
+                0x0000000000002d0c                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000002d0c        0x4 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x0000000000002d10                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ .jumptables.gcc._ZN6Usart04initEv
+                0x0000000000002d10       0x10 build/usart0.o
+ .jumptables.gcc._ZN6Usart014setFrameFormatENS_11FrameFormatE
+                0x0000000000002d20       0x94 build/usart0.o
+ .jumptables.gcc.main
+                0x0000000000002db4       0x20 build/main.o
+                0x0000000000002dd4                _etext = .
+
+.data           0x0000000000800100       0x20 load address 0x0000000000002dd4
+                0x0000000000800100                PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x0000000000800100        0x6 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0000000000800100                __malloc_heap_end
+                0x0000000000800102                __malloc_heap_start
+                0x0000000000800104                __malloc_margin
+ *(.data*)
+ .data.Midi_Variable
+                0x0000000000800106        0x5 build/main.o
+                0x0000000000800106                Midi_Variable
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata._ZTV3Twi
+                0x000000000080010b       0x14 build/twi.o
+                0x000000000080010b                _ZTV3Twi
+ *(.gnu.linkonce.r*)
+                0x0000000000800120                . = ALIGN (0x2)
+ *fill*         0x000000000080011f        0x1 
+                0x0000000000800120                _edata = .
+                0x0000000000800120                PROVIDE (__data_end = .)
+
+.bss            0x0000000000800120       0x75
+                0x0000000000800120                PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x0000000000800120        0x4 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0000000000800120                __flp
+                0x0000000000800122                __brkval
+ *(.bss*)
+ .bss.adc       0x0000000000800124        0x9 build/adc.o
+                0x0000000000800124                adc
+ .bss.int0      0x000000000080012d        0x4 build/int0.o
+                0x000000000080012d                int0
+ .bss.int1      0x0000000000800131        0x4 build/int1.o
+                0x0000000000800131                int1
+ .bss.pcint0    0x0000000000800135        0x4 build/pcint0.o
+                0x0000000000800135                pcint0
+ .bss.pcint1    0x0000000000800139        0x4 build/pcint1.o
+                0x0000000000800139                pcint1
+ .bss.pcint2    0x000000000080013d        0x4 build/pcint2.o
+                0x000000000080013d                pcint2
+ .bss.timer0    0x0000000000800141        0x5 build/timer0.o
+                0x0000000000800141                timer0
+ .bss.timer1    0x0000000000800146        0x5 build/timer1.o
+                0x0000000000800146                timer1
+ .bss.timer2    0x000000000080014b        0x5 build/timer2.o
+                0x000000000080014b                timer2
+ .bss._ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+                0x0000000000800150        0x1 build/twi.o
+ .bss.twi       0x0000000000800151       0x13 build/twi.o
+                0x0000000000800151                twi
+ .bss.usartStream
+                0x0000000000800164        0xe build/usart0.o
+                0x0000000000800164                usartStream
+ .bss.usart0    0x0000000000800172        0xc build/usart0.o
+                0x0000000000800172                usart0
+ .bss.usartDefaultHandler
+                0x000000000080017e        0x2 build/usart0.o
+                0x000000000080017e                usartDefaultHandler
+ .bss.systemStatus
+                0x0000000000800180       0x15 build/systemStatus.o
+                0x0000000000800180                systemStatus
+ *(COMMON)
+                0x0000000000800195                PROVIDE (__bss_end = .)
+                0x0000000000002dd4                __data_load_start = LOADADDR (.data)
+                0x0000000000002df4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800195        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x0000000000800195                _end = .
+                0x0000000000800195                PROVIDE (__heap_start = .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 build/keypad.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 build/adc.o
+ .comment       0x0000000000000012       0x13 build/int0.o
+ .comment       0x0000000000000012       0x13 build/int1.o
+ .comment       0x0000000000000012       0x13 build/pcint0.o
+ .comment       0x0000000000000012       0x13 build/pcint1.o
+ .comment       0x0000000000000012       0x13 build/pcint2.o
+ .comment       0x0000000000000012       0x13 build/timer0.o
+ .comment       0x0000000000000012       0x13 build/timer1.o
+ .comment       0x0000000000000012       0x13 build/timer2.o
+ .comment       0x0000000000000012       0x13 build/twi.o
+ .comment       0x0000000000000012       0x13 build/usart0.o
+ .comment       0x0000000000000012       0x13 build/systemStatus.o
+ .comment       0x0000000000000012       0x13 build/main.o
+ .comment       0x0000000000000012       0x13 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .comment       0x0000000000000012       0x13 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x0000000000000012       0x13 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x160
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x0000000000000020       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x0000000000000040       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_aranges
+                0x0000000000000060       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x0000000000000080       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_aranges
+                0x0000000000000100       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_aranges
+                0x0000000000000120       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_aranges
+                0x0000000000000140       0x20 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x780
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x5f4 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x00000000000005f4       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x0000000000000618       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x000000000000063c       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_info    0x0000000000000660       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x0000000000000684       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x00000000000006a8       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_info    0x00000000000006cc       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_info    0x00000000000006f0       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_info    0x0000000000000714       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_info    0x0000000000000738       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_info    0x000000000000075c       0x24 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+.debug_abbrev   0x0000000000000000      0x67e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x5a2 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x00000000000005a2       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x00000000000005b6       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x00000000000005ca       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_abbrev  0x00000000000005de       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00000000000005f2       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000000000000606       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_abbrev  0x000000000000061a       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_abbrev  0x000000000000062e       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_abbrev  0x0000000000000642       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_abbrev  0x0000000000000656       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_abbrev  0x000000000000066a       0x14 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+.debug_line     0x0000000000000000      0x74c
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1d e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x000000000000001d      0x111 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x000000000000012e       0x51 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x000000000000017f       0x69 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_line    0x00000000000001e8       0x87 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x000000000000026f       0x75 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x00000000000002e4       0x81 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_line    0x0000000000000365       0x9f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_line    0x0000000000000404       0x81 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_line    0x0000000000000485       0xf3 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_line    0x0000000000000578       0xed e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_line    0x0000000000000665       0xe7 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x26a
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x20b e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x000000000000020b       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_str     0x000000000000026a       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x0000000000000000       0x53
+ *(.debug_line_str)
+ .debug_line_str
+                0x0000000000000000       0x53 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                                         0x5f (size before relaxing)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_line_str
+                0x0000000000000053       0x5f e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(build/application.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+Midi_Variable                                     build/main.o
+_Z11sdCardSsLowv                                  build/mmc_avr_spi.o
+_Z12sdCardSsHighv                                 build/mmc_avr_spi.o
+_Z13spiMasterInit19spiClockPrescaler_t10spiModes_t14spiDataOrder_t13spiProtocol_t build/spiMaster.o
+_Z17change_instrumentP4MIDIh                      build/main.o
+_Z19spiSlaveDeviceSsLowP16spiSlaveDevice_s        build/spiMaster.o
+                                                  build/mmc_avr_spi.o
+_Z20spiSlaveDeviceCreateP16spiSlaveDevice_s13pinLocation_e build/spiMaster.o
+_Z20spiSlaveDeviceSsHighP16spiSlaveDevice_s       build/spiMaster.o
+                                                  build/mmc_avr_spi.o
+_Z21int0InterruptCallbackv                        build/int0.o
+_Z21int1InterruptCallbackv                        build/int1.o
+_Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType build/sevenSegmentsDisplay.o
+_Z22convertToSevenSegmentshb24SevenSegmentsDisplayType build/sevenSegmentsDisplay.o
+                                                  build/sevenSegmentsMuxDisplay.o
+_Z22timer0CompareACallbackv                       build/timer0.o
+_Z22timer0CompareBCallbackv                       build/timer0.o
+_Z22timer0OverflowCallbackv                       build/timer0.o
+_Z22timer1CompareACallbackv                       build/timer1.o
+_Z22timer1CompareBCallbackv                       build/timer1.o
+_Z22timer1OverflowCallbackv                       build/timer1.o
+_Z22timer2CompareACallbackv                       build/timer2.o
+_Z22timer2CompareBCallbackv                       build/timer2.o
+_Z22timer2OverflowCallbackv                       build/timer2.o
+_Z23pcint0InterruptCallbackv                      build/pcint0.o
+_Z23pcint1InterruptCallbackv                      build/pcint1.o
+_Z23pcint2InterruptCallbackv                      build/pcint2.o
+_Z23usartTransmitStdWrappercP6__file              build/usart0.o
+_Z24spiMasterSendReceiveByteh                     build/spiMaster.o
+_Z24spiMasterSendReceiveDataPhS_h                 build/spiMaster.o
+_Z26timer1InputCaptureCallbackv                   build/timer1.o
+_Z29adcConversionCompleteCallbackv                build/adc.o
+_Z30usartReceptionCompleteCallbackv               build/usart0.o
+_Z33usartTransmissionCompleteCallbackv            build/usart0.o
+_Z36usartTransmissionBufferEmptyCallbackv         build/main.o
+                                                  build/usart0.o
+_Z4playP4MIDI                                     build/main.o
+_Z7getTickv                                       build/diskio.o
+_Z7note_onP4MIDIhch                               build/main.o
+_Z8note_offP4MIDIhc                               build/main.o
+_Z9init_midiP4MIDIh                               build/main.o
+_Z9playNotesP4Note                                build/sound.o
+_ZN12SystemStatus11getCpuClockEv                  build/systemStatus.o
+                                                  build/usart0.o
+                                                  build/twi.o
+_ZN12SystemStatus12getLastErrorEv                 build/systemStatus.o
+_ZN12SystemStatus13readStopwatchEv                build/systemStatus.o
+                                                  build/twi.o
+_ZN12SystemStatus14getElapsedTimeEb               build/systemStatus.o
+_ZN12SystemStatus14pauseStopwatchEv               build/systemStatus.o
+_ZN12SystemStatus14resetStopwatchEv               build/systemStatus.o
+_ZN12SystemStatus15resumeStopwatchEv              build/systemStatus.o
+_ZN12SystemStatus16setStopwatchMarkEv             build/systemStatus.o
+_ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE build/systemStatus.o
+_ZN12SystemStatus18incrementStopwatchEv           build/systemStatus.o
+_ZN12SystemStatusC1Ev                             build/systemStatus.o
+_ZN12SystemStatusC2Ev                             build/systemStatus.o
+_ZN12SystemStatusD1Ev                             build/systemStatus.o
+_ZN12SystemStatusD2Ev                             build/systemStatus.o
+_ZN23SevenSegmentsMuxDisplay13showNextDigitEv     build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplay8setPortsEPVhS1_h10LogicLevel build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplayC1Ev                  build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplayC2Ev                  build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplayD1Ev                  build/sevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplayD2Ev                  build/sevenSegmentsMuxDisplay.o
+_ZN3Adc10setChannelENS_7ChannelE                  build/adc.o
+_ZN3Adc12getLastErrorEv                           build/adc.o
+_ZN3Adc12setPrescalerENS_9PrescalerE              build/adc.o
+_ZN3Adc12setReferenceENS_9ReferenceE              build/adc.o
+_ZN3Adc13setDataAdjustENS_10DataAdjustE           build/adc.o
+_ZN3Adc15startConversionEv                        build/adc.o
+_ZN3Adc17activateInterruptEv                      build/adc.o
+_ZN3Adc18enableDigitalInputENS_12DigitalInputE    build/adc.o
+_ZN3Adc19deactivateInterruptEv                    build/adc.o
+_ZN3Adc19disableDigitalInputENS_12DigitalInputE   build/adc.o
+_ZN3Adc21clearInterruptRequestEv                  build/adc.o
+_ZN3Adc25waitUntilConversionFinishEv              build/adc.o
+_ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE build/adc.o
+_ZN3Adc6enableEv                                  build/adc.o
+_ZN3Adc7disableEv                                 build/adc.o
+_ZN3Adc7setModeENS_4ModeE                         build/adc.o
+_ZN3AdcC1Ev                                       build/adc.o
+_ZN3AdcC2Ev                                       build/adc.o
+_ZN3AdcD1Ev                                       build/adc.o
+_ZN3AdcD2Ev                                       build/adc.o
+_ZN3Bus8sendDataEPKhPhj                           build/twi.o
+_ZN3Bus8sendDataEPhj                              build/twi.o
+_ZN3Bus9setDeviceEPFvvES1_                        build/twi.o
+_ZN3Twi10getBusTypeEv                             build/twi.o
+_ZN3Twi10setTimeoutEj                             build/twi.o
+_ZN3Twi12getLastErrorEv                           build/twi.o
+_ZN3Twi15_readFromBufferEPhh                      build/twi.o
+_ZN3Twi16_waitWhileIsBusyEv                       build/twi.o
+_ZN3Twi16interruptHandlerEv                       build/twi.o
+_ZN3Twi17_startTrasmissionEv                      build/twi.o
+_ZN3Twi4initEmh                                   build/twi.o
+                                                  build/main.o
+_ZN3Twi7readRegEhPhj                              build/twi.o
+                                                  build/main.o
+_ZN3Twi8sendDataEhNS_9OperationEhPhh              build/twi.o
+_ZN3Twi8writeRegEhPKhj                            build/twi.o
+_ZN3Twi9setDeviceEjb                              build/twi.o
+                                                  build/main.o
+_ZN3TwiC1Ev                                       build/twi.o
+_ZN3TwiC2Ev                                       build/twi.o
+_ZN3TwiD1Ev                                       build/twi.o
+_ZN3TwiD2Ev                                       build/twi.o
+_ZN4Int012getLastErrorEv                          build/int0.o
+_ZN4Int012setSenseModeENS_9SenseModeE             build/int0.o
+_ZN4Int04initENS_9SenseModeE                      build/int0.o
+_ZN4Int0C1Ev                                      build/int0.o
+_ZN4Int0C2Ev                                      build/int0.o
+_ZN4Int0D1Ev                                      build/int0.o
+_ZN4Int0D2Ev                                      build/int0.o
+_ZN4Int112getLastErrorEv                          build/int1.o
+_ZN4Int112setSenseModeENS_9SenseModeE             build/int1.o
+_ZN4Int14initENS_9SenseModeE                      build/int1.o
+_ZN4Int1C1Ev                                      build/int1.o
+_ZN4Int1C2Ev                                      build/int1.o
+_ZN4Int1D1Ev                                      build/int1.o
+_ZN4Int1D2Ev                                      build/int1.o
+_ZN5DebugC1Ev                                     build/debug.o
+_ZN5DebugC2Ev                                     build/debug.o
+_ZN5DebugD1Ev                                     build/debug.o
+_ZN5DebugD2Ev                                     build/debug.o
+_ZN6Ds130710_clearDataEv                          build/ds1307.o
+_ZN6Ds130710clockStartEv                          build/ds1307.o
+_ZN6Ds130710getRamDataEhPhh                       build/ds1307.o
+_ZN6Ds130710setRamDataEhPhh                       build/ds1307.o
+_ZN6Ds130711getDateTimeEP8DateTime                build/ds1307.o
+_ZN6Ds130711setDateTimeE8DateTime                 build/ds1307.o
+_ZN6Ds130712_setCountingEb                        build/ds1307.o
+_ZN6Ds130712getLastErrorEv                        build/ds1307.o
+_ZN6Ds130714_isInitializedEv                      build/ds1307.o
+_ZN6Ds130722setSquareWaveGeneratorENS_10SquareWaveE build/ds1307.o
+_ZN6Ds13074initEP3Bus                             build/ds1307.o
+_ZN6Ds13077getDateEPjPhS1_S1_                     build/ds1307.o
+_ZN6Ds13077getTimeEPhS0_S0_N8DateTime10TimeFormatEPNS1_8AmPmFlagE build/ds1307.o
+_ZN6Ds13077setDateEjhh                            build/ds1307.o
+_ZN6Ds13077setTimeEhhhN8DateTime10TimeFormatENS0_8AmPmFlagE build/ds1307.o
+_ZN6Ds13078_getDataEv                             build/ds1307.o
+_ZN6Ds13079_sendDataEv                            build/ds1307.o
+_ZN6Ds13079clockStopEv                            build/ds1307.o
+_ZN6Ds1307C1Ev                                    build/ds1307.o
+_ZN6Ds1307C2Ev                                    build/ds1307.o
+_ZN6Ds1307D1Ev                                    build/ds1307.o
+_ZN6Ds1307D2Ev                                    build/ds1307.o
+_ZN6Keypad12setKeyValuesENS_4TypeEz               build/keypad.o
+                                                  build/main.o
+_ZN6Keypad14readKeyPressedEPh                     build/keypad.o
+                                                  build/main.o
+_ZN6Keypad4initEh                                 build/keypad.o
+                                                  build/main.o
+_ZN6Keypad8setPortsEPVhhS1_h                      build/keypad.o
+                                                  build/main.o
+_ZN6KeypadC1Ev                                    build/keypad.o
+                                                  build/main.o
+_ZN6KeypadC2Ev                                    build/keypad.o
+_ZN6KeypadD1Ev                                    build/keypad.o
+_ZN6KeypadD2Ev                                    build/keypad.o
+_ZN6Pcint010enablePinsENS_3PinE                   build/pcint0.o
+_ZN6Pcint011disablePinsENS_3PinE                  build/pcint0.o
+_ZN6Pcint012getLastErrorEv                        build/pcint0.o
+_ZN6Pcint04initENS_3PinE                          build/pcint0.o
+_ZN6Pcint0C1Ev                                    build/pcint0.o
+_ZN6Pcint0C2Ev                                    build/pcint0.o
+_ZN6Pcint0D1Ev                                    build/pcint0.o
+_ZN6Pcint0D2Ev                                    build/pcint0.o
+_ZN6Pcint110enablePinsENS_3PinE                   build/pcint1.o
+_ZN6Pcint111disablePinsENS_3PinE                  build/pcint1.o
+_ZN6Pcint112getLastErrorEv                        build/pcint1.o
+_ZN6Pcint14initENS_3PinE                          build/pcint1.o
+_ZN6Pcint1C1Ev                                    build/pcint1.o
+_ZN6Pcint1C2Ev                                    build/pcint1.o
+_ZN6Pcint1D1Ev                                    build/pcint1.o
+_ZN6Pcint1D2Ev                                    build/pcint1.o
+_ZN6Pcint210enablePinsENS_3PinE                   build/pcint2.o
+_ZN6Pcint211disablePinsENS_3PinE                  build/pcint2.o
+_ZN6Pcint212getLastErrorEv                        build/pcint2.o
+_ZN6Pcint24initENS_3PinE                          build/pcint2.o
+_ZN6Pcint2C1Ev                                    build/pcint2.o
+_ZN6Pcint2C2Ev                                    build/pcint2.o
+_ZN6Pcint2D1Ev                                    build/pcint2.o
+_ZN6Pcint2D2Ev                                    build/pcint2.o
+_ZN6Timer012getLastErrorEv                        build/timer0.o
+_ZN6Timer013setOutputModeENS_10OutputModeES0_     build/timer0.o
+_ZN6Timer014setClockSourceENS_11ClockSourceE      build/timer0.o
+_ZN6Timer04initENS_4ModeENS_11ClockSourceE        build/timer0.o
+_ZN6Timer07setModeENS_4ModeE                      build/timer0.o
+_ZN6Timer0C1Ev                                    build/timer0.o
+_ZN6Timer0C2Ev                                    build/timer0.o
+_ZN6Timer0D1Ev                                    build/timer0.o
+_ZN6Timer0D2Ev                                    build/timer0.o
+_ZN6Timer112getLastErrorEv                        build/timer1.o
+_ZN6Timer113setOutputModeENS_10OutputModeES0_     build/timer1.o
+_ZN6Timer114setClockSourceENS_11ClockSourceE      build/timer1.o
+                                                  build/sound.o
+_ZN6Timer119setInputCaptureModeE4Edgeb            build/timer1.o
+_ZN6Timer14initENS_4ModeENS_11ClockSourceE        build/timer1.o
+_ZN6Timer17setModeENS_4ModeE                      build/timer1.o
+_ZN6Timer1C1Ev                                    build/timer1.o
+_ZN6Timer1C2Ev                                    build/timer1.o
+_ZN6Timer1D1Ev                                    build/timer1.o
+_ZN6Timer1D2Ev                                    build/timer1.o
+_ZN6Timer212getLastErrorEv                        build/timer2.o
+_ZN6Timer213setOutputModeENS_10OutputModeES0_     build/timer2.o
+_ZN6Timer214setClockSourceENS_11ClockSourceE      build/timer2.o
+_ZN6Timer24initENS_4ModeENS_11ClockSourceE        build/timer2.o
+_ZN6Timer27setModeENS_4ModeE                      build/timer2.o
+_ZN6Timer2C1Ev                                    build/timer2.o
+_ZN6Timer2C2Ev                                    build/timer2.o
+_ZN6Timer2D1Ev                                    build/timer2.o
+_ZN6Timer2D2Ev                                    build/timer2.o
+_ZN6Usart011receiveDataEPj                        build/usart0.o
+_ZN6Usart011sendDataStdEcP6__file                 build/usart0.o
+_ZN6Usart011setBaudRateENS_8BaudRateE             build/usart0.o
+_ZN6Usart011setDataSizeENS_8DataSizeE             build/usart0.o
+_ZN6Usart011setStopBitsENS_8StopBitsE             build/usart0.o
+_ZN6Usart014receiveDataStdEP6__file               build/usart0.o
+_ZN6Usart014setFrameFormatENS_11FrameFormatE      build/usart0.o
+_ZN6Usart015_receiveDataStdEP6__file              build/usart0.o
+_ZN6Usart016_clearFrameErrorEv                    build/usart0.o
+_ZN6Usart017_clearParityErrorEv                   build/usart0.o
+_ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE build/usart0.o
+_ZN6Usart020flushReceptionBufferEv                build/usart0.o
+_ZN6Usart022_clearDataOverrunErrorEv              build/usart0.o
+_ZN6Usart04initEv                                 build/usart0.o
+                                                  build/main.o
+_ZN6Usart07setModeENS_4ModeE                      build/usart0.o
+_ZN6Usart08sendDataEj                             build/usart0.o
+_ZN6Usart09setParityENS_6ParityE                  build/usart0.o
+_ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE build/usart0.o
+_ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE build/usart0.o
+_ZN6Usart0D1Ev                                    build/usart0.o
+_ZN6Usart0D2Ev                                    build/usart0.o
+_ZN7Hd4478010cursorGoToEhh                        build/hd44780.o
+_ZN7Hd4478010cursorHomeEv                         build/hd44780.o
+_ZN7Hd4478010cursorMoveE9Direction                build/hd44780.o
+_ZN7Hd4478011clearScreenEv                        build/hd44780.o
+_ZN7Hd4478011dataPortSetEPVhh                     build/hd44780.o
+_ZN7Hd4478012displayShiftE9Direction              build/hd44780.o
+_ZN7Hd4478012entryModeSetENS_4StepENS_11DisplayModeE build/hd44780.o
+_ZN7Hd4478012getLastErrorEv                       build/hd44780.o
+_ZN7Hd4478013_writeCommandEh                      build/hd44780.o
+_ZN7Hd4478014controlPortSetEPVhhhh                build/hd44780.o
+_ZN7Hd4478015_waitUntilReadyEv                    build/hd44780.o
+_ZN7Hd4478015_writeCharacterEhb                   build/hd44780.o
+_ZN7Hd4478015displayStateSetENS_12DisplayStateE   build/hd44780.o
+_ZN7Hd4478017_functionSet8BitsEh                  build/hd44780.o
+_ZN7Hd4478018cursorMoveNextLineEv                 build/hd44780.o
+_ZN7Hd4478018customCharacterSetEhPKh              build/hd44780.o
+_ZN7Hd4478019cursorMoveFirstLineEv                build/hd44780.o
+_ZN7Hd447804initENS_4SizeENS_4FontEbb             build/hd44780.o
+_ZN7Hd447805stdioEv                               build/hd44780.o
+_ZN7Hd44780C1Ev                                   build/hd44780.o
+_ZN7Hd44780C2Ev                                   build/hd44780.o
+_ZN7Hd44780D1Ev                                   build/hd44780.o
+_ZN7Hd44780D2Ev                                   build/hd44780.o
+_ZN8DateTime10_clearDataEv                        build/dateTime.o
+_ZN8DateTime10getWeekDayEPNS_7WeekDayE            build/dateTime.o
+_ZN8DateTime10isLeapYearEv                        build/dateTime.o
+_ZN8DateTime11_isLeapYearEj                       build/dateTime.o
+_ZN8DateTime11getTimeZoneEPNS_8TimeZoneE          build/dateTime.o
+_ZN8DateTime11setTimeZoneENS_8TimeZoneE           build/dateTime.o
+_ZN8DateTime12_isValidDateEjNS_5MonthEh           build/dateTime.o
+_ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE    build/dateTime.o
+_ZN8DateTime12getLastErrorEv                      build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime13getTimeFormatEPNS_10TimeFormatE     build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime13setTimeFormatENS_10TimeFormatE      build/dateTime.o
+_ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_ build/dateTime.o
+_ZN8DateTime18_evaluateDayOfWeekEv                build/dateTime.o
+_ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE build/dateTime.o
+_ZN8DateTime7setDateEjNS_5MonthEh                 build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE build/dateTime.o
+_ZN8DateTime9isDateSetEv                          build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTime9isTimeSetEv                          build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTimeC1Ev                                  build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTimeC2Ev                                  build/dateTime.o
+_ZN8DateTimeD1Ev                                  build/dateTime.o
+                                                  build/ds1307.o
+_ZN8DateTimeD2Ev                                  build/dateTime.o
+_ZTV3Twi                                          build/twi.o
+__FUSE_REGION_LENGTH__                            e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__ashrdi3                                         e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+__bad_interrupt                                   e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__brkval                                          e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__bss_end                                         e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+__ctors_end                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+__ctors_start                                     e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+__data_end                                        e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+__data_start                                      e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+__divmodhi4                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+                                                  build/hd44780.o
+__do_clear_bss                                    e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  build/main.o
+                                                  build/systemStatus.o
+                                                  build/debug.o
+                                                  build/usart0.o
+                                                  build/twi.o
+                                                  build/timer2.o
+                                                  build/timer1.o
+                                                  build/timer0.o
+                                                  build/pcint2.o
+                                                  build/pcint1.o
+                                                  build/pcint0.o
+                                                  build/int1.o
+                                                  build/int0.o
+                                                  build/adc.o
+                                                  build/hd44780.o
+                                                  build/mmc_avr_spi.o
+                                                  build/ff.o
+__do_copy_data                                    e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  build/main.o
+                                                  build/sound.o
+                                                  build/dateTime.o
+                                                  build/twi.o
+                                                  build/sevenSegmentsMuxDisplay.o
+                                                  build/mmc_avr_spi.o
+                                                  build/ff.o
+__do_global_ctors                                 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+                                                  build/systemStatus.o
+                                                  build/usart0.o
+                                                  build/twi.o
+                                                  build/timer2.o
+                                                  build/timer1.o
+                                                  build/timer0.o
+                                                  build/pcint2.o
+                                                  build/pcint1.o
+                                                  build/pcint0.o
+                                                  build/int1.o
+                                                  build/int0.o
+                                                  build/adc.o
+__epilogue_restores__                             e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__flp                                             e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__heap_end                                        e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__heap_start                                      e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__init                                            e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__iob                                             e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                                                  build/hd44780.o
+__lshrdi3                                         e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+                                                  build/usart0.o
+__malloc_heap_end                                 e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__malloc_heap_start                               e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__malloc_margin                                   e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__muluhisi3                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+                                                  build/usart0.o
+                                                  build/ff.o
+__prologue_saves__                                e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__stack                                           e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__tablejump2__                                    e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+                                                  build/main.o
+                                                  build/systemStatus.o
+                                                  build/usart0.o
+                                                  build/sevenSegmentsDisplay.o
+                                                  build/mmc_avr_spi.o
+__udivmodhi4                                      e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+__udivmodsi4                                      e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                                                  build/systemStatus.o
+                                                  build/usart0.o
+                                                  build/twi.o
+                                                  build/ff.o
+__umulhisi3                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+                                                  build/dateTime.o
+                                                  build/sevenSegmentsMuxDisplay.o
+                                                  build/keypad.o
+                                                  build/hd44780.o
+                                                  build/ds1307.o
+                                                  build/mmc_avr_spi.o
+__vector_1                                        build/int0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_10                                       build/timer1.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_11                                       build/timer1.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_12                                       build/timer1.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_13                                       build/timer1.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_14                                       build/timer0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_15                                       build/timer0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_16                                       build/timer0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_17                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_18                                       build/usart0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_19                                       build/usart0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_2                                        build/int1.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_20                                       build/usart0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_21                                       build/adc.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_22                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_23                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_24                                       build/twi.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_25                                       e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_3                                        build/pcint0.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_4                                        build/pcint1.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_5                                        build/pcint2.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_6                                        e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_7                                        build/timer2.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_8                                        build/timer2.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_9                                        build/timer2.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_default                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vectors                                         e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+_div                                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_divmodhi4.o)
+_exit                                             e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+adc                                               build/adc.o
+calloc                                            e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+                                                  build/twi.o
+debug                                             build/debug.o
+defaultDisplay                                    build/hd44780.o
+disk_initialize                                   build/diskio.o
+                                                  build/ff.o
+disk_ioctl                                        build/diskio.o
+                                                  build/ff.o
+disk_read                                         build/diskio.o
+                                                  build/ff.o
+disk_status                                       build/diskio.o
+                                                  build/ff.o
+disk_timerproc                                    build/diskio.o
+disk_write                                        build/diskio.o
+                                                  build/ff.o
+exit                                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+f_close                                           build/ff.o
+f_closedir                                        build/ff.o
+f_lseek                                           build/ff.o
+f_mount                                           build/ff.o
+f_open                                            build/ff.o
+f_opendir                                         build/ff.o
+f_read                                            build/ff.o
+f_readdir                                         build/ff.o
+f_sync                                            build/ff.o
+f_write                                           build/ff.o
+free                                              e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                                                  build/twi.o
+                                                  build/keypad.o
+int0                                              build/int0.o
+int1                                              build/int1.o
+lcdStream                                         build/hd44780.o
+main                                              build/main.o
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+malloc                                            e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+memcpy                                            e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+memset                                            e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
+                                                  e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+mmc_disk_initialize                               build/mmc_avr_spi.o
+                                                  build/diskio.o
+mmc_disk_ioctl                                    build/mmc_avr_spi.o
+                                                  build/diskio.o
+mmc_disk_read                                     build/mmc_avr_spi.o
+                                                  build/diskio.o
+mmc_disk_status                                   build/mmc_avr_spi.o
+                                                  build/diskio.o
+mmc_disk_timerproc                                build/mmc_avr_spi.o
+                                                  build/diskio.o
+mmc_disk_write                                    build/mmc_avr_spi.o
+                                                  build/diskio.o
+notesPrescaler                                    build/sound.o
+pcint0                                            build/pcint0.o
+pcint1                                            build/pcint1.o
+pcint2                                            build/pcint2.o
+printRawValue                                     build/main.o
+realloc                                           e:/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                                                  build/keypad.o
+sdCardCreate                                      build/mmc_avr_spi.o
+spiSlaveSdCard                                    build/mmc_avr_spi.o
+systemStatus                                      build/systemStatus.o
+                                                  build/usart0.o
+                                                  build/twi.o
+timer0                                            build/timer0.o
+timer1                                            build/timer1.o
+                                                  build/sound.o
+timer2                                            build/timer2.o
+twi                                               build/twi.o
+                                                  build/main.o
+usart0                                            build/usart0.o
+                                                  build/main.o
+usartDefaultHandler                               build/usart0.o
+usartStream                                       build/usart0.o

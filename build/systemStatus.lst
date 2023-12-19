@@ -1,0 +1,565 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 1
+
+
+   1               		.file	"systemStatus.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN12SystemStatusC2Ev,"ax",@progbits
+  23               	.global	_ZN12SystemStatusC2Ev
+  25               	_ZN12SystemStatusC2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F92F      		mov r31,r25
+  32 0004 80E0      		ldi r24,0
+  33 0006 94E2      		ldi r25,lo8(36)
+  34 0008 A4EF      		ldi r26,lo8(-12)
+  35 000a B0E0      		ldi r27,0
+  36 000c 8683      		std Z+6,r24
+  37 000e 9783      		std Z+7,r25
+  38 0010 A087      		std Z+8,r26
+  39 0012 B187      		std Z+9,r27
+  40 0014 8083      		st Z,r24
+  41 0016 9183      		std Z+1,r25
+  42 0018 A283      		std Z+2,r26
+  43 001a B383      		std Z+3,r27
+  44 001c 1582      		std Z+5,__zero_reg__
+  45 001e 1482      		std Z+4,__zero_reg__
+  46 0020 1686      		std Z+14,__zero_reg__
+  47 0022 1786      		std Z+15,__zero_reg__
+  48 0024 108A      		std Z+16,__zero_reg__
+  49 0026 118A      		std Z+17,__zero_reg__
+  50 0028 8289      		ldd r24,Z+18
+  51 002a 8E7F      		andi r24,lo8(~(1<<0))
+  52 002c 828B      		std Z+18,r24
+  53 002e 148A      		std Z+20,__zero_reg__
+  54 0030 138A      		std Z+19,__zero_reg__
+  55               	/* epilogue start */
+  56 0032 0895      		ret
+  58               	.global	_ZN12SystemStatusC1Ev
+  59               		.set	_ZN12SystemStatusC1Ev,_ZN12SystemStatusC2Ev
+  60               		.section	.text._ZN12SystemStatusD2Ev,"ax",@progbits
+  61               	.global	_ZN12SystemStatusD2Ev
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 2
+
+
+  63               	_ZN12SystemStatusD2Ev:
+  64               	/* prologue: function */
+  65               	/* frame size = 0 */
+  66               	/* stack size = 0 */
+  67               	.L__stack_usage = 0
+  68               	/* epilogue start */
+  69 0000 0895      		ret
+  71               	.global	_ZN12SystemStatusD1Ev
+  72               		.set	_ZN12SystemStatusD1Ev,_ZN12SystemStatusD2Ev
+  73               		.section	.text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE,"ax",@progbits
+  74               	.global	_ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+  76               	_ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:
+  77 0000 CF93      		push r28
+  78 0002 DF93      		push r29
+  79 0004 00D0      		rcall .
+  80 0006 00D0      		rcall .
+  81 0008 00D0      		rcall .
+  82 000a CDB7      		in r28,__SP_L__
+  83 000c DEB7      		in r29,__SP_H__
+  84               	/* prologue: function */
+  85               	/* frame size = 6 */
+  86               	/* stack size = 8 */
+  87               	.L__stack_usage = 8
+  88 000e 8D83      		std Y+5,r24
+  89 0010 9E83      		std Y+6,r25
+  90 0012 862F      		mov r24,r22
+  91 0014 972F      		mov r25,r23
+  92 0016 8830      		cpi r24,8
+  93 0018 9105      		cpc r25,__zero_reg__
+  94 001a 00F0      		brlo .+2
+  95 001c 00C0      		rjmp .L15
+  96 001e FC01      		movw r30,r24
+  97 0020 E050      		subi r30,lo8(-(gs(.L7)))
+  98 0022 F040      		sbci r31,hi8(-(gs(.L7)))
+  99 0024 0C94 0000 		jmp __tablejump2__
+ 100               		.section	.jumptables.gcc._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE,"a",@progbits
+ 101               		.p2align	1
+ 102               	.L7:
+ 103 0000 0000      		.word gs(.L14)
+ 104 0002 0000      		.word gs(.L16)
+ 105 0004 0000      		.word gs(.L12)
+ 106 0006 0000      		.word gs(.L11)
+ 107 0008 0000      		.word gs(.L10)
+ 108 000a 0000      		.word gs(.L9)
+ 109 000c 0000      		.word gs(.L8)
+ 110 000e 0000      		.word gs(.L6)
+ 111               		.section	.text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+ 112               	.L12:
+ 113 0028 64E0      		ldi r22,lo8(4)
+ 114 002a 70E0      		ldi r23,0
+ 115 002c 42E0      		ldi r20,lo8(2)
+ 116               	.L13:
+ 117 002e 2FB7      		in r18,__SREG__
+ 118               	/* #APP */
+ 119               	 ;  50 "e:\vscode-win\toolchains\avr-gcc\avr\include\util\atomic.h" 1
+ 120 0030 F894      		cli
+ 121               	 ;  0 "" 2
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 3
+
+
+ 122               	/* #NOAPP */
+ 123 0032 E1E6      		ldi r30,lo8(97)
+ 124 0034 F0E0      		ldi r31,0
+ 125 0036 30E8      		ldi r19,lo8(-128)
+ 126 0038 3083      		st Z,r19
+ 127 003a 4083      		st Z,r20
+ 128 003c 2FBF      		out __SREG__,r18
+ 129               	/* #APP */
+ 130               	 ;  778 "funsape/util/../globalDefines.hpp" 1
+ 131 003e 0000      		nop
+ 132               	 ;  0 "" 2
+ 133               	/* #NOAPP */
+ 134 0040 3081      		ld r19,Z
+ 135 0042 3F77      		andi r19,lo8(127)
+ 136 0044 4313      		cpse r20,r19
+ 137 0046 00C0      		rjmp .L17
+ 138 0048 AD81      		ldd r26,Y+5
+ 139 004a BE81      		ldd r27,Y+6
+ 140 004c 1596      		adiw r26,4+1
+ 141 004e 9C93      		st X,r25
+ 142 0050 8E93      		st -X,r24
+ 143 0052 1497      		sbiw r26,4
+ 144 0054 9B01      		movw r18,r22
+ 145 0056 40E0      		ldi r20,0
+ 146 0058 50E0      		ldi r21,0
+ 147 005a 8D91      		ld r24,X+
+ 148 005c 9D91      		ld r25,X+
+ 149 005e 0D90      		ld __tmp_reg__,X+
+ 150 0060 BC91      		ld r27,X
+ 151 0062 A02D      		mov r26,__tmp_reg__
+ 152 0064 8983      		std Y+1,r24
+ 153 0066 9A83      		std Y+2,r25
+ 154 0068 AB83      		std Y+3,r26
+ 155 006a BC83      		std Y+4,r27
+ 156 006c BC01      		movw r22,r24
+ 157 006e CD01      		movw r24,r26
+ 158 0070 0E94 0000 		call __udivmodsi4
+ 159 0074 ED81      		ldd r30,Y+5
+ 160 0076 FE81      		ldd r31,Y+6
+ 161 0078 2683      		std Z+6,r18
+ 162 007a 3783      		std Z+7,r19
+ 163 007c 4087      		std Z+8,r20
+ 164 007e 5187      		std Z+9,r21
+ 165 0080 20E0      		ldi r18,0
+ 166 0082 30E0      		ldi r19,0
+ 167 0084 81E0      		ldi r24,lo8(1)
+ 168               	.L5:
+ 169 0086 AD81      		ldd r26,Y+5
+ 170 0088 BE81      		ldd r27,Y+6
+ 171 008a 5496      		adiw r26,19+1
+ 172 008c 3C93      		st X,r19
+ 173 008e 2E93      		st -X,r18
+ 174 0090 5397      		sbiw r26,19
+ 175               	/* epilogue start */
+ 176 0092 0F90      		pop __tmp_reg__
+ 177 0094 0F90      		pop __tmp_reg__
+ 178 0096 0F90      		pop __tmp_reg__
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 4
+
+
+ 179 0098 0F90      		pop __tmp_reg__
+ 180 009a 0F90      		pop __tmp_reg__
+ 181 009c 0F90      		pop __tmp_reg__
+ 182 009e DF91      		pop r29
+ 183 00a0 CF91      		pop r28
+ 184 00a2 0895      		ret
+ 185               	.L11:
+ 186 00a4 68E0      		ldi r22,lo8(8)
+ 187 00a6 70E0      		ldi r23,0
+ 188 00a8 43E0      		ldi r20,lo8(3)
+ 189 00aa 00C0      		rjmp .L13
+ 190               	.L10:
+ 191 00ac 60E2      		ldi r22,lo8(32)
+ 192 00ae 70E0      		ldi r23,0
+ 193 00b0 44E0      		ldi r20,lo8(4)
+ 194 00b2 00C0      		rjmp .L13
+ 195               	.L9:
+ 196 00b4 60E4      		ldi r22,lo8(64)
+ 197 00b6 70E0      		ldi r23,0
+ 198 00b8 45E0      		ldi r20,lo8(5)
+ 199 00ba 00C0      		rjmp .L13
+ 200               	.L8:
+ 201 00bc 60E8      		ldi r22,lo8(-128)
+ 202 00be 70E0      		ldi r23,0
+ 203 00c0 46E0      		ldi r20,lo8(6)
+ 204 00c2 00C0      		rjmp .L13
+ 205               	.L6:
+ 206 00c4 60E0      		ldi r22,0
+ 207 00c6 71E0      		ldi r23,lo8(1)
+ 208 00c8 47E0      		ldi r20,lo8(7)
+ 209 00ca 00C0      		rjmp .L13
+ 210               	.L14:
+ 211 00cc 61E0      		ldi r22,lo8(1)
+ 212 00ce 70E0      		ldi r23,0
+ 213 00d0 40E0      		ldi r20,0
+ 214 00d2 00C0      		rjmp .L13
+ 215               	.L16:
+ 216 00d4 62E0      		ldi r22,lo8(2)
+ 217 00d6 70E0      		ldi r23,0
+ 218 00d8 41E0      		ldi r20,lo8(1)
+ 219 00da 00C0      		rjmp .L13
+ 220               	.L15:
+ 221 00dc 21E3      		ldi r18,lo8(49)
+ 222 00de 30E0      		ldi r19,0
+ 223 00e0 80E0      		ldi r24,0
+ 224 00e2 00C0      		rjmp .L5
+ 225               	.L17:
+ 226 00e4 20E3      		ldi r18,lo8(48)
+ 227 00e6 30E0      		ldi r19,0
+ 228 00e8 80E0      		ldi r24,0
+ 229 00ea 00C0      		rjmp .L5
+ 231               		.section	.text._ZN12SystemStatus11getCpuClockEv,"ax",@progbits
+ 232               	.global	_ZN12SystemStatus11getCpuClockEv
+ 234               	_ZN12SystemStatus11getCpuClockEv:
+ 235 0000 CF93      		push r28
+ 236 0002 DF93      		push r29
+ 237 0004 00D0      		rcall .
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 5
+
+
+ 238 0006 00D0      		rcall .
+ 239 0008 CDB7      		in r28,__SP_L__
+ 240 000a DEB7      		in r29,__SP_H__
+ 241               	/* prologue: function */
+ 242               	/* frame size = 4 */
+ 243               	/* stack size = 6 */
+ 244               	.L__stack_usage = 6
+ 245 000c FC01      		movw r30,r24
+ 246 000e 2681      		ldd r18,Z+6
+ 247 0010 3781      		ldd r19,Z+7
+ 248 0012 4085      		ldd r20,Z+8
+ 249 0014 5185      		ldd r21,Z+9
+ 250 0016 2983      		std Y+1,r18
+ 251 0018 3A83      		std Y+2,r19
+ 252 001a 4B83      		std Y+3,r20
+ 253 001c 5C83      		std Y+4,r21
+ 254 001e CA01      		movw r24,r20
+ 255 0020 B901      		movw r22,r18
+ 256               	/* epilogue start */
+ 257 0022 0F90      		pop __tmp_reg__
+ 258 0024 0F90      		pop __tmp_reg__
+ 259 0026 0F90      		pop __tmp_reg__
+ 260 0028 0F90      		pop __tmp_reg__
+ 261 002a DF91      		pop r29
+ 262 002c CF91      		pop r28
+ 263 002e 0895      		ret
+ 265               		.section	.text._ZN12SystemStatus12getLastErrorEv,"ax",@progbits
+ 266               	.global	_ZN12SystemStatus12getLastErrorEv
+ 268               	_ZN12SystemStatus12getLastErrorEv:
+ 269               	/* prologue: function */
+ 270               	/* frame size = 0 */
+ 271               	/* stack size = 0 */
+ 272               	.L__stack_usage = 0
+ 273 0000 FC01      		movw r30,r24
+ 274 0002 8389      		ldd r24,Z+19
+ 275 0004 9489      		ldd r25,Z+20
+ 276               	/* epilogue start */
+ 277 0006 0895      		ret
+ 279               		.section	.text._ZN12SystemStatus13readStopwatchEv,"ax",@progbits
+ 280               	.global	_ZN12SystemStatus13readStopwatchEv
+ 282               	_ZN12SystemStatus13readStopwatchEv:
+ 283 0000 CF93      		push r28
+ 284 0002 DF93      		push r29
+ 285 0004 00D0      		rcall .
+ 286 0006 00D0      		rcall .
+ 287 0008 CDB7      		in r28,__SP_L__
+ 288 000a DEB7      		in r29,__SP_H__
+ 289               	/* prologue: function */
+ 290               	/* frame size = 4 */
+ 291               	/* stack size = 6 */
+ 292               	.L__stack_usage = 6
+ 293 000c E82F      		mov r30,r24
+ 294 000e F92F      		mov r31,r25
+ 295 0010 8285      		ldd r24,Z+10
+ 296 0012 9385      		ldd r25,Z+11
+ 297 0014 A485      		ldd r26,Z+12
+ 298 0016 B585      		ldd r27,Z+13
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 6
+
+
+ 299 0018 8983      		std Y+1,r24
+ 300 001a 9A83      		std Y+2,r25
+ 301 001c AB83      		std Y+3,r26
+ 302 001e BC83      		std Y+4,r27
+ 303 0020 BC01      		movw r22,r24
+ 304 0022 CD01      		movw r24,r26
+ 305               	/* epilogue start */
+ 306 0024 0F90      		pop __tmp_reg__
+ 307 0026 0F90      		pop __tmp_reg__
+ 308 0028 0F90      		pop __tmp_reg__
+ 309 002a 0F90      		pop __tmp_reg__
+ 310 002c DF91      		pop r29
+ 311 002e CF91      		pop r28
+ 312 0030 0895      		ret
+ 314               		.section	.text._ZN12SystemStatus15resumeStopwatchEv,"ax",@progbits
+ 315               	.global	_ZN12SystemStatus15resumeStopwatchEv
+ 317               	_ZN12SystemStatus15resumeStopwatchEv:
+ 318               	/* prologue: function */
+ 319               	/* frame size = 0 */
+ 320               	/* stack size = 0 */
+ 321               	.L__stack_usage = 0
+ 322 0000 E82F      		mov r30,r24
+ 323 0002 F92F      		mov r31,r25
+ 324 0004 8289      		ldd r24,Z+18
+ 325 0006 8E7F      		andi r24,lo8(~(1<<0))
+ 326 0008 828B      		std Z+18,r24
+ 327               	/* epilogue start */
+ 328 000a 0895      		ret
+ 330               		.section	.text._ZN12SystemStatus14pauseStopwatchEv,"ax",@progbits
+ 331               	.global	_ZN12SystemStatus14pauseStopwatchEv
+ 333               	_ZN12SystemStatus14pauseStopwatchEv:
+ 334               	/* prologue: function */
+ 335               	/* frame size = 0 */
+ 336               	/* stack size = 0 */
+ 337               	.L__stack_usage = 0
+ 338 0000 E82F      		mov r30,r24
+ 339 0002 F92F      		mov r31,r25
+ 340 0004 8289      		ldd r24,Z+18
+ 341 0006 8160      		ori r24,lo8(1<<0)
+ 342 0008 828B      		std Z+18,r24
+ 343               	/* epilogue start */
+ 344 000a 0895      		ret
+ 346               		.section	.text._ZN12SystemStatus14resetStopwatchEv,"ax",@progbits
+ 347               	.global	_ZN12SystemStatus14resetStopwatchEv
+ 349               	_ZN12SystemStatus14resetStopwatchEv:
+ 350               	/* prologue: function */
+ 351               	/* frame size = 0 */
+ 352               	/* stack size = 0 */
+ 353               	.L__stack_usage = 0
+ 354 0000 E82F      		mov r30,r24
+ 355 0002 F92F      		mov r31,r25
+ 356 0004 1286      		std Z+10,__zero_reg__
+ 357 0006 1386      		std Z+11,__zero_reg__
+ 358 0008 1486      		std Z+12,__zero_reg__
+ 359 000a 1586      		std Z+13,__zero_reg__
+ 360 000c 1686      		std Z+14,__zero_reg__
+ 361 000e 1786      		std Z+15,__zero_reg__
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 7
+
+
+ 362 0010 108A      		std Z+16,__zero_reg__
+ 363 0012 118A      		std Z+17,__zero_reg__
+ 364               	/* epilogue start */
+ 365 0014 0895      		ret
+ 367               		.section	.text._ZN12SystemStatus16setStopwatchMarkEv,"ax",@progbits
+ 368               	.global	_ZN12SystemStatus16setStopwatchMarkEv
+ 370               	_ZN12SystemStatus16setStopwatchMarkEv:
+ 371               	/* prologue: function */
+ 372               	/* frame size = 0 */
+ 373               	/* stack size = 0 */
+ 374               	.L__stack_usage = 0
+ 375 0000 E82F      		mov r30,r24
+ 376 0002 F92F      		mov r31,r25
+ 377 0004 8285      		ldd r24,Z+10
+ 378 0006 9385      		ldd r25,Z+11
+ 379 0008 A485      		ldd r26,Z+12
+ 380 000a B585      		ldd r27,Z+13
+ 381 000c 8687      		std Z+14,r24
+ 382 000e 9787      		std Z+15,r25
+ 383 0010 A08B      		std Z+16,r26
+ 384 0012 B18B      		std Z+17,r27
+ 385               	/* epilogue start */
+ 386 0014 0895      		ret
+ 388               		.section	.text._ZN12SystemStatus18incrementStopwatchEv,"ax",@progbits
+ 389               	.global	_ZN12SystemStatus18incrementStopwatchEv
+ 391               	_ZN12SystemStatus18incrementStopwatchEv:
+ 392               	/* prologue: function */
+ 393               	/* frame size = 0 */
+ 394               	/* stack size = 0 */
+ 395               	.L__stack_usage = 0
+ 396 0000 E82F      		mov r30,r24
+ 397 0002 F92F      		mov r31,r25
+ 398 0004 8289      		ldd r24,Z+18
+ 399 0006 80FD      		sbrc r24,0
+ 400 0008 00C0      		rjmp .L25
+ 401 000a 8285      		ldd r24,Z+10
+ 402 000c 9385      		ldd r25,Z+11
+ 403 000e A485      		ldd r26,Z+12
+ 404 0010 B585      		ldd r27,Z+13
+ 405 0012 0196      		adiw r24,1
+ 406 0014 A11D      		adc r26,__zero_reg__
+ 407 0016 B11D      		adc r27,__zero_reg__
+ 408 0018 8287      		std Z+10,r24
+ 409 001a 9387      		std Z+11,r25
+ 410 001c A487      		std Z+12,r26
+ 411 001e B587      		std Z+13,r27
+ 412               	.L25:
+ 413               	/* epilogue start */
+ 414 0020 0895      		ret
+ 416               		.section	.text._ZN12SystemStatus14getElapsedTimeEb,"ax",@progbits
+ 417               	.global	_ZN12SystemStatus14getElapsedTimeEb
+ 419               	_ZN12SystemStatus14getElapsedTimeEb:
+ 420 0000 CF92      		push r12
+ 421 0002 DF92      		push r13
+ 422 0004 EF92      		push r14
+ 423 0006 FF92      		push r15
+ 424 0008 0F93      		push r16
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 8
+
+
+ 425 000a 1F93      		push r17
+ 426 000c CF93      		push r28
+ 427 000e DF93      		push r29
+ 428 0010 00D0      		rcall .
+ 429 0012 00D0      		rcall .
+ 430 0014 CDB7      		in r28,__SP_L__
+ 431 0016 DEB7      		in r29,__SP_H__
+ 432               	/* prologue: function */
+ 433               	/* frame size = 4 */
+ 434               	/* stack size = 12 */
+ 435               	.L__stack_usage = 12
+ 436 0018 E82F      		mov r30,r24
+ 437 001a F92F      		mov r31,r25
+ 438 001c 0685      		ldd r16,Z+14
+ 439 001e 1785      		ldd r17,Z+15
+ 440 0020 2089      		ldd r18,Z+16
+ 441 0022 3189      		ldd r19,Z+17
+ 442 0024 8285      		ldd r24,Z+10
+ 443 0026 9385      		ldd r25,Z+11
+ 444 0028 A485      		ldd r26,Z+12
+ 445 002a B585      		ldd r27,Z+13
+ 446 002c 6C01      		movw r12,r24
+ 447 002e 7D01      		movw r14,r26
+ 448 0030 C01A      		sub r12,r16
+ 449 0032 D10A      		sbc r13,r17
+ 450 0034 E20A      		sbc r14,r18
+ 451 0036 F30A      		sbc r15,r19
+ 452 0038 C982      		std Y+1,r12
+ 453 003a DA82      		std Y+2,r13
+ 454 003c EB82      		std Y+3,r14
+ 455 003e FC82      		std Y+4,r15
+ 456 0040 6623      		tst r22
+ 457 0042 01F0      		breq .L27
+ 458 0044 8687      		std Z+14,r24
+ 459 0046 9787      		std Z+15,r25
+ 460 0048 A08B      		std Z+16,r26
+ 461 004a B18B      		std Z+17,r27
+ 462               	.L27:
+ 463 004c 6981      		ldd r22,Y+1
+ 464 004e 7A81      		ldd r23,Y+2
+ 465 0050 8B81      		ldd r24,Y+3
+ 466 0052 9C81      		ldd r25,Y+4
+ 467               	/* epilogue start */
+ 468 0054 0F90      		pop __tmp_reg__
+ 469 0056 0F90      		pop __tmp_reg__
+ 470 0058 0F90      		pop __tmp_reg__
+ 471 005a 0F90      		pop __tmp_reg__
+ 472 005c DF91      		pop r29
+ 473 005e CF91      		pop r28
+ 474 0060 1F91      		pop r17
+ 475 0062 0F91      		pop r16
+ 476 0064 FF90      		pop r15
+ 477 0066 EF90      		pop r14
+ 478 0068 DF90      		pop r13
+ 479 006a CF90      		pop r12
+ 480 006c 0895      		ret
+ 482               		.section	.text._GLOBAL__sub_I_systemStatus,"ax",@progbits
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 9
+
+
+ 484               	_GLOBAL__sub_I_systemStatus:
+ 485               	/* prologue: function */
+ 486               	/* frame size = 0 */
+ 487               	/* stack size = 0 */
+ 488               	.L__stack_usage = 0
+ 489 0000 80E0      		ldi r24,lo8(systemStatus)
+ 490 0002 90E0      		ldi r25,hi8(systemStatus)
+ 491 0004 0E94 0000 		call _ZN12SystemStatusC1Ev
+ 492               	/* epilogue start */
+ 493 0008 0895      		ret
+ 495               		.global __do_global_ctors
+ 496               		.section .ctors,"a",@progbits
+ 497               		.p2align	1
+ 498 0000 0000      		.word	gs(_GLOBAL__sub_I_systemStatus)
+ 499               	.global	systemStatus
+ 500               		.section	.bss.systemStatus,"aw",@nobits
+ 503               	systemStatus:
+ 504 0000 0000 0000 		.zero	21
+ 504      0000 0000 
+ 504      0000 0000 
+ 504      0000 0000 
+ 504      0000 0000 
+ 505               		.ident	"GCC: (GNU) 12.1.0"
+ 506               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 systemStatus.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:25     .text._ZN12SystemStatusC2Ev:0000000000000000 _ZN12SystemStatusC2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:25     .text._ZN12SystemStatusC2Ev:0000000000000000 _ZN12SystemStatusC1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:63     .text._ZN12SystemStatusD2Ev:0000000000000000 _ZN12SystemStatusD2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:63     .text._ZN12SystemStatusD2Ev:0000000000000000 _ZN12SystemStatusD1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:76     .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000000000000 _ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:79     .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000000000006 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:80     .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000000000008 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:81     .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000000000000a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:94     .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000000000001c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:234    .text._ZN12SystemStatus11getCpuClockEv:0000000000000000 _ZN12SystemStatus11getCpuClockEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:237    .text._ZN12SystemStatus11getCpuClockEv:0000000000000006 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:238    .text._ZN12SystemStatus11getCpuClockEv:0000000000000008 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:268    .text._ZN12SystemStatus12getLastErrorEv:0000000000000000 _ZN12SystemStatus12getLastErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:282    .text._ZN12SystemStatus13readStopwatchEv:0000000000000000 _ZN12SystemStatus13readStopwatchEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:285    .text._ZN12SystemStatus13readStopwatchEv:0000000000000006 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:286    .text._ZN12SystemStatus13readStopwatchEv:0000000000000008 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:317    .text._ZN12SystemStatus15resumeStopwatchEv:0000000000000000 _ZN12SystemStatus15resumeStopwatchEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:333    .text._ZN12SystemStatus14pauseStopwatchEv:0000000000000000 _ZN12SystemStatus14pauseStopwatchEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:349    .text._ZN12SystemStatus14resetStopwatchEv:0000000000000000 _ZN12SystemStatus14resetStopwatchEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:370    .text._ZN12SystemStatus16setStopwatchMarkEv:0000000000000000 _ZN12SystemStatus16setStopwatchMarkEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:391    .text._ZN12SystemStatus18incrementStopwatchEv:0000000000000000 _ZN12SystemStatus18incrementStopwatchEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:419    .text._ZN12SystemStatus14getElapsedTimeEb:0000000000000000 _ZN12SystemStatus14getElapsedTimeEb
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:428    .text._ZN12SystemStatus14getElapsedTimeEb:0000000000000012 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:429    .text._ZN12SystemStatus14getElapsedTimeEb:0000000000000014 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:484    .text._GLOBAL__sub_I_systemStatus:0000000000000000 _GLOBAL__sub_I_systemStatus
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:503    .bss.systemStatus:0000000000000000 systemStatus
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:220    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000dc .L15
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:102    .jumptables.gcc._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000000000000 .L7
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:225    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000e4 .L17
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:116    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000000000002e .L13
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:168    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000000000086 .L5
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:210    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000cc .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:215    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000d4 .L16
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:112    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000000000028 .L12
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:185    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000a4 .L11
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:190    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000ac .L10
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:195    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000b4 .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:200    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000bc .L8
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:205    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000000000c4 .L6
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:412    .text._ZN12SystemStatus18incrementStopwatchEv:0000000000000020 .L25
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccVeyrqg.s:462    .text._ZN12SystemStatus14getElapsedTimeEb:000000000000004c .L27
+
+UNDEFINED SYMBOLS
+__tablejump2__
+__udivmodsi4
+__do_global_ctors
+__do_clear_bss

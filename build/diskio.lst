@@ -1,0 +1,185 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s 			page 1
+
+
+   1               		.file	"diskio.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text.disk_status,"ax",@progbits
+  23               	.global	disk_status
+  25               	disk_status:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 8823      		tst r24
+  31 0002 01F0      		breq .L5
+  32 0004 81E0      		ldi r24,lo8(1)
+  33               	/* epilogue start */
+  34 0006 0895      		ret
+  35               	.L5:
+  36 0008 0E94 0000 		call mmc_disk_status
+  37 000c 0895      		ret
+  39               		.section	.text.disk_initialize,"ax",@progbits
+  40               	.global	disk_initialize
+  42               	disk_initialize:
+  43               	/* prologue: function */
+  44               	/* frame size = 0 */
+  45               	/* stack size = 0 */
+  46               	.L__stack_usage = 0
+  47 0000 8823      		tst r24
+  48 0002 01F0      		breq .L9
+  49 0004 81E0      		ldi r24,lo8(1)
+  50               	/* epilogue start */
+  51 0006 0895      		ret
+  52               	.L9:
+  53 0008 0E94 0000 		call mmc_disk_initialize
+  54 000c 0895      		ret
+  56               		.section	.text.disk_read,"ax",@progbits
+  57               	.global	disk_read
+  59               	disk_read:
+  60 0000 0F93      		push r16
+  61 0002 1F93      		push r17
+  62               	/* prologue: function */
+  63               	/* frame size = 0 */
+  64               	/* stack size = 2 */
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s 			page 2
+
+
+  65               	.L__stack_usage = 2
+  66 0004 E62F      		mov r30,r22
+  67 0006 972F      		mov r25,r23
+  68 0008 A22F      		mov r26,r18
+  69 000a F32F      		mov r31,r19
+  70 000c 642F      		mov r22,r20
+  71 000e 752F      		mov r23,r21
+  72 0010 8823      		tst r24
+  73 0012 01F0      		breq .L13
+  74 0014 84E0      		ldi r24,lo8(4)
+  75 0016 90E0      		ldi r25,0
+  76               	.L10:
+  77               	/* epilogue start */
+  78 0018 1F91      		pop r17
+  79 001a 0F91      		pop r16
+  80 001c 0895      		ret
+  81               	.L13:
+  82 001e 202F      		mov r18,r16
+  83 0020 312F      		mov r19,r17
+  84 0022 4A2F      		mov r20,r26
+  85 0024 5F2F      		mov r21,r31
+  86 0026 8E2F      		mov r24,r30
+  87 0028 0E94 0000 		call mmc_disk_read
+  88 002c 00C0      		rjmp .L10
+  90               		.section	.text.disk_write,"ax",@progbits
+  91               	.global	disk_write
+  93               	disk_write:
+  94 0000 0F93      		push r16
+  95 0002 1F93      		push r17
+  96               	/* prologue: function */
+  97               	/* frame size = 0 */
+  98               	/* stack size = 2 */
+  99               	.L__stack_usage = 2
+ 100 0004 E62F      		mov r30,r22
+ 101 0006 972F      		mov r25,r23
+ 102 0008 A22F      		mov r26,r18
+ 103 000a F32F      		mov r31,r19
+ 104 000c 642F      		mov r22,r20
+ 105 000e 752F      		mov r23,r21
+ 106 0010 8823      		tst r24
+ 107 0012 01F0      		breq .L17
+ 108 0014 84E0      		ldi r24,lo8(4)
+ 109 0016 90E0      		ldi r25,0
+ 110               	.L14:
+ 111               	/* epilogue start */
+ 112 0018 1F91      		pop r17
+ 113 001a 0F91      		pop r16
+ 114 001c 0895      		ret
+ 115               	.L17:
+ 116 001e 202F      		mov r18,r16
+ 117 0020 312F      		mov r19,r17
+ 118 0022 4A2F      		mov r20,r26
+ 119 0024 5F2F      		mov r21,r31
+ 120 0026 8E2F      		mov r24,r30
+ 121 0028 0E94 0000 		call mmc_disk_write
+ 122 002c 00C0      		rjmp .L14
+ 124               		.section	.text.disk_ioctl,"ax",@progbits
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s 			page 3
+
+
+ 125               	.global	disk_ioctl
+ 127               	disk_ioctl:
+ 128               	/* prologue: function */
+ 129               	/* frame size = 0 */
+ 130               	/* stack size = 0 */
+ 131               	.L__stack_usage = 0
+ 132 0000 962F      		mov r25,r22
+ 133 0002 8823      		tst r24
+ 134 0004 01F0      		breq .L21
+ 135 0006 84E0      		ldi r24,lo8(4)
+ 136 0008 90E0      		ldi r25,0
+ 137               	/* epilogue start */
+ 138 000a 0895      		ret
+ 139               	.L21:
+ 140 000c 642F      		mov r22,r20
+ 141 000e 752F      		mov r23,r21
+ 142 0010 892F      		mov r24,r25
+ 143 0012 0E94 0000 		call mmc_disk_ioctl
+ 144 0016 0895      		ret
+ 146               		.section	.text.disk_timerproc,"ax",@progbits
+ 147               	.global	disk_timerproc
+ 149               	disk_timerproc:
+ 150               	/* prologue: function */
+ 151               	/* frame size = 0 */
+ 152               	/* stack size = 0 */
+ 153               	.L__stack_usage = 0
+ 154 0000 0E94 0000 		call mmc_disk_timerproc
+ 155               	/* epilogue start */
+ 156 0004 0895      		ret
+ 158               		.ident	"GCC: (GNU) 12.1.0"
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 diskio.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:25     .text.disk_status:0000000000000000 disk_status
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:42     .text.disk_initialize:0000000000000000 disk_initialize
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:59     .text.disk_read:0000000000000000 disk_read
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:93     .text.disk_write:0000000000000000 disk_write
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:127    .text.disk_ioctl:0000000000000000 disk_ioctl
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:149    .text.disk_timerproc:0000000000000000 disk_timerproc
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:35     .text.disk_status:0000000000000008 .L5
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:52     .text.disk_initialize:0000000000000008 .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:81     .text.disk_read:000000000000001e .L13
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:76     .text.disk_read:0000000000000018 .L10
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:115    .text.disk_write:000000000000001e .L17
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:110    .text.disk_write:0000000000000018 .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrQ6xmT.s:139    .text.disk_ioctl:000000000000000c .L21
+
+UNDEFINED SYMBOLS
+mmc_disk_status
+mmc_disk_initialize
+mmc_disk_read
+mmc_disk_write
+mmc_disk_ioctl
+mmc_disk_timerproc
