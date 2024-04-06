@@ -1,4 +1,4 @@
-#define F_CPU 16000000UL
+﻿#define F_CPU 16000000UL
 
 #include <avr/interrupt.h>
 #include "funsape/peripheral/twi.hpp"
@@ -13,6 +13,8 @@
 #define cplBit(reg, bit)                ((reg) ^= (1 << (bit)))
 #define setMaskOffset(reg, mask, offset)        ((reg) |= ((mask) << (offset)))
 #define MPU9250_SLAVEADRESS             0b1101000
+
+// Um abraço para o Leonardo Beche
 
 //------------UCSRnA – USART Control and Status Register n A-----------------
 #define RXCE0                7
