@@ -1,0 +1,578 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 1
+
+
+   1               		.file	"adc.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN3AdcC2Ev,"ax",@progbits
+  23               	.global	_ZN3AdcC2Ev
+  25               	_ZN3AdcC2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F92F      		mov r31,r25
+  32 0004 1582      		std Z+5,__zero_reg__
+  33 0006 8085      		ldd r24,Z+8
+  34 0008 8E7F      		andi r24,lo8(~(1<<0))
+  35 000a 8087      		std Z+8,r24
+  36 000c 8081      		ld r24,Z
+  37 000e 8C7F      		andi r24,lo8(-4)
+  38 0010 8B7F      		andi r24,lo8(~(1<<2))
+  39 0012 8083      		st Z,r24
+  40 0014 8FE0      		ldi r24,lo8(15)
+  41 0016 90E0      		ldi r25,0
+  42 0018 9783      		std Z+7,r25
+  43 001a 8683      		std Z+6,r24
+  44 001c 1382      		std Z+3,__zero_reg__
+  45 001e 1482      		std Z+4,__zero_reg__
+  46 0020 1282      		std Z+2,__zero_reg__
+  47 0022 1182      		std Z+1,__zero_reg__
+  48               	/* epilogue start */
+  49 0024 0895      		ret
+  51               	.global	_ZN3AdcC1Ev
+  52               		.set	_ZN3AdcC1Ev,_ZN3AdcC2Ev
+  53               		.section	.text._ZN3AdcD2Ev,"ax",@progbits
+  54               	.global	_ZN3AdcD2Ev
+  56               	_ZN3AdcD2Ev:
+  57               	/* prologue: function */
+  58               	/* frame size = 0 */
+  59               	/* stack size = 0 */
+  60               	.L__stack_usage = 0
+  61               	/* epilogue start */
+  62 0000 0895      		ret
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 2
+
+
+  64               	.global	_ZN3AdcD1Ev
+  65               		.set	_ZN3AdcD1Ev,_ZN3AdcD2Ev
+  66               		.section	.text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE,"ax",@progbits
+  67               	.global	_ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE
+  69               	_ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE:
+  70               	/* prologue: function */
+  71               	/* frame size = 0 */
+  72               	/* stack size = 0 */
+  73               	.L__stack_usage = 0
+  74 0000 E82F      		mov r30,r24
+  75 0002 F92F      		mov r31,r25
+  76 0004 A62F      		mov r26,r22
+  77 0006 B72F      		mov r27,r23
+  78 0008 8091 7A00 		lds r24,122
+  79 000c 9091 7B00 		lds r25,123
+  80 0010 3091 7C00 		lds r19,124
+  81 0014 987F      		andi r25,lo8(-8)
+  82 0016 AF30      		cpi r26,15
+  83 0018 B105      		cpc r27,__zero_reg__
+  84 001a 01F0      		breq .L7
+  85 001c 8062      		ori r24,lo8(32)
+  86 001e 962B      		or r25,r22
+  87               	.L6:
+  88 0020 50E4      		ldi r21,lo8(64)
+  89 0022 459F      		mul r20,r21
+  90 0024 B001      		movw r22,r0
+  91 0026 1124      		clr __zero_reg__
+  92 0028 3F73      		andi r19,lo8(63)
+  93 002a 632B      		or r22,r19
+  94 002c 887F      		andi r24,lo8(-8)
+  95 002e 822B      		or r24,r18
+  96 0030 6093 7C00 		sts 124,r22
+  97 0034 8093 7A00 		sts 122,r24
+  98 0038 9093 7B00 		sts 123,r25
+  99 003c B783      		std Z+7,r27
+ 100 003e A683      		std Z+6,r26
+ 101 0040 4483      		std Z+4,r20
+ 102 0042 2383      		std Z+3,r18
+ 103 0044 8081      		ld r24,Z
+ 104 0046 8260      		ori r24,lo8(1<<1)
+ 105 0048 8083      		st Z,r24
+ 106 004a 1282      		std Z+2,__zero_reg__
+ 107 004c 1182      		std Z+1,__zero_reg__
+ 108 004e 81E0      		ldi r24,lo8(1)
+ 109               	/* epilogue start */
+ 110 0050 0895      		ret
+ 111               	.L7:
+ 112 0052 8F7D      		andi r24,lo8(-33)
+ 113 0054 00C0      		rjmp .L6
+ 115               		.section	.text._ZN3Adc13setDataAdjustENS_10DataAdjustE,"ax",@progbits
+ 116               	.global	_ZN3Adc13setDataAdjustENS_10DataAdjustE
+ 118               	_ZN3Adc13setDataAdjustENS_10DataAdjustE:
+ 119               	/* prologue: function */
+ 120               	/* frame size = 0 */
+ 121               	/* stack size = 0 */
+ 122               	.L__stack_usage = 0
+ 123 0000 E82F      		mov r30,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 3
+
+
+ 124 0002 F92F      		mov r31,r25
+ 125 0004 6111      		cpse r22,__zero_reg__
+ 126 0006 00C0      		rjmp .L9
+ 127 0008 ACE7      		ldi r26,lo8(124)
+ 128 000a B0E0      		ldi r27,0
+ 129 000c 8C91      		ld r24,X
+ 130 000e 8F7D      		andi r24,lo8(-33)
+ 131 0010 8C93      		st X,r24
+ 132               	.L10:
+ 133 0012 8085      		ldd r24,Z+8
+ 134 0014 60FB      		bst r22,0
+ 135 0016 80F9      		bld r24,0
+ 136 0018 8087      		std Z+8,r24
+ 137 001a 1282      		std Z+2,__zero_reg__
+ 138 001c 1182      		std Z+1,__zero_reg__
+ 139 001e 81E0      		ldi r24,lo8(1)
+ 140               	/* epilogue start */
+ 141 0020 0895      		ret
+ 142               	.L9:
+ 143 0022 ACE7      		ldi r26,lo8(124)
+ 144 0024 B0E0      		ldi r27,0
+ 145 0026 8C91      		ld r24,X
+ 146 0028 8062      		ori r24,lo8(32)
+ 147 002a 8C93      		st X,r24
+ 148 002c 00C0      		rjmp .L10
+ 150               		.section	.text._ZN3Adc7setModeENS_4ModeE,"ax",@progbits
+ 151               	.global	_ZN3Adc7setModeENS_4ModeE
+ 153               	_ZN3Adc7setModeENS_4ModeE:
+ 154               	/* prologue: function */
+ 155               	/* frame size = 0 */
+ 156               	/* stack size = 0 */
+ 157               	.L__stack_usage = 0
+ 158 0000 E82F      		mov r30,r24
+ 159 0002 F92F      		mov r31,r25
+ 160 0004 862F      		mov r24,r22
+ 161 0006 972F      		mov r25,r23
+ 162 0008 3091 7A00 		lds r19,122
+ 163 000c 2091 7B00 		lds r18,123
+ 164 0010 287F      		andi r18,lo8(-8)
+ 165 0012 8F30      		cpi r24,15
+ 166 0014 9105      		cpc r25,__zero_reg__
+ 167 0016 01F0      		breq .L14
+ 168 0018 3062      		ori r19,lo8(32)
+ 169 001a 262B      		or r18,r22
+ 170               	.L13:
+ 171 001c 3093 7A00 		sts 122,r19
+ 172 0020 2093 7B00 		sts 123,r18
+ 173 0024 9783      		std Z+7,r25
+ 174 0026 8683      		std Z+6,r24
+ 175 0028 1282      		std Z+2,__zero_reg__
+ 176 002a 1182      		std Z+1,__zero_reg__
+ 177 002c 81E0      		ldi r24,lo8(1)
+ 178               	/* epilogue start */
+ 179 002e 0895      		ret
+ 180               	.L14:
+ 181 0030 3F7D      		andi r19,lo8(-33)
+ 182 0032 00C0      		rjmp .L13
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 4
+
+
+ 184               		.section	.text._ZN3Adc12setPrescalerENS_9PrescalerE,"ax",@progbits
+ 185               	.global	_ZN3Adc12setPrescalerENS_9PrescalerE
+ 187               	_ZN3Adc12setPrescalerENS_9PrescalerE:
+ 188               	/* prologue: function */
+ 189               	/* frame size = 0 */
+ 190               	/* stack size = 0 */
+ 191               	.L__stack_usage = 0
+ 192 0000 E82F      		mov r30,r24
+ 193 0002 F92F      		mov r31,r25
+ 194 0004 AAE7      		ldi r26,lo8(122)
+ 195 0006 B0E0      		ldi r27,0
+ 196 0008 8C91      		ld r24,X
+ 197 000a 887F      		andi r24,lo8(-8)
+ 198 000c 862B      		or r24,r22
+ 199 000e 8C93      		st X,r24
+ 200 0010 6383      		std Z+3,r22
+ 201 0012 1282      		std Z+2,__zero_reg__
+ 202 0014 1182      		std Z+1,__zero_reg__
+ 203 0016 81E0      		ldi r24,lo8(1)
+ 204               	/* epilogue start */
+ 205 0018 0895      		ret
+ 207               		.section	.text._ZN3Adc12setReferenceENS_9ReferenceE,"ax",@progbits
+ 208               	.global	_ZN3Adc12setReferenceENS_9ReferenceE
+ 210               	_ZN3Adc12setReferenceENS_9ReferenceE:
+ 211               	/* prologue: function */
+ 212               	/* frame size = 0 */
+ 213               	/* stack size = 0 */
+ 214               	.L__stack_usage = 0
+ 215 0000 E82F      		mov r30,r24
+ 216 0002 F92F      		mov r31,r25
+ 217 0004 ACE7      		ldi r26,lo8(124)
+ 218 0006 B0E0      		ldi r27,0
+ 219 0008 2C91      		ld r18,X
+ 220 000a 30E4      		ldi r19,lo8(64)
+ 221 000c 639F      		mul r22,r19
+ 222 000e C001      		movw r24,r0
+ 223 0010 1124      		clr __zero_reg__
+ 224 0012 2F73      		andi r18,lo8(63)
+ 225 0014 822B      		or r24,r18
+ 226 0016 8C93      		st X,r24
+ 227 0018 6483      		std Z+4,r22
+ 228 001a 1282      		std Z+2,__zero_reg__
+ 229 001c 1182      		std Z+1,__zero_reg__
+ 230 001e 81E0      		ldi r24,lo8(1)
+ 231               	/* epilogue start */
+ 232 0020 0895      		ret
+ 234               		.section	.text._ZN3Adc19disableDigitalInputENS_12DigitalInputE,"ax",@progbits
+ 235               	.global	_ZN3Adc19disableDigitalInputENS_12DigitalInputE
+ 237               	_ZN3Adc19disableDigitalInputENS_12DigitalInputE:
+ 238               	/* prologue: function */
+ 239               	/* frame size = 0 */
+ 240               	/* stack size = 0 */
+ 241               	.L__stack_usage = 0
+ 242 0000 22E0      		ldi r18,lo8(2)
+ 243 0002 30E0      		ldi r19,0
+ 244 0004 FC01      		movw r30,r24
+ 245 0006 3283      		std Z+2,r19
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 5
+
+
+ 246 0008 2183      		std Z+1,r18
+ 247 000a 80E0      		ldi r24,0
+ 248               	/* epilogue start */
+ 249 000c 0895      		ret
+ 251               		.section	.text._ZN3Adc18enableDigitalInputENS_12DigitalInputE,"ax",@progbits
+ 252               	.global	_ZN3Adc18enableDigitalInputENS_12DigitalInputE
+ 254               	_ZN3Adc18enableDigitalInputENS_12DigitalInputE:
+ 255               	/* prologue: function */
+ 256               	/* frame size = 0 */
+ 257               	/* stack size = 0 */
+ 258               	.L__stack_usage = 0
+ 259 0000 22E0      		ldi r18,lo8(2)
+ 260 0002 30E0      		ldi r19,0
+ 261 0004 FC01      		movw r30,r24
+ 262 0006 3283      		std Z+2,r19
+ 263 0008 2183      		std Z+1,r18
+ 264 000a 80E0      		ldi r24,0
+ 265               	/* epilogue start */
+ 266 000c 0895      		ret
+ 268               		.section	.text._ZN3Adc10setChannelENS_7ChannelE,"ax",@progbits
+ 269               	.global	_ZN3Adc10setChannelENS_7ChannelE
+ 271               	_ZN3Adc10setChannelENS_7ChannelE:
+ 272               	/* prologue: function */
+ 273               	/* frame size = 0 */
+ 274               	/* stack size = 0 */
+ 275               	.L__stack_usage = 0
+ 276 0000 E82F      		mov r30,r24
+ 277 0002 F92F      		mov r31,r25
+ 278 0004 ACE7      		ldi r26,lo8(124)
+ 279 0006 B0E0      		ldi r27,0
+ 280 0008 8C91      		ld r24,X
+ 281 000a 807F      		andi r24,lo8(-16)
+ 282 000c 862B      		or r24,r22
+ 283 000e 8C93      		st X,r24
+ 284 0010 6583      		std Z+5,r22
+ 285 0012 1282      		std Z+2,__zero_reg__
+ 286 0014 1182      		std Z+1,__zero_reg__
+ 287 0016 81E0      		ldi r24,lo8(1)
+ 288               	/* epilogue start */
+ 289 0018 0895      		ret
+ 291               		.section	.text._ZN3Adc17activateInterruptEv,"ax",@progbits
+ 292               	.global	_ZN3Adc17activateInterruptEv
+ 294               	_ZN3Adc17activateInterruptEv:
+ 295               	/* prologue: function */
+ 296               	/* frame size = 0 */
+ 297               	/* stack size = 0 */
+ 298               	.L__stack_usage = 0
+ 299 0000 E82F      		mov r30,r24
+ 300 0002 F92F      		mov r31,r25
+ 301 0004 AAE7      		ldi r26,lo8(122)
+ 302 0006 B0E0      		ldi r27,0
+ 303 0008 8C91      		ld r24,X
+ 304 000a 8860      		ori r24,lo8(8)
+ 305 000c 8C93      		st X,r24
+ 306 000e 8081      		ld r24,Z
+ 307 0010 8460      		ori r24,lo8(1<<2)
+ 308 0012 8083      		st Z,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 6
+
+
+ 309 0014 1282      		std Z+2,__zero_reg__
+ 310 0016 1182      		std Z+1,__zero_reg__
+ 311 0018 81E0      		ldi r24,lo8(1)
+ 312               	/* epilogue start */
+ 313 001a 0895      		ret
+ 315               		.section	.text._ZN3Adc21clearInterruptRequestEv,"ax",@progbits
+ 316               	.global	_ZN3Adc21clearInterruptRequestEv
+ 318               	_ZN3Adc21clearInterruptRequestEv:
+ 319               	/* prologue: function */
+ 320               	/* frame size = 0 */
+ 321               	/* stack size = 0 */
+ 322               	.L__stack_usage = 0
+ 323 0000 DC01      		movw r26,r24
+ 324 0002 EAE7      		ldi r30,lo8(122)
+ 325 0004 F0E0      		ldi r31,0
+ 326 0006 9081      		ld r25,Z
+ 327 0008 9061      		ori r25,lo8(16)
+ 328 000a 9083      		st Z,r25
+ 329 000c 1296      		adiw r26,1+1
+ 330 000e 1C92      		st X,__zero_reg__
+ 331 0010 1E92      		st -X,__zero_reg__
+ 332 0012 1197      		sbiw r26,1
+ 333 0014 81E0      		ldi r24,lo8(1)
+ 334               	/* epilogue start */
+ 335 0016 0895      		ret
+ 337               		.section	.text._ZN3Adc19deactivateInterruptEv,"ax",@progbits
+ 338               	.global	_ZN3Adc19deactivateInterruptEv
+ 340               	_ZN3Adc19deactivateInterruptEv:
+ 341               	/* prologue: function */
+ 342               	/* frame size = 0 */
+ 343               	/* stack size = 0 */
+ 344               	.L__stack_usage = 0
+ 345 0000 E82F      		mov r30,r24
+ 346 0002 F92F      		mov r31,r25
+ 347 0004 AAE7      		ldi r26,lo8(122)
+ 348 0006 B0E0      		ldi r27,0
+ 349 0008 8C91      		ld r24,X
+ 350 000a 877F      		andi r24,lo8(-9)
+ 351 000c 8C93      		st X,r24
+ 352 000e 8081      		ld r24,Z
+ 353 0010 8B7F      		andi r24,lo8(~(1<<2))
+ 354 0012 8083      		st Z,r24
+ 355 0014 1282      		std Z+2,__zero_reg__
+ 356 0016 1182      		std Z+1,__zero_reg__
+ 357 0018 81E0      		ldi r24,lo8(1)
+ 358               	/* epilogue start */
+ 359 001a 0895      		ret
+ 361               		.section	.text._ZN3Adc6enableEv,"ax",@progbits
+ 362               	.global	_ZN3Adc6enableEv
+ 364               	_ZN3Adc6enableEv:
+ 365               	/* prologue: function */
+ 366               	/* frame size = 0 */
+ 367               	/* stack size = 0 */
+ 368               	.L__stack_usage = 0
+ 369 0000 E82F      		mov r30,r24
+ 370 0002 F92F      		mov r31,r25
+ 371 0004 AAE7      		ldi r26,lo8(122)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 7
+
+
+ 372 0006 B0E0      		ldi r27,0
+ 373 0008 8C91      		ld r24,X
+ 374 000a 8068      		ori r24,lo8(-128)
+ 375 000c 8C93      		st X,r24
+ 376 000e 8081      		ld r24,Z
+ 377 0010 8160      		ori r24,lo8(1<<0)
+ 378 0012 8083      		st Z,r24
+ 379 0014 1282      		std Z+2,__zero_reg__
+ 380 0016 1182      		std Z+1,__zero_reg__
+ 381 0018 81E0      		ldi r24,lo8(1)
+ 382               	/* epilogue start */
+ 383 001a 0895      		ret
+ 385               		.section	.text._ZN3Adc7disableEv,"ax",@progbits
+ 386               	.global	_ZN3Adc7disableEv
+ 388               	_ZN3Adc7disableEv:
+ 389               	/* prologue: function */
+ 390               	/* frame size = 0 */
+ 391               	/* stack size = 0 */
+ 392               	.L__stack_usage = 0
+ 393 0000 E82F      		mov r30,r24
+ 394 0002 F92F      		mov r31,r25
+ 395 0004 AAE7      		ldi r26,lo8(122)
+ 396 0006 B0E0      		ldi r27,0
+ 397 0008 8C91      		ld r24,X
+ 398 000a 8F77      		andi r24,lo8(127)
+ 399 000c 8C93      		st X,r24
+ 400 000e 8081      		ld r24,Z
+ 401 0010 8E7F      		andi r24,lo8(~(1<<0))
+ 402 0012 8083      		st Z,r24
+ 403 0014 1282      		std Z+2,__zero_reg__
+ 404 0016 1182      		std Z+1,__zero_reg__
+ 405 0018 81E0      		ldi r24,lo8(1)
+ 406               	/* epilogue start */
+ 407 001a 0895      		ret
+ 409               		.section	.text._ZN3Adc12getLastErrorEv,"ax",@progbits
+ 410               	.global	_ZN3Adc12getLastErrorEv
+ 412               	_ZN3Adc12getLastErrorEv:
+ 413               	/* prologue: function */
+ 414               	/* frame size = 0 */
+ 415               	/* stack size = 0 */
+ 416               	.L__stack_usage = 0
+ 417 0000 FC01      		movw r30,r24
+ 418 0002 8181      		ldd r24,Z+1
+ 419 0004 9281      		ldd r25,Z+2
+ 420               	/* epilogue start */
+ 421 0006 0895      		ret
+ 423               		.section	.text._ZN3Adc15startConversionEv,"ax",@progbits
+ 424               	.global	_ZN3Adc15startConversionEv
+ 426               	_ZN3Adc15startConversionEv:
+ 427               	/* prologue: function */
+ 428               	/* frame size = 0 */
+ 429               	/* stack size = 0 */
+ 430               	.L__stack_usage = 0
+ 431 0000 DC01      		movw r26,r24
+ 432 0002 EAE7      		ldi r30,lo8(122)
+ 433 0004 F0E0      		ldi r31,0
+ 434 0006 9081      		ld r25,Z
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 8
+
+
+ 435 0008 9064      		ori r25,lo8(64)
+ 436 000a 9083      		st Z,r25
+ 437 000c 1296      		adiw r26,1+1
+ 438 000e 1C92      		st X,__zero_reg__
+ 439 0010 1E92      		st -X,__zero_reg__
+ 440 0012 1197      		sbiw r26,1
+ 441 0014 81E0      		ldi r24,lo8(1)
+ 442               	/* epilogue start */
+ 443 0016 0895      		ret
+ 445               		.section	.text._ZN3Adc25waitUntilConversionFinishEv,"ax",@progbits
+ 446               	.global	_ZN3Adc25waitUntilConversionFinishEv
+ 448               	_ZN3Adc25waitUntilConversionFinishEv:
+ 449               	/* prologue: function */
+ 450               	/* frame size = 0 */
+ 451               	/* stack size = 0 */
+ 452               	.L__stack_usage = 0
+ 453 0000 A82F      		mov r26,r24
+ 454 0002 B92F      		mov r27,r25
+ 455 0004 EAE7      		ldi r30,lo8(122)
+ 456 0006 F0E0      		ldi r31,0
+ 457               	.L28:
+ 458 0008 8081      		ld r24,Z
+ 459 000a 86FD      		sbrc r24,6
+ 460 000c 00C0      		rjmp .L28
+ 461 000e 1296      		adiw r26,1+1
+ 462 0010 1C92      		st X,__zero_reg__
+ 463 0012 1E92      		st -X,__zero_reg__
+ 464 0014 1197      		sbiw r26,1
+ 465 0016 81E0      		ldi r24,lo8(1)
+ 466               	/* epilogue start */
+ 467 0018 0895      		ret
+ 469               		.section	.text._Z29adcConversionCompleteCallbackv,"ax",@progbits
+ 470               		.weak	_Z29adcConversionCompleteCallbackv
+ 472               	_Z29adcConversionCompleteCallbackv:
+ 473               	/* prologue: function */
+ 474               	/* frame size = 0 */
+ 475               	/* stack size = 0 */
+ 476               	.L__stack_usage = 0
+ 477               	/* epilogue start */
+ 478 0000 0895      		ret
+ 480               		.section	.text.__vector_21,"ax",@progbits
+ 481               	.global	__vector_21
+ 483               	__vector_21:
+ 484 0000 1F92      		push r1
+ 485 0002 0F92      		push r0
+ 486 0004 0FB6      		in r0,__SREG__
+ 487 0006 0F92      		push r0
+ 488 0008 1124      		clr __zero_reg__
+ 489 000a 2F93      		push r18
+ 490 000c 3F93      		push r19
+ 491 000e 4F93      		push r20
+ 492 0010 5F93      		push r21
+ 493 0012 6F93      		push r22
+ 494 0014 7F93      		push r23
+ 495 0016 8F93      		push r24
+ 496 0018 9F93      		push r25
+ 497 001a AF93      		push r26
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 9
+
+
+ 498 001c BF93      		push r27
+ 499 001e EF93      		push r30
+ 500 0020 FF93      		push r31
+ 501               	/* prologue: Signal */
+ 502               	/* frame size = 0 */
+ 503               	/* stack size = 15 */
+ 504               	.L__stack_usage = 15
+ 505 0022 0E94 0000 		call _Z29adcConversionCompleteCallbackv
+ 506               	/* epilogue start */
+ 507 0026 FF91      		pop r31
+ 508 0028 EF91      		pop r30
+ 509 002a BF91      		pop r27
+ 510 002c AF91      		pop r26
+ 511 002e 9F91      		pop r25
+ 512 0030 8F91      		pop r24
+ 513 0032 7F91      		pop r23
+ 514 0034 6F91      		pop r22
+ 515 0036 5F91      		pop r21
+ 516 0038 4F91      		pop r20
+ 517 003a 3F91      		pop r19
+ 518 003c 2F91      		pop r18
+ 519 003e 0F90      		pop r0
+ 520 0040 0FBE      		out __SREG__,r0
+ 521 0042 0F90      		pop r0
+ 522 0044 1F90      		pop r1
+ 523 0046 1895      		reti
+ 525               		.section	.text._GLOBAL__sub_I_adc,"ax",@progbits
+ 527               	_GLOBAL__sub_I_adc:
+ 528               	/* prologue: function */
+ 529               	/* frame size = 0 */
+ 530               	/* stack size = 0 */
+ 531               	.L__stack_usage = 0
+ 532 0000 80E0      		ldi r24,lo8(adc)
+ 533 0002 90E0      		ldi r25,hi8(adc)
+ 534 0004 0E94 0000 		call _ZN3AdcC1Ev
+ 535               	/* epilogue start */
+ 536 0008 0895      		ret
+ 538               		.global __do_global_ctors
+ 539               		.section .ctors,"a",@progbits
+ 540               		.p2align	1
+ 541 0000 0000      		.word	gs(_GLOBAL__sub_I_adc)
+ 542               	.global	adc
+ 543               		.section	.bss.adc,"aw",@nobits
+ 546               	adc:
+ 547 0000 0000 0000 		.zero	9
+ 547      0000 0000 
+ 547      00
+ 548               		.ident	"GCC: (GNU) 12.1.0"
+ 549               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 adc.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:25     .text._ZN3AdcC2Ev:0000000000000000 _ZN3AdcC2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:25     .text._ZN3AdcC2Ev:0000000000000000 _ZN3AdcC1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:56     .text._ZN3AdcD2Ev:0000000000000000 _ZN3AdcD2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:56     .text._ZN3AdcD2Ev:0000000000000000 _ZN3AdcD1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:69     .text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE:0000000000000000 _ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:118    .text._ZN3Adc13setDataAdjustENS_10DataAdjustE:0000000000000000 _ZN3Adc13setDataAdjustENS_10DataAdjustE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:153    .text._ZN3Adc7setModeENS_4ModeE:0000000000000000 _ZN3Adc7setModeENS_4ModeE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:187    .text._ZN3Adc12setPrescalerENS_9PrescalerE:0000000000000000 _ZN3Adc12setPrescalerENS_9PrescalerE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:210    .text._ZN3Adc12setReferenceENS_9ReferenceE:0000000000000000 _ZN3Adc12setReferenceENS_9ReferenceE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:237    .text._ZN3Adc19disableDigitalInputENS_12DigitalInputE:0000000000000000 _ZN3Adc19disableDigitalInputENS_12DigitalInputE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:254    .text._ZN3Adc18enableDigitalInputENS_12DigitalInputE:0000000000000000 _ZN3Adc18enableDigitalInputENS_12DigitalInputE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:271    .text._ZN3Adc10setChannelENS_7ChannelE:0000000000000000 _ZN3Adc10setChannelENS_7ChannelE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:294    .text._ZN3Adc17activateInterruptEv:0000000000000000 _ZN3Adc17activateInterruptEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:318    .text._ZN3Adc21clearInterruptRequestEv:0000000000000000 _ZN3Adc21clearInterruptRequestEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:340    .text._ZN3Adc19deactivateInterruptEv:0000000000000000 _ZN3Adc19deactivateInterruptEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:364    .text._ZN3Adc6enableEv:0000000000000000 _ZN3Adc6enableEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:388    .text._ZN3Adc7disableEv:0000000000000000 _ZN3Adc7disableEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:412    .text._ZN3Adc12getLastErrorEv:0000000000000000 _ZN3Adc12getLastErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:426    .text._ZN3Adc15startConversionEv:0000000000000000 _ZN3Adc15startConversionEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:448    .text._ZN3Adc25waitUntilConversionFinishEv:0000000000000000 _ZN3Adc25waitUntilConversionFinishEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:472    .text._Z29adcConversionCompleteCallbackv:0000000000000000 _Z29adcConversionCompleteCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:483    .text.__vector_21:0000000000000000 __vector_21
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:527    .text._GLOBAL__sub_I_adc:0000000000000000 _GLOBAL__sub_I_adc
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:546    .bss.adc:0000000000000000 adc
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:111    .text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE:0000000000000052 .L7
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:87     .text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE:0000000000000020 .L6
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:142    .text._ZN3Adc13setDataAdjustENS_10DataAdjustE:0000000000000022 .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:132    .text._ZN3Adc13setDataAdjustENS_10DataAdjustE:0000000000000012 .L10
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:180    .text._ZN3Adc7setModeENS_4ModeE:0000000000000030 .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:170    .text._ZN3Adc7setModeENS_4ModeE:000000000000001c .L13
+C:\Users\ANDRLU~1\AppData\Local\Temp\cce0cTWb.s:457    .text._ZN3Adc25waitUntilConversionFinishEv:0000000000000008 .L28
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss

@@ -1,0 +1,406 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 1
+
+
+   1               		.file	"timer0.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN6Timer0C2Ev,"ax",@progbits
+  23               	.global	_ZN6Timer0C2Ev
+  25               	_ZN6Timer0C2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F92F      		mov r31,r25
+  32 0004 1182      		std Z+1,__zero_reg__
+  33 0006 1282      		std Z+2,__zero_reg__
+  34 0008 8081      		ld r24,Z
+  35 000a 8E7F      		andi r24,lo8(~(1<<0))
+  36 000c 8083      		st Z,r24
+  37 000e 1482      		std Z+4,__zero_reg__
+  38 0010 1382      		std Z+3,__zero_reg__
+  39               	/* epilogue start */
+  40 0012 0895      		ret
+  42               	.global	_ZN6Timer0C1Ev
+  43               		.set	_ZN6Timer0C1Ev,_ZN6Timer0C2Ev
+  44               		.section	.text._ZN6Timer0D2Ev,"ax",@progbits
+  45               	.global	_ZN6Timer0D2Ev
+  47               	_ZN6Timer0D2Ev:
+  48               	/* prologue: function */
+  49               	/* frame size = 0 */
+  50               	/* stack size = 0 */
+  51               	.L__stack_usage = 0
+  52               	/* epilogue start */
+  53 0000 0895      		ret
+  55               	.global	_ZN6Timer0D1Ev
+  56               		.set	_ZN6Timer0D1Ev,_ZN6Timer0D2Ev
+  57               		.section	.text._ZN6Timer04initENS_4ModeENS_11ClockSourceE,"ax",@progbits
+  58               	.global	_ZN6Timer04initENS_4ModeENS_11ClockSourceE
+  60               	_ZN6Timer04initENS_4ModeENS_11ClockSourceE:
+  61               	/* prologue: function */
+  62               	/* frame size = 0 */
+  63               	/* stack size = 0 */
+  64               	.L__stack_usage = 0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 2
+
+
+  65 0000 E82F      		mov r30,r24
+  66 0002 F92F      		mov r31,r25
+  67 0004 84B5      		in r24,0x24
+  68 0006 25B5      		in r18,0x25
+  69 0008 962F      		mov r25,r22
+  70 000a 9370      		andi r25,lo8(3)
+  71 000c 8C7F      		andi r24,lo8(-4)
+  72 000e 982B      		or r25,r24
+  73 0010 862F      		mov r24,r22
+  74 0012 8695      		lsr r24
+  75 0014 8695      		lsr r24
+  76 0016 880F      		lsl r24
+  77 0018 880F      		lsl r24
+  78 001a 880F      		lsl r24
+  79 001c 207F      		andi r18,lo8(-16)
+  80 001e 822B      		or r24,r18
+  81 0020 842B      		or r24,r20
+  82 0022 94BD      		out 0x24,r25
+  83 0024 85BD      		out 0x25,r24
+  84 0026 6283      		std Z+2,r22
+  85 0028 4183      		std Z+1,r20
+  86 002a 8081      		ld r24,Z
+  87 002c 8160      		ori r24,lo8(1<<0)
+  88 002e 8083      		st Z,r24
+  89 0030 1482      		std Z+4,__zero_reg__
+  90 0032 1382      		std Z+3,__zero_reg__
+  91 0034 81E0      		ldi r24,lo8(1)
+  92               	/* epilogue start */
+  93 0036 0895      		ret
+  95               		.section	.text._ZN6Timer07setModeENS_4ModeE,"ax",@progbits
+  96               	.global	_ZN6Timer07setModeENS_4ModeE
+  98               	_ZN6Timer07setModeENS_4ModeE:
+  99               	/* prologue: function */
+ 100               	/* frame size = 0 */
+ 101               	/* stack size = 0 */
+ 102               	.L__stack_usage = 0
+ 103 0000 E82F      		mov r30,r24
+ 104 0002 F92F      		mov r31,r25
+ 105 0004 84B5      		in r24,0x24
+ 106 0006 25B5      		in r18,0x25
+ 107 0008 962F      		mov r25,r22
+ 108 000a 9370      		andi r25,lo8(3)
+ 109 000c 8C7F      		andi r24,lo8(-4)
+ 110 000e 982B      		or r25,r24
+ 111 0010 862F      		mov r24,r22
+ 112 0012 8695      		lsr r24
+ 113 0014 8695      		lsr r24
+ 114 0016 880F      		lsl r24
+ 115 0018 880F      		lsl r24
+ 116 001a 880F      		lsl r24
+ 117 001c 277F      		andi r18,lo8(-9)
+ 118 001e 822B      		or r24,r18
+ 119 0020 94BD      		out 0x24,r25
+ 120 0022 85BD      		out 0x25,r24
+ 121 0024 6283      		std Z+2,r22
+ 122 0026 1482      		std Z+4,__zero_reg__
+ 123 0028 1382      		std Z+3,__zero_reg__
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 3
+
+
+ 124 002a 81E0      		ldi r24,lo8(1)
+ 125               	/* epilogue start */
+ 126 002c 0895      		ret
+ 128               		.section	.text._ZN6Timer014setClockSourceENS_11ClockSourceE,"ax",@progbits
+ 129               	.global	_ZN6Timer014setClockSourceENS_11ClockSourceE
+ 131               	_ZN6Timer014setClockSourceENS_11ClockSourceE:
+ 132               	/* prologue: function */
+ 133               	/* frame size = 0 */
+ 134               	/* stack size = 0 */
+ 135               	.L__stack_usage = 0
+ 136 0000 E82F      		mov r30,r24
+ 137 0002 F92F      		mov r31,r25
+ 138 0004 85B5      		in r24,0x25
+ 139 0006 887F      		andi r24,lo8(-8)
+ 140 0008 862B      		or r24,r22
+ 141 000a 85BD      		out 0x25,r24
+ 142 000c 6183      		std Z+1,r22
+ 143 000e 1482      		std Z+4,__zero_reg__
+ 144 0010 1382      		std Z+3,__zero_reg__
+ 145 0012 81E0      		ldi r24,lo8(1)
+ 146               	/* epilogue start */
+ 147 0014 0895      		ret
+ 149               		.section	.text._ZN6Timer013setOutputModeENS_10OutputModeES0_,"ax",@progbits
+ 150               	.global	_ZN6Timer013setOutputModeENS_10OutputModeES0_
+ 152               	_ZN6Timer013setOutputModeENS_10OutputModeES0_:
+ 153               	/* prologue: function */
+ 154               	/* frame size = 0 */
+ 155               	/* stack size = 0 */
+ 156               	.L__stack_usage = 0
+ 157 0000 FC01      		movw r30,r24
+ 158 0002 94B5      		in r25,0x24
+ 159 0004 80E4      		ldi r24,lo8(64)
+ 160 0006 689F      		mul r22,r24
+ 161 0008 B001      		movw r22,r0
+ 162 000a 1124      		clr __zero_reg__
+ 163 000c 9F73      		andi r25,lo8(63)
+ 164 000e 692B      		or r22,r25
+ 165 0010 6F7C      		andi r22,lo8(-49)
+ 166 0012 80E1      		ldi r24,lo8(16)
+ 167 0014 489F      		mul r20,r24
+ 168 0016 A001      		movw r20,r0
+ 169 0018 1124      		clr __zero_reg__
+ 170 001a 462B      		or r20,r22
+ 171 001c 44BD      		out 0x24,r20
+ 172 001e 1482      		std Z+4,__zero_reg__
+ 173 0020 1382      		std Z+3,__zero_reg__
+ 174 0022 81E0      		ldi r24,lo8(1)
+ 175               	/* epilogue start */
+ 176 0024 0895      		ret
+ 178               		.section	.text._ZN6Timer012getLastErrorEv,"ax",@progbits
+ 179               	.global	_ZN6Timer012getLastErrorEv
+ 181               	_ZN6Timer012getLastErrorEv:
+ 182               	/* prologue: function */
+ 183               	/* frame size = 0 */
+ 184               	/* stack size = 0 */
+ 185               	.L__stack_usage = 0
+ 186 0000 FC01      		movw r30,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 4
+
+
+ 187 0002 8381      		ldd r24,Z+3
+ 188 0004 9481      		ldd r25,Z+4
+ 189               	/* epilogue start */
+ 190 0006 0895      		ret
+ 192               		.section	.text._Z22timer0CompareACallbackv,"ax",@progbits
+ 193               		.weak	_Z22timer0CompareACallbackv
+ 195               	_Z22timer0CompareACallbackv:
+ 196               	/* prologue: function */
+ 197               	/* frame size = 0 */
+ 198               	/* stack size = 0 */
+ 199               	.L__stack_usage = 0
+ 200               	/* epilogue start */
+ 201 0000 0895      		ret
+ 203               		.section	.text._Z22timer0CompareBCallbackv,"ax",@progbits
+ 204               		.weak	_Z22timer0CompareBCallbackv
+ 206               	_Z22timer0CompareBCallbackv:
+ 207               	/* prologue: function */
+ 208               	/* frame size = 0 */
+ 209               	/* stack size = 0 */
+ 210               	.L__stack_usage = 0
+ 211               	/* epilogue start */
+ 212 0000 0895      		ret
+ 214               		.section	.text._Z22timer0OverflowCallbackv,"ax",@progbits
+ 215               		.weak	_Z22timer0OverflowCallbackv
+ 217               	_Z22timer0OverflowCallbackv:
+ 218               	/* prologue: function */
+ 219               	/* frame size = 0 */
+ 220               	/* stack size = 0 */
+ 221               	.L__stack_usage = 0
+ 222               	/* epilogue start */
+ 223 0000 0895      		ret
+ 225               		.section	.text.__vector_14,"ax",@progbits
+ 226               	.global	__vector_14
+ 228               	__vector_14:
+ 229 0000 1F92      		push r1
+ 230 0002 0F92      		push r0
+ 231 0004 0FB6      		in r0,__SREG__
+ 232 0006 0F92      		push r0
+ 233 0008 1124      		clr __zero_reg__
+ 234 000a 2F93      		push r18
+ 235 000c 3F93      		push r19
+ 236 000e 4F93      		push r20
+ 237 0010 5F93      		push r21
+ 238 0012 6F93      		push r22
+ 239 0014 7F93      		push r23
+ 240 0016 8F93      		push r24
+ 241 0018 9F93      		push r25
+ 242 001a AF93      		push r26
+ 243 001c BF93      		push r27
+ 244 001e EF93      		push r30
+ 245 0020 FF93      		push r31
+ 246               	/* prologue: Signal */
+ 247               	/* frame size = 0 */
+ 248               	/* stack size = 15 */
+ 249               	.L__stack_usage = 15
+ 250 0022 0E94 0000 		call _Z22timer0CompareACallbackv
+ 251               	/* epilogue start */
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 5
+
+
+ 252 0026 FF91      		pop r31
+ 253 0028 EF91      		pop r30
+ 254 002a BF91      		pop r27
+ 255 002c AF91      		pop r26
+ 256 002e 9F91      		pop r25
+ 257 0030 8F91      		pop r24
+ 258 0032 7F91      		pop r23
+ 259 0034 6F91      		pop r22
+ 260 0036 5F91      		pop r21
+ 261 0038 4F91      		pop r20
+ 262 003a 3F91      		pop r19
+ 263 003c 2F91      		pop r18
+ 264 003e 0F90      		pop r0
+ 265 0040 0FBE      		out __SREG__,r0
+ 266 0042 0F90      		pop r0
+ 267 0044 1F90      		pop r1
+ 268 0046 1895      		reti
+ 270               		.section	.text.__vector_15,"ax",@progbits
+ 271               	.global	__vector_15
+ 273               	__vector_15:
+ 274 0000 1F92      		push r1
+ 275 0002 0F92      		push r0
+ 276 0004 0FB6      		in r0,__SREG__
+ 277 0006 0F92      		push r0
+ 278 0008 1124      		clr __zero_reg__
+ 279 000a 2F93      		push r18
+ 280 000c 3F93      		push r19
+ 281 000e 4F93      		push r20
+ 282 0010 5F93      		push r21
+ 283 0012 6F93      		push r22
+ 284 0014 7F93      		push r23
+ 285 0016 8F93      		push r24
+ 286 0018 9F93      		push r25
+ 287 001a AF93      		push r26
+ 288 001c BF93      		push r27
+ 289 001e EF93      		push r30
+ 290 0020 FF93      		push r31
+ 291               	/* prologue: Signal */
+ 292               	/* frame size = 0 */
+ 293               	/* stack size = 15 */
+ 294               	.L__stack_usage = 15
+ 295 0022 0E94 0000 		call _Z22timer0CompareBCallbackv
+ 296               	/* epilogue start */
+ 297 0026 FF91      		pop r31
+ 298 0028 EF91      		pop r30
+ 299 002a BF91      		pop r27
+ 300 002c AF91      		pop r26
+ 301 002e 9F91      		pop r25
+ 302 0030 8F91      		pop r24
+ 303 0032 7F91      		pop r23
+ 304 0034 6F91      		pop r22
+ 305 0036 5F91      		pop r21
+ 306 0038 4F91      		pop r20
+ 307 003a 3F91      		pop r19
+ 308 003c 2F91      		pop r18
+ 309 003e 0F90      		pop r0
+ 310 0040 0FBE      		out __SREG__,r0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 6
+
+
+ 311 0042 0F90      		pop r0
+ 312 0044 1F90      		pop r1
+ 313 0046 1895      		reti
+ 315               		.section	.text.__vector_16,"ax",@progbits
+ 316               	.global	__vector_16
+ 318               	__vector_16:
+ 319 0000 1F92      		push r1
+ 320 0002 0F92      		push r0
+ 321 0004 0FB6      		in r0,__SREG__
+ 322 0006 0F92      		push r0
+ 323 0008 1124      		clr __zero_reg__
+ 324 000a 2F93      		push r18
+ 325 000c 3F93      		push r19
+ 326 000e 4F93      		push r20
+ 327 0010 5F93      		push r21
+ 328 0012 6F93      		push r22
+ 329 0014 7F93      		push r23
+ 330 0016 8F93      		push r24
+ 331 0018 9F93      		push r25
+ 332 001a AF93      		push r26
+ 333 001c BF93      		push r27
+ 334 001e EF93      		push r30
+ 335 0020 FF93      		push r31
+ 336               	/* prologue: Signal */
+ 337               	/* frame size = 0 */
+ 338               	/* stack size = 15 */
+ 339               	.L__stack_usage = 15
+ 340 0022 0E94 0000 		call _Z22timer0OverflowCallbackv
+ 341               	/* epilogue start */
+ 342 0026 FF91      		pop r31
+ 343 0028 EF91      		pop r30
+ 344 002a BF91      		pop r27
+ 345 002c AF91      		pop r26
+ 346 002e 9F91      		pop r25
+ 347 0030 8F91      		pop r24
+ 348 0032 7F91      		pop r23
+ 349 0034 6F91      		pop r22
+ 350 0036 5F91      		pop r21
+ 351 0038 4F91      		pop r20
+ 352 003a 3F91      		pop r19
+ 353 003c 2F91      		pop r18
+ 354 003e 0F90      		pop r0
+ 355 0040 0FBE      		out __SREG__,r0
+ 356 0042 0F90      		pop r0
+ 357 0044 1F90      		pop r1
+ 358 0046 1895      		reti
+ 360               		.section	.text._GLOBAL__sub_I_timer0,"ax",@progbits
+ 362               	_GLOBAL__sub_I_timer0:
+ 363               	/* prologue: function */
+ 364               	/* frame size = 0 */
+ 365               	/* stack size = 0 */
+ 366               	.L__stack_usage = 0
+ 367 0000 80E0      		ldi r24,lo8(timer0)
+ 368 0002 90E0      		ldi r25,hi8(timer0)
+ 369 0004 0E94 0000 		call _ZN6Timer0C1Ev
+ 370               	/* epilogue start */
+ 371 0008 0895      		ret
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 7
+
+
+ 373               		.global __do_global_ctors
+ 374               		.section .ctors,"a",@progbits
+ 375               		.p2align	1
+ 376 0000 0000      		.word	gs(_GLOBAL__sub_I_timer0)
+ 377               	.global	timer0
+ 378               		.section	.bss.timer0,"aw",@nobits
+ 381               	timer0:
+ 382 0000 0000 0000 		.zero	5
+ 382      00
+ 383               		.ident	"GCC: (GNU) 12.1.0"
+ 384               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 timer0.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:25     .text._ZN6Timer0C2Ev:0000000000000000 _ZN6Timer0C2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:25     .text._ZN6Timer0C2Ev:0000000000000000 _ZN6Timer0C1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:47     .text._ZN6Timer0D2Ev:0000000000000000 _ZN6Timer0D2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:47     .text._ZN6Timer0D2Ev:0000000000000000 _ZN6Timer0D1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:60     .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000000000000000 _ZN6Timer04initENS_4ModeENS_11ClockSourceE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:98     .text._ZN6Timer07setModeENS_4ModeE:0000000000000000 _ZN6Timer07setModeENS_4ModeE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:131    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000000000000 _ZN6Timer014setClockSourceENS_11ClockSourceE
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:152    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000000000000000 _ZN6Timer013setOutputModeENS_10OutputModeES0_
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:181    .text._ZN6Timer012getLastErrorEv:0000000000000000 _ZN6Timer012getLastErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:195    .text._Z22timer0CompareACallbackv:0000000000000000 _Z22timer0CompareACallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:206    .text._Z22timer0CompareBCallbackv:0000000000000000 _Z22timer0CompareBCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:217    .text._Z22timer0OverflowCallbackv:0000000000000000 _Z22timer0OverflowCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:228    .text.__vector_14:0000000000000000 __vector_14
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:273    .text.__vector_15:0000000000000000 __vector_15
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:318    .text.__vector_16:0000000000000000 __vector_16
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:362    .text._GLOBAL__sub_I_timer0:0000000000000000 _GLOBAL__sub_I_timer0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cc2u4mDh.s:381    .bss.timer0:0000000000000000 timer0
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss

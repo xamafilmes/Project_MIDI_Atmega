@@ -1,0 +1,244 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s 			page 1
+
+
+   1               		.file	"pcint1.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN6Pcint1C2Ev,"ax",@progbits
+  23               	.global	_ZN6Pcint1C2Ev
+  25               	_ZN6Pcint1C2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F92F      		mov r31,r25
+  32 0004 1182      		std Z+1,__zero_reg__
+  33 0006 8081      		ld r24,Z
+  34 0008 8E7F      		andi r24,lo8(~(1<<0))
+  35 000a 8083      		st Z,r24
+  36 000c 1382      		std Z+3,__zero_reg__
+  37 000e 1282      		std Z+2,__zero_reg__
+  38               	/* epilogue start */
+  39 0010 0895      		ret
+  41               	.global	_ZN6Pcint1C1Ev
+  42               		.set	_ZN6Pcint1C1Ev,_ZN6Pcint1C2Ev
+  43               		.section	.text._ZN6Pcint1D2Ev,"ax",@progbits
+  44               	.global	_ZN6Pcint1D2Ev
+  46               	_ZN6Pcint1D2Ev:
+  47               	/* prologue: function */
+  48               	/* frame size = 0 */
+  49               	/* stack size = 0 */
+  50               	.L__stack_usage = 0
+  51               	/* epilogue start */
+  52 0000 0895      		ret
+  54               	.global	_ZN6Pcint1D1Ev
+  55               		.set	_ZN6Pcint1D1Ev,_ZN6Pcint1D2Ev
+  56               		.section	.text._ZN6Pcint14initENS_3PinE,"ax",@progbits
+  57               	.global	_ZN6Pcint14initENS_3PinE
+  59               	_ZN6Pcint14initENS_3PinE:
+  60               	/* prologue: function */
+  61               	/* frame size = 0 */
+  62               	/* stack size = 0 */
+  63               	.L__stack_usage = 0
+  64 0000 E82F      		mov r30,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s 			page 2
+
+
+  65 0002 F92F      		mov r31,r25
+  66 0004 ACE6      		ldi r26,lo8(108)
+  67 0006 B0E0      		ldi r27,0
+  68 0008 8C91      		ld r24,X
+  69 000a 8078      		andi r24,lo8(-128)
+  70 000c 862B      		or r24,r22
+  71 000e 8C93      		st X,r24
+  72 0010 6183      		std Z+1,r22
+  73 0012 8081      		ld r24,Z
+  74 0014 8160      		ori r24,lo8(1<<0)
+  75 0016 8083      		st Z,r24
+  76 0018 1382      		std Z+3,__zero_reg__
+  77 001a 1282      		std Z+2,__zero_reg__
+  78 001c 81E0      		ldi r24,lo8(1)
+  79               	/* epilogue start */
+  80 001e 0895      		ret
+  82               		.section	.text._ZN6Pcint110enablePinsENS_3PinE,"ax",@progbits
+  83               	.global	_ZN6Pcint110enablePinsENS_3PinE
+  85               	_ZN6Pcint110enablePinsENS_3PinE:
+  86               	/* prologue: function */
+  87               	/* frame size = 0 */
+  88               	/* stack size = 0 */
+  89               	.L__stack_usage = 0
+  90 0000 E82F      		mov r30,r24
+  91 0002 F92F      		mov r31,r25
+  92 0004 ACE6      		ldi r26,lo8(108)
+  93 0006 B0E0      		ldi r27,0
+  94 0008 8C91      		ld r24,X
+  95 000a 9181      		ldd r25,Z+1
+  96 000c 692B      		or r22,r25
+  97 000e 8078      		andi r24,lo8(-128)
+  98 0010 862B      		or r24,r22
+  99 0012 8C93      		st X,r24
+ 100 0014 6183      		std Z+1,r22
+ 101 0016 1382      		std Z+3,__zero_reg__
+ 102 0018 1282      		std Z+2,__zero_reg__
+ 103 001a 81E0      		ldi r24,lo8(1)
+ 104               	/* epilogue start */
+ 105 001c 0895      		ret
+ 107               		.section	.text._ZN6Pcint111disablePinsENS_3PinE,"ax",@progbits
+ 108               	.global	_ZN6Pcint111disablePinsENS_3PinE
+ 110               	_ZN6Pcint111disablePinsENS_3PinE:
+ 111               	/* prologue: function */
+ 112               	/* frame size = 0 */
+ 113               	/* stack size = 0 */
+ 114               	.L__stack_usage = 0
+ 115 0000 E82F      		mov r30,r24
+ 116 0002 F92F      		mov r31,r25
+ 117 0004 ACE6      		ldi r26,lo8(108)
+ 118 0006 B0E0      		ldi r27,0
+ 119 0008 8C91      		ld r24,X
+ 120 000a 6095      		com r22
+ 121 000c 9181      		ldd r25,Z+1
+ 122 000e 6923      		and r22,r25
+ 123 0010 8078      		andi r24,lo8(-128)
+ 124 0012 862B      		or r24,r22
+ 125 0014 8C93      		st X,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s 			page 3
+
+
+ 126 0016 6183      		std Z+1,r22
+ 127 0018 1382      		std Z+3,__zero_reg__
+ 128 001a 1282      		std Z+2,__zero_reg__
+ 129 001c 81E0      		ldi r24,lo8(1)
+ 130               	/* epilogue start */
+ 131 001e 0895      		ret
+ 133               		.section	.text._ZN6Pcint112getLastErrorEv,"ax",@progbits
+ 134               	.global	_ZN6Pcint112getLastErrorEv
+ 136               	_ZN6Pcint112getLastErrorEv:
+ 137               	/* prologue: function */
+ 138               	/* frame size = 0 */
+ 139               	/* stack size = 0 */
+ 140               	.L__stack_usage = 0
+ 141 0000 FC01      		movw r30,r24
+ 142 0002 8281      		ldd r24,Z+2
+ 143 0004 9381      		ldd r25,Z+3
+ 144               	/* epilogue start */
+ 145 0006 0895      		ret
+ 147               		.section	.text._Z23pcint1InterruptCallbackv,"ax",@progbits
+ 148               		.weak	_Z23pcint1InterruptCallbackv
+ 150               	_Z23pcint1InterruptCallbackv:
+ 151               	/* prologue: function */
+ 152               	/* frame size = 0 */
+ 153               	/* stack size = 0 */
+ 154               	.L__stack_usage = 0
+ 155               	/* epilogue start */
+ 156 0000 0895      		ret
+ 158               		.section	.text.__vector_4,"ax",@progbits
+ 159               	.global	__vector_4
+ 161               	__vector_4:
+ 162 0000 1F92      		push r1
+ 163 0002 0F92      		push r0
+ 164 0004 0FB6      		in r0,__SREG__
+ 165 0006 0F92      		push r0
+ 166 0008 1124      		clr __zero_reg__
+ 167 000a 2F93      		push r18
+ 168 000c 3F93      		push r19
+ 169 000e 4F93      		push r20
+ 170 0010 5F93      		push r21
+ 171 0012 6F93      		push r22
+ 172 0014 7F93      		push r23
+ 173 0016 8F93      		push r24
+ 174 0018 9F93      		push r25
+ 175 001a AF93      		push r26
+ 176 001c BF93      		push r27
+ 177 001e EF93      		push r30
+ 178 0020 FF93      		push r31
+ 179               	/* prologue: Signal */
+ 180               	/* frame size = 0 */
+ 181               	/* stack size = 15 */
+ 182               	.L__stack_usage = 15
+ 183 0022 0E94 0000 		call _Z23pcint1InterruptCallbackv
+ 184               	/* epilogue start */
+ 185 0026 FF91      		pop r31
+ 186 0028 EF91      		pop r30
+ 187 002a BF91      		pop r27
+ 188 002c AF91      		pop r26
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s 			page 4
+
+
+ 189 002e 9F91      		pop r25
+ 190 0030 8F91      		pop r24
+ 191 0032 7F91      		pop r23
+ 192 0034 6F91      		pop r22
+ 193 0036 5F91      		pop r21
+ 194 0038 4F91      		pop r20
+ 195 003a 3F91      		pop r19
+ 196 003c 2F91      		pop r18
+ 197 003e 0F90      		pop r0
+ 198 0040 0FBE      		out __SREG__,r0
+ 199 0042 0F90      		pop r0
+ 200 0044 1F90      		pop r1
+ 201 0046 1895      		reti
+ 203               		.section	.text._GLOBAL__sub_I_pcint1,"ax",@progbits
+ 205               	_GLOBAL__sub_I_pcint1:
+ 206               	/* prologue: function */
+ 207               	/* frame size = 0 */
+ 208               	/* stack size = 0 */
+ 209               	.L__stack_usage = 0
+ 210 0000 80E0      		ldi r24,lo8(pcint1)
+ 211 0002 90E0      		ldi r25,hi8(pcint1)
+ 212 0004 0E94 0000 		call _ZN6Pcint1C1Ev
+ 213               	/* epilogue start */
+ 214 0008 0895      		ret
+ 216               		.global __do_global_ctors
+ 217               		.section .ctors,"a",@progbits
+ 218               		.p2align	1
+ 219 0000 0000      		.word	gs(_GLOBAL__sub_I_pcint1)
+ 220               	.global	pcint1
+ 221               		.section	.bss.pcint1,"aw",@nobits
+ 224               	pcint1:
+ 225 0000 0000 0000 		.zero	4
+ 226               		.ident	"GCC: (GNU) 12.1.0"
+ 227               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 pcint1.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:25     .text._ZN6Pcint1C2Ev:0000000000000000 _ZN6Pcint1C2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:25     .text._ZN6Pcint1C2Ev:0000000000000000 _ZN6Pcint1C1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:46     .text._ZN6Pcint1D2Ev:0000000000000000 _ZN6Pcint1D2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:46     .text._ZN6Pcint1D2Ev:0000000000000000 _ZN6Pcint1D1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:59     .text._ZN6Pcint14initENS_3PinE:0000000000000000 _ZN6Pcint14initENS_3PinE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:85     .text._ZN6Pcint110enablePinsENS_3PinE:0000000000000000 _ZN6Pcint110enablePinsENS_3PinE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:110    .text._ZN6Pcint111disablePinsENS_3PinE:0000000000000000 _ZN6Pcint111disablePinsENS_3PinE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:136    .text._ZN6Pcint112getLastErrorEv:0000000000000000 _ZN6Pcint112getLastErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:150    .text._Z23pcint1InterruptCallbackv:0000000000000000 _Z23pcint1InterruptCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:161    .text.__vector_4:0000000000000000 __vector_4
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:205    .text._GLOBAL__sub_I_pcint1:0000000000000000 _GLOBAL__sub_I_pcint1
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccrdNxSI.s:224    .bss.pcint1:0000000000000000 pcint1
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss

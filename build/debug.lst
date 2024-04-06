@@ -1,0 +1,69 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s 			page 1
+
+
+   1               		.file	"debug.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN5DebugC2Ev,"ax",@progbits
+  23               	.global	_ZN5DebugC2Ev
+  25               	_ZN5DebugC2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30               	/* epilogue start */
+  31 0000 0895      		ret
+  33               	.global	_ZN5DebugC1Ev
+  34               		.set	_ZN5DebugC1Ev,_ZN5DebugC2Ev
+  35               		.section	.text._ZN5DebugD2Ev,"ax",@progbits
+  36               	.global	_ZN5DebugD2Ev
+  38               	_ZN5DebugD2Ev:
+  39               	/* prologue: function */
+  40               	/* frame size = 0 */
+  41               	/* stack size = 0 */
+  42               	.L__stack_usage = 0
+  43               	/* epilogue start */
+  44 0000 0895      		ret
+  46               	.global	_ZN5DebugD1Ev
+  47               		.set	_ZN5DebugD1Ev,_ZN5DebugD2Ev
+  48               	.global	debug
+  49               		.section	.bss.debug,"aw",@nobits
+  52               	debug:
+  53 0000 00        		.zero	1
+  54               		.ident	"GCC: (GNU) 12.1.0"
+  55               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 debug.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:25     .text._ZN5DebugC2Ev:0000000000000000 _ZN5DebugC2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:25     .text._ZN5DebugC2Ev:0000000000000000 _ZN5DebugC1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:38     .text._ZN5DebugD2Ev:0000000000000000 _ZN5DebugD2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:38     .text._ZN5DebugD2Ev:0000000000000000 _ZN5DebugD1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccpZAyMF.s:52     .bss.debug:0000000000000000 debug
+
+UNDEFINED SYMBOLS
+__do_clear_bss

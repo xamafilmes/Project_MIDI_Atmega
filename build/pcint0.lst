@@ -1,0 +1,238 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s 			page 1
+
+
+   1               		.file	"pcint0.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN6Pcint0C2Ev,"ax",@progbits
+  23               	.global	_ZN6Pcint0C2Ev
+  25               	_ZN6Pcint0C2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F92F      		mov r31,r25
+  32 0004 1182      		std Z+1,__zero_reg__
+  33 0006 8081      		ld r24,Z
+  34 0008 8E7F      		andi r24,lo8(~(1<<0))
+  35 000a 8083      		st Z,r24
+  36 000c 1382      		std Z+3,__zero_reg__
+  37 000e 1282      		std Z+2,__zero_reg__
+  38               	/* epilogue start */
+  39 0010 0895      		ret
+  41               	.global	_ZN6Pcint0C1Ev
+  42               		.set	_ZN6Pcint0C1Ev,_ZN6Pcint0C2Ev
+  43               		.section	.text._ZN6Pcint0D2Ev,"ax",@progbits
+  44               	.global	_ZN6Pcint0D2Ev
+  46               	_ZN6Pcint0D2Ev:
+  47               	/* prologue: function */
+  48               	/* frame size = 0 */
+  49               	/* stack size = 0 */
+  50               	.L__stack_usage = 0
+  51               	/* epilogue start */
+  52 0000 0895      		ret
+  54               	.global	_ZN6Pcint0D1Ev
+  55               		.set	_ZN6Pcint0D1Ev,_ZN6Pcint0D2Ev
+  56               		.section	.text._ZN6Pcint04initENS_3PinE,"ax",@progbits
+  57               	.global	_ZN6Pcint04initENS_3PinE
+  59               	_ZN6Pcint04initENS_3PinE:
+  60               	/* prologue: function */
+  61               	/* frame size = 0 */
+  62               	/* stack size = 0 */
+  63               	.L__stack_usage = 0
+  64 0000 E82F      		mov r30,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s 			page 2
+
+
+  65 0002 F92F      		mov r31,r25
+  66 0004 ABE6      		ldi r26,lo8(107)
+  67 0006 B0E0      		ldi r27,0
+  68 0008 8C91      		ld r24,X
+  69 000a 6C93      		st X,r22
+  70 000c 6183      		std Z+1,r22
+  71 000e 8081      		ld r24,Z
+  72 0010 8160      		ori r24,lo8(1<<0)
+  73 0012 8083      		st Z,r24
+  74 0014 1382      		std Z+3,__zero_reg__
+  75 0016 1282      		std Z+2,__zero_reg__
+  76 0018 81E0      		ldi r24,lo8(1)
+  77               	/* epilogue start */
+  78 001a 0895      		ret
+  80               		.section	.text._ZN6Pcint010enablePinsENS_3PinE,"ax",@progbits
+  81               	.global	_ZN6Pcint010enablePinsENS_3PinE
+  83               	_ZN6Pcint010enablePinsENS_3PinE:
+  84               	/* prologue: function */
+  85               	/* frame size = 0 */
+  86               	/* stack size = 0 */
+  87               	.L__stack_usage = 0
+  88 0000 E82F      		mov r30,r24
+  89 0002 F92F      		mov r31,r25
+  90 0004 ABE6      		ldi r26,lo8(107)
+  91 0006 B0E0      		ldi r27,0
+  92 0008 8C91      		ld r24,X
+  93 000a 8181      		ldd r24,Z+1
+  94 000c 682B      		or r22,r24
+  95 000e 6C93      		st X,r22
+  96 0010 6183      		std Z+1,r22
+  97 0012 1382      		std Z+3,__zero_reg__
+  98 0014 1282      		std Z+2,__zero_reg__
+  99 0016 81E0      		ldi r24,lo8(1)
+ 100               	/* epilogue start */
+ 101 0018 0895      		ret
+ 103               		.section	.text._ZN6Pcint011disablePinsENS_3PinE,"ax",@progbits
+ 104               	.global	_ZN6Pcint011disablePinsENS_3PinE
+ 106               	_ZN6Pcint011disablePinsENS_3PinE:
+ 107               	/* prologue: function */
+ 108               	/* frame size = 0 */
+ 109               	/* stack size = 0 */
+ 110               	.L__stack_usage = 0
+ 111 0000 E82F      		mov r30,r24
+ 112 0002 F92F      		mov r31,r25
+ 113 0004 ABE6      		ldi r26,lo8(107)
+ 114 0006 B0E0      		ldi r27,0
+ 115 0008 8C91      		ld r24,X
+ 116 000a 6095      		com r22
+ 117 000c 8181      		ldd r24,Z+1
+ 118 000e 6823      		and r22,r24
+ 119 0010 6C93      		st X,r22
+ 120 0012 6183      		std Z+1,r22
+ 121 0014 1382      		std Z+3,__zero_reg__
+ 122 0016 1282      		std Z+2,__zero_reg__
+ 123 0018 81E0      		ldi r24,lo8(1)
+ 124               	/* epilogue start */
+ 125 001a 0895      		ret
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s 			page 3
+
+
+ 127               		.section	.text._ZN6Pcint012getLastErrorEv,"ax",@progbits
+ 128               	.global	_ZN6Pcint012getLastErrorEv
+ 130               	_ZN6Pcint012getLastErrorEv:
+ 131               	/* prologue: function */
+ 132               	/* frame size = 0 */
+ 133               	/* stack size = 0 */
+ 134               	.L__stack_usage = 0
+ 135 0000 FC01      		movw r30,r24
+ 136 0002 8281      		ldd r24,Z+2
+ 137 0004 9381      		ldd r25,Z+3
+ 138               	/* epilogue start */
+ 139 0006 0895      		ret
+ 141               		.section	.text._Z23pcint0InterruptCallbackv,"ax",@progbits
+ 142               		.weak	_Z23pcint0InterruptCallbackv
+ 144               	_Z23pcint0InterruptCallbackv:
+ 145               	/* prologue: function */
+ 146               	/* frame size = 0 */
+ 147               	/* stack size = 0 */
+ 148               	.L__stack_usage = 0
+ 149               	/* epilogue start */
+ 150 0000 0895      		ret
+ 152               		.section	.text.__vector_3,"ax",@progbits
+ 153               	.global	__vector_3
+ 155               	__vector_3:
+ 156 0000 1F92      		push r1
+ 157 0002 0F92      		push r0
+ 158 0004 0FB6      		in r0,__SREG__
+ 159 0006 0F92      		push r0
+ 160 0008 1124      		clr __zero_reg__
+ 161 000a 2F93      		push r18
+ 162 000c 3F93      		push r19
+ 163 000e 4F93      		push r20
+ 164 0010 5F93      		push r21
+ 165 0012 6F93      		push r22
+ 166 0014 7F93      		push r23
+ 167 0016 8F93      		push r24
+ 168 0018 9F93      		push r25
+ 169 001a AF93      		push r26
+ 170 001c BF93      		push r27
+ 171 001e EF93      		push r30
+ 172 0020 FF93      		push r31
+ 173               	/* prologue: Signal */
+ 174               	/* frame size = 0 */
+ 175               	/* stack size = 15 */
+ 176               	.L__stack_usage = 15
+ 177 0022 0E94 0000 		call _Z23pcint0InterruptCallbackv
+ 178               	/* epilogue start */
+ 179 0026 FF91      		pop r31
+ 180 0028 EF91      		pop r30
+ 181 002a BF91      		pop r27
+ 182 002c AF91      		pop r26
+ 183 002e 9F91      		pop r25
+ 184 0030 8F91      		pop r24
+ 185 0032 7F91      		pop r23
+ 186 0034 6F91      		pop r22
+ 187 0036 5F91      		pop r21
+ 188 0038 4F91      		pop r20
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s 			page 4
+
+
+ 189 003a 3F91      		pop r19
+ 190 003c 2F91      		pop r18
+ 191 003e 0F90      		pop r0
+ 192 0040 0FBE      		out __SREG__,r0
+ 193 0042 0F90      		pop r0
+ 194 0044 1F90      		pop r1
+ 195 0046 1895      		reti
+ 197               		.section	.text._GLOBAL__sub_I_pcint0,"ax",@progbits
+ 199               	_GLOBAL__sub_I_pcint0:
+ 200               	/* prologue: function */
+ 201               	/* frame size = 0 */
+ 202               	/* stack size = 0 */
+ 203               	.L__stack_usage = 0
+ 204 0000 80E0      		ldi r24,lo8(pcint0)
+ 205 0002 90E0      		ldi r25,hi8(pcint0)
+ 206 0004 0E94 0000 		call _ZN6Pcint0C1Ev
+ 207               	/* epilogue start */
+ 208 0008 0895      		ret
+ 210               		.global __do_global_ctors
+ 211               		.section .ctors,"a",@progbits
+ 212               		.p2align	1
+ 213 0000 0000      		.word	gs(_GLOBAL__sub_I_pcint0)
+ 214               	.global	pcint0
+ 215               		.section	.bss.pcint0,"aw",@nobits
+ 218               	pcint0:
+ 219 0000 0000 0000 		.zero	4
+ 220               		.ident	"GCC: (GNU) 12.1.0"
+ 221               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 pcint0.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:25     .text._ZN6Pcint0C2Ev:0000000000000000 _ZN6Pcint0C2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:25     .text._ZN6Pcint0C2Ev:0000000000000000 _ZN6Pcint0C1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:46     .text._ZN6Pcint0D2Ev:0000000000000000 _ZN6Pcint0D2Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:46     .text._ZN6Pcint0D2Ev:0000000000000000 _ZN6Pcint0D1Ev
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:59     .text._ZN6Pcint04initENS_3PinE:0000000000000000 _ZN6Pcint04initENS_3PinE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:83     .text._ZN6Pcint010enablePinsENS_3PinE:0000000000000000 _ZN6Pcint010enablePinsENS_3PinE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:106    .text._ZN6Pcint011disablePinsENS_3PinE:0000000000000000 _ZN6Pcint011disablePinsENS_3PinE
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:130    .text._ZN6Pcint012getLastErrorEv:0000000000000000 _ZN6Pcint012getLastErrorEv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:144    .text._Z23pcint0InterruptCallbackv:0000000000000000 _Z23pcint0InterruptCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:155    .text.__vector_3:0000000000000000 __vector_3
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:199    .text._GLOBAL__sub_I_pcint0:0000000000000000 _GLOBAL__sub_I_pcint0
+C:\Users\ANDRLU~1\AppData\Local\Temp\ccTk8MLN.s:218    .bss.pcint0:0000000000000000 pcint0
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss

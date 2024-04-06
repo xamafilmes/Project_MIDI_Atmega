@@ -1,0 +1,2142 @@
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 1
+
+
+   1               		.file	"main.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._Z4playP4MIDI,"ax",@progbits
+  23               	.global	_Z4playP4MIDI
+  25               	_Z4playP4MIDI:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F92F      		mov r31,r25
+  32 0004 8091 C000 		lds r24,192
+  33 0008 8072      		andi r24,lo8(32)
+  34 000a 8111      		cpse r24,__zero_reg__
+  35 000c 00C0      		rjmp .L4
+  36               	.L2:
+  37               	/* epilogue start */
+  38 000e 0895      		ret
+  39               	.L4:
+  40 0010 8181      		ldd r24,Z+1
+  41 0012 A0E0      		ldi r26,lo8(Midi_Variable)
+  42 0014 B0E0      		ldi r27,hi8(Midi_Variable)
+  43 0016 1196      		adiw r26,1
+  44 0018 8C93      		st X,r24
+  45 001a 1197      		sbiw r26,1
+  46 001c 8281      		ldd r24,Z+2
+  47 001e 1296      		adiw r26,2
+  48 0020 8C93      		st X,r24
+  49 0022 1297      		sbiw r26,2
+  50 0024 8381      		ldd r24,Z+3
+  51 0026 1396      		adiw r26,3
+  52 0028 8C93      		st X,r24
+  53 002a 1397      		sbiw r26,3
+  54 002c 8481      		ldd r24,Z+4
+  55 002e 1496      		adiw r26,4
+  56 0030 8C93      		st X,r24
+  57 0032 1497      		sbiw r26,4
+  58 0034 8081      		ld r24,Z
+  59 0036 8C93      		st X,r24
+  60 0038 E1EC      		ldi r30,lo8(-63)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 2
+
+
+  61 003a F0E0      		ldi r31,0
+  62 003c 8081      		ld r24,Z
+  63 003e 8860      		ori r24,lo8(8)
+  64 0040 8083      		st Z,r24
+  65 0042 8081      		ld r24,Z
+  66 0044 8062      		ori r24,lo8(32)
+  67 0046 8083      		st Z,r24
+  68 0048 81E0      		ldi r24,lo8(1)
+  69 004a 00C0      		rjmp .L2
+  71               		.section	.text._Z9init_midiP4MIDIh,"ax",@progbits
+  72               	.global	_Z9init_midiP4MIDIh
+  74               	_Z9init_midiP4MIDIh:
+  75               	/* prologue: function */
+  76               	/* frame size = 0 */
+  77               	/* stack size = 0 */
+  78               	.L__stack_usage = 0
+  79 0000 FC01      		movw r30,r24
+  80 0002 6483      		std Z+4,r22
+  81 0004 80E0      		ldi r24,lo8(usart0)
+  82 0006 90E0      		ldi r25,hi8(usart0)
+  83 0008 0E94 0000 		call _ZN6Usart04initEv
+  84 000c E1EC      		ldi r30,lo8(-63)
+  85 000e F0E0      		ldi r31,0
+  86 0010 8081      		ld r24,Z
+  87 0012 8860      		ori r24,lo8(8)
+  88 0014 8083      		st Z,r24
+  89 0016 8FE1      		ldi r24,lo8(31)
+  90 0018 90E0      		ldi r25,0
+  91 001a 9093 C500 		sts 196+1,r25
+  92 001e 8093 C400 		sts 196,r24
+  93 0022 8081      		ld r24,Z
+  94 0024 8860      		ori r24,lo8(8)
+  95 0026 8083      		st Z,r24
+  96 0028 559A      		sbi 0xa,5
+  97 002a 5D9A      		sbi 0xb,5
+  98 002c 549A      		sbi 0xa,4
+  99 002e 5C9A      		sbi 0xb,4
+ 100 0030 5C98      		cbi 0xb,4
+ 101 0032 FFEF      		ldi r31,lo8(319999)
+ 102 0034 21EE      		ldi r18,hi8(319999)
+ 103 0036 84E0      		ldi r24,hlo8(319999)
+ 104 0038 F150      	1:	subi r31,1
+ 105 003a 2040      		sbci r18,0
+ 106 003c 8040      		sbci r24,0
+ 107 003e 01F4      		brne 1b
+ 108 0040 00C0      		rjmp .
+ 109 0042 0000      		nop
+ 110 0044 5C9A      		sbi 0xb,4
+ 111 0046 9FEF      		ldi r25,lo8(319999)
+ 112 0048 E1EE      		ldi r30,hi8(319999)
+ 113 004a F4E0      		ldi r31,hlo8(319999)
+ 114 004c 9150      	1:	subi r25,1
+ 115 004e E040      		sbci r30,0
+ 116 0050 F040      		sbci r31,0
+ 117 0052 01F4      		brne 1b
+ 118 0054 00C0      		rjmp .
+ 119 0056 0000      		nop
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 3
+
+
+ 120               	/* epilogue start */
+ 121 0058 0895      		ret
+ 123               		.section	.text._Z7note_onP4MIDIhch,"ax",@progbits
+ 124               	.global	_Z7note_onP4MIDIhch
+ 126               	_Z7note_onP4MIDIhch:
+ 127               	/* prologue: function */
+ 128               	/* frame size = 0 */
+ 129               	/* stack size = 0 */
+ 130               	.L__stack_usage = 0
+ 131 0000 E82F      		mov r30,r24
+ 132 0002 F92F      		mov r31,r25
+ 133 0004 8481      		ldd r24,Z+4
+ 134 0006 8069      		ori r24,lo8(-112)
+ 135 0008 8083      		st Z,r24
+ 136 000a 942F      		mov r25,r20
+ 137 000c 990F      		lsl r25
+ 138 000e 490F      		add r20,r25
+ 139 0010 440F      		lsl r20
+ 140 0012 440F      		lsl r20
+ 141 0014 645C      		subi r22,lo8(-(60))
+ 142 0016 460F      		add r20,r22
+ 143 0018 842F      		mov r24,r20
+ 144 001a 822B      		or r24,r18
+ 145 001c 8823      		tst r24
+ 146 001e 04F4      		brge .L9
+ 147 0020 80E0      		ldi r24,0
+ 148               	/* epilogue start */
+ 149 0022 0895      		ret
+ 150               	.L9:
+ 151 0024 4183      		std Z+1,r20
+ 152 0026 2283      		std Z+2,r18
+ 153 0028 8381      		ldd r24,Z+3
+ 154 002a 8760      		ori r24,lo8(7)
+ 155 002c 8383      		std Z+3,r24
+ 156 002e CF01      		movw r24,r30
+ 157 0030 0E94 0000 		call _Z4playP4MIDI
+ 158 0034 8FE9      		ldi r24,lo8(3999)
+ 159 0036 9FE0      		ldi r25,hi8(3999)
+ 160 0038 0197      	1:	sbiw r24,1
+ 161 003a 01F4      		brne 1b
+ 162 003c 00C0      		rjmp .
+ 163 003e 0000      		nop
+ 164 0040 81E0      		ldi r24,lo8(1)
+ 165 0042 0895      		ret
+ 167               		.section	.text._Z8note_offP4MIDIhc,"ax",@progbits
+ 168               	.global	_Z8note_offP4MIDIhc
+ 170               	_Z8note_offP4MIDIhc:
+ 171               	/* prologue: function */
+ 172               	/* frame size = 0 */
+ 173               	/* stack size = 0 */
+ 174               	.L__stack_usage = 0
+ 175 0000 20E0      		ldi r18,0
+ 176 0002 0E94 0000 		call _Z7note_onP4MIDIhch
+ 177               	/* epilogue start */
+ 178 0006 0895      		ret
+ 180               		.section	.text._Z17change_instrumentP4MIDIh,"ax",@progbits
+ 181               	.global	_Z17change_instrumentP4MIDIh
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 4
+
+
+ 183               	_Z17change_instrumentP4MIDIh:
+ 184               	/* prologue: function */
+ 185               	/* frame size = 0 */
+ 186               	/* stack size = 0 */
+ 187               	.L__stack_usage = 0
+ 188 0000 E82F      		mov r30,r24
+ 189 0002 F92F      		mov r31,r25
+ 190 0004 8481      		ldd r24,Z+4
+ 191 0006 8F70      		andi r24,lo8(15)
+ 192 0008 806C      		ori r24,lo8(-64)
+ 193 000a 8083      		st Z,r24
+ 194 000c 6F77      		andi r22,lo8(127)
+ 195 000e 6183      		std Z+1,r22
+ 196 0010 8381      		ldd r24,Z+3
+ 197 0012 8E7F      		andi r24,lo8(-2)
+ 198 0014 8A60      		ori r24,lo8(10)
+ 199 0016 8383      		std Z+3,r24
+ 200 0018 CF01      		movw r24,r30
+ 201 001a 0E94 0000 		call _Z4playP4MIDI
+ 202 001e 8FE9      		ldi r24,lo8(3999)
+ 203 0020 9FE0      		ldi r25,hi8(3999)
+ 204 0022 0197      	1:	sbiw r24,1
+ 205 0024 01F4      		brne 1b
+ 206 0026 00C0      		rjmp .
+ 207 0028 0000      		nop
+ 208               	/* epilogue start */
+ 209 002a 0895      		ret
+ 211               		.section	.text._Z36usartTransmissionBufferEmptyCallbackv,"ax",@progbits
+ 212               	.global	_Z36usartTransmissionBufferEmptyCallbackv
+ 214               	_Z36usartTransmissionBufferEmptyCallbackv:
+ 215               	/* prologue: function */
+ 216               	/* frame size = 0 */
+ 217               	/* stack size = 0 */
+ 218               	.L__stack_usage = 0
+ 219 0000 8091 0000 		lds r24,Midi_Variable+3
+ 220 0004 82FD      		sbrc r24,2
+ 221 0006 00C0      		rjmp .L17
+ 222 0008 8091 0000 		lds r24,Midi_Variable+3
+ 223 000c 8770      		andi r24,lo8(7)
+ 224 000e 8330      		cpi r24,lo8(3)
+ 225 0010 01F0      		breq .L18
+ 226 0012 8091 0000 		lds r24,Midi_Variable+3
+ 227 0016 8770      		andi r24,lo8(7)
+ 228 0018 8230      		cpi r24,lo8(2)
+ 229 001a 01F0      		breq .L19
+ 230 001c 8091 0000 		lds r24,Midi_Variable+3
+ 231 0020 8770      		andi r24,lo8(7)
+ 232 0022 8130      		cpi r24,lo8(1)
+ 233 0024 01F0      		breq .L20
+ 234               	.L12:
+ 235               	/* epilogue start */
+ 236 0026 0895      		ret
+ 237               	.L17:
+ 238 0028 E0E0      		ldi r30,lo8(Midi_Variable)
+ 239 002a F0E0      		ldi r31,hi8(Midi_Variable)
+ 240 002c 8081      		ld r24,Z
+ 241 002e 8093 C600 		sts 198,r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 5
+
+
+ 242 0032 8381      		ldd r24,Z+3
+ 243 0034 8450      		subi r24,lo8(-(-4))
+ 244 0036 8383      		std Z+3,r24
+ 245 0038 0895      		ret
+ 246               	.L18:
+ 247 003a E0E0      		ldi r30,lo8(Midi_Variable)
+ 248 003c F0E0      		ldi r31,hi8(Midi_Variable)
+ 249 003e 8181      		ldd r24,Z+1
+ 250 0040 8093 C600 		sts 198,r24
+ 251 0044 8381      		ldd r24,Z+3
+ 252 0046 8250      		subi r24,lo8(-(-2))
+ 253 0048 8383      		std Z+3,r24
+ 254 004a 0895      		ret
+ 255               	.L19:
+ 256 004c E0E0      		ldi r30,lo8(Midi_Variable)
+ 257 004e F0E0      		ldi r31,hi8(Midi_Variable)
+ 258 0050 8181      		ldd r24,Z+1
+ 259 0052 8093 C600 		sts 198,r24
+ 260 0056 1382      		std Z+3,__zero_reg__
+ 261 0058 E1EC      		ldi r30,lo8(-63)
+ 262 005a F0E0      		ldi r31,0
+ 263 005c 8081      		ld r24,Z
+ 264 005e 8F7D      		andi r24,lo8(-33)
+ 265 0060 8083      		st Z,r24
+ 266 0062 0895      		ret
+ 267               	.L20:
+ 268 0064 E0E0      		ldi r30,lo8(Midi_Variable)
+ 269 0066 F0E0      		ldi r31,hi8(Midi_Variable)
+ 270 0068 8281      		ldd r24,Z+2
+ 271 006a 8093 C600 		sts 198,r24
+ 272 006e 1382      		std Z+3,__zero_reg__
+ 273 0070 E1EC      		ldi r30,lo8(-63)
+ 274 0072 F0E0      		ldi r31,0
+ 275 0074 8081      		ld r24,Z
+ 276 0076 8F7D      		andi r24,lo8(-33)
+ 277 0078 8083      		st Z,r24
+ 278 007a 00C0      		rjmp .L12
+ 280               		.section	.text.main,"ax",@progbits
+ 281               	.global	main
+ 283               	main:
+ 284 0000 CDB7      		in r28,__SP_L__
+ 285 0002 DEB7      		in r29,__SP_H__
+ 286 0004 6C97      		sbiw r28,28
+ 287 0006 0FB6      		in __tmp_reg__,__SREG__
+ 288 0008 F894      		cli
+ 289 000a DEBF      		out __SP_H__,r29
+ 290 000c 0FBE      		out __SREG__,__tmp_reg__
+ 291 000e CDBF      		out __SP_L__,r28
+ 292               	/* prologue: function */
+ 293               	/* frame size = 28 */
+ 294               	/* stack size = 28 */
+ 295               	.L__stack_usage = 28
+ 296 0010 CE01      		movw r24,r28
+ 297 0012 0196      		adiw r24,1
+ 298 0014 7C01      		movw r14,r24
+ 299 0016 0E94 0000 		call _ZN6KeypadC1Ev
+ 300 001a 80E8      		ldi r24,lo8(-128)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 6
+
+
+ 301 001c 888F      		std Y+24,r24
+ 302 001e 198E      		std Y+25,__zero_reg__
+ 303 0020 1A8E      		std Y+26,__zero_reg__
+ 304 0022 1B8E      		std Y+27,__zero_reg__
+ 305 0024 60E0      		ldi r22,0
+ 306 0026 CE01      		movw r24,r28
+ 307 0028 4896      		adiw r24,24
+ 308 002a 0E94 0000 		call _Z9init_midiP4MIDIh
+ 309               	/* #APP */
+ 310               	 ;  346 "main.cpp" 1
+ 311 002e 7894      		sei
+ 312               	 ;  0 "" 2
+ 313               	/* #NOAPP */
+ 314 0030 00E0      		ldi r16,0
+ 315 0032 24E2      		ldi r18,lo8(36)
+ 316 0034 30E0      		ldi r19,0
+ 317 0036 40E0      		ldi r20,0
+ 318 0038 67E2      		ldi r22,lo8(39)
+ 319 003a 70E0      		ldi r23,0
+ 320 003c C701      		movw r24,r14
+ 321 003e 0E94 0000 		call _ZN6Keypad8setPortsEPVhhS1_h
+ 322 0042 1F92      		push __zero_reg__
+ 323 0044 8FE0      		ldi r24,lo8(15)
+ 324 0046 8F93      		push r24
+ 325 0048 1F92      		push __zero_reg__
+ 326 004a 8EE0      		ldi r24,lo8(14)
+ 327 004c 8F93      		push r24
+ 328 004e 1F92      		push __zero_reg__
+ 329 0050 8DE0      		ldi r24,lo8(13)
+ 330 0052 8F93      		push r24
+ 331 0054 1F92      		push __zero_reg__
+ 332 0056 8CE0      		ldi r24,lo8(12)
+ 333 0058 8F93      		push r24
+ 334 005a 1F92      		push __zero_reg__
+ 335 005c 8BE0      		ldi r24,lo8(11)
+ 336 005e 8F93      		push r24
+ 337 0060 1F92      		push __zero_reg__
+ 338 0062 8AE0      		ldi r24,lo8(10)
+ 339 0064 8F93      		push r24
+ 340 0066 1F92      		push __zero_reg__
+ 341 0068 89E0      		ldi r24,lo8(9)
+ 342 006a 8F93      		push r24
+ 343 006c 1F92      		push __zero_reg__
+ 344 006e 88E0      		ldi r24,lo8(8)
+ 345 0070 8F93      		push r24
+ 346 0072 1F92      		push __zero_reg__
+ 347 0074 87E0      		ldi r24,lo8(7)
+ 348 0076 8F93      		push r24
+ 349 0078 1F92      		push __zero_reg__
+ 350 007a 86E0      		ldi r24,lo8(6)
+ 351 007c 8F93      		push r24
+ 352 007e 1F92      		push __zero_reg__
+ 353 0080 85E0      		ldi r24,lo8(5)
+ 354 0082 8F93      		push r24
+ 355 0084 1F92      		push __zero_reg__
+ 356 0086 84E0      		ldi r24,lo8(4)
+ 357 0088 8F93      		push r24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 7
+
+
+ 358 008a 1F92      		push __zero_reg__
+ 359 008c 83E0      		ldi r24,lo8(3)
+ 360 008e 8F93      		push r24
+ 361 0090 1F92      		push __zero_reg__
+ 362 0092 82E0      		ldi r24,lo8(2)
+ 363 0094 8F93      		push r24
+ 364 0096 1F92      		push __zero_reg__
+ 365 0098 81E0      		ldi r24,lo8(1)
+ 366 009a 8F93      		push r24
+ 367 009c 1F92      		push __zero_reg__
+ 368 009e 1F92      		push __zero_reg__
+ 369 00a0 1F92      		push __zero_reg__
+ 370 00a2 FF92      		push r15
+ 371 00a4 EF92      		push r14
+ 372 00a6 0E94 0000 		call _ZN6Keypad12setKeyValuesENS_4TypeEz
+ 373 00aa 0FB6      		in __tmp_reg__,__SREG__
+ 374 00ac F894      		cli
+ 375 00ae DEBF      		out __SP_H__,r29
+ 376 00b0 0FBE      		out __SREG__,__tmp_reg__
+ 377 00b2 CDBF      		out __SP_L__,r28
+ 378 00b4 65E0      		ldi r22,lo8(5)
+ 379 00b6 C701      		movw r24,r14
+ 380 00b8 0E94 0000 		call _ZN6Keypad4initEh
+ 381 00bc 24E1      		ldi r18,lo8(20)
+ 382 00be 40E1      		ldi r20,lo8(16)
+ 383 00c0 57E2      		ldi r21,lo8(39)
+ 384 00c2 60E0      		ldi r22,0
+ 385 00c4 70E0      		ldi r23,0
+ 386 00c6 80E0      		ldi r24,lo8(twi)
+ 387 00c8 90E0      		ldi r25,hi8(twi)
+ 388 00ca 0E94 0000 		call _ZN3Twi4initEmh
+ 389 00ce 40E0      		ldi r20,0
+ 390 00d0 68E6      		ldi r22,lo8(104)
+ 391 00d2 70E0      		ldi r23,0
+ 392 00d4 80E0      		ldi r24,lo8(twi)
+ 393 00d6 90E0      		ldi r25,hi8(twi)
+ 394 00d8 0E94 0000 		call _ZN3Twi9setDeviceEjb
+ 395 00dc 21E0      		ldi r18,lo8(1)
+ 396 00de 30E0      		ldi r19,0
+ 397 00e0 AE01      		movw r20,r28
+ 398 00e2 4B5E      		subi r20,-21
+ 399 00e4 5F4F      		sbci r21,-1
+ 400 00e6 6BE3      		ldi r22,lo8(59)
+ 401 00e8 80E0      		ldi r24,lo8(twi)
+ 402 00ea 90E0      		ldi r25,hi8(twi)
+ 403 00ec 0E94 0000 		call _ZN3Twi7readRegEhPhj
+ 404 00f0 21E0      		ldi r18,lo8(1)
+ 405 00f2 30E0      		ldi r19,0
+ 406 00f4 AE01      		movw r20,r28
+ 407 00f6 4A5E      		subi r20,-22
+ 408 00f8 5F4F      		sbci r21,-1
+ 409 00fa 6DE3      		ldi r22,lo8(61)
+ 410 00fc 80E0      		ldi r24,lo8(twi)
+ 411 00fe 90E0      		ldi r25,hi8(twi)
+ 412 0100 0E94 0000 		call _ZN3Twi7readRegEhPhj
+ 413 0104 21E0      		ldi r18,lo8(1)
+ 414 0106 30E0      		ldi r19,0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 8
+
+
+ 415 0108 AE01      		movw r20,r28
+ 416 010a 495E      		subi r20,-23
+ 417 010c 5F4F      		sbci r21,-1
+ 418 010e 6FE3      		ldi r22,lo8(63)
+ 419 0110 80E0      		ldi r24,lo8(twi)
+ 420 0112 90E0      		ldi r25,hi8(twi)
+ 421 0114 0E94 0000 		call _ZN3Twi7readRegEhPhj
+ 422 0118 10E0      		ldi r17,0
+ 423 011a 6894      		set
+ 424 011c BB24      		clr r11
+ 425 011e B4F8      		bld r11,4
+ 426 0120 0F2E      		mov __tmp_reg__,r31
+ 427 0122 F3E1      		ldi r31,lo8(19)
+ 428 0124 EF2E      		mov r14,r31
+ 429 0126 F02D      		mov r31,__tmp_reg__
+ 430 0128 0F2E      		mov __tmp_reg__,r31
+ 431 012a FAE1      		ldi r31,lo8(26)
+ 432 012c CF2E      		mov r12,r31
+ 433 012e F02D      		mov r31,__tmp_reg__
+ 434 0130 0F2E      		mov __tmp_reg__,r31
+ 435 0132 FEE2      		ldi r31,lo8(46)
+ 436 0134 FF2E      		mov r15,r31
+ 437 0136 F02D      		mov r31,__tmp_reg__
+ 438 0138 0F2E      		mov __tmp_reg__,r31
+ 439 013a FFE4      		ldi r31,lo8(79)
+ 440 013c DF2E      		mov r13,r31
+ 441 013e F02D      		mov r31,__tmp_reg__
+ 442 0140 00C0      		rjmp .L22
+ 443               	.L44:
+ 444 0142 012F      		mov r16,r17
+ 445               	.L24:
+ 446 0144 9233      		cpi r25,lo8(50)
+ 447 0146 04F4      		brge .L46
+ 448 0148 9F3C      		cpi r25,lo8(-49)
+ 449 014a 04F4      		brge .L25
+ 450 014c 0C2D      		mov r16,r12
+ 451 014e 00C0      		rjmp .L25
+ 452               	.L46:
+ 453 0150 0E2D      		mov r16,r14
+ 454               	.L25:
+ 455 0152 8233      		cpi r24,lo8(50)
+ 456 0154 04F4      		brge .L48
+ 457 0156 8F3C      		cpi r24,lo8(-49)
+ 458 0158 04F4      		brge .L26
+ 459 015a 0D2D      		mov r16,r13
+ 460 015c 00C0      		rjmp .L26
+ 461               	.L48:
+ 462 015e 0F2D      		mov r16,r15
+ 463               	.L26:
+ 464 0160 BE01      		movw r22,r28
+ 465 0162 6C5E      		subi r22,-20
+ 466 0164 7F4F      		sbci r23,-1
+ 467 0166 CE01      		movw r24,r28
+ 468 0168 0196      		adiw r24,1
+ 469 016a 0E94 0000 		call _ZN6Keypad14readKeyPressedEPh
+ 470 016e EC89      		ldd r30,Y+20
+ 471 0170 E031      		cpi r30,lo8(16)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 9
+
+
+ 472 0172 00F4      		brsh .L22
+ 473 0174 F0E0      		ldi r31,0
+ 474 0176 E050      		subi r30,lo8(-(gs(.L28)))
+ 475 0178 F040      		sbci r31,hi8(-(gs(.L28)))
+ 476 017a 0C94 0000 		jmp __tablejump2__
+ 477               		.section	.jumptables.gcc.main,"a",@progbits
+ 478               		.p2align	1
+ 479               	.L28:
+ 480 0000 0000      		.word gs(.L43)
+ 481 0002 0000      		.word gs(.L42)
+ 482 0004 0000      		.word gs(.L41)
+ 483 0006 0000      		.word gs(.L40)
+ 484 0008 0000      		.word gs(.L39)
+ 485 000a 0000      		.word gs(.L38)
+ 486 000c 0000      		.word gs(.L37)
+ 487 000e 0000      		.word gs(.L36)
+ 488 0010 0000      		.word gs(.L35)
+ 489 0012 0000      		.word gs(.L34)
+ 490 0014 0000      		.word gs(.L33)
+ 491 0016 0000      		.word gs(.L32)
+ 492 0018 0000      		.word gs(.L31)
+ 493 001a 0000      		.word gs(.L30)
+ 494 001c 0000      		.word gs(.L29)
+ 495 001e 0000      		.word gs(.L27)
+ 496               		.section	.text.main
+ 497               	.L43:
+ 498 017e 20E7      		ldi r18,lo8(112)
+ 499 0180 412F      		mov r20,r17
+ 500 0182 612F      		mov r22,r17
+ 501 0184 CE01      		movw r24,r28
+ 502 0186 4896      		adiw r24,24
+ 503 0188 0E94 0000 		call _Z7note_onP4MIDIhch
+ 504 018c 9FEF      		ldi r25,lo8(1599999)
+ 505 018e 29E6      		ldi r18,hi8(1599999)
+ 506 0190 88E1      		ldi r24,hlo8(1599999)
+ 507 0192 9150      	1:	subi r25,1
+ 508 0194 2040      		sbci r18,0
+ 509 0196 8040      		sbci r24,0
+ 510 0198 01F4      		brne 1b
+ 511 019a 00C0      		rjmp .
+ 512 019c 0000      		nop
+ 513 019e 412F      		mov r20,r17
+ 514 01a0 612F      		mov r22,r17
+ 515 01a2 CE01      		movw r24,r28
+ 516 01a4 4896      		adiw r24,24
+ 517 01a6 0E94 0000 		call _Z8note_offP4MIDIhc
+ 518               	.L22:
+ 519 01aa 21E0      		ldi r18,lo8(1)
+ 520 01ac 30E0      		ldi r19,0
+ 521 01ae AE01      		movw r20,r28
+ 522 01b0 4B5E      		subi r20,-21
+ 523 01b2 5F4F      		sbci r21,-1
+ 524 01b4 6BE3      		ldi r22,lo8(59)
+ 525 01b6 80E0      		ldi r24,lo8(twi)
+ 526 01b8 90E0      		ldi r25,hi8(twi)
+ 527 01ba 0E94 0000 		call _ZN3Twi7readRegEhPhj
+ 528 01be 21E0      		ldi r18,lo8(1)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 10
+
+
+ 529 01c0 30E0      		ldi r19,0
+ 530 01c2 AE01      		movw r20,r28
+ 531 01c4 4A5E      		subi r20,-22
+ 532 01c6 5F4F      		sbci r21,-1
+ 533 01c8 6DE3      		ldi r22,lo8(61)
+ 534 01ca 80E0      		ldi r24,lo8(twi)
+ 535 01cc 90E0      		ldi r25,hi8(twi)
+ 536 01ce 0E94 0000 		call _ZN3Twi7readRegEhPhj
+ 537 01d2 21E0      		ldi r18,lo8(1)
+ 538 01d4 30E0      		ldi r19,0
+ 539 01d6 AE01      		movw r20,r28
+ 540 01d8 495E      		subi r20,-23
+ 541 01da 5F4F      		sbci r21,-1
+ 542 01dc 6FE3      		ldi r22,lo8(63)
+ 543 01de 80E0      		ldi r24,lo8(twi)
+ 544 01e0 90E0      		ldi r25,hi8(twi)
+ 545 01e2 0E94 0000 		call _ZN3Twi7readRegEhPhj
+ 546 01e6 8D89      		ldd r24,Y+21
+ 547 01e8 9E89      		ldd r25,Y+22
+ 548 01ea 2F89      		ldd r18,Y+23
+ 549 01ec 2233      		cpi r18,lo8(50)
+ 550 01ee 04F0      		brlt .+2
+ 551 01f0 00C0      		rjmp .L44
+ 552 01f2 2F3C      		cpi r18,lo8(-49)
+ 553 01f4 04F0      		brlt .+2
+ 554 01f6 00C0      		rjmp .L24
+ 555 01f8 0B2D      		mov r16,r11
+ 556 01fa 00C0      		rjmp .L24
+ 557               	.L42:
+ 558 01fc 20E7      		ldi r18,lo8(112)
+ 559 01fe 412F      		mov r20,r17
+ 560 0200 61E0      		ldi r22,lo8(1)
+ 561 0202 CE01      		movw r24,r28
+ 562 0204 4896      		adiw r24,24
+ 563 0206 0E94 0000 		call _Z7note_onP4MIDIhch
+ 564 020a 9FEF      		ldi r25,lo8(1599999)
+ 565 020c 29E6      		ldi r18,hi8(1599999)
+ 566 020e 88E1      		ldi r24,hlo8(1599999)
+ 567 0210 9150      	1:	subi r25,1
+ 568 0212 2040      		sbci r18,0
+ 569 0214 8040      		sbci r24,0
+ 570 0216 01F4      		brne 1b
+ 571 0218 00C0      		rjmp .
+ 572 021a 0000      		nop
+ 573 021c 412F      		mov r20,r17
+ 574 021e 61E0      		ldi r22,lo8(1)
+ 575 0220 CE01      		movw r24,r28
+ 576 0222 4896      		adiw r24,24
+ 577 0224 0E94 0000 		call _Z8note_offP4MIDIhc
+ 578 0228 00C0      		rjmp .L22
+ 579               	.L41:
+ 580 022a 20E7      		ldi r18,lo8(112)
+ 581 022c 412F      		mov r20,r17
+ 582 022e 62E0      		ldi r22,lo8(2)
+ 583 0230 CE01      		movw r24,r28
+ 584 0232 4896      		adiw r24,24
+ 585 0234 0E94 0000 		call _Z7note_onP4MIDIhch
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 11
+
+
+ 586 0238 9FEF      		ldi r25,lo8(1599999)
+ 587 023a 29E6      		ldi r18,hi8(1599999)
+ 588 023c 88E1      		ldi r24,hlo8(1599999)
+ 589 023e 9150      	1:	subi r25,1
+ 590 0240 2040      		sbci r18,0
+ 591 0242 8040      		sbci r24,0
+ 592 0244 01F4      		brne 1b
+ 593 0246 00C0      		rjmp .
+ 594 0248 0000      		nop
+ 595 024a 412F      		mov r20,r17
+ 596 024c 62E0      		ldi r22,lo8(2)
+ 597 024e CE01      		movw r24,r28
+ 598 0250 4896      		adiw r24,24
+ 599 0252 0E94 0000 		call _Z8note_offP4MIDIhc
+ 600 0256 00C0      		rjmp .L22
+ 601               	.L40:
+ 602 0258 20E7      		ldi r18,lo8(112)
+ 603 025a 412F      		mov r20,r17
+ 604 025c 63E0      		ldi r22,lo8(3)
+ 605 025e CE01      		movw r24,r28
+ 606 0260 4896      		adiw r24,24
+ 607 0262 0E94 0000 		call _Z7note_onP4MIDIhch
+ 608 0266 9FEF      		ldi r25,lo8(1599999)
+ 609 0268 29E6      		ldi r18,hi8(1599999)
+ 610 026a 88E1      		ldi r24,hlo8(1599999)
+ 611 026c 9150      	1:	subi r25,1
+ 612 026e 2040      		sbci r18,0
+ 613 0270 8040      		sbci r24,0
+ 614 0272 01F4      		brne 1b
+ 615 0274 00C0      		rjmp .
+ 616 0276 0000      		nop
+ 617 0278 412F      		mov r20,r17
+ 618 027a 63E0      		ldi r22,lo8(3)
+ 619 027c CE01      		movw r24,r28
+ 620 027e 4896      		adiw r24,24
+ 621 0280 0E94 0000 		call _Z8note_offP4MIDIhc
+ 622 0284 00C0      		rjmp .L22
+ 623               	.L39:
+ 624 0286 20E7      		ldi r18,lo8(112)
+ 625 0288 412F      		mov r20,r17
+ 626 028a 64E0      		ldi r22,lo8(4)
+ 627 028c CE01      		movw r24,r28
+ 628 028e 4896      		adiw r24,24
+ 629 0290 0E94 0000 		call _Z7note_onP4MIDIhch
+ 630 0294 9FEF      		ldi r25,lo8(1599999)
+ 631 0296 29E6      		ldi r18,hi8(1599999)
+ 632 0298 88E1      		ldi r24,hlo8(1599999)
+ 633 029a 9150      	1:	subi r25,1
+ 634 029c 2040      		sbci r18,0
+ 635 029e 8040      		sbci r24,0
+ 636 02a0 01F4      		brne 1b
+ 637 02a2 00C0      		rjmp .
+ 638 02a4 0000      		nop
+ 639 02a6 412F      		mov r20,r17
+ 640 02a8 64E0      		ldi r22,lo8(4)
+ 641 02aa CE01      		movw r24,r28
+ 642 02ac 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 12
+
+
+ 643 02ae 0E94 0000 		call _Z8note_offP4MIDIhc
+ 644 02b2 00C0      		rjmp .L22
+ 645               	.L38:
+ 646 02b4 20E7      		ldi r18,lo8(112)
+ 647 02b6 412F      		mov r20,r17
+ 648 02b8 65E0      		ldi r22,lo8(5)
+ 649 02ba CE01      		movw r24,r28
+ 650 02bc 4896      		adiw r24,24
+ 651 02be 0E94 0000 		call _Z7note_onP4MIDIhch
+ 652 02c2 9FEF      		ldi r25,lo8(1599999)
+ 653 02c4 29E6      		ldi r18,hi8(1599999)
+ 654 02c6 88E1      		ldi r24,hlo8(1599999)
+ 655 02c8 9150      	1:	subi r25,1
+ 656 02ca 2040      		sbci r18,0
+ 657 02cc 8040      		sbci r24,0
+ 658 02ce 01F4      		brne 1b
+ 659 02d0 00C0      		rjmp .
+ 660 02d2 0000      		nop
+ 661 02d4 412F      		mov r20,r17
+ 662 02d6 65E0      		ldi r22,lo8(5)
+ 663 02d8 CE01      		movw r24,r28
+ 664 02da 4896      		adiw r24,24
+ 665 02dc 0E94 0000 		call _Z8note_offP4MIDIhc
+ 666 02e0 00C0      		rjmp .L22
+ 667               	.L37:
+ 668 02e2 20E7      		ldi r18,lo8(112)
+ 669 02e4 412F      		mov r20,r17
+ 670 02e6 66E0      		ldi r22,lo8(6)
+ 671 02e8 CE01      		movw r24,r28
+ 672 02ea 4896      		adiw r24,24
+ 673 02ec 0E94 0000 		call _Z7note_onP4MIDIhch
+ 674 02f0 9FEF      		ldi r25,lo8(1599999)
+ 675 02f2 29E6      		ldi r18,hi8(1599999)
+ 676 02f4 88E1      		ldi r24,hlo8(1599999)
+ 677 02f6 9150      	1:	subi r25,1
+ 678 02f8 2040      		sbci r18,0
+ 679 02fa 8040      		sbci r24,0
+ 680 02fc 01F4      		brne 1b
+ 681 02fe 00C0      		rjmp .
+ 682 0300 0000      		nop
+ 683 0302 412F      		mov r20,r17
+ 684 0304 66E0      		ldi r22,lo8(6)
+ 685 0306 CE01      		movw r24,r28
+ 686 0308 4896      		adiw r24,24
+ 687 030a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 688 030e 00C0      		rjmp .L22
+ 689               	.L36:
+ 690 0310 20E7      		ldi r18,lo8(112)
+ 691 0312 412F      		mov r20,r17
+ 692 0314 67E0      		ldi r22,lo8(7)
+ 693 0316 CE01      		movw r24,r28
+ 694 0318 4896      		adiw r24,24
+ 695 031a 0E94 0000 		call _Z7note_onP4MIDIhch
+ 696 031e 9FEF      		ldi r25,lo8(1599999)
+ 697 0320 29E6      		ldi r18,hi8(1599999)
+ 698 0322 88E1      		ldi r24,hlo8(1599999)
+ 699 0324 9150      	1:	subi r25,1
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 13
+
+
+ 700 0326 2040      		sbci r18,0
+ 701 0328 8040      		sbci r24,0
+ 702 032a 01F4      		brne 1b
+ 703 032c 00C0      		rjmp .
+ 704 032e 0000      		nop
+ 705 0330 412F      		mov r20,r17
+ 706 0332 67E0      		ldi r22,lo8(7)
+ 707 0334 CE01      		movw r24,r28
+ 708 0336 4896      		adiw r24,24
+ 709 0338 0E94 0000 		call _Z8note_offP4MIDIhc
+ 710 033c 00C0      		rjmp .L22
+ 711               	.L35:
+ 712 033e 20E7      		ldi r18,lo8(112)
+ 713 0340 412F      		mov r20,r17
+ 714 0342 68E0      		ldi r22,lo8(8)
+ 715 0344 CE01      		movw r24,r28
+ 716 0346 4896      		adiw r24,24
+ 717 0348 0E94 0000 		call _Z7note_onP4MIDIhch
+ 718 034c 9FEF      		ldi r25,lo8(1599999)
+ 719 034e 29E6      		ldi r18,hi8(1599999)
+ 720 0350 88E1      		ldi r24,hlo8(1599999)
+ 721 0352 9150      	1:	subi r25,1
+ 722 0354 2040      		sbci r18,0
+ 723 0356 8040      		sbci r24,0
+ 724 0358 01F4      		brne 1b
+ 725 035a 00C0      		rjmp .
+ 726 035c 0000      		nop
+ 727 035e 412F      		mov r20,r17
+ 728 0360 68E0      		ldi r22,lo8(8)
+ 729 0362 CE01      		movw r24,r28
+ 730 0364 4896      		adiw r24,24
+ 731 0366 0E94 0000 		call _Z8note_offP4MIDIhc
+ 732 036a 00C0      		rjmp .L22
+ 733               	.L34:
+ 734 036c 20E7      		ldi r18,lo8(112)
+ 735 036e 412F      		mov r20,r17
+ 736 0370 69E0      		ldi r22,lo8(9)
+ 737 0372 CE01      		movw r24,r28
+ 738 0374 4896      		adiw r24,24
+ 739 0376 0E94 0000 		call _Z7note_onP4MIDIhch
+ 740 037a 9FEF      		ldi r25,lo8(1599999)
+ 741 037c 29E6      		ldi r18,hi8(1599999)
+ 742 037e 88E1      		ldi r24,hlo8(1599999)
+ 743 0380 9150      	1:	subi r25,1
+ 744 0382 2040      		sbci r18,0
+ 745 0384 8040      		sbci r24,0
+ 746 0386 01F4      		brne 1b
+ 747 0388 00C0      		rjmp .
+ 748 038a 0000      		nop
+ 749 038c 412F      		mov r20,r17
+ 750 038e 69E0      		ldi r22,lo8(9)
+ 751 0390 CE01      		movw r24,r28
+ 752 0392 4896      		adiw r24,24
+ 753 0394 0E94 0000 		call _Z8note_offP4MIDIhc
+ 754 0398 00C0      		rjmp .L22
+ 755               	.L33:
+ 756 039a 20E7      		ldi r18,lo8(112)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 14
+
+
+ 757 039c 412F      		mov r20,r17
+ 758 039e 6AE0      		ldi r22,lo8(10)
+ 759 03a0 CE01      		movw r24,r28
+ 760 03a2 4896      		adiw r24,24
+ 761 03a4 0E94 0000 		call _Z7note_onP4MIDIhch
+ 762 03a8 9FEF      		ldi r25,lo8(1599999)
+ 763 03aa 29E6      		ldi r18,hi8(1599999)
+ 764 03ac 88E1      		ldi r24,hlo8(1599999)
+ 765 03ae 9150      	1:	subi r25,1
+ 766 03b0 2040      		sbci r18,0
+ 767 03b2 8040      		sbci r24,0
+ 768 03b4 01F4      		brne 1b
+ 769 03b6 00C0      		rjmp .
+ 770 03b8 0000      		nop
+ 771 03ba 412F      		mov r20,r17
+ 772 03bc 6AE0      		ldi r22,lo8(10)
+ 773 03be CE01      		movw r24,r28
+ 774 03c0 4896      		adiw r24,24
+ 775 03c2 0E94 0000 		call _Z8note_offP4MIDIhc
+ 776 03c6 00C0      		rjmp .L22
+ 777               	.L32:
+ 778 03c8 20E7      		ldi r18,lo8(112)
+ 779 03ca 412F      		mov r20,r17
+ 780 03cc 6BE0      		ldi r22,lo8(11)
+ 781 03ce CE01      		movw r24,r28
+ 782 03d0 4896      		adiw r24,24
+ 783 03d2 0E94 0000 		call _Z7note_onP4MIDIhch
+ 784 03d6 9FEF      		ldi r25,lo8(1599999)
+ 785 03d8 29E6      		ldi r18,hi8(1599999)
+ 786 03da 88E1      		ldi r24,hlo8(1599999)
+ 787 03dc 9150      	1:	subi r25,1
+ 788 03de 2040      		sbci r18,0
+ 789 03e0 8040      		sbci r24,0
+ 790 03e2 01F4      		brne 1b
+ 791 03e4 00C0      		rjmp .
+ 792 03e6 0000      		nop
+ 793 03e8 412F      		mov r20,r17
+ 794 03ea 6BE0      		ldi r22,lo8(11)
+ 795 03ec CE01      		movw r24,r28
+ 796 03ee 4896      		adiw r24,24
+ 797 03f0 0E94 0000 		call _Z8note_offP4MIDIhc
+ 798 03f4 00C0      		rjmp .L22
+ 799               	.L31:
+ 800 03f6 602F      		mov r22,r16
+ 801 03f8 CE01      		movw r24,r28
+ 802 03fa 4896      		adiw r24,24
+ 803 03fc 0E94 0000 		call _Z17change_instrumentP4MIDIh
+ 804 0400 00C0      		rjmp .L22
+ 805               	.L30:
+ 806 0402 20E7      		ldi r18,lo8(112)
+ 807 0404 412F      		mov r20,r17
+ 808 0406 64E0      		ldi r22,lo8(4)
+ 809 0408 CE01      		movw r24,r28
+ 810 040a 4896      		adiw r24,24
+ 811 040c 0E94 0000 		call _Z7note_onP4MIDIhch
+ 812 0410 9FEF      		ldi r25,lo8(1599999)
+ 813 0412 29E6      		ldi r18,hi8(1599999)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 15
+
+
+ 814 0414 88E1      		ldi r24,hlo8(1599999)
+ 815 0416 9150      	1:	subi r25,1
+ 816 0418 2040      		sbci r18,0
+ 817 041a 8040      		sbci r24,0
+ 818 041c 01F4      		brne 1b
+ 819 041e 00C0      		rjmp .
+ 820 0420 0000      		nop
+ 821 0422 412F      		mov r20,r17
+ 822 0424 64E0      		ldi r22,lo8(4)
+ 823 0426 CE01      		movw r24,r28
+ 824 0428 4896      		adiw r24,24
+ 825 042a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 826 042e 20E7      		ldi r18,lo8(112)
+ 827 0430 412F      		mov r20,r17
+ 828 0432 64E0      		ldi r22,lo8(4)
+ 829 0434 CE01      		movw r24,r28
+ 830 0436 4896      		adiw r24,24
+ 831 0438 0E94 0000 		call _Z7note_onP4MIDIhch
+ 832 043c 9FEF      		ldi r25,lo8(1599999)
+ 833 043e 29E6      		ldi r18,hi8(1599999)
+ 834 0440 88E1      		ldi r24,hlo8(1599999)
+ 835 0442 9150      	1:	subi r25,1
+ 836 0444 2040      		sbci r18,0
+ 837 0446 8040      		sbci r24,0
+ 838 0448 01F4      		brne 1b
+ 839 044a 00C0      		rjmp .
+ 840 044c 0000      		nop
+ 841 044e 412F      		mov r20,r17
+ 842 0450 64E0      		ldi r22,lo8(4)
+ 843 0452 CE01      		movw r24,r28
+ 844 0454 4896      		adiw r24,24
+ 845 0456 0E94 0000 		call _Z8note_offP4MIDIhc
+ 846 045a 20E7      		ldi r18,lo8(112)
+ 847 045c 412F      		mov r20,r17
+ 848 045e 64E0      		ldi r22,lo8(4)
+ 849 0460 CE01      		movw r24,r28
+ 850 0462 4896      		adiw r24,24
+ 851 0464 0E94 0000 		call _Z7note_onP4MIDIhch
+ 852 0468 9FEF      		ldi r25,lo8(3199999)
+ 853 046a 23ED      		ldi r18,hi8(3199999)
+ 854 046c 80E3      		ldi r24,hlo8(3199999)
+ 855 046e 9150      	1:	subi r25,1
+ 856 0470 2040      		sbci r18,0
+ 857 0472 8040      		sbci r24,0
+ 858 0474 01F4      		brne 1b
+ 859 0476 00C0      		rjmp .
+ 860 0478 0000      		nop
+ 861 047a 412F      		mov r20,r17
+ 862 047c 64E0      		ldi r22,lo8(4)
+ 863 047e CE01      		movw r24,r28
+ 864 0480 4896      		adiw r24,24
+ 865 0482 0E94 0000 		call _Z8note_offP4MIDIhc
+ 866 0486 20E7      		ldi r18,lo8(112)
+ 867 0488 412F      		mov r20,r17
+ 868 048a 64E0      		ldi r22,lo8(4)
+ 869 048c CE01      		movw r24,r28
+ 870 048e 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 16
+
+
+ 871 0490 0E94 0000 		call _Z7note_onP4MIDIhch
+ 872 0494 9FEF      		ldi r25,lo8(1599999)
+ 873 0496 29E6      		ldi r18,hi8(1599999)
+ 874 0498 88E1      		ldi r24,hlo8(1599999)
+ 875 049a 9150      	1:	subi r25,1
+ 876 049c 2040      		sbci r18,0
+ 877 049e 8040      		sbci r24,0
+ 878 04a0 01F4      		brne 1b
+ 879 04a2 00C0      		rjmp .
+ 880 04a4 0000      		nop
+ 881 04a6 412F      		mov r20,r17
+ 882 04a8 64E0      		ldi r22,lo8(4)
+ 883 04aa CE01      		movw r24,r28
+ 884 04ac 4896      		adiw r24,24
+ 885 04ae 0E94 0000 		call _Z8note_offP4MIDIhc
+ 886 04b2 20E7      		ldi r18,lo8(112)
+ 887 04b4 412F      		mov r20,r17
+ 888 04b6 64E0      		ldi r22,lo8(4)
+ 889 04b8 CE01      		movw r24,r28
+ 890 04ba 4896      		adiw r24,24
+ 891 04bc 0E94 0000 		call _Z7note_onP4MIDIhch
+ 892 04c0 9FEF      		ldi r25,lo8(1599999)
+ 893 04c2 29E6      		ldi r18,hi8(1599999)
+ 894 04c4 88E1      		ldi r24,hlo8(1599999)
+ 895 04c6 9150      	1:	subi r25,1
+ 896 04c8 2040      		sbci r18,0
+ 897 04ca 8040      		sbci r24,0
+ 898 04cc 01F4      		brne 1b
+ 899 04ce 00C0      		rjmp .
+ 900 04d0 0000      		nop
+ 901 04d2 412F      		mov r20,r17
+ 902 04d4 64E0      		ldi r22,lo8(4)
+ 903 04d6 CE01      		movw r24,r28
+ 904 04d8 4896      		adiw r24,24
+ 905 04da 0E94 0000 		call _Z8note_offP4MIDIhc
+ 906 04de 20E7      		ldi r18,lo8(112)
+ 907 04e0 412F      		mov r20,r17
+ 908 04e2 64E0      		ldi r22,lo8(4)
+ 909 04e4 CE01      		movw r24,r28
+ 910 04e6 4896      		adiw r24,24
+ 911 04e8 0E94 0000 		call _Z7note_onP4MIDIhch
+ 912 04ec 9FEF      		ldi r25,lo8(3199999)
+ 913 04ee 23ED      		ldi r18,hi8(3199999)
+ 914 04f0 80E3      		ldi r24,hlo8(3199999)
+ 915 04f2 9150      	1:	subi r25,1
+ 916 04f4 2040      		sbci r18,0
+ 917 04f6 8040      		sbci r24,0
+ 918 04f8 01F4      		brne 1b
+ 919 04fa 00C0      		rjmp .
+ 920 04fc 0000      		nop
+ 921 04fe 412F      		mov r20,r17
+ 922 0500 64E0      		ldi r22,lo8(4)
+ 923 0502 CE01      		movw r24,r28
+ 924 0504 4896      		adiw r24,24
+ 925 0506 0E94 0000 		call _Z8note_offP4MIDIhc
+ 926 050a 20E7      		ldi r18,lo8(112)
+ 927 050c 412F      		mov r20,r17
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 17
+
+
+ 928 050e 67E0      		ldi r22,lo8(7)
+ 929 0510 CE01      		movw r24,r28
+ 930 0512 4896      		adiw r24,24
+ 931 0514 0E94 0000 		call _Z7note_onP4MIDIhch
+ 932 0518 9FEF      		ldi r25,lo8(1599999)
+ 933 051a 29E6      		ldi r18,hi8(1599999)
+ 934 051c 88E1      		ldi r24,hlo8(1599999)
+ 935 051e 9150      	1:	subi r25,1
+ 936 0520 2040      		sbci r18,0
+ 937 0522 8040      		sbci r24,0
+ 938 0524 01F4      		brne 1b
+ 939 0526 00C0      		rjmp .
+ 940 0528 0000      		nop
+ 941 052a 412F      		mov r20,r17
+ 942 052c 67E0      		ldi r22,lo8(7)
+ 943 052e CE01      		movw r24,r28
+ 944 0530 4896      		adiw r24,24
+ 945 0532 0E94 0000 		call _Z8note_offP4MIDIhc
+ 946 0536 20E7      		ldi r18,lo8(112)
+ 947 0538 412F      		mov r20,r17
+ 948 053a 69E0      		ldi r22,lo8(9)
+ 949 053c CE01      		movw r24,r28
+ 950 053e 4896      		adiw r24,24
+ 951 0540 0E94 0000 		call _Z7note_onP4MIDIhch
+ 952 0544 9FEF      		ldi r25,lo8(1599999)
+ 953 0546 29E6      		ldi r18,hi8(1599999)
+ 954 0548 88E1      		ldi r24,hlo8(1599999)
+ 955 054a 9150      	1:	subi r25,1
+ 956 054c 2040      		sbci r18,0
+ 957 054e 8040      		sbci r24,0
+ 958 0550 01F4      		brne 1b
+ 959 0552 00C0      		rjmp .
+ 960 0554 0000      		nop
+ 961 0556 412F      		mov r20,r17
+ 962 0558 69E0      		ldi r22,lo8(9)
+ 963 055a CE01      		movw r24,r28
+ 964 055c 4896      		adiw r24,24
+ 965 055e 0E94 0000 		call _Z8note_offP4MIDIhc
+ 966 0562 20E7      		ldi r18,lo8(112)
+ 967 0564 412F      		mov r20,r17
+ 968 0566 69E0      		ldi r22,lo8(9)
+ 969 0568 CE01      		movw r24,r28
+ 970 056a 4896      		adiw r24,24
+ 971 056c 0E94 0000 		call _Z7note_onP4MIDIhch
+ 972 0570 9FEF      		ldi r25,lo8(3199999)
+ 973 0572 23ED      		ldi r18,hi8(3199999)
+ 974 0574 80E3      		ldi r24,hlo8(3199999)
+ 975 0576 9150      	1:	subi r25,1
+ 976 0578 2040      		sbci r18,0
+ 977 057a 8040      		sbci r24,0
+ 978 057c 01F4      		brne 1b
+ 979 057e 00C0      		rjmp .
+ 980 0580 0000      		nop
+ 981 0582 412F      		mov r20,r17
+ 982 0584 69E0      		ldi r22,lo8(9)
+ 983 0586 CE01      		movw r24,r28
+ 984 0588 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 18
+
+
+ 985 058a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 986 058e 20E7      		ldi r18,lo8(112)
+ 987 0590 412F      		mov r20,r17
+ 988 0592 69E0      		ldi r22,lo8(9)
+ 989 0594 CE01      		movw r24,r28
+ 990 0596 4896      		adiw r24,24
+ 991 0598 0E94 0000 		call _Z7note_onP4MIDIhch
+ 992 059c 9FEF      		ldi r25,lo8(1599999)
+ 993 059e 29E6      		ldi r18,hi8(1599999)
+ 994 05a0 88E1      		ldi r24,hlo8(1599999)
+ 995 05a2 9150      	1:	subi r25,1
+ 996 05a4 2040      		sbci r18,0
+ 997 05a6 8040      		sbci r24,0
+ 998 05a8 01F4      		brne 1b
+ 999 05aa 00C0      		rjmp .
+ 1000 05ac 0000      		nop
+ 1001 05ae 412F      		mov r20,r17
+ 1002 05b0 69E0      		ldi r22,lo8(9)
+ 1003 05b2 CE01      		movw r24,r28
+ 1004 05b4 4896      		adiw r24,24
+ 1005 05b6 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1006 05ba 20E7      		ldi r18,lo8(112)
+ 1007 05bc 412F      		mov r20,r17
+ 1008 05be 67E0      		ldi r22,lo8(7)
+ 1009 05c0 CE01      		movw r24,r28
+ 1010 05c2 4896      		adiw r24,24
+ 1011 05c4 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1012 05c8 9FEF      		ldi r25,lo8(1599999)
+ 1013 05ca 29E6      		ldi r18,hi8(1599999)
+ 1014 05cc 88E1      		ldi r24,hlo8(1599999)
+ 1015 05ce 9150      	1:	subi r25,1
+ 1016 05d0 2040      		sbci r18,0
+ 1017 05d2 8040      		sbci r24,0
+ 1018 05d4 01F4      		brne 1b
+ 1019 05d6 00C0      		rjmp .
+ 1020 05d8 0000      		nop
+ 1021 05da 412F      		mov r20,r17
+ 1022 05dc 67E0      		ldi r22,lo8(7)
+ 1023 05de CE01      		movw r24,r28
+ 1024 05e0 4896      		adiw r24,24
+ 1025 05e2 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1026 05e6 20E7      		ldi r18,lo8(112)
+ 1027 05e8 412F      		mov r20,r17
+ 1028 05ea 65E0      		ldi r22,lo8(5)
+ 1029 05ec CE01      		movw r24,r28
+ 1030 05ee 4896      		adiw r24,24
+ 1031 05f0 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1032 05f4 9FEF      		ldi r25,lo8(3199999)
+ 1033 05f6 23ED      		ldi r18,hi8(3199999)
+ 1034 05f8 80E3      		ldi r24,hlo8(3199999)
+ 1035 05fa 9150      	1:	subi r25,1
+ 1036 05fc 2040      		sbci r18,0
+ 1037 05fe 8040      		sbci r24,0
+ 1038 0600 01F4      		brne 1b
+ 1039 0602 00C0      		rjmp .
+ 1040 0604 0000      		nop
+ 1041 0606 412F      		mov r20,r17
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 19
+
+
+ 1042 0608 65E0      		ldi r22,lo8(5)
+ 1043 060a CE01      		movw r24,r28
+ 1044 060c 4896      		adiw r24,24
+ 1045 060e 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1046 0612 00C0      		rjmp .L22
+ 1047               	.L29:
+ 1048 0614 20E7      		ldi r18,lo8(112)
+ 1049 0616 412F      		mov r20,r17
+ 1050 0618 612F      		mov r22,r17
+ 1051 061a CE01      		movw r24,r28
+ 1052 061c 4896      		adiw r24,24
+ 1053 061e 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1054 0622 9FEF      		ldi r25,lo8(1919999)
+ 1055 0624 2BE4      		ldi r18,hi8(1919999)
+ 1056 0626 8DE1      		ldi r24,hlo8(1919999)
+ 1057 0628 9150      	1:	subi r25,1
+ 1058 062a 2040      		sbci r18,0
+ 1059 062c 8040      		sbci r24,0
+ 1060 062e 01F4      		brne 1b
+ 1061 0630 00C0      		rjmp .
+ 1062 0632 0000      		nop
+ 1063 0634 412F      		mov r20,r17
+ 1064 0636 612F      		mov r22,r17
+ 1065 0638 CE01      		movw r24,r28
+ 1066 063a 4896      		adiw r24,24
+ 1067 063c 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1068 0640 20E7      		ldi r18,lo8(112)
+ 1069 0642 412F      		mov r20,r17
+ 1070 0644 612F      		mov r22,r17
+ 1071 0646 CE01      		movw r24,r28
+ 1072 0648 4896      		adiw r24,24
+ 1073 064a 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1074 064e 9FEF      		ldi r25,lo8(1919999)
+ 1075 0650 2BE4      		ldi r18,hi8(1919999)
+ 1076 0652 8DE1      		ldi r24,hlo8(1919999)
+ 1077 0654 9150      	1:	subi r25,1
+ 1078 0656 2040      		sbci r18,0
+ 1079 0658 8040      		sbci r24,0
+ 1080 065a 01F4      		brne 1b
+ 1081 065c 00C0      		rjmp .
+ 1082 065e 0000      		nop
+ 1083 0660 412F      		mov r20,r17
+ 1084 0662 612F      		mov r22,r17
+ 1085 0664 CE01      		movw r24,r28
+ 1086 0666 4896      		adiw r24,24
+ 1087 0668 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1088 066c 20E7      		ldi r18,lo8(112)
+ 1089 066e 412F      		mov r20,r17
+ 1090 0670 67E0      		ldi r22,lo8(7)
+ 1091 0672 CE01      		movw r24,r28
+ 1092 0674 4896      		adiw r24,24
+ 1093 0676 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1094 067a 9FEF      		ldi r25,lo8(1919999)
+ 1095 067c 2BE4      		ldi r18,hi8(1919999)
+ 1096 067e 8DE1      		ldi r24,hlo8(1919999)
+ 1097 0680 9150      	1:	subi r25,1
+ 1098 0682 2040      		sbci r18,0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 20
+
+
+ 1099 0684 8040      		sbci r24,0
+ 1100 0686 01F4      		brne 1b
+ 1101 0688 00C0      		rjmp .
+ 1102 068a 0000      		nop
+ 1103 068c 412F      		mov r20,r17
+ 1104 068e 67E0      		ldi r22,lo8(7)
+ 1105 0690 CE01      		movw r24,r28
+ 1106 0692 4896      		adiw r24,24
+ 1107 0694 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1108 0698 20E7      		ldi r18,lo8(112)
+ 1109 069a 412F      		mov r20,r17
+ 1110 069c 67E0      		ldi r22,lo8(7)
+ 1111 069e CE01      		movw r24,r28
+ 1112 06a0 4896      		adiw r24,24
+ 1113 06a2 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1114 06a6 9FEF      		ldi r25,lo8(1919999)
+ 1115 06a8 2BE4      		ldi r18,hi8(1919999)
+ 1116 06aa 8DE1      		ldi r24,hlo8(1919999)
+ 1117 06ac 9150      	1:	subi r25,1
+ 1118 06ae 2040      		sbci r18,0
+ 1119 06b0 8040      		sbci r24,0
+ 1120 06b2 01F4      		brne 1b
+ 1121 06b4 00C0      		rjmp .
+ 1122 06b6 0000      		nop
+ 1123 06b8 412F      		mov r20,r17
+ 1124 06ba 67E0      		ldi r22,lo8(7)
+ 1125 06bc CE01      		movw r24,r28
+ 1126 06be 4896      		adiw r24,24
+ 1127 06c0 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1128 06c4 20E7      		ldi r18,lo8(112)
+ 1129 06c6 412F      		mov r20,r17
+ 1130 06c8 69E0      		ldi r22,lo8(9)
+ 1131 06ca CE01      		movw r24,r28
+ 1132 06cc 4896      		adiw r24,24
+ 1133 06ce 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1134 06d2 9FEF      		ldi r25,lo8(1919999)
+ 1135 06d4 2BE4      		ldi r18,hi8(1919999)
+ 1136 06d6 8DE1      		ldi r24,hlo8(1919999)
+ 1137 06d8 9150      	1:	subi r25,1
+ 1138 06da 2040      		sbci r18,0
+ 1139 06dc 8040      		sbci r24,0
+ 1140 06de 01F4      		brne 1b
+ 1141 06e0 00C0      		rjmp .
+ 1142 06e2 0000      		nop
+ 1143 06e4 412F      		mov r20,r17
+ 1144 06e6 69E0      		ldi r22,lo8(9)
+ 1145 06e8 CE01      		movw r24,r28
+ 1146 06ea 4896      		adiw r24,24
+ 1147 06ec 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1148 06f0 20E7      		ldi r18,lo8(112)
+ 1149 06f2 412F      		mov r20,r17
+ 1150 06f4 69E0      		ldi r22,lo8(9)
+ 1151 06f6 CE01      		movw r24,r28
+ 1152 06f8 4896      		adiw r24,24
+ 1153 06fa 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1154 06fe 9FEF      		ldi r25,lo8(1919999)
+ 1155 0700 2BE4      		ldi r18,hi8(1919999)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 21
+
+
+ 1156 0702 8DE1      		ldi r24,hlo8(1919999)
+ 1157 0704 9150      	1:	subi r25,1
+ 1158 0706 2040      		sbci r18,0
+ 1159 0708 8040      		sbci r24,0
+ 1160 070a 01F4      		brne 1b
+ 1161 070c 00C0      		rjmp .
+ 1162 070e 0000      		nop
+ 1163 0710 412F      		mov r20,r17
+ 1164 0712 69E0      		ldi r22,lo8(9)
+ 1165 0714 CE01      		movw r24,r28
+ 1166 0716 4896      		adiw r24,24
+ 1167 0718 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1168 071c 20E7      		ldi r18,lo8(112)
+ 1169 071e 412F      		mov r20,r17
+ 1170 0720 67E0      		ldi r22,lo8(7)
+ 1171 0722 CE01      		movw r24,r28
+ 1172 0724 4896      		adiw r24,24
+ 1173 0726 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1174 072a 9FEF      		ldi r25,lo8(1919999)
+ 1175 072c 2BE4      		ldi r18,hi8(1919999)
+ 1176 072e 8DE1      		ldi r24,hlo8(1919999)
+ 1177 0730 9150      	1:	subi r25,1
+ 1178 0732 2040      		sbci r18,0
+ 1179 0734 8040      		sbci r24,0
+ 1180 0736 01F4      		brne 1b
+ 1181 0738 00C0      		rjmp .
+ 1182 073a 0000      		nop
+ 1183 073c 412F      		mov r20,r17
+ 1184 073e 67E0      		ldi r22,lo8(7)
+ 1185 0740 CE01      		movw r24,r28
+ 1186 0742 4896      		adiw r24,24
+ 1187 0744 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1188 0748 20E7      		ldi r18,lo8(112)
+ 1189 074a 412F      		mov r20,r17
+ 1190 074c 65E0      		ldi r22,lo8(5)
+ 1191 074e CE01      		movw r24,r28
+ 1192 0750 4896      		adiw r24,24
+ 1193 0752 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1194 0756 9FEF      		ldi r25,lo8(1919999)
+ 1195 0758 2BE4      		ldi r18,hi8(1919999)
+ 1196 075a 8DE1      		ldi r24,hlo8(1919999)
+ 1197 075c 9150      	1:	subi r25,1
+ 1198 075e 2040      		sbci r18,0
+ 1199 0760 8040      		sbci r24,0
+ 1200 0762 01F4      		brne 1b
+ 1201 0764 00C0      		rjmp .
+ 1202 0766 0000      		nop
+ 1203 0768 412F      		mov r20,r17
+ 1204 076a 65E0      		ldi r22,lo8(5)
+ 1205 076c CE01      		movw r24,r28
+ 1206 076e 4896      		adiw r24,24
+ 1207 0770 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1208 0774 20E7      		ldi r18,lo8(112)
+ 1209 0776 412F      		mov r20,r17
+ 1210 0778 65E0      		ldi r22,lo8(5)
+ 1211 077a CE01      		movw r24,r28
+ 1212 077c 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 22
+
+
+ 1213 077e 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1214 0782 9FEF      		ldi r25,lo8(1919999)
+ 1215 0784 2BE4      		ldi r18,hi8(1919999)
+ 1216 0786 8DE1      		ldi r24,hlo8(1919999)
+ 1217 0788 9150      	1:	subi r25,1
+ 1218 078a 2040      		sbci r18,0
+ 1219 078c 8040      		sbci r24,0
+ 1220 078e 01F4      		brne 1b
+ 1221 0790 00C0      		rjmp .
+ 1222 0792 0000      		nop
+ 1223 0794 412F      		mov r20,r17
+ 1224 0796 65E0      		ldi r22,lo8(5)
+ 1225 0798 CE01      		movw r24,r28
+ 1226 079a 4896      		adiw r24,24
+ 1227 079c 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1228 07a0 20E7      		ldi r18,lo8(112)
+ 1229 07a2 412F      		mov r20,r17
+ 1230 07a4 65E0      		ldi r22,lo8(5)
+ 1231 07a6 CE01      		movw r24,r28
+ 1232 07a8 4896      		adiw r24,24
+ 1233 07aa 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1234 07ae 9FEF      		ldi r25,lo8(1919999)
+ 1235 07b0 2BE4      		ldi r18,hi8(1919999)
+ 1236 07b2 8DE1      		ldi r24,hlo8(1919999)
+ 1237 07b4 9150      	1:	subi r25,1
+ 1238 07b6 2040      		sbci r18,0
+ 1239 07b8 8040      		sbci r24,0
+ 1240 07ba 01F4      		brne 1b
+ 1241 07bc 00C0      		rjmp .
+ 1242 07be 0000      		nop
+ 1243 07c0 412F      		mov r20,r17
+ 1244 07c2 65E0      		ldi r22,lo8(5)
+ 1245 07c4 CE01      		movw r24,r28
+ 1246 07c6 4896      		adiw r24,24
+ 1247 07c8 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1248 07cc 20E7      		ldi r18,lo8(112)
+ 1249 07ce 412F      		mov r20,r17
+ 1250 07d0 64E0      		ldi r22,lo8(4)
+ 1251 07d2 CE01      		movw r24,r28
+ 1252 07d4 4896      		adiw r24,24
+ 1253 07d6 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1254 07da 9FEF      		ldi r25,lo8(1919999)
+ 1255 07dc 2BE4      		ldi r18,hi8(1919999)
+ 1256 07de 8DE1      		ldi r24,hlo8(1919999)
+ 1257 07e0 9150      	1:	subi r25,1
+ 1258 07e2 2040      		sbci r18,0
+ 1259 07e4 8040      		sbci r24,0
+ 1260 07e6 01F4      		brne 1b
+ 1261 07e8 00C0      		rjmp .
+ 1262 07ea 0000      		nop
+ 1263 07ec 412F      		mov r20,r17
+ 1264 07ee 64E0      		ldi r22,lo8(4)
+ 1265 07f0 CE01      		movw r24,r28
+ 1266 07f2 4896      		adiw r24,24
+ 1267 07f4 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1268 07f8 20E7      		ldi r18,lo8(112)
+ 1269 07fa 412F      		mov r20,r17
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 23
+
+
+ 1270 07fc 64E0      		ldi r22,lo8(4)
+ 1271 07fe CE01      		movw r24,r28
+ 1272 0800 4896      		adiw r24,24
+ 1273 0802 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1274 0806 9FEF      		ldi r25,lo8(1919999)
+ 1275 0808 2BE4      		ldi r18,hi8(1919999)
+ 1276 080a 8DE1      		ldi r24,hlo8(1919999)
+ 1277 080c 9150      	1:	subi r25,1
+ 1278 080e 2040      		sbci r18,0
+ 1279 0810 8040      		sbci r24,0
+ 1280 0812 01F4      		brne 1b
+ 1281 0814 00C0      		rjmp .
+ 1282 0816 0000      		nop
+ 1283 0818 412F      		mov r20,r17
+ 1284 081a 64E0      		ldi r22,lo8(4)
+ 1285 081c CE01      		movw r24,r28
+ 1286 081e 4896      		adiw r24,24
+ 1287 0820 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1288 0824 20E7      		ldi r18,lo8(112)
+ 1289 0826 412F      		mov r20,r17
+ 1290 0828 62E0      		ldi r22,lo8(2)
+ 1291 082a CE01      		movw r24,r28
+ 1292 082c 4896      		adiw r24,24
+ 1293 082e 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1294 0832 9FEF      		ldi r25,lo8(1919999)
+ 1295 0834 2BE4      		ldi r18,hi8(1919999)
+ 1296 0836 8DE1      		ldi r24,hlo8(1919999)
+ 1297 0838 9150      	1:	subi r25,1
+ 1298 083a 2040      		sbci r18,0
+ 1299 083c 8040      		sbci r24,0
+ 1300 083e 01F4      		brne 1b
+ 1301 0840 00C0      		rjmp .
+ 1302 0842 0000      		nop
+ 1303 0844 412F      		mov r20,r17
+ 1304 0846 62E0      		ldi r22,lo8(2)
+ 1305 0848 CE01      		movw r24,r28
+ 1306 084a 4896      		adiw r24,24
+ 1307 084c 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1308 0850 20E7      		ldi r18,lo8(112)
+ 1309 0852 412F      		mov r20,r17
+ 1310 0854 612F      		mov r22,r17
+ 1311 0856 CE01      		movw r24,r28
+ 1312 0858 4896      		adiw r24,24
+ 1313 085a 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1314 085e 9FEF      		ldi r25,lo8(3839999)
+ 1315 0860 27E9      		ldi r18,hi8(3839999)
+ 1316 0862 8AE3      		ldi r24,hlo8(3839999)
+ 1317 0864 9150      	1:	subi r25,1
+ 1318 0866 2040      		sbci r18,0
+ 1319 0868 8040      		sbci r24,0
+ 1320 086a 01F4      		brne 1b
+ 1321 086c 00C0      		rjmp .
+ 1322 086e 0000      		nop
+ 1323 0870 412F      		mov r20,r17
+ 1324 0872 612F      		mov r22,r17
+ 1325 0874 CE01      		movw r24,r28
+ 1326 0876 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 24
+
+
+ 1327 0878 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1328 087c 00C0      		rjmp .L22
+ 1329               	.L27:
+ 1330 087e 20E7      		ldi r18,lo8(112)
+ 1331 0880 412F      		mov r20,r17
+ 1332 0882 69E0      		ldi r22,lo8(9)
+ 1333 0884 CE01      		movw r24,r28
+ 1334 0886 4896      		adiw r24,24
+ 1335 0888 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1336 088c 9FEF      		ldi r25,lo8(1599999)
+ 1337 088e 29E6      		ldi r18,hi8(1599999)
+ 1338 0890 88E1      		ldi r24,hlo8(1599999)
+ 1339 0892 9150      	1:	subi r25,1
+ 1340 0894 2040      		sbci r18,0
+ 1341 0896 8040      		sbci r24,0
+ 1342 0898 01F4      		brne 1b
+ 1343 089a 00C0      		rjmp .
+ 1344 089c 0000      		nop
+ 1345 089e 412F      		mov r20,r17
+ 1346 08a0 69E0      		ldi r22,lo8(9)
+ 1347 08a2 CE01      		movw r24,r28
+ 1348 08a4 4896      		adiw r24,24
+ 1349 08a6 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1350 08aa 20E7      		ldi r18,lo8(112)
+ 1351 08ac 412F      		mov r20,r17
+ 1352 08ae 67E0      		ldi r22,lo8(7)
+ 1353 08b0 CE01      		movw r24,r28
+ 1354 08b2 4896      		adiw r24,24
+ 1355 08b4 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1356 08b8 9FEF      		ldi r25,lo8(1599999)
+ 1357 08ba 29E6      		ldi r18,hi8(1599999)
+ 1358 08bc 88E1      		ldi r24,hlo8(1599999)
+ 1359 08be 9150      	1:	subi r25,1
+ 1360 08c0 2040      		sbci r18,0
+ 1361 08c2 8040      		sbci r24,0
+ 1362 08c4 01F4      		brne 1b
+ 1363 08c6 00C0      		rjmp .
+ 1364 08c8 0000      		nop
+ 1365 08ca 412F      		mov r20,r17
+ 1366 08cc 67E0      		ldi r22,lo8(7)
+ 1367 08ce CE01      		movw r24,r28
+ 1368 08d0 4896      		adiw r24,24
+ 1369 08d2 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1370 08d6 20E7      		ldi r18,lo8(112)
+ 1371 08d8 412F      		mov r20,r17
+ 1372 08da 65E0      		ldi r22,lo8(5)
+ 1373 08dc CE01      		movw r24,r28
+ 1374 08de 4896      		adiw r24,24
+ 1375 08e0 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1376 08e4 9FEF      		ldi r25,lo8(1599999)
+ 1377 08e6 29E6      		ldi r18,hi8(1599999)
+ 1378 08e8 88E1      		ldi r24,hlo8(1599999)
+ 1379 08ea 9150      	1:	subi r25,1
+ 1380 08ec 2040      		sbci r18,0
+ 1381 08ee 8040      		sbci r24,0
+ 1382 08f0 01F4      		brne 1b
+ 1383 08f2 00C0      		rjmp .
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 25
+
+
+ 1384 08f4 0000      		nop
+ 1385 08f6 412F      		mov r20,r17
+ 1386 08f8 65E0      		ldi r22,lo8(5)
+ 1387 08fa CE01      		movw r24,r28
+ 1388 08fc 4896      		adiw r24,24
+ 1389 08fe 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1390 0902 20E7      		ldi r18,lo8(112)
+ 1391 0904 412F      		mov r20,r17
+ 1392 0906 64E0      		ldi r22,lo8(4)
+ 1393 0908 CE01      		movw r24,r28
+ 1394 090a 4896      		adiw r24,24
+ 1395 090c 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1396 0910 9FEF      		ldi r25,lo8(1599999)
+ 1397 0912 29E6      		ldi r18,hi8(1599999)
+ 1398 0914 88E1      		ldi r24,hlo8(1599999)
+ 1399 0916 9150      	1:	subi r25,1
+ 1400 0918 2040      		sbci r18,0
+ 1401 091a 8040      		sbci r24,0
+ 1402 091c 01F4      		brne 1b
+ 1403 091e 00C0      		rjmp .
+ 1404 0920 0000      		nop
+ 1405 0922 412F      		mov r20,r17
+ 1406 0924 64E0      		ldi r22,lo8(4)
+ 1407 0926 CE01      		movw r24,r28
+ 1408 0928 4896      		adiw r24,24
+ 1409 092a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1410 092e 20E7      		ldi r18,lo8(112)
+ 1411 0930 412F      		mov r20,r17
+ 1412 0932 62E0      		ldi r22,lo8(2)
+ 1413 0934 CE01      		movw r24,r28
+ 1414 0936 4896      		adiw r24,24
+ 1415 0938 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1416 093c 9FEF      		ldi r25,lo8(1599999)
+ 1417 093e 29E6      		ldi r18,hi8(1599999)
+ 1418 0940 88E1      		ldi r24,hlo8(1599999)
+ 1419 0942 9150      	1:	subi r25,1
+ 1420 0944 2040      		sbci r18,0
+ 1421 0946 8040      		sbci r24,0
+ 1422 0948 01F4      		brne 1b
+ 1423 094a 00C0      		rjmp .
+ 1424 094c 0000      		nop
+ 1425 094e 412F      		mov r20,r17
+ 1426 0950 62E0      		ldi r22,lo8(2)
+ 1427 0952 CE01      		movw r24,r28
+ 1428 0954 4896      		adiw r24,24
+ 1429 0956 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1430 095a 20E7      		ldi r18,lo8(112)
+ 1431 095c 412F      		mov r20,r17
+ 1432 095e 612F      		mov r22,r17
+ 1433 0960 CE01      		movw r24,r28
+ 1434 0962 4896      		adiw r24,24
+ 1435 0964 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1436 0968 9FEF      		ldi r25,lo8(1599999)
+ 1437 096a 29E6      		ldi r18,hi8(1599999)
+ 1438 096c 88E1      		ldi r24,hlo8(1599999)
+ 1439 096e 9150      	1:	subi r25,1
+ 1440 0970 2040      		sbci r18,0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 26
+
+
+ 1441 0972 8040      		sbci r24,0
+ 1442 0974 01F4      		brne 1b
+ 1443 0976 00C0      		rjmp .
+ 1444 0978 0000      		nop
+ 1445 097a 412F      		mov r20,r17
+ 1446 097c 612F      		mov r22,r17
+ 1447 097e CE01      		movw r24,r28
+ 1448 0980 4896      		adiw r24,24
+ 1449 0982 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1450 0986 20E7      		ldi r18,lo8(112)
+ 1451 0988 412F      		mov r20,r17
+ 1452 098a 69E0      		ldi r22,lo8(9)
+ 1453 098c CE01      		movw r24,r28
+ 1454 098e 4896      		adiw r24,24
+ 1455 0990 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1456 0994 9FEF      		ldi r25,lo8(1599999)
+ 1457 0996 29E6      		ldi r18,hi8(1599999)
+ 1458 0998 88E1      		ldi r24,hlo8(1599999)
+ 1459 099a 9150      	1:	subi r25,1
+ 1460 099c 2040      		sbci r18,0
+ 1461 099e 8040      		sbci r24,0
+ 1462 09a0 01F4      		brne 1b
+ 1463 09a2 00C0      		rjmp .
+ 1464 09a4 0000      		nop
+ 1465 09a6 412F      		mov r20,r17
+ 1466 09a8 69E0      		ldi r22,lo8(9)
+ 1467 09aa CE01      		movw r24,r28
+ 1468 09ac 4896      		adiw r24,24
+ 1469 09ae 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1470 09b2 20E7      		ldi r18,lo8(112)
+ 1471 09b4 412F      		mov r20,r17
+ 1472 09b6 67E0      		ldi r22,lo8(7)
+ 1473 09b8 CE01      		movw r24,r28
+ 1474 09ba 4896      		adiw r24,24
+ 1475 09bc 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1476 09c0 9FEF      		ldi r25,lo8(1599999)
+ 1477 09c2 29E6      		ldi r18,hi8(1599999)
+ 1478 09c4 88E1      		ldi r24,hlo8(1599999)
+ 1479 09c6 9150      	1:	subi r25,1
+ 1480 09c8 2040      		sbci r18,0
+ 1481 09ca 8040      		sbci r24,0
+ 1482 09cc 01F4      		brne 1b
+ 1483 09ce 00C0      		rjmp .
+ 1484 09d0 0000      		nop
+ 1485 09d2 412F      		mov r20,r17
+ 1486 09d4 67E0      		ldi r22,lo8(7)
+ 1487 09d6 CE01      		movw r24,r28
+ 1488 09d8 4896      		adiw r24,24
+ 1489 09da 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1490 09de 20E7      		ldi r18,lo8(112)
+ 1491 09e0 412F      		mov r20,r17
+ 1492 09e2 65E0      		ldi r22,lo8(5)
+ 1493 09e4 CE01      		movw r24,r28
+ 1494 09e6 4896      		adiw r24,24
+ 1495 09e8 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1496 09ec 9FEF      		ldi r25,lo8(1599999)
+ 1497 09ee 29E6      		ldi r18,hi8(1599999)
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 27
+
+
+ 1498 09f0 88E1      		ldi r24,hlo8(1599999)
+ 1499 09f2 9150      	1:	subi r25,1
+ 1500 09f4 2040      		sbci r18,0
+ 1501 09f6 8040      		sbci r24,0
+ 1502 09f8 01F4      		brne 1b
+ 1503 09fa 00C0      		rjmp .
+ 1504 09fc 0000      		nop
+ 1505 09fe 412F      		mov r20,r17
+ 1506 0a00 65E0      		ldi r22,lo8(5)
+ 1507 0a02 CE01      		movw r24,r28
+ 1508 0a04 4896      		adiw r24,24
+ 1509 0a06 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1510 0a0a 20E7      		ldi r18,lo8(112)
+ 1511 0a0c 412F      		mov r20,r17
+ 1512 0a0e 64E0      		ldi r22,lo8(4)
+ 1513 0a10 CE01      		movw r24,r28
+ 1514 0a12 4896      		adiw r24,24
+ 1515 0a14 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1516 0a18 9FEF      		ldi r25,lo8(1599999)
+ 1517 0a1a 29E6      		ldi r18,hi8(1599999)
+ 1518 0a1c 88E1      		ldi r24,hlo8(1599999)
+ 1519 0a1e 9150      	1:	subi r25,1
+ 1520 0a20 2040      		sbci r18,0
+ 1521 0a22 8040      		sbci r24,0
+ 1522 0a24 01F4      		brne 1b
+ 1523 0a26 00C0      		rjmp .
+ 1524 0a28 0000      		nop
+ 1525 0a2a 412F      		mov r20,r17
+ 1526 0a2c 64E0      		ldi r22,lo8(4)
+ 1527 0a2e CE01      		movw r24,r28
+ 1528 0a30 4896      		adiw r24,24
+ 1529 0a32 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1530 0a36 20E7      		ldi r18,lo8(112)
+ 1531 0a38 412F      		mov r20,r17
+ 1532 0a3a 62E0      		ldi r22,lo8(2)
+ 1533 0a3c CE01      		movw r24,r28
+ 1534 0a3e 4896      		adiw r24,24
+ 1535 0a40 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1536 0a44 9FEF      		ldi r25,lo8(1599999)
+ 1537 0a46 29E6      		ldi r18,hi8(1599999)
+ 1538 0a48 88E1      		ldi r24,hlo8(1599999)
+ 1539 0a4a 9150      	1:	subi r25,1
+ 1540 0a4c 2040      		sbci r18,0
+ 1541 0a4e 8040      		sbci r24,0
+ 1542 0a50 01F4      		brne 1b
+ 1543 0a52 00C0      		rjmp .
+ 1544 0a54 0000      		nop
+ 1545 0a56 412F      		mov r20,r17
+ 1546 0a58 62E0      		ldi r22,lo8(2)
+ 1547 0a5a CE01      		movw r24,r28
+ 1548 0a5c 4896      		adiw r24,24
+ 1549 0a5e 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1550 0a62 20E7      		ldi r18,lo8(112)
+ 1551 0a64 412F      		mov r20,r17
+ 1552 0a66 612F      		mov r22,r17
+ 1553 0a68 CE01      		movw r24,r28
+ 1554 0a6a 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 28
+
+
+ 1555 0a6c 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1556 0a70 9FEF      		ldi r25,lo8(1599999)
+ 1557 0a72 29E6      		ldi r18,hi8(1599999)
+ 1558 0a74 88E1      		ldi r24,hlo8(1599999)
+ 1559 0a76 9150      	1:	subi r25,1
+ 1560 0a78 2040      		sbci r18,0
+ 1561 0a7a 8040      		sbci r24,0
+ 1562 0a7c 01F4      		brne 1b
+ 1563 0a7e 00C0      		rjmp .
+ 1564 0a80 0000      		nop
+ 1565 0a82 412F      		mov r20,r17
+ 1566 0a84 612F      		mov r22,r17
+ 1567 0a86 CE01      		movw r24,r28
+ 1568 0a88 4896      		adiw r24,24
+ 1569 0a8a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1570 0a8e 20E7      		ldi r18,lo8(112)
+ 1571 0a90 412F      		mov r20,r17
+ 1572 0a92 69E0      		ldi r22,lo8(9)
+ 1573 0a94 CE01      		movw r24,r28
+ 1574 0a96 4896      		adiw r24,24
+ 1575 0a98 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1576 0a9c 9FEF      		ldi r25,lo8(1599999)
+ 1577 0a9e 29E6      		ldi r18,hi8(1599999)
+ 1578 0aa0 88E1      		ldi r24,hlo8(1599999)
+ 1579 0aa2 9150      	1:	subi r25,1
+ 1580 0aa4 2040      		sbci r18,0
+ 1581 0aa6 8040      		sbci r24,0
+ 1582 0aa8 01F4      		brne 1b
+ 1583 0aaa 00C0      		rjmp .
+ 1584 0aac 0000      		nop
+ 1585 0aae 412F      		mov r20,r17
+ 1586 0ab0 69E0      		ldi r22,lo8(9)
+ 1587 0ab2 CE01      		movw r24,r28
+ 1588 0ab4 4896      		adiw r24,24
+ 1589 0ab6 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1590 0aba 20E7      		ldi r18,lo8(112)
+ 1591 0abc 412F      		mov r20,r17
+ 1592 0abe 67E0      		ldi r22,lo8(7)
+ 1593 0ac0 CE01      		movw r24,r28
+ 1594 0ac2 4896      		adiw r24,24
+ 1595 0ac4 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1596 0ac8 9FEF      		ldi r25,lo8(1599999)
+ 1597 0aca 29E6      		ldi r18,hi8(1599999)
+ 1598 0acc 88E1      		ldi r24,hlo8(1599999)
+ 1599 0ace 9150      	1:	subi r25,1
+ 1600 0ad0 2040      		sbci r18,0
+ 1601 0ad2 8040      		sbci r24,0
+ 1602 0ad4 01F4      		brne 1b
+ 1603 0ad6 00C0      		rjmp .
+ 1604 0ad8 0000      		nop
+ 1605 0ada 412F      		mov r20,r17
+ 1606 0adc 67E0      		ldi r22,lo8(7)
+ 1607 0ade CE01      		movw r24,r28
+ 1608 0ae0 4896      		adiw r24,24
+ 1609 0ae2 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1610 0ae6 20E7      		ldi r18,lo8(112)
+ 1611 0ae8 412F      		mov r20,r17
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 29
+
+
+ 1612 0aea 65E0      		ldi r22,lo8(5)
+ 1613 0aec CE01      		movw r24,r28
+ 1614 0aee 4896      		adiw r24,24
+ 1615 0af0 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1616 0af4 9FEF      		ldi r25,lo8(1599999)
+ 1617 0af6 29E6      		ldi r18,hi8(1599999)
+ 1618 0af8 88E1      		ldi r24,hlo8(1599999)
+ 1619 0afa 9150      	1:	subi r25,1
+ 1620 0afc 2040      		sbci r18,0
+ 1621 0afe 8040      		sbci r24,0
+ 1622 0b00 01F4      		brne 1b
+ 1623 0b02 00C0      		rjmp .
+ 1624 0b04 0000      		nop
+ 1625 0b06 412F      		mov r20,r17
+ 1626 0b08 65E0      		ldi r22,lo8(5)
+ 1627 0b0a CE01      		movw r24,r28
+ 1628 0b0c 4896      		adiw r24,24
+ 1629 0b0e 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1630 0b12 20E7      		ldi r18,lo8(112)
+ 1631 0b14 412F      		mov r20,r17
+ 1632 0b16 64E0      		ldi r22,lo8(4)
+ 1633 0b18 CE01      		movw r24,r28
+ 1634 0b1a 4896      		adiw r24,24
+ 1635 0b1c 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1636 0b20 9FEF      		ldi r25,lo8(1599999)
+ 1637 0b22 29E6      		ldi r18,hi8(1599999)
+ 1638 0b24 88E1      		ldi r24,hlo8(1599999)
+ 1639 0b26 9150      	1:	subi r25,1
+ 1640 0b28 2040      		sbci r18,0
+ 1641 0b2a 8040      		sbci r24,0
+ 1642 0b2c 01F4      		brne 1b
+ 1643 0b2e 00C0      		rjmp .
+ 1644 0b30 0000      		nop
+ 1645 0b32 412F      		mov r20,r17
+ 1646 0b34 64E0      		ldi r22,lo8(4)
+ 1647 0b36 CE01      		movw r24,r28
+ 1648 0b38 4896      		adiw r24,24
+ 1649 0b3a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1650 0b3e 20E7      		ldi r18,lo8(112)
+ 1651 0b40 412F      		mov r20,r17
+ 1652 0b42 62E0      		ldi r22,lo8(2)
+ 1653 0b44 CE01      		movw r24,r28
+ 1654 0b46 4896      		adiw r24,24
+ 1655 0b48 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1656 0b4c 9FEF      		ldi r25,lo8(1599999)
+ 1657 0b4e 29E6      		ldi r18,hi8(1599999)
+ 1658 0b50 88E1      		ldi r24,hlo8(1599999)
+ 1659 0b52 9150      	1:	subi r25,1
+ 1660 0b54 2040      		sbci r18,0
+ 1661 0b56 8040      		sbci r24,0
+ 1662 0b58 01F4      		brne 1b
+ 1663 0b5a 00C0      		rjmp .
+ 1664 0b5c 0000      		nop
+ 1665 0b5e 412F      		mov r20,r17
+ 1666 0b60 62E0      		ldi r22,lo8(2)
+ 1667 0b62 CE01      		movw r24,r28
+ 1668 0b64 4896      		adiw r24,24
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 30
+
+
+ 1669 0b66 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1670 0b6a 20E7      		ldi r18,lo8(112)
+ 1671 0b6c 412F      		mov r20,r17
+ 1672 0b6e 612F      		mov r22,r17
+ 1673 0b70 CE01      		movw r24,r28
+ 1674 0b72 4896      		adiw r24,24
+ 1675 0b74 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1676 0b78 9FEF      		ldi r25,lo8(1599999)
+ 1677 0b7a 29E6      		ldi r18,hi8(1599999)
+ 1678 0b7c 88E1      		ldi r24,hlo8(1599999)
+ 1679 0b7e 9150      	1:	subi r25,1
+ 1680 0b80 2040      		sbci r18,0
+ 1681 0b82 8040      		sbci r24,0
+ 1682 0b84 01F4      		brne 1b
+ 1683 0b86 00C0      		rjmp .
+ 1684 0b88 0000      		nop
+ 1685 0b8a 412F      		mov r20,r17
+ 1686 0b8c 612F      		mov r22,r17
+ 1687 0b8e CE01      		movw r24,r28
+ 1688 0b90 4896      		adiw r24,24
+ 1689 0b92 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1690 0b96 20E7      		ldi r18,lo8(112)
+ 1691 0b98 412F      		mov r20,r17
+ 1692 0b9a 67E0      		ldi r22,lo8(7)
+ 1693 0b9c CE01      		movw r24,r28
+ 1694 0b9e 4896      		adiw r24,24
+ 1695 0ba0 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1696 0ba4 9FEF      		ldi r25,lo8(1599999)
+ 1697 0ba6 29E6      		ldi r18,hi8(1599999)
+ 1698 0ba8 88E1      		ldi r24,hlo8(1599999)
+ 1699 0baa 9150      	1:	subi r25,1
+ 1700 0bac 2040      		sbci r18,0
+ 1701 0bae 8040      		sbci r24,0
+ 1702 0bb0 01F4      		brne 1b
+ 1703 0bb2 00C0      		rjmp .
+ 1704 0bb4 0000      		nop
+ 1705 0bb6 412F      		mov r20,r17
+ 1706 0bb8 67E0      		ldi r22,lo8(7)
+ 1707 0bba CE01      		movw r24,r28
+ 1708 0bbc 4896      		adiw r24,24
+ 1709 0bbe 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1710 0bc2 20E7      		ldi r18,lo8(112)
+ 1711 0bc4 412F      		mov r20,r17
+ 1712 0bc6 69E0      		ldi r22,lo8(9)
+ 1713 0bc8 CE01      		movw r24,r28
+ 1714 0bca 4896      		adiw r24,24
+ 1715 0bcc 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1716 0bd0 9FEF      		ldi r25,lo8(1599999)
+ 1717 0bd2 29E6      		ldi r18,hi8(1599999)
+ 1718 0bd4 88E1      		ldi r24,hlo8(1599999)
+ 1719 0bd6 9150      	1:	subi r25,1
+ 1720 0bd8 2040      		sbci r18,0
+ 1721 0bda 8040      		sbci r24,0
+ 1722 0bdc 01F4      		brne 1b
+ 1723 0bde 00C0      		rjmp .
+ 1724 0be0 0000      		nop
+ 1725 0be2 412F      		mov r20,r17
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 31
+
+
+ 1726 0be4 69E0      		ldi r22,lo8(9)
+ 1727 0be6 CE01      		movw r24,r28
+ 1728 0be8 4896      		adiw r24,24
+ 1729 0bea 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1730 0bee 20E7      		ldi r18,lo8(112)
+ 1731 0bf0 412F      		mov r20,r17
+ 1732 0bf2 67E0      		ldi r22,lo8(7)
+ 1733 0bf4 CE01      		movw r24,r28
+ 1734 0bf6 4896      		adiw r24,24
+ 1735 0bf8 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1736 0bfc 9FEF      		ldi r25,lo8(1599999)
+ 1737 0bfe 29E6      		ldi r18,hi8(1599999)
+ 1738 0c00 88E1      		ldi r24,hlo8(1599999)
+ 1739 0c02 9150      	1:	subi r25,1
+ 1740 0c04 2040      		sbci r18,0
+ 1741 0c06 8040      		sbci r24,0
+ 1742 0c08 01F4      		brne 1b
+ 1743 0c0a 00C0      		rjmp .
+ 1744 0c0c 0000      		nop
+ 1745 0c0e 412F      		mov r20,r17
+ 1746 0c10 67E0      		ldi r22,lo8(7)
+ 1747 0c12 CE01      		movw r24,r28
+ 1748 0c14 4896      		adiw r24,24
+ 1749 0c16 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1750 0c1a 20E7      		ldi r18,lo8(112)
+ 1751 0c1c 412F      		mov r20,r17
+ 1752 0c1e 65E0      		ldi r22,lo8(5)
+ 1753 0c20 CE01      		movw r24,r28
+ 1754 0c22 4896      		adiw r24,24
+ 1755 0c24 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1756 0c28 9FEF      		ldi r25,lo8(1599999)
+ 1757 0c2a 29E6      		ldi r18,hi8(1599999)
+ 1758 0c2c 88E1      		ldi r24,hlo8(1599999)
+ 1759 0c2e 9150      	1:	subi r25,1
+ 1760 0c30 2040      		sbci r18,0
+ 1761 0c32 8040      		sbci r24,0
+ 1762 0c34 01F4      		brne 1b
+ 1763 0c36 00C0      		rjmp .
+ 1764 0c38 0000      		nop
+ 1765 0c3a 412F      		mov r20,r17
+ 1766 0c3c 65E0      		ldi r22,lo8(5)
+ 1767 0c3e CE01      		movw r24,r28
+ 1768 0c40 4896      		adiw r24,24
+ 1769 0c42 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1770 0c46 20E7      		ldi r18,lo8(112)
+ 1771 0c48 412F      		mov r20,r17
+ 1772 0c4a 64E0      		ldi r22,lo8(4)
+ 1773 0c4c CE01      		movw r24,r28
+ 1774 0c4e 4896      		adiw r24,24
+ 1775 0c50 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1776 0c54 9FEF      		ldi r25,lo8(1599999)
+ 1777 0c56 29E6      		ldi r18,hi8(1599999)
+ 1778 0c58 88E1      		ldi r24,hlo8(1599999)
+ 1779 0c5a 9150      	1:	subi r25,1
+ 1780 0c5c 2040      		sbci r18,0
+ 1781 0c5e 8040      		sbci r24,0
+ 1782 0c60 01F4      		brne 1b
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 32
+
+
+ 1783 0c62 00C0      		rjmp .
+ 1784 0c64 0000      		nop
+ 1785 0c66 412F      		mov r20,r17
+ 1786 0c68 64E0      		ldi r22,lo8(4)
+ 1787 0c6a CE01      		movw r24,r28
+ 1788 0c6c 4896      		adiw r24,24
+ 1789 0c6e 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1790 0c72 20E7      		ldi r18,lo8(112)
+ 1791 0c74 412F      		mov r20,r17
+ 1792 0c76 62E0      		ldi r22,lo8(2)
+ 1793 0c78 CE01      		movw r24,r28
+ 1794 0c7a 4896      		adiw r24,24
+ 1795 0c7c 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1796 0c80 9FEF      		ldi r25,lo8(1599999)
+ 1797 0c82 29E6      		ldi r18,hi8(1599999)
+ 1798 0c84 88E1      		ldi r24,hlo8(1599999)
+ 1799 0c86 9150      	1:	subi r25,1
+ 1800 0c88 2040      		sbci r18,0
+ 1801 0c8a 8040      		sbci r24,0
+ 1802 0c8c 01F4      		brne 1b
+ 1803 0c8e 00C0      		rjmp .
+ 1804 0c90 0000      		nop
+ 1805 0c92 412F      		mov r20,r17
+ 1806 0c94 62E0      		ldi r22,lo8(2)
+ 1807 0c96 CE01      		movw r24,r28
+ 1808 0c98 4896      		adiw r24,24
+ 1809 0c9a 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1810 0c9e 20E7      		ldi r18,lo8(112)
+ 1811 0ca0 412F      		mov r20,r17
+ 1812 0ca2 612F      		mov r22,r17
+ 1813 0ca4 CE01      		movw r24,r28
+ 1814 0ca6 4896      		adiw r24,24
+ 1815 0ca8 0E94 0000 		call _Z7note_onP4MIDIhch
+ 1816 0cac 9FEF      		ldi r25,lo8(3199999)
+ 1817 0cae 23ED      		ldi r18,hi8(3199999)
+ 1818 0cb0 80E3      		ldi r24,hlo8(3199999)
+ 1819 0cb2 9150      	1:	subi r25,1
+ 1820 0cb4 2040      		sbci r18,0
+ 1821 0cb6 8040      		sbci r24,0
+ 1822 0cb8 01F4      		brne 1b
+ 1823 0cba 00C0      		rjmp .
+ 1824 0cbc 0000      		nop
+ 1825 0cbe 412F      		mov r20,r17
+ 1826 0cc0 612F      		mov r22,r17
+ 1827 0cc2 CE01      		movw r24,r28
+ 1828 0cc4 4896      		adiw r24,24
+ 1829 0cc6 0E94 0000 		call _Z8note_offP4MIDIhc
+ 1830 0cca 00C0      		rjmp .L22
+ 1832               	.global	printRawValue
+ 1833               		.section	.bss.printRawValue,"aw",@nobits
+ 1836               	printRawValue:
+ 1837 0000 00        		.zero	1
+ 1838               	.global	Midi_Variable
+ 1839               		.section	.data.Midi_Variable,"aw"
+ 1842               	Midi_Variable:
+ 1843 0000 80        		.byte	-128
+ 1844 0001 00        		.byte	0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 33
+
+
+ 1845 0002 00        		.byte	0
+ 1846 0003 00        		.byte	0
+ 1847 0004 00        		.byte	0
+ 1848               		.ident	"GCC: (GNU) 12.1.0"
+ 1849               	.global __do_copy_data
+ 1850               	.global __do_clear_bss
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 34
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.cpp
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:25     .text._Z4playP4MIDI:0000000000000000 _Z4playP4MIDI
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1842   .data.Midi_Variable:0000000000000000 Midi_Variable
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:74     .text._Z9init_midiP4MIDIh:0000000000000000 _Z9init_midiP4MIDIh
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:108    .text._Z9init_midiP4MIDIh:0000000000000042 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:118    .text._Z9init_midiP4MIDIh:0000000000000056 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:126    .text._Z7note_onP4MIDIhch:0000000000000000 _Z7note_onP4MIDIhch
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:162    .text._Z7note_onP4MIDIhch:000000000000003e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:170    .text._Z8note_offP4MIDIhc:0000000000000000 _Z8note_offP4MIDIhc
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:183    .text._Z17change_instrumentP4MIDIh:0000000000000000 _Z17change_instrumentP4MIDIh
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:206    .text._Z17change_instrumentP4MIDIh:0000000000000028 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:214    .text._Z36usartTransmissionBufferEmptyCallbackv:0000000000000000 _Z36usartTransmissionBufferEmptyCallbackv
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:283    .text.main:0000000000000000 main
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:511    .text.main:000000000000019c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:550    .text.main:00000000000001f0 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:553    .text.main:00000000000001f6 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:571    .text.main:000000000000021a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:593    .text.main:0000000000000248 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:615    .text.main:0000000000000276 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:637    .text.main:00000000000002a4 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:659    .text.main:00000000000002d2 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:681    .text.main:0000000000000300 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:703    .text.main:000000000000032e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:725    .text.main:000000000000035c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:747    .text.main:000000000000038a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:769    .text.main:00000000000003b8 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:791    .text.main:00000000000003e6 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:819    .text.main:0000000000000420 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:839    .text.main:000000000000044c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:859    .text.main:0000000000000478 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:879    .text.main:00000000000004a4 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:899    .text.main:00000000000004d0 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:919    .text.main:00000000000004fc L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:939    .text.main:0000000000000528 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:959    .text.main:0000000000000554 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:979    .text.main:0000000000000580 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:999    .text.main:00000000000005ac L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1019   .text.main:00000000000005d8 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1039   .text.main:0000000000000604 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1061   .text.main:0000000000000632 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1081   .text.main:000000000000065e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1101   .text.main:000000000000068a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1121   .text.main:00000000000006b6 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1141   .text.main:00000000000006e2 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1161   .text.main:000000000000070e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1181   .text.main:000000000000073a L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1201   .text.main:0000000000000766 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1221   .text.main:0000000000000792 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1241   .text.main:00000000000007be L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1261   .text.main:00000000000007ea L0
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 35
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1281   .text.main:0000000000000816 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1301   .text.main:0000000000000842 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1321   .text.main:000000000000086e L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1343   .text.main:000000000000089c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1363   .text.main:00000000000008c8 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1383   .text.main:00000000000008f4 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1403   .text.main:0000000000000920 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1423   .text.main:000000000000094c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1443   .text.main:0000000000000978 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1463   .text.main:00000000000009a4 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1483   .text.main:00000000000009d0 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1503   .text.main:00000000000009fc L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1523   .text.main:0000000000000a28 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1543   .text.main:0000000000000a54 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1563   .text.main:0000000000000a80 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1583   .text.main:0000000000000aac L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1603   .text.main:0000000000000ad8 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1623   .text.main:0000000000000b04 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1643   .text.main:0000000000000b30 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1663   .text.main:0000000000000b5c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1683   .text.main:0000000000000b88 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1703   .text.main:0000000000000bb4 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1723   .text.main:0000000000000be0 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1743   .text.main:0000000000000c0c L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1763   .text.main:0000000000000c38 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1783   .text.main:0000000000000c64 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1803   .text.main:0000000000000c90 L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1823   .text.main:0000000000000cbc L0
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1836   .bss.printRawValue:0000000000000000 printRawValue
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:39     .text._Z4playP4MIDI:0000000000000010 .L4
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:36     .text._Z4playP4MIDI:000000000000000e .L2
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:104    .text._Z9init_midiP4MIDIh:0000000000000038 .L11
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:114    .text._Z9init_midiP4MIDIh:000000000000004c .L12
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:150    .text._Z7note_onP4MIDIhch:0000000000000024 .L9
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:160    .text._Z7note_onP4MIDIhch:0000000000000038 .L13
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:204    .text._Z17change_instrumentP4MIDIh:0000000000000022 .L14
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:237    .text._Z36usartTransmissionBufferEmptyCallbackv:0000000000000028 .L17
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:246    .text._Z36usartTransmissionBufferEmptyCallbackv:000000000000003a .L18
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:255    .text._Z36usartTransmissionBufferEmptyCallbackv:000000000000004c .L19
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:267    .text._Z36usartTransmissionBufferEmptyCallbackv:0000000000000064 .L20
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:234    .text._Z36usartTransmissionBufferEmptyCallbackv:0000000000000026 .L12
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:518    .text.main:00000000000001aa .L22
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:452    .text.main:0000000000000150 .L46
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:454    .text.main:0000000000000152 .L25
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:461    .text.main:000000000000015e .L48
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:463    .text.main:0000000000000160 .L26
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:479    .jumptables.gcc.main:0000000000000000 .L28
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:507    .text.main:0000000000000192 .L15
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:443    .text.main:0000000000000142 .L44
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:445    .text.main:0000000000000144 .L24
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:567    .text.main:0000000000000210 .L16
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:589    .text.main:000000000000023e .L17
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:611    .text.main:000000000000026c .L18
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:633    .text.main:000000000000029a .L19
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:655    .text.main:00000000000002c8 .L110
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:677    .text.main:00000000000002f6 .L111
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:699    .text.main:0000000000000324 .L112
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 36
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:721    .text.main:0000000000000352 .L113
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:743    .text.main:0000000000000380 .L114
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:765    .text.main:00000000000003ae .L115
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:787    .text.main:00000000000003dc .L116
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:815    .text.main:0000000000000416 .L117
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:835    .text.main:0000000000000442 .L118
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:855    .text.main:000000000000046e .L119
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:875    .text.main:000000000000049a .L120
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:895    .text.main:00000000000004c6 .L121
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:915    .text.main:00000000000004f2 .L122
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:935    .text.main:000000000000051e .L123
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:955    .text.main:000000000000054a .L124
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:975    .text.main:0000000000000576 .L125
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:995    .text.main:00000000000005a2 .L126
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1015   .text.main:00000000000005ce .L127
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1035   .text.main:00000000000005fa .L128
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1057   .text.main:0000000000000628 .L129
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1077   .text.main:0000000000000654 .L130
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1097   .text.main:0000000000000680 .L131
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1117   .text.main:00000000000006ac .L132
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1137   .text.main:00000000000006d8 .L133
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1157   .text.main:0000000000000704 .L134
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1177   .text.main:0000000000000730 .L135
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1197   .text.main:000000000000075c .L136
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1217   .text.main:0000000000000788 .L137
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1237   .text.main:00000000000007b4 .L138
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1257   .text.main:00000000000007e0 .L139
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1277   .text.main:000000000000080c .L140
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1297   .text.main:0000000000000838 .L141
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1317   .text.main:0000000000000864 .L142
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1339   .text.main:0000000000000892 .L143
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1359   .text.main:00000000000008be .L144
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1379   .text.main:00000000000008ea .L145
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1399   .text.main:0000000000000916 .L146
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1419   .text.main:0000000000000942 .L147
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1439   .text.main:000000000000096e .L148
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1459   .text.main:000000000000099a .L149
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1479   .text.main:00000000000009c6 .L150
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1499   .text.main:00000000000009f2 .L151
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1519   .text.main:0000000000000a1e .L152
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1539   .text.main:0000000000000a4a .L153
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1559   .text.main:0000000000000a76 .L154
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1579   .text.main:0000000000000aa2 .L155
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1599   .text.main:0000000000000ace .L156
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1619   .text.main:0000000000000afa .L157
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1639   .text.main:0000000000000b26 .L158
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1659   .text.main:0000000000000b52 .L159
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1679   .text.main:0000000000000b7e .L160
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1699   .text.main:0000000000000baa .L161
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1719   .text.main:0000000000000bd6 .L162
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1739   .text.main:0000000000000c02 .L163
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1759   .text.main:0000000000000c2e .L164
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1779   .text.main:0000000000000c5a .L165
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1799   .text.main:0000000000000c86 .L166
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1819   .text.main:0000000000000cb2 .L167
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:497    .text.main:000000000000017e .L43
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:557    .text.main:00000000000001fc .L42
+GAS LISTING C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s 			page 37
+
+
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:579    .text.main:000000000000022a .L41
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:601    .text.main:0000000000000258 .L40
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:623    .text.main:0000000000000286 .L39
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:645    .text.main:00000000000002b4 .L38
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:667    .text.main:00000000000002e2 .L37
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:689    .text.main:0000000000000310 .L36
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:711    .text.main:000000000000033e .L35
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:733    .text.main:000000000000036c .L34
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:755    .text.main:000000000000039a .L33
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:777    .text.main:00000000000003c8 .L32
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:799    .text.main:00000000000003f6 .L31
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:805    .text.main:0000000000000402 .L30
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1047   .text.main:0000000000000614 .L29
+C:\Users\ANDRLU~1\AppData\Local\Temp\cctnCePQ.s:1329   .text.main:000000000000087e .L27
+
+UNDEFINED SYMBOLS
+usart0
+_ZN6Usart04initEv
+_ZN6KeypadC1Ev
+_ZN6Keypad8setPortsEPVhhS1_h
+_ZN6Keypad12setKeyValuesENS_4TypeEz
+_ZN6Keypad4initEh
+twi
+_ZN3Twi4initEmh
+_ZN3Twi9setDeviceEjb
+_ZN3Twi7readRegEhPhj
+_ZN6Keypad14readKeyPressedEPh
+__tablejump2__
+__do_copy_data
+__do_clear_bss
