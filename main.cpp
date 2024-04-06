@@ -1,5 +1,10 @@
 ﻿#define F_CPU 16000000UL
 
+//80% codigo do professor Leandro Schwarz
+//12% dádiva divina
+//8%  código escrito por aluno
+// Alunos: André Toldo e Leonardo Beche
+
 #include <avr/interrupt.h>
 #include "funsape/peripheral/twi.hpp"
 #include "funsape/device/keypad.hpp"
